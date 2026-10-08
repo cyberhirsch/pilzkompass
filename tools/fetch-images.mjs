@@ -2,7 +2,7 @@
 // API responses are cached in tools/.cache.json, so reruns are fast.
 import { readFile, writeFile, rename } from 'node:fs/promises';
 
-const UA = { 'User-Agent': 'boletus-species-list/1.0 (static site builder)' };
+const UA = { 'User-Agent': 'pilzkompass/1.0 (static site builder)' };
 const MAX_PHOTOS = 8;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const species = JSON.parse(await readFile(new URL('./species.json', import.meta.url), 'utf8'));

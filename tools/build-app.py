@@ -25,7 +25,7 @@ FONTS_CSS = ("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144
 PHOTO_EDGE, THUMB_EDGE = 800, 200
 
 session = requests.Session()
-session.headers["User-Agent"] = "boletus-app-builder/1.0 (non-commercial offline mushroom guide)"
+session.headers["User-Agent"] = "pilzkompass-app-builder/1.0 (non-commercial offline mushroom guide)"
 
 
 def fetch(url):

@@ -3,7 +3,7 @@
 // Writes tools/inat-counts.json and prints a table.
 import { readFile, writeFile } from 'node:fs/promises';
 
-const UA = { 'User-Agent': 'boletus-species-list/1.0 (training data survey)' };
+const UA = { 'User-Agent': 'pilzkompass/1.0 (training data survey)' };
 const OPEN = 'cc0,cc-by,cc-by-sa';
 const LOOKALIKES = [
   'Paxillus involutus', 'Scleroderma citrinum', 'Scleroderma areolatum', 'Hygrophoropsis aurantiaca',

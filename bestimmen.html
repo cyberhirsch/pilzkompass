@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>Boletus.de — Bestimmungshilfe</title>
+<title>Pilzkompass — Bestimmungshilfe</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -144,7 +144,7 @@
       status: { poisonous: 'Giftig', deadly: 'Tödlich giftig', bitter: 'Ungenießbar', caution: 'Nur gut durchgegart essbar', edible: 'Essbar', inedible: 'Kein Speisepilz', other: 'Unbekannt' },
       warn: { poisonous: '☠ GIFTIG', deadly: '☠ TÖDLICH GIFTIG', bitter: '✖ SCHMECKT ÜBEL' },
       protect: { strict: '🛡 GESCHÜTZT — NICHT SAMMELN', personal: '🛡 Geschützt: nur geringe Mengen für den Eigenbedarf' },
-      footer: 'KI-Modell: DINOv2 ViT-S/14 (Meta AI, Apache 2.0), feinjustiert für Boletus.de auf rund 40.000 Fotos von iNaturalist (research grade). Die Fotos stehen unter Creative-Commons-Lizenzen ihrer Urheber, teils nicht-kommerziell; die vollständige Urheberliste steht in <a href="model/photo-credits.csv">photo-credits.csv</a>. Nur für nicht-kommerzielle Nutzung. Das Modell läuft im Browser über ONNX Runtime Web; Fotos werden nicht hochgeladen.',
+      footer: 'KI-Modell: DINOv2 ViT-S/14 (Meta AI, Apache 2.0), feinjustiert für den Pilzkompass auf rund 40.000 Fotos von iNaturalist (research grade). Die Fotos stehen unter Creative-Commons-Lizenzen ihrer Urheber, teils nicht-kommerziell; die vollständige Urheberliste steht in <a href="model/photo-credits.csv">photo-credits.csv</a>. Nur für nicht-kommerzielle Nutzung. Das Modell läuft im Browser über ONNX Runtime Web; Fotos werden nicht hochgeladen.',
     },
     en: {
       back: '← All boletes',
@@ -170,7 +170,7 @@
       status: { poisonous: 'Poisonous', deadly: 'Deadly poisonous', bitter: 'Tastes bad', caution: 'Edible only well cooked', edible: 'Edible', inedible: 'Not edible', other: 'Unknown' },
       warn: { poisonous: '☠ POISONOUS', deadly: '☠ DEADLY POISONOUS', bitter: '✖ TASTES TERRIBLE' },
       protect: { strict: '🛡 PROTECTED — DO NOT PICK', personal: '🛡 Protected: small amounts for own use only' },
-      footer: 'AI model: DINOv2 ViT-S/14 (Meta AI, Apache 2.0), fine-tuned for Boletus.de on about 40,000 research-grade iNaturalist photos. The photos are under their authors\' Creative Commons licences, some non-commercial; the full credit list is in <a href="model/photo-credits.csv">photo-credits.csv</a>. Non-commercial use only. The model runs in the browser via ONNX Runtime Web; photos are not uploaded.',
+      footer: 'AI model: DINOv2 ViT-S/14 (Meta AI, Apache 2.0), fine-tuned for Pilzkompass on about 40,000 research-grade iNaturalist photos. The photos are under their authors\' Creative Commons licences, some non-commercial; the full credit list is in <a href="model/photo-credits.csv">photo-credits.csv</a>. Non-commercial use only. The model runs in the browser via ONNX Runtime Web; photos are not uploaded.',
     },
   };
   // Non-bolete look-alikes the model knows.
@@ -320,7 +320,7 @@
     lang = l;
     store.set(l);
     document.documentElement.lang = l;
-    document.title = 'Boletus.de — ' + (l === 'de' ? 'Bestimmungshilfe' : 'Identification aid');
+    document.title = 'Pilzkompass — ' + (l === 'de' ? 'Bestimmungshilfe' : 'Identification aid');
     document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = T[l][el.dataset.i18n]);
     document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
     showResults();

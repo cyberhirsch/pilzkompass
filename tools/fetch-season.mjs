@@ -2,7 +2,7 @@
 // species with too few European records). Rerun to refresh.
 import { readFile, writeFile } from 'node:fs/promises';
 
-const UA = { 'User-Agent': 'boletus-species-list/1.0 (season calendar)' };
+const UA = { 'User-Agent': 'pilzkompass/1.0 (season calendar)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function gbif(path, params) {
   const url = `https://api.gbif.org/v1/${path}?` + new URLSearchParams(params);

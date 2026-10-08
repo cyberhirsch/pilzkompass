@@ -47,7 +47,7 @@ jobs:
           ./gradlew assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
-          name: boletus-android-apk
+          name: pilzkompass-android-apk
           path: app/android/app/build/outputs/apk/debug/app-debug.apk
           compression-level: 0
 
@@ -85,9 +85,9 @@ jobs:
           # Unsigned .ipa: sign it yourself (e.g. Sideloadly/AltStore with your Apple ID) to install.
           mkdir -p Payload
           cp -R build/Build/Products/Release-iphoneos/App.app Payload/
-          zip -qry Boletus-unsigned.ipa Payload
+          zip -qry Pilzkompass-unsigned.ipa Payload
       - uses: actions/upload-artifact@v4
         with:
-          name: boletus-ios-unsigned-ipa
-          path: app/Boletus-unsigned.ipa
+          name: pilzkompass-ios-unsigned-ipa
+          path: app/Pilzkompass-unsigned.ipa
           compression-level: 0

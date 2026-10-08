@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Boletus</string>
-    <string name="title_activity_main">Boletus</string>
-    <string name="package_name">de.boletus.app</string>
-    <string name="custom_url_scheme">de.boletus.app</string>
+    <string name="app_name">Pilzkompass</string>
+    <string name="title_activity_main">Pilzkompass</string>
+    <string name="package_name">de.pilzkompass.app</string>
+    <string name="custom_url_scheme">de.pilzkompass.app</string>
 </resources>

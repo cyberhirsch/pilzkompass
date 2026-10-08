@@ -25,7 +25,7 @@ DATA = ROOT / "data"
 MIN_OBS = 50
 MAX_PER_CLASS = 500
 OTHER_FUNGI = 2500
-UA = {"User-Agent": "boletus-de-training/1.0 (non-commercial mushroom identification aid)"}
+UA = {"User-Agent": "pilzkompass-training/1.0 (non-commercial mushroom identification aid)"}
 FUNGI, BOLETALES = 47170, 48427
 
 session = requests.Session()

@@ -1,4 +1,4 @@
-package de.boletus.app;
+package de.pilzkompass.app;
 
 import com.getcapacitor.BridgeActivity;
 

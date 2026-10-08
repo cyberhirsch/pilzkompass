@@ -1,6 +1,6 @@
 {
-  "appId": "de.boletus.app",
-  "appName": "Boletus",
+  "appId": "de.pilzkompass.app",
+  "appName": "Pilzkompass",
   "webDir": "www",
   "android": { "backgroundColor": "#14110d" }
 }
