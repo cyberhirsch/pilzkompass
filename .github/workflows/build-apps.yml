@@ -3,6 +3,7 @@ name: Build apps
 on:
   push:
     branches: [main]
+    tags: ['v*']
   workflow_dispatch:
 
 concurrency:
@@ -26,12 +27,6 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - name: Cache Wikimedia photos
-        uses: actions/cache@v4
-        with:
-          path: app/cache
-          key: wikimedia-photos-${{ hashFiles('data.js') }}
-          restore-keys: wikimedia-photos-
       - name: Assemble offline web bundle
         working-directory: app
         run: |
@@ -63,12 +58,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Cache Wikimedia photos
-        uses: actions/cache@v4
-        with:
-          path: app/cache
-          key: wikimedia-photos-${{ hashFiles('data.js') }}
-          restore-keys: wikimedia-photos-
       - name: Assemble offline web bundle
         working-directory: app
         run: |
@@ -91,3 +80,28 @@ jobs:
           name: pilzkompass-ios-unsigned-ipa
           path: app/Pilzkompass-unsigned.ipa
           compression-level: 0
+
+  # Tag v* (e.g. v0.1.0-alpha.1) → GitHub pre-release with both apps attached.
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [android, ios]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+      - name: Publish pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          mv pilzkompass-android-apk/app-debug.apk "Pilzkompass-$TAG.apk"
+          mv pilzkompass-ios-unsigned-ipa/Pilzkompass-unsigned.ipa "Pilzkompass-$TAG-unsigned.ipa"
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --prerelease --title "Pilzkompass $TAG"             --notes-file - "Pilzkompass-$TAG.apk" "Pilzkompass-$TAG-unsigned.ipa" <<'NOTES'
+          Erste Testversion (Alpha). Nicht für Essensentscheidungen verwenden — jeden Fund von Pilzsachverständigen prüfen lassen.
+
+          **Android:** APK herunterladen und installieren („Unbekannte Apps installieren“ erlauben). Debug-signiert.
+          **iOS:** unsignierte IPA — vor der Installation mit eigener Apple-ID signieren (z. B. Sideloadly oder AltStore).
+
+          Enthält: 100 Röhrlinge (DE/EN) mit Fotos, Warnungen, Doppelgängern und ⭐ für Anfänger · KI-Fotobestimmung offline · Baumkarte Deutschland (10 m, offline) · Pilzwetter und Begrüßung mit Empfehlung (Internet nötig).
+          NOTES
