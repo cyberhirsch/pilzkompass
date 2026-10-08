@@ -1,0 +1,5 @@
+* text=auto
+app/android/gradlew text eol=lf
+*.png binary
+*.onnx binary
+*.bin binary

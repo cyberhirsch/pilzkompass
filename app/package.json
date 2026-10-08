@@ -1,0 +1,21 @@
+{
+  "name": "boletus-app",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "assemble": "python ../tools/build-app.py",
+    "sync": "npx cap sync android",
+    "apk": "cd android && gradlew.bat assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/ios": "^8.5.3",
+    "onnxruntime-web": "^1.22.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.3",
+    "sharp": "^0.35.5"
+  }
+}

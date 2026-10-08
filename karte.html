@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Boletus.de — Baumkarte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root {
+    --bg: #14110d; --surface: #1f1a14; --surface-2: #2a231b; --line: #3a3127;
+    --text: #efe6d8; --muted: #a99a85;
+    --edible: #6fae5a; --caution: #e0a83a; --bitter: #d9771f; --poison: #e5322d; --protect: #4c8dd6;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 Inter, system-ui, sans-serif; display: flex; flex-direction: column; }
+  a { color: inherit; }
+  header { padding: 14px 16px 10px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; border-bottom: 1px solid var(--line); }
+  header h1 { font: 900 26px/1 Fraunces, Georgia, serif; margin: 0; }
+  header h1 span { color: var(--caution); }
+  .back { color: var(--muted); font-size: 13px; text-decoration: none; }
+  .lang { margin-left: auto; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { background: var(--surface); color: var(--muted); border: 0; padding: 6px 14px; font: 700 12px Inter, sans-serif; letter-spacing: .06em; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--surface); }
+  .seg { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .seg button { background: var(--surface-2); color: var(--muted); border: 0; padding: 7px 12px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+  select { min-width: 0; flex: 1 1 220px; max-width: 420px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
+  .btn { border: 1px solid var(--line); background: var(--surface-2); color: var(--text); border-radius: 999px; padding: 7px 14px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+
+  main { position: relative; flex: 1; min-height: 360px; }
+  #map { position: absolute; inset: 0; background: #ddd; }
+  .leaflet-image-layer, .leaflet-tile { image-rendering: pixelated; }
+  .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 6px; }
+  .legend .row { margin-top: 4px; }
+  .here { margin-bottom: 10px; padding: 6px 8px; border-radius: 6px; background: var(--surface-2); }
+  .legend { position: absolute; left: 12px; bottom: 22px; z-index: 500; background: rgba(31, 26, 20, .92); border: 1px solid var(--line);
+    border-radius: 8px; padding: 8px 10px; font-size: 12px; max-width: 280px; }
+  .legend .ramp { height: 10px; border-radius: 3px; margin: 6px 0 2px; }
+  .legend .ticks { display: flex; justify-content: space-between; color: var(--muted); }
+  .note { font-size: 12px; color: var(--muted); padding: 8px 16px; border-top: 1px solid var(--line); }
+
+  /* Popup */
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--surface); color: var(--text); }
+  .leaflet-popup-content { margin: 12px 14px; font: 13px/1.45 Inter, sans-serif; min-width: 240px; }
+  .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+  .pp h3 { margin: 0 0 6px; font: 700 13px Inter, sans-serif; color: var(--muted); }
+  .mix { display: grid; grid-template-columns: auto 1fr auto; gap: 3px 8px; align-items: center; margin-bottom: 10px; }
+  .mix .b { height: 8px; border-radius: 0 4px 4px 0; background: #b5652a; }
+  .mix .v { color: var(--muted); text-align: right; }
+  .fit { list-style: none; margin: 0; padding: 0; }
+  .fit li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid var(--line); }
+  .fit { max-height: 300px; overflow-y: auto; }
+  .leaflet-container .pp a { color: var(--text); text-decoration: none; }
+  .fit .sci { font: italic 600 13px Fraunces, Georgia, serif; }
+  .fit .tag { font-size: 11px; font-weight: 700; }
+  .tag.poisonous { color: var(--poison); } .tag.bitter { color: var(--bitter); } .tag.protected { color: var(--protect); }
+  .fit .pct { color: var(--muted); }
+  .pp .none { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html" data-i18n="back"></a>
+  <h1 data-i18n="title"></h1>
+  <div class="lang" role="group" aria-label="Language / Sprache">
+    <button data-lang="de">DE</button><button data-lang="en">EN</button>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="seg" role="group">
+    <button data-mode="species" aria-pressed="true" data-i18n="modeSpecies"></button>
+    <button data-mode="tree" aria-pressed="false" data-i18n="modeTree"></button>
+  </div>
+  <select id="pick" aria-label="Auswahl"></select>
+  <button class="btn" id="here" data-i18n="here"></button>
+</div>
+
+<main>
+  <div id="map"></div>
+  <div class="legend" id="legend"></div>
+</main>
+<div class="note" data-i18n="note"></div>
+
+<script src="data.js"></script>
+<script src="trees.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+  const T = {
+    de: {
+      back: '← Alle Röhrlinge', title: 'Baum<span>karte</span>',
+      modeSpecies: 'Pilzart', modeTree: 'Baumart', here: '📍 Mein Standort',
+      legendSpecies: name => `Anteil passender Baumpartner für <i>${name}</i> (1-km-Übersicht, ab Zoom 10 in 10 m)`,
+      legendTree: name => `Waldanteil mit vorherrschend ${name}`,
+      detailSpecies: name => `10-m-Karte: Waldflächen mit Baumpartnern von <i>${name}</i>`,
+      detailTree: name => `10-m-Karte: Wald mit vorherrschend ${name}`,
+      hostFull: 'Baumpartner', hostPart: 'Baumgruppe, enthält Partner (z. B. Hainbuche, Espe)',
+      hereIs: 'Genau hier (10 m)', noTree: 'kein Wald / keine Angabe',
+      mix: 'Bäume im Umkreis (≈1 km²)', fits: 'Passende Röhrlinge', noForest: 'Hier ist laut Karte kaum Wald.',
+      noHosts: 'Keine Baumpartner auf der Karte (z. B. nur im Mittelmeerraum).',
+      note: 'Baumdaten: Blickensdörfer et al. (2022), Dominante Baumartenkarte Deutschland 2017/2018, Thünen-Institut, CC BY 4.0. Die Karte zeigt nur, wo passende Bäume vorherrschen — nicht, ob der Pilz dort wächst. Boden, Klima und Seltenheit sind nicht berücksichtigt; die Baumpartner je Art sind ungeprüft. Seit 2018 sind viele Fichtenbestände abgestorben.',
+      trees: { birch: 'Birke', beech: 'Buche', douglas: 'Douglasie', oak: 'Eiche', alder: 'Erle', spruce: 'Fichte', pine: 'Kiefer', larch: 'Lärche', fir: 'Tanne', odh: 'sonst. Laubbäume (langlebig)', odl: 'sonst. Laubbäume (kurzlebig)' },
+      tag: { poisonous: '☠ giftig', bitter: '✖ ungenießbar', strict: '🛡 geschützt' }, calc: 'nur auf Kalk', rare: 'selten',
+    },
+    en: {
+      back: '← All boletes', title: 'Tree <span>map</span>',
+      modeSpecies: 'Mushroom', modeTree: 'Tree species', here: '📍 My location',
+      legendSpecies: name => `Share of matching host trees for <i>${name}</i> (1 km overview, 10 m from zoom 10)`,
+      legendTree: name => `Forest share dominated by ${name}`,
+      detailSpecies: name => `10 m map: forest with host trees of <i>${name}</i>`,
+      detailTree: name => `10 m map: forest dominated by ${name}`,
+      hostFull: 'host trees', hostPart: 'tree group containing hosts (e.g. hornbeam, aspen)',
+      hereIs: 'Right here (10 m)', noTree: 'no forest / no data',
+      mix: 'Trees around here (≈1 km²)', fits: 'Matching boletes', noForest: 'Hardly any forest here according to the map.',
+      noHosts: 'No host trees on this map (e.g. Mediterranean only).',
+      note: 'Tree data: Blickensdörfer et al. (2022), Dominant Tree Species for Germany 2017/2018, Thünen Institute, CC BY 4.0. The map only shows where suitable trees dominate — not whether the mushroom grows there. Soil, climate and rarity are not included; host trees per species are unverified. Many spruce stands have died since 2018.',
+      trees: { birch: 'birch', beech: 'beech', douglas: 'Douglas fir', oak: 'oak', alder: 'alder', spruce: 'spruce', pine: 'pine', larch: 'larch', fir: 'fir', odh: 'other broadleaves (long-lived)', odl: 'other broadleaves (short-lived)' },
+      tag: { poisonous: '☠ poisonous', bitter: '✖ inedible', strict: '🛡 protected' }, calc: 'chalky soil only', rare: 'rare',
+    },
+  };
+
+  const HOST = TreeGrid.HOST, NOT_IN_DE = TreeGrid.NOT_IN_DE;
+  const finds = s => s.season ? s.season.months.reduce((a, b) => a + b, 0) : 0;
+  const RAMP = [[255, 237, 200], [181, 101, 42], [74, 28, 6]];  // one hue, light → dark (sequential)
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+  };
+  let lang = store.get('lang') || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+  let mode = 'species', choice = 'Boletus edulis', grid, meta, overlay;
+
+  const map = L.map('map', { minZoom: 5, maxZoom: 17 }).setView([51.2, 10.4], 6);
+  const DETAIL_ZOOM = 10;   // from here on the 10 m tiles replace the 1 km overview
+  let W = null;             // current weights per map class (index 0..10)
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Bäume/Trees: Thünen-Institut (CC BY 4.0)',
+  }).addTo(map);
+
+  // Weights over map classes for one bolete; several codes may hit the same class → keep the max.
+  function weights(s) {
+    const w = new Float32Array(meta.classes.length);
+    for (const code of s.trees ?? []) {
+      const h = HOST[code];
+      if (h) { const i = meta.classes.indexOf(h[0]); w[i] = Math.max(w[i], h[1]); }
+    }
+    return w;
+  }
+
+  function cellScore(w, idx) {
+    let v = 0;
+    for (let c = 0; c < w.length; c++) if (w[c]) v += w[c] * grid[c * meta.width * meta.height + idx];
+    return v;  // percent of cell area
+  }
+
+  function colour(t) {
+    const [a, b] = t < .5 ? [RAMP[0], RAMP[1]] : [RAMP[1], RAMP[2]];
+    const u = t < .5 ? t * 2 : (t - .5) * 2;
+    return a.map((x, i) => Math.round(x + (b[i] - x) * u));
+  }
+
+  function draw() {
+    const GW = meta.width, H = meta.height, n = GW * H;
+    const canvas = document.createElement('canvas');
+    canvas.width = GW; canvas.height = H;
+    const ctx = canvas.getContext('2d'), img = ctx.createImageData(GW, H);
+    let w;
+    if (mode === 'species') w = weights(BOLETES.find(s => s.sci === choice));
+    else { w = new Float32Array(meta.classes.length); w[meta.classes.indexOf(choice)] = 1; }
+    W = w;
+    const MAX = 60;  // colour scale saturates at 60 % of the cell
+    for (let i = 0; i < n; i++) {
+      const v = cellScore(w, i);
+      if (v < 2) continue;
+      const t = Math.min(1, v / MAX), [r, g, b] = colour(t);
+      img.data.set([r, g, b, Math.round(110 + 130 * t)], i * 4);
+    }
+    ctx.putImageData(img, 0, 0);
+    const [l, bo, r, tp] = meta.bounds;
+    const sw = L.CRS.EPSG3857.unproject(L.point(l, bo)), ne = L.CRS.EPSG3857.unproject(L.point(r, tp));
+    if (overlay) overlay.remove();
+    overlay = L.imageOverlay(canvas.toDataURL(), [sw, ne], { opacity: .85, interactive: false });
+    for (const t of Object.values(tiles._tiles ?? {})) paint(t.el);
+    zoomSwitch();
+  }
+
+  // ----- 10 m tiles: each pixel stores a tree class (red = class * 20); recoloured here -----
+  const FULL = [181, 101, 42], PART = [232, 180, 120];
+  function paint(canvas) {
+    if (!canvas._cls || !W) return;
+    const ctx = canvas.getContext('2d'), d = ctx.createImageData(256, 256), px = d.data;
+    for (let i = 0; i < 65536; i++) {
+      const c = canvas._cls[i];
+      if (!c) continue;
+      const w = W[c - 1];
+      if (!w) continue;
+      const [r, g, b] = w >= 1 ? FULL : PART;
+      px[i * 4] = r; px[i * 4 + 1] = g; px[i * 4 + 2] = b; px[i * 4 + 3] = w >= 1 ? 220 : 170;
+    }
+    ctx.putImageData(d, 0, 0);
+  }
+  const TreeTiles = L.GridLayer.extend({
+    createTile(coords, done) {
+      const canvas = document.createElement('canvas');
+      canvas.width = canvas.height = 256;
+      const img = new Image();
+      img.onload = () => {
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        const raw = ctx.getImageData(0, 0, 256, 256).data, cls = new Uint8Array(65536);
+        for (let i = 0; i < 65536; i++) if (raw[i * 4 + 3]) cls[i] = Math.round(raw[i * 4] / 20);
+        canvas._cls = cls;
+        paint(canvas);
+        done(null, canvas);
+      };
+      img.onerror = () => done(null, canvas);   // no forest in this tile
+      img.src = `maps/tiles/${coords.z}/${coords.x}/${coords.y}.png`;
+      return canvas;
+    },
+  });
+  const tiles = new TreeTiles({ minNativeZoom: 5, maxNativeZoom: 13, minZoom: DETAIL_ZOOM, maxZoom: 17, opacity: .9 });
+
+  // Without the tile set (e.g. in the app before tiles are bundled) stay on the 1 km overview.
+  let tilesOk = false;
+  fetch('maps/tiles/5/17/10.png', { method: 'HEAD' }).then(r => { tilesOk = r.ok; if (meta) zoomSwitch(); }, () => {});
+  function zoomSwitch() {
+    const detail = tilesOk && map.getZoom() >= DETAIL_ZOOM;
+    if (overlay) detail ? overlay.remove() : overlay.addTo(map);
+    detail ? tiles.addTo(map) : tiles.remove();
+    legend();
+  }
+  map.on('zoomend', () => { if (meta) zoomSwitch(); });
+
+  // Tree class at a point, from the loaded 10 m tile (only meaningful when zoomed in).
+  function classAt(latlng) {
+    const z = Math.min(map.getZoom(), 13);
+    if (map.getZoom() < 12) return null;
+    const p = map.project(latlng, z), x = Math.floor(p.x / 256), y = Math.floor(p.y / 256);
+    const t = tiles._tiles?.[`${x}:${y}:${z}`];
+    if (!t?.el._cls) return null;
+    const c = t.el._cls[Math.floor(p.y % 256) * 256 + Math.floor(p.x % 256)];
+    return c ? meta.classes[c - 1] : 'none';
+  }
+
+  function legend() {
+    const t = T[lang];
+    if (tilesOk && map.getZoom() >= DETAIL_ZOOM) {
+      const label = mode === 'species' ? t.detailSpecies(esc(choice)) : t.detailTree(t.trees[choice]);
+      const partial = mode === 'species' && W && W.some(v => v > 0 && v < 1);
+      document.getElementById('legend').innerHTML = `${label}
+        <div class="row"><span class="sw" style="background:rgb(${FULL})"></span>${mode === 'species' ? t.hostFull : t.trees[choice]}</div>
+        ${partial ? `<div class="row"><span class="sw" style="background:rgb(${PART})"></span>${t.hostPart}</div>` : ''}`;
+      return;
+    }
+    const stops = [0, .25, .5, .75, 1].map(x => `rgb(${colour(x).join(',')}) ${x * 100}%`).join(',');
+    const label = mode === 'species' ? t.legendSpecies(esc(choice)) : t.legendTree(t.trees[choice]);
+    document.getElementById('legend').innerHTML =
+      `${label}<div class="ramp" style="background:linear-gradient(90deg,${stops})"></div>
+       <div class="ticks"><span>2 %</span><span>30 %</span><span>≥ 60 %</span></div>`;
+  }
+
+  function fillPick() {
+    const t = T[lang], sel = document.getElementById('pick');
+    if (mode === 'species') {
+      const name = s => (lang === 'de' ? s.de : s.en).split(',')[0];
+      sel.innerHTML = BOLETES.filter(s => !NOT_IN_DE.has(s.sci) && s.trees?.some(c => HOST[c]))
+        .map(s => `<option value="${esc(s.sci)}">${esc(s.sci)}${s.de !== '—' ? ' — ' + esc(name(s)) : ''}</option>`).join('');
+    } else {
+      sel.innerHTML = meta.classes.map(c => `<option value="${c}">${esc(t.trees[c])}</option>`).join('');
+    }
+    if (![...sel.options].some(o => o.value === choice)) choice = sel.options[0].value;
+    sel.value = choice;
+  }
+
+  map.on('click', e => {
+    const t = T[lang], p = L.CRS.EPSG3857.project(e.latlng);
+    const [l, , , tp] = meta.bounds, res = (meta.bounds[2] - l) / meta.width;
+    const col = Math.floor((p.x - l) / res), row = Math.floor((tp - p.y) / res);
+    if (col < 0 || row < 0 || col >= meta.width || row >= meta.height) return;
+    const idx = row * meta.width + col, n = meta.width * meta.height;
+    const mix = meta.classes.map((c, i) => [c, grid[i * n + idx]]).filter(([, v]) => v >= 2).sort((a, b) => b[1] - a[1]);
+    const here = classAt(e.latlng);
+    let html = '<div class="pp">' + (here ? `<div class="here">${t.hereIs}: <b>${here === 'none' ? t.noTree : esc(t.trees[here])}</b></div>` : '') + `<h3>${t.mix}</h3>`;
+    if (!mix.length) html += `<div class="none">${t.noForest}</div>`;
+    else {
+      html += `<div class="mix">${mix.map(([c, v]) => `<span>${esc(t.trees[c])}</span><div class="b" style="width:${v}%"></div><span class="v">${v} %</span>`).join('')}</div>`;
+      // Same tree share → common species first (GBIF finds in Europe as a rough commonness measure).
+      const fits = BOLETES.filter(s => !NOT_IN_DE.has(s.sci))
+        .map(s => ({ s, v: cellScore(weights(s), idx) })).filter(x => x.v >= 5)
+        .sort((a, b) => Math.round(b.v / 10) - Math.round(a.v / 10) || finds(b.s) - finds(a.s)).slice(0, 12);
+      html += `<h3>${t.fits}</h3><ul class="fit">${fits.map(({ s, v }) => {
+        const tag = s.status === 'poisonous' || s.status === 'bitter' ? `<span class="tag ${s.status}">${t.tag[s.status]}</span>`
+          : s.protection === 'strict' ? `<span class="tag protected">${t.tag.strict}</span>` : '';
+        const name = (lang === 'de' ? s.de : s.en).split(',')[0];
+        const hints = [s.soil === 'calc' ? t.calc : '', finds(s) < 500 ? t.rare : ''].filter(Boolean).join(' · ');
+        return `<li><a href="index.html#${encodeURIComponent(s.sci)}"><span class="sci">${esc(s.sci)}</span><br><small>${esc(name === '—' ? '' : name)}${hints ? ' · <em>' + hints + '</em>' : ''}</small></a>
+          <span>${tag} <span class="pct">${Math.round(v)} %</span></span></li>`;
+      }).join('')}</ul>`;
+    }
+    L.popup({ maxWidth: 320 }).setLatLng(e.latlng).setContent(html + '</div>').openOn(map);
+  });
+
+  function setLang(l) {
+    lang = l; store.set('lang', l);
+    document.documentElement.lang = l;
+    document.title = 'Boletus.de — ' + (l === 'de' ? 'Baumkarte' : 'Tree map');
+    document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = T[l][el.dataset.i18n]);
+    document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
+    if (meta) { fillPick(); legend(); }
+  }
+
+  document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  document.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => {
+    mode = b.dataset.mode;
+    document.querySelectorAll('[data-mode]').forEach(x => x.setAttribute('aria-pressed', x === b));
+    choice = mode === 'species' ? 'Boletus edulis' : 'spruce';
+    fillPick(); draw();
+  }));
+  document.getElementById('pick').addEventListener('change', e => { choice = e.target.value; draw(); });
+  document.getElementById('here').addEventListener('click', () => {
+    navigator.geolocation?.getCurrentPosition(p => {
+      const ll = [p.coords.latitude, p.coords.longitude];
+      map.setView(ll, 11);
+      L.circleMarker(ll, { radius: 7, color: '#fff', weight: 2, fillColor: '#4c8dd6', fillOpacity: 1 }).addTo(map);
+    });
+  });
+
+  setLang(lang);
+  // Deep link: karte.html#Boletus%20edulis
+  const [fromHash, at] = decodeURIComponent(location.hash.slice(1)).split('@');
+  if (BOLETES.some(s => s.sci === fromHash)) choice = fromHash;
+  if (at) {
+    const [lat, lon] = at.split(',').map(Number);
+    if (isFinite(lat) && isFinite(lon)) {
+      map.setView([lat, lon], 12);
+      L.circleMarker([lat, lon], { radius: 7, color: '#fff', weight: 2, fillColor: '#4c8dd6', fillOpacity: 1 }).addTo(map);
+    }
+  }
+
+  Promise.all([
+    fetch('maps/trees.json').then(r => r.json()),
+    fetch('maps/trees.bin').then(r => r.arrayBuffer()),
+  ]).then(([m, buf]) => {
+    meta = m; grid = new Uint8Array(buf);
+    fillPick(); draw();
+  });
+</script>
+</body>
+</html>

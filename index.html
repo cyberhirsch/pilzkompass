@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Boletus.de — Boletes of Europe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14110d;
+    --surface: #1f1a14;
+    --surface-2: #2a231b;
+    --line: #3a3127;
+    --text: #efe6d8;
+    --muted: #a99a85;
+    --edible: #6fae5a;
+    --caution: #e0a83a;
+    --bitter: #d9771f;
+    --poison: #e5322d;
+    --protect: #4c8dd6;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 Inter, system-ui, sans-serif;
+  }
+  a { color: inherit; }
+
+  header { position: relative; padding: 56px 16px 24px; max-width: 1240px; margin: 0 auto; }
+  .lang { position: absolute; top: 20px; right: 16px; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { background: var(--surface); color: var(--muted); border: 0; padding: 6px 14px; font: 700 12px Inter, sans-serif; letter-spacing: .06em; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+  .ai-link {
+    display: inline-block; margin-top: 16px; padding: 9px 18px; border-radius: 999px;
+    background: var(--caution); color: #14110d; text-decoration: none; font: 700 14px Inter, sans-serif;
+  }
+  .map-link { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); margin-left: 6px; }
+  .card-map { font-size: 12px; color: var(--muted); }
+  .card { scroll-margin-top: 80px; }
+  .card:target { outline: 3px solid var(--caution); outline-offset: 3px; }
+  h1 {
+    font: 900 clamp(40px, 7vw, 76px)/1 Fraunces, Georgia, serif;
+    margin: 0 0 12px; letter-spacing: -0.02em;
+  }
+  h1 span { color: var(--caution); }
+  .lede { color: var(--muted); max-width: 640px; margin: 0; }
+
+  .disclaimer {
+    max-width: 1240px; margin: 24px auto 0; padding: 0 16px;
+  }
+  .disclaimer div {
+    border: 2px solid var(--poison); border-radius: var(--radius);
+    background: rgba(229, 50, 45, .08); padding: 14px 18px; font-size: 14px;
+  }
+  .disclaimer strong { color: var(--poison); }
+
+  .guide-wrap { max-width: 1240px; margin: 16px auto 24px; padding: 0 16px; }
+  .guide { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .guide summary {
+    cursor: pointer; padding: 14px 18px; font: 700 20px/1.2 Fraunces, Georgia, serif; list-style: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .guide summary::-webkit-details-marker { display: none; }
+  .guide summary::before { content: "▸"; color: var(--poison); transition: transform .15s; }
+  .guide[open] summary::before { transform: rotate(90deg); }
+  .guide-body { padding: 0 18px 20px; font-size: 14px; }
+  .guide-body h3 { font: 700 17px/1.3 Fraunces, Georgia, serif; margin: 22px 0 8px; }
+  .guide-body p, .guide-body li { max-width: 820px; }
+  .guide-body ul, .guide-body ol { padding-left: 20px; margin: 8px 0; }
+  .guide-body li { margin: 4px 0; }
+  .guide-body .rule {
+    border-left: 4px solid var(--poison); background: rgba(229, 50, 45, .08);
+    padding: 10px 14px; border-radius: 6px; font-weight: 600; margin: 12px 0;
+  }
+  .table-scroll { overflow-x: auto; }
+  .guide-body table { border-collapse: collapse; width: 100%; max-width: 980px; margin: 8px 0; }
+  .guide-body th, .guide-body td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  .guide-body th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  .guide-body td:first-child { font-weight: 600; min-width: 150px; }
+  .guide-body .show {
+    margin-top: 14px; border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer;
+    background: var(--poison); color: #fff; font: 700 13px Inter, sans-serif;
+  }
+
+  .controls {
+    position: sticky; top: 0; z-index: 5; background: rgba(20, 17, 13, .94);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+  }
+  .controls-inner {
+    max-width: 1240px; margin: 0 auto; padding: 12px 16px;
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  .controls input {
+    flex: 1 1 220px; min-width: 0; padding: 9px 12px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit;
+  }
+  .chip {
+    border: 1px solid var(--line); background: var(--surface); color: var(--text);
+    padding: 7px 12px; border-radius: 999px; font: 500 13px Inter, sans-serif; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .count { color: var(--muted); font-size: 13px; margin-left: auto; }
+
+  main { max-width: 1240px; margin: 0 auto; padding: 8px 16px 64px; }
+  h2 {
+    font: 700 26px/1.2 Fraunces, Georgia, serif; margin: 40px 0 14px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  h2 small { font: 400 13px Inter, sans-serif; color: var(--muted); margin-left: 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .card.poisonous { border: 3px solid var(--poison); }
+  .card.bitter { border: 3px solid var(--bitter); }
+  .photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; flex: none; background: var(--surface-2); }
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo .none {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    color: var(--muted); font-size: 13px;
+  }
+  .credit {
+    position: absolute; right: 6px; bottom: 6px; font-size: 10px; text-decoration: none;
+    background: rgba(0,0,0,.6); color: #ddd; padding: 2px 6px; border-radius: 4px;
+  }
+
+  /* The big warnings */
+  .warn {
+    padding: 14px 14px 12px; text-align: center; color: #fff;
+    font: 800 22px/1.05 Inter, sans-serif; letter-spacing: .02em;
+  }
+  .warn small { display: block; font: 600 12px/1.3 Inter, sans-serif; letter-spacing: 0; margin-top: 6px; opacity: .95; }
+  .warn .icon { font-size: 30px; display: block; margin-bottom: 4px; }
+  .warn.poisonous {
+    background: repeating-linear-gradient(-45deg, #c4211d 0 14px, #a81a17 14px 28px);
+  }
+  .warn.bitter {
+    background: repeating-linear-gradient(-45deg, #c0631a 0 14px, #a65414 14px 28px);
+  }
+  .card.poisonous .photo::after, .card.bitter .photo::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    box-shadow: inset 0 0 0 4px var(--poison);
+  }
+  .card.bitter .photo::after { box-shadow: inset 0 0 0 4px var(--bitter); }
+  .warn.protected {
+    background: repeating-linear-gradient(-45deg, #2f6fb8 0 14px, #275e9e 14px 28px);
+    font-size: 18px; padding: 10px 14px;
+  }
+  .card.protected-strict:not(.poisonous):not(.bitter) { border: 3px solid var(--protect); }
+  .prot {
+    margin: 6px 0 0; font-size: 12px; padding: 6px 10px; border-radius: 6px;
+    background: rgba(76, 141, 214, .12); border-left: 3px solid var(--protect);
+  }
+
+  .body { padding: 12px 14px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .sci { font: italic 700 19px/1.2 Fraunces, Georgia, serif; }
+  .names { color: var(--muted); font-size: 13px; }
+  .note { margin: 6px 0 0; font-size: 14px; }
+  .badge {
+    align-self: flex-start; margin-top: auto; padding: 3px 9px; border-radius: 999px;
+    font: 700 11px Inter, sans-serif; letter-spacing: .04em; text-transform: uppercase;
+    color: #14110d;
+  }
+  .badge.edible { background: var(--edible); }
+  .badge.caution { background: var(--caution); }
+  .badge.bitter { background: var(--bitter); }
+  .badge.poisonous { background: var(--poison); color: #fff; }
+  .badge.inedible { background: var(--muted); }
+  .note + .badge, .taste + .badge { margin-top: 10px; }
+  .taste {
+    margin: 6px 0 0; font-size: 13px; padding: 7px 10px; border-radius: 6px;
+    background: var(--surface-2); border-left: 3px solid var(--muted);
+  }
+  .taste b { font-weight: 700; }
+  .card.poisonous .taste { border-left-color: var(--poison); }
+  .card.bitter .taste { border-left-color: var(--bitter); }
+  .taste .trap { display: block; margin-top: 3px; color: var(--poison); font-weight: 700; font-size: 12px; }
+
+  /* Photo strip + lightbox */
+  .photo { cursor: zoom-in; }
+  .photo .n {
+    position: absolute; left: 6px; bottom: 6px; font: 600 11px Inter, sans-serif;
+    background: rgba(0,0,0,.6); color: #eee; padding: 2px 7px; border-radius: 4px;
+  }
+  .strip { display: flex; gap: 4px; padding: 4px; background: var(--surface-2); overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+  .strip::-webkit-scrollbar { height: 6px; }
+  .strip::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .strip button {
+    flex: 0 0 auto; width: 52px; height: 52px; padding: 0; border: 2px solid transparent;
+    border-radius: 4px; overflow: hidden; background: #000; cursor: pointer; position: relative;
+  }
+  .strip button:hover, .strip button:focus-visible { border-color: var(--text); }
+  .strip img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .strip .tag {
+    position: absolute; left: 0; right: 0; bottom: 0; font: 700 8px/1.6 Inter, sans-serif;
+    text-transform: uppercase; letter-spacing: .04em; background: rgba(0,0,0,.65); color: #fff;
+  }
+
+  /* Swipe viewer: ←/→ photos, ↑ look-alikes, ↓ next result */
+  .viewer { position: fixed; inset: 0; z-index: 30; background: #000; display: none; touch-action: none; user-select: none; }
+  .viewer.open { display: block; }
+  .v-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity .15s, transform .15s; }
+  .v-img.out { opacity: 0; }
+  .v-head { position: absolute; left: 0; right: 0; top: 0; padding: 12px 56px 14px 14px;
+    background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.55) 70%, transparent); color: #fff; }
+  .v-twin { font: 600 12px Inter, sans-serif; color: #ffd28a; margin-bottom: 3px; }
+  .v-name { font: 700 20px/1.2 Fraunces, Georgia, serif; }
+  .v-sci { font: italic 400 14px Fraunces, Georgia, serif; opacity: .85; }
+  .v-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .v-tag { font: 800 12px Inter, sans-serif; padding: 3px 9px; border-radius: 4px; color: #fff; letter-spacing: .02em; }
+  .v-tag.poisonous { background: var(--poison); } .v-tag.bitter { background: var(--bitter); }
+  .v-tag.protected { background: #2f6fb8; } .v-tag.star { background: #3b5f2e; }
+  .v-tag.ext { background: rgba(255,255,255,.15); font-weight: 600; }
+  .v-close { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-radius: 50%; border: 0;
+    background: rgba(0,0,0,.5); color: #fff; font-size: 20px; cursor: pointer; z-index: 2; }
+  .v-foot { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 12px 12px; color: #ddd; font-size: 12px;
+    background: linear-gradient(transparent, rgba(0,0,0,.8) 40%); }
+  .v-dots { display: flex; justify-content: center; gap: 5px; margin-bottom: 8px; }
+  .v-dots i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.35); }
+  .v-dots i.on { background: #fff; }
+  .v-nav { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 6px; }
+  .v-nav button, .v-nav a { border: 1px solid rgba(255,255,255,.25); background: rgba(0,0,0,.45); color: #fff; border-radius: 999px;
+    padding: 6px 12px; font: 600 12px Inter, sans-serif; cursor: pointer; text-decoration: none; }
+  .v-nav button:disabled { opacity: .35; cursor: default; }
+  .v-credit { text-align: center; opacity: .75; }
+  .v-credit a { color: inherit; }
+  .v-side { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 0;
+    background: rgba(0,0,0,.45); color: #fff; font-size: 22px; cursor: pointer; }
+  .v-side.prev { left: 8px; } .v-side.next { right: 8px; }
+  @media (hover: none) { .v-side { display: none; } }
+  .v-toast { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); background: rgba(0,0,0,.75); color: #fff;
+    padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .v-toast.show { opacity: 1; }
+
+  /* Beginner star + look-alikes on cards */
+  .star { display: inline-block; margin-left: 6px; font-style: normal; cursor: help; }
+  .twins { font-size: 12px; color: var(--muted); margin: 6px 0 0; }
+  .twins a { color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  .twins .poisonous { color: var(--poison); } .twins .bitter { color: var(--bitter); }
+  .card { cursor: pointer; }
+
+  footer { max-width: 1240px; margin: 0 auto; padding: 24px 16px 48px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+
+  /* Habitat + season on cards */
+  .habitat { font-size: 12px; color: var(--muted); margin: 6px 0 0; line-height: 1.6; }
+  .habitat b { color: var(--text); font-weight: 600; }
+  .season { margin: 8px 0 0; }
+  .season .lbl { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
+  .season svg { display: block; width: 100%; height: 44px; }
+  .season .bar { fill: var(--muted); opacity: .55; }
+  .season .bar.now { fill: var(--caution); opacity: 1; }
+  .season .hit { fill: transparent; }
+  .season .hit:hover + .bar, .season g:hover .bar { opacity: .9; }
+  .season text { fill: var(--muted); font: 9px Inter, sans-serif; text-anchor: middle; }
+  .season text.now { fill: var(--text); font-weight: 700; }
+
+  /* Mushroom weather */
+  .weather-wrap { max-width: 1240px; margin: 0 auto 24px; padding: 0 16px; }
+  .weather { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 14px 18px 18px; }
+  .weather h2 { margin: 0 0 4px; border: 0; padding: 0; font-size: 20px; }
+  .weather .intro { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+  .wx-form { display: flex; gap: 8px; flex-wrap: wrap; }
+  .wx-form input { flex: 1 1 180px; min-width: 0; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
+  .wx-btn { border: 1px solid var(--line); background: var(--surface-2); color: var(--text); border-radius: 999px; padding: 8px 14px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  .wx-btn.primary { background: var(--caution); color: #14110d; border-color: var(--caution); }
+  .wx-out { margin-top: 14px; }
+  .wx-place { font-weight: 700; margin-bottom: 8px; }
+  .verdict { display: flex; gap: 10px; align-items: flex-start; border-radius: 8px; padding: 10px 12px; border-left: 4px solid; background: var(--surface-2); }
+  .verdict .ico { font-size: 20px; line-height: 1.2; }
+  .verdict.good { border-color: var(--edible); } .verdict.medium { border-color: var(--caution); } .verdict.poor { border-color: var(--muted); }
+  .verdict small { display: block; color: var(--muted); margin-top: 2px; }
+  .wx-stats { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 12px 0 4px; font-size: 13px; color: var(--muted); }
+  .wx-stats b { display: block; color: var(--text); font: 700 20px Inter, sans-serif; }
+  .wx-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 10px; }
+  .wx-chart h3 { margin: 0 0 4px; font: 600 12px Inter, sans-serif; color: var(--muted); }
+  .wx-chart svg { display: block; width: 100%; height: 110px; overflow: visible; margin-top: 14px; }
+  .wx-chart .grid { stroke: var(--line); stroke-width: 1; }
+  .wx-chart .zero { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+  .wx-chart text { fill: var(--muted); font: 10px Inter, sans-serif; }
+  .wx-chart .rain { fill: #5b9bd8; }
+  .wx-chart .temp { fill: var(--caution); }
+  .wx-chart g:hover rect:not(.hit) { opacity: .75; }
+  .wx-chart .hit { fill: transparent; }
+  .wx-season { margin-top: 12px; font-size: 13px; }
+  .wx-note { color: var(--muted); font-size: 11px; margin-top: 10px; }
+
+  /* Greeting */
+  .greet-wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+  .greet { position: relative; display: flex; gap: 14px; align-items: flex-start; border-radius: var(--radius);
+    background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--caution); padding: 16px 44px 16px 16px; margin-top: 8px; }
+  .greet.good { border-left-color: var(--edible); } .greet.poor { border-left-color: var(--muted); }
+  .g-icon { font-size: 34px; line-height: 1; }
+  .g-hello { margin: 0; font: 700 13px Inter, sans-serif; color: var(--muted); text-transform: none; }
+  .g-head { margin: 2px 0 0; font: 700 clamp(19px, 3vw, 24px)/1.3 Fraunces, Georgia, serif; }
+  .g-head a, .g-sub a { color: var(--caution); text-decoration: none; }
+  .g-sub { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+  .g-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .g-actions a { text-decoration: none; }
+  .g-note { margin: 10px 0 0; font-size: 11px; color: var(--muted); }
+  .g-close { position: absolute; top: 10px; right: 10px; background: none; border: 0; color: var(--muted); font-size: 18px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="lang" role="group" aria-label="Language / Sprache">
+    <button data-lang="de">DE</button><button data-lang="en">EN</button>
+  </div>
+  <h1>Boletus<span>.</span>de</h1>
+  <p class="lede" data-i18n="lede"></p>
+  <a class="ai-link" href="bestimmen.html" data-i18n="aiLink"></a>
+  <a class="ai-link map-link" href="karte.html" data-i18n="mapLink"></a>
+</header>
+
+<section class="greet-wrap"><div class="greet" id="greet" hidden aria-live="polite"></div></section>
+
+<div class="disclaimer"><div data-i18n="disclaimer"></div></div>
+
+<section class="guide-wrap">
+  <details class="guide">
+    <summary data-i18n="guideTitle"></summary>
+    <div class="guide-body" data-i18n="guide"></div>
+  </details>
+</section>
+
+<section class="weather-wrap">
+  <div class="weather">
+    <h2 data-i18n="wxTitle"></h2>
+    <p class="intro" data-i18n="wxIntro"></p>
+    <form class="wx-form" id="wx-form">
+      <button type="button" class="wx-btn primary" id="wx-here" data-i18n="wxHere"></button>
+      <input id="wx-q" type="search" autocomplete="off">
+      <button type="submit" class="wx-btn" data-i18n="wxSearch"></button>
+    </form>
+    <div class="wx-out" id="wx-out" aria-live="polite"></div>
+  </div>
+</section>
+
+<nav class="controls" aria-label="Filter">
+  <div class="controls-inner">
+    <input id="q" type="search">
+    <button class="chip" data-f="all" aria-pressed="true" data-i18n="f_all"></button>
+    <button class="chip" data-f="poisonous" aria-pressed="false"><span class="dot" style="background:var(--poison)"></span><span data-i18n="f_poisonous"></span></button>
+    <button class="chip" data-f="bitter" aria-pressed="false"><span class="dot" style="background:var(--bitter)"></span><span data-i18n="f_bitter"></span></button>
+    <button class="chip" data-f="caution" aria-pressed="false"><span class="dot" style="background:var(--caution)"></span><span data-i18n="f_caution"></span></button>
+    <button class="chip" data-f="edible" aria-pressed="false"><span class="dot" style="background:var(--edible)"></span><span data-i18n="f_edible"></span></button>
+    <button class="chip" data-f="inedible" aria-pressed="false"><span class="dot" style="background:var(--muted)"></span><span data-i18n="f_inedible"></span></button>
+    <button class="chip" data-f="protected" aria-pressed="false"><span class="dot" style="background:var(--protect)"></span><span data-i18n="f_protected"></span></button>
+    <button class="chip" data-f="season" aria-pressed="false"><span class="dot" style="background:var(--text)"></span><span data-i18n="f_season"></span></button>
+    <button class="chip" data-f="beginner" aria-pressed="false">⭐ <span data-i18n="f_beginner"></span></button>
+    <span class="count" id="count"></span>
+  </div>
+</nav>
+
+<main id="list"></main>
+
+<footer data-i18n="footer"></footer>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true">
+  <img class="v-img" id="v-img" alt="">
+  <div class="v-head" id="v-head"></div>
+  <button class="v-close" id="v-close">✕</button>
+  <button class="v-side prev" id="v-prev">‹</button>
+  <button class="v-side next" id="v-next">›</button>
+  <div class="v-foot" id="v-foot"></div>
+  <div class="v-toast" id="v-toast"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="wetter.js"></script>
+<script src="trees.js"></script>
+<script>
+  const T = {
+    en: {
+      title: 'Boletus.de — Boletes of Europe',
+      lede: 'The boletes of Central Europe — true <i>Boletus</i> and every genus split from it, plus the rough-stalks, slippery jacks and a few notorious poisonous species from abroad. Poisonous and foul-tasting species carry a warning you cannot miss.',
+      disclaimer: '<strong>Never eat a mushroom based on a website or photo.</strong> Identification needs several features at once — pores, flesh colour change, stem, smell, habitat. Have every find checked by a certified mushroom expert (in Germany: DGfM Pilzsachverständige). Almost all boletes are poisonous raw — always cook thoroughly (at least 15 minutes). Taste is no guide: several poisonous boletes taste mild and pleasant. Taste descriptions here come from the literature — never swallow a tasting sample. Blue 🛡 marks species protected in Germany. ⭐ = beginner-friendly: tastes good, no poisonous or inedible look-alike.',
+      search: 'Search Latin, English or German name…',
+      f_all: 'All', f_poisonous: 'Poisonous', f_bitter: 'Tastes bad', f_caution: 'Cook thoroughly', f_edible: 'Edible', f_inedible: 'Not edible', f_protected: 'Protected', f_season: 'In season now', f_beginner: 'Beginner-friendly',
+      starTip: 'Beginner-friendly: tastes good and has no poisonous or inedible look-alike',
+      twins: 'Can be confused with',
+      vTwinOf: (name, i, n) => `👥 Look-alike of ${name} · ${i}/${n}`, vNoTwins: 'No look-alikes listed',
+      vLast: 'End of the list', vTwinsBtn: n => `↑ Look-alikes (${n})`, vNextBtn: '↓ Next mushroom', vBackBtn: '↩ Back',
+      vCard: 'Species page', vStar: '⭐ beginner-friendly', vProtected: '🛡 PROTECTED',
+      vHint: 'Swipe ← → photos · ↑ look-alikes · ↓ next mushroom',
+      habitatTrees: 'With', soilLabel: 'Soil',
+      soil: { calc: 'chalky', acid: 'acidic', any: 'any' },
+      tree: { spruce: 'spruce', pine: 'pine', larch: 'larch', fir: 'fir', stonepine: 'Swiss stone pine', douglas: 'Douglas fir', oak: 'oak', beech: 'beech', hornbeam: 'hornbeam', birch: 'birch', aspen: 'aspen/poplar', willow: 'willow', alder: 'alder', hazel: 'hazel', chestnut: 'sweet chestnut', lime: 'lime', cistus: 'rockrose', holmoak: 'holm oak' },
+      extra: { park: 'parks', wet: 'damp places', sand: 'sandy soil', bog: 'bogs', wood: 'on wood', parasite: 'on earthballs' },
+      seasonLabel: 'Finds per month (Europe, GBIF)', seasonWorld: 'Finds per month (worldwide, GBIF)', seasonFew: 'Too few dated finds for a season calendar.',
+      months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      monthsShort: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+      finds: n => `${n.toLocaleString('en')} finds`,
+      wxTitle: '🌦 Mushroom weather',
+      wxIntro: 'Rain and temperature of the last 14 days for your area, with a rule-of-thumb verdict. Your location is only requested when you press the button and is rounded to about 10 km.',
+      wxHere: '📍 My location', wxSearch: 'Search', wxPlaceholder: 'Town or postcode…',
+      wxLoading: 'Loading weather…', wxNoPlace: 'Place not found.', wxFail: 'Weather data could not be loaded (offline?).',
+      wxNoGeo: 'Location not available. Enter a town instead.', wxHereName: 'Your location',
+      wxRain14: 'rain, 14 days', wxRain3: 'rain, last 3 days', wxTemp7: 'mean temp., 7 days', wxFrost: 'nights below 0 °C (7 days)',
+      wxRainChart: 'Rain per day (mm)', wxTempChart: 'Temperature per day, min–max (°C)', wxToday: 'today', wxDaysAgo: '14 days ago',
+      verdict: {
+        good: ['Good mushroom weather', 'Plenty of rain and mild temperatures. Boletes usually appear 1–2 weeks after heavy rain.'],
+        medium: ['Moderate', ''],
+        poor: ['Poor mushroom weather', ''],
+      },
+      why: { cold: 'too cold', frost: 'frost in the last week', dry: 'too dry', littleRain: 'little rain', hot: 'very warm', cool: 'cool' },
+      offSeason: 'Outside the main bolete season (June–November).',
+      inSeason: n => `${n} species on this site are in season this month.`, showSeason: 'Show them ↓',
+      wxSource: 'Weather data: Open-Meteo.com (CC BY 4.0), based on national weather services incl. DWD. Rule of thumb only.',
+      gHello: 'Welcome!', gYourRegion: 'your region', gLocating: 'Checking the weather, season and trees around you…',
+      gNoLocation: 'Share your location or enter a town for a personal recommendation.', gEnterPlace: 'Enter a town ↓',
+      gGood: (p, s) => `Conditions in ${p} are ideal right now for: ${s}.`,
+      gMedium: (p, s, why) => `Conditions in ${p} are moderate (${why}). Your best chance: ${s}.`,
+      gPoor: (p, s, why) => `Poor mushroom weather in ${p} at the moment (${why}). After the next good rain, look for: ${s}.`,
+      gNoWeather: s => `No weather data right now (offline?). By season and trees, your best chance is: ${s}.`,
+      gOffSeason: 'It is not bolete season right now. The main season runs from June to November.',
+      gNoForest: p => `According to the tree map there is hardly any forest around ${p}.`,
+      gAlso: list => `Also in season with suitable trees nearby: ${list}.`,
+      gStats: (rain, temp) => `Last 14 days: ${rain} mm rain, about ${temp} °C.`,
+      gNoTrees: 'Tree data only covers Germany.',
+      gMap: '🗺 Show on map', gWeather: 'Weather details ↓',
+      gNote: 'Rule of thumb from weather, season and tree map — not a guarantee. Never eat a mushroom without a certain identification.',
+      protect: {
+        strict: { warn: '🛡 PROTECTED — DO NOT PICK', sub: 'Specially protected in Germany (BArtSchV). Collecting is prohibited.' },
+        personal: { note: '🛡 Protected in Germany: only small amounts for your own use (BArtSchV § 2).' },
+      },
+      count: (n, t) => `${n} of ${t} species`,
+      species: n => `${n} species`,
+      guideTitle: '☠ How to recognise poisonous boletes',
+      aiLink: '📷 Identify from a photo (AI)', mapLink: '🗺 Tree map', onMap: 'Where its trees grow →',
+      guide: "\n<p class=\"rule\">Main rule for beginners: do not eat any bolete with red or orange pores. Almost every poisonous bolete in Central Europe belongs to this group.</p>\n<p>The group also contains good edible species (e.g. the scarletina bolete), which experienced foragers eat. For beginners, skipping the whole group removes nearly all the risk.</p>\n\n<h3>The poisonous red-pored boletes</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Species</th><th>Features</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satan's bolete</td><td>Chalky white-grey cap, blood-red pores, swollen stem with red net. Old specimens smell of carrion. Summer, on limestone under beech and oak.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolf bolete</td><td>Pinkish-ochre cap, red pores, <b>no net</b> on the stem, bluing flesh.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purple bolete</td><td>Purple-red cap, flesh turns ink-blue <b>instantly</b>.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Brawny bolete</td><td>Unusually heavy and massive, ochre-yellow cap with purple tones, deep bluing.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Pale to pink caps, red pores, mostly on limestone in warm deciduous woods.</td></tr>\n</table></div>\n<p class=\"rule\">Taste is no guide: all of these taste mild. Do not use the tongue test on red-pored boletes.</p>\n\n<h3>Bad-tasting look-alikes (spoil the meal, not poisonous)</h3>\n<ul>\n<li><b>Bitter bolete</b> (<i>Tylopilus felleus</i>) vs. cep: <b>pink</b> pores and a <b>dark brown</b> net on the stem. The cep has white to yellow-green pores and a <b>white</b> net.</li>\n<li><b>Bitter beech bolete</b> (<i>Caloboletus calopus</i>): red-netted stem but <b>yellow</b> pores.</li>\n<li><b>Peppery bolete</b> (<i>Chalciporus piperatus</i>): small, rusty-brown pores, yellow flesh in the stem base.</li>\n</ul>\n<p>These can be detected safely: touch a tiny piece to the tongue tip, then spit it out.</p>\n\n<h3>\"No red, no colour change = safe\"? No.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Spanish and Portuguese pine dunes): pale pores, no bluing, poisonous.</li>\n<li><b>Rough-stalks</b> (<i>Leccinum</i>): no red pores, flesh turns grey or black. Undercooked, they have caused poisonings.</li>\n<li><b>Every bolete is poisonous raw</b>, the cep included.</li>\n<li><b>Old, soggy or mouldy specimens</b> cause many bolete \"poisonings\" in practice: spoiled protein rather than toxins, but real stomach cramps.</li>\n<li>The reverse fails too: many good edible species turn blue (bay bolete, scarletina bolete, inkstain bolete). <i>Neoboletus venenatus</i> (Japan) has <b>yellow</b> pores and is poisonous.</li>\n</ul>\n\n<h3>Is it a bolete at all?</h3>\n<p>Underneath there must be a <b>sponge of tubes</b>, not gills. The brown roll-rim (<i>Paxillus involutus</i>) is related to boletes but has gills, and can cause a fatal immune reaction. Earthballs (<i>Scleroderma</i>) are poisonous; the parasitic bolete grows on them.</p>\n\n<h3>Safer beginner rule</h3>\n<ol>\n<li>Definitely tubes and pores underneath.</li>\n<li>Pores not red or orange.</li>\n<li>A tiny piece on the tongue tip (spat out) is not bitter or peppery.</li>\n<li>Only firm, fresh specimens.</li>\n<li>Cook for at least 15 minutes.</li>\n<li>Have it checked by a mushroom expert (DGfM).</li>\n</ol>\n<p>Even then this is a filter, not a guarantee.</p>\n<button class=\"show\" data-show=\"poisonous\">Show all poisonous species ↓</button>",
+      empty: 'No species match.',
+      noPhoto: 'No free photo available',
+      taste: 'Taste', trap: 'A pleasant taste says nothing about toxicity.',
+      photos: n => `${n} photos`,
+      stage: { young: 'Young', old: 'Old', cut: 'Cut / flesh', pores: 'Pores' },
+      prev: 'Previous photo', next: 'Next photo', close: 'Close',
+      footer: 'Photos: Wikimedia Commons, each linked to its file page with author and licence. Taxonomy follows current genus concepts (e.g. <i>Rubroboletus satanas</i>, formerly <i>Boletus satanas</i>). Covers the boletes of Central Europe plus Mediterranean and notable foreign species; rare varieties and recently split micro-species may be missing. Worldwide, the family Boletaceae alone has well over 1,000 species.',
+      status: {
+        poisonous: { badge: 'Poisonous', warn: 'POISONOUS', sub: 'Do not eat. Causes poisoning even when cooked.' },
+        bitter:    { badge: 'Tastes bad', warn: 'TASTES TERRIBLE', sub: 'Inedible — bitter, peppery or foul. One specimen spoils the whole dish.' },
+        caution:   { badge: 'Edible only well cooked' },
+        inedible:  { badge: 'Not edible' },
+        edible:    { badge: 'Edible' },
+      },
+    },
+    de: {
+      title: 'Boletus.de — Röhrlinge Europas',
+      lede: 'Die Röhrlinge Mitteleuropas — echte <i>Boletus</i> und alle davon abgetrennten Gattungen, dazu Raufüße, Schmierröhrlinge und einige berüchtigte Giftpilze aus aller Welt. Giftige und ungenießbare Arten tragen eine Warnung, die man nicht übersehen kann.',
+      disclaimer: '<strong>Niemals einen Pilz aufgrund einer Website oder eines Fotos essen.</strong> Zur Bestimmung braucht es mehrere Merkmale zugleich — Poren, Verfärbung des Fleisches, Stiel, Geruch, Standort. Jeden Fund von geprüften Pilzsachverständigen (DGfM) kontrollieren lassen. Fast alle Röhrlinge sind roh giftig — immer gründlich garen (mindestens 15 Minuten). Der Geschmack ist kein Kriterium: mehrere giftige Röhrlinge schmecken mild und angenehm. Die Geschmacksangaben stammen aus der Literatur — Kostproben niemals schlucken. Blaues 🛡 markiert in Deutschland geschützte Arten. ⭐ = anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger.',
+      search: 'Lateinischen, deutschen oder englischen Namen suchen…',
+      f_all: 'Alle', f_poisonous: 'Giftig', f_bitter: 'Ungenießbar', f_caution: 'Gut durchgaren', f_edible: 'Essbar', f_inedible: 'Kein Speisepilz', f_protected: 'Geschützt', f_season: 'Jetzt in Saison', f_beginner: 'Anfängerfreundlich',
+      starTip: 'Anfängerfreundlich: schmeckt gut und hat keinen giftigen oder ungenießbaren Doppelgänger',
+      twins: 'Verwechslung mit',
+      vTwinOf: (name, i, n) => `👥 Doppelgänger von ${name} · ${i}/${n}`, vNoTwins: 'Keine Doppelgänger eingetragen',
+      vLast: 'Ende der Liste', vTwinsBtn: n => `↑ Doppelgänger (${n})`, vNextBtn: '↓ Nächster Pilz', vBackBtn: '↩ Zurück',
+      vCard: 'Zur Art', vStar: '⭐ anfängerfreundlich', vProtected: '🛡 GESCHÜTZT',
+      vHint: 'Wischen: ← → Fotos · ↑ Doppelgänger · ↓ nächster Pilz',
+      habitatTrees: 'Bei', soilLabel: 'Boden',
+      soil: { calc: 'kalkhaltig', acid: 'sauer', any: 'egal' },
+      tree: { spruce: 'Fichte', pine: 'Kiefer', larch: 'Lärche', fir: 'Tanne', stonepine: 'Zirbe', douglas: 'Douglasie', oak: 'Eiche', beech: 'Buche', hornbeam: 'Hainbuche', birch: 'Birke', aspen: 'Espe/Pappel', willow: 'Weide', alder: 'Erle', hazel: 'Hasel', chestnut: 'Esskastanie', lime: 'Linde', cistus: 'Zistrose', holmoak: 'Steineiche' },
+      extra: { park: 'Parks', wet: 'feuchte Stellen', sand: 'Sandboden', bog: 'Moore', wood: 'auf Holz', parasite: 'auf Kartoffelbovisten' },
+      seasonLabel: 'Funde pro Monat (Europa, GBIF)', seasonWorld: 'Funde pro Monat (weltweit, GBIF)', seasonFew: 'Zu wenige datierte Funde für einen Saisonkalender.',
+      months: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+      monthsShort: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+      finds: n => `${n.toLocaleString('de')} Funde`,
+      wxTitle: '🌦 Pilzwetter',
+      wxIntro: 'Regen und Temperatur der letzten 14 Tage in deiner Gegend, mit einer Faustregel-Einschätzung. Der Standort wird nur auf Knopfdruck abgefragt und auf etwa 10 km gerundet.',
+      wxHere: '📍 Mein Standort', wxSearch: 'Suchen', wxPlaceholder: 'Ort oder PLZ…',
+      wxLoading: 'Lade Wetterdaten…', wxNoPlace: 'Ort nicht gefunden.', wxFail: 'Wetterdaten konnten nicht geladen werden (offline?).',
+      wxNoGeo: 'Standort nicht verfügbar. Bitte einen Ort eingeben.', wxHereName: 'Dein Standort',
+      wxRain14: 'Regen, 14 Tage', wxRain3: 'Regen, letzte 3 Tage', wxTemp7: 'Ø Temperatur, 7 Tage', wxFrost: 'Frostnächte (7 Tage)',
+      wxRainChart: 'Regen pro Tag (mm)', wxTempChart: 'Temperatur pro Tag, min–max (°C)', wxToday: 'heute', wxDaysAgo: 'vor 14 Tagen',
+      verdict: {
+        good: ['Gutes Pilzwetter', 'Viel Regen und milde Temperaturen. Röhrlinge erscheinen meist 1–2 Wochen nach kräftigem Regen.'],
+        medium: ['Mittelmäßig', ''],
+        poor: ['Schlechtes Pilzwetter', ''],
+      },
+      why: { cold: 'zu kalt', frost: 'Frost in der letzten Woche', dry: 'zu trocken', littleRain: 'wenig Regen', hot: 'sehr warm', cool: 'kühl' },
+      offSeason: 'Außerhalb der Röhrlings-Hauptsaison (Juni–November).',
+      inSeason: n => `${n} Arten dieser Seite haben diesen Monat Saison.`, showSeason: 'Anzeigen ↓',
+      wxSource: 'Wetterdaten: Open-Meteo.com (CC BY 4.0), auf Basis nationaler Wetterdienste inkl. DWD. Nur eine Faustregel.',
+      gHello: 'Willkommen!', gYourRegion: 'deiner Region', gLocating: 'Prüfe Wetter, Saison und Bäume in deiner Nähe…',
+      gNoLocation: 'Gib deinen Standort frei oder trag einen Ort ein, dann bekommst du eine persönliche Empfehlung.', gEnterPlace: 'Ort eingeben ↓',
+      gGood: (p, s) => `Die Bedingungen in ${p} sind gerade ideal für: ${s}.`,
+      gMedium: (p, s, why) => `Die Bedingungen in ${p} sind mittelmäßig (${why}). Die besten Chancen hat: ${s}.`,
+      gPoor: (p, s, why) => `Gerade schlechtes Pilzwetter in ${p} (${why}). Nach dem nächsten kräftigen Regen lohnt sich vor allem: ${s}.`,
+      gNoWeather: s => `Gerade keine Wetterdaten (offline?). Nach Saison und Bäumen passt am besten: ${s}.`,
+      gOffSeason: 'Gerade ist keine Röhrlingssaison. Die Hauptsaison geht von Juni bis November.',
+      gNoForest: p => `Laut Baumkarte gibt es rund um ${p} kaum Wald.`,
+      gAlso: list => `Ebenfalls in Saison und mit passenden Bäumen in der Nähe: ${list}.`,
+      gStats: (rain, temp) => `Letzte 14 Tage: ${rain} mm Regen, um ${temp} °C.`,
+      gNoTrees: 'Baumdaten gibt es nur für Deutschland.',
+      gMap: '🗺 Auf der Karte zeigen', gWeather: 'Wetter im Detail ↓',
+      gNote: 'Faustregel aus Wetter, Saison und Baumkarte — keine Garantie. Pilze nur mit sicherer Bestimmung essen.',
+      protect: {
+        strict: { warn: '🛡 GESCHÜTZT — NICHT SAMMELN', sub: 'In Deutschland besonders geschützt (BArtSchV). Sammeln ist verboten.' },
+        personal: { note: '🛡 In Deutschland geschützt: nur geringe Mengen für den Eigenbedarf (BArtSchV § 2).' },
+      },
+      count: (n, t) => `${n} von ${t} Arten`,
+      species: n => `${n} ${n === 1 ? 'Art' : 'Arten'}`,
+      guideTitle: '☠ Giftige Röhrlinge erkennen',
+      aiLink: '📷 Per Foto bestimmen (KI)', mapLink: '🗺 Baumkarte', onMap: 'Wo seine Bäume wachsen →',
+      guide: "\n<p class=\"rule\">Hauptregel für Anfänger: Keine Röhrlinge mit roten oder orangen Poren essen. Fast alle giftigen Röhrlinge Mitteleuropas gehören zu dieser Gruppe.</p>\n<p>Die Gruppe enthält auch gute Speisepilze (z. B. den Flockenstieligen Hexen-Röhrling), die Erfahrene essen. Für Anfänger beseitigt der Verzicht auf die ganze Gruppe fast das gesamte Risiko.</p>\n\n<h3>Die giftigen Rotporer</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Art</th><th>Merkmale</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satans-Röhrling</td><td>Kreideweiß-grauer Hut, blutrote Poren, bauchiger Stiel mit rotem Netz. Alte Exemplare riechen nach Aas. Sommer, auf Kalk unter Buche und Eiche.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolfs-Röhrling</td><td>Rosa-ockerfarbener Hut, rote Poren, <b>kein Netz</b> am Stiel, blauendes Fleisch.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purpur-Röhrling</td><td>Purpurroter Hut, Fleisch wird <b>sofort</b> tintenblau.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Ochsen-Röhrling</td><td>Auffallend schwer und massig, ockergelber Hut mit Purpurtönen, stark blauend.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Blasse bis rosa Hüte, rote Poren, meist auf Kalk in warmen Laubwäldern.</td></tr>\n</table></div>\n<p class=\"rule\">Der Geschmack hilft nicht: Alle diese Arten schmecken mild. Bei Rotporern keine Geschmacksprobe machen.</p>\n\n<h3>Ungenießbare Doppelgänger (verderben das Essen, nicht giftig)</h3>\n<ul>\n<li><b>Gallen-Röhrling</b> (<i>Tylopilus felleus</i>) vs. Steinpilz: <b>rosa</b> Poren und <b>dunkelbraunes</b> Netz am Stiel. Der Steinpilz hat weiße bis gelbgrüne Poren und ein <b>weißes</b> Netz.</li>\n<li><b>Schönfuß-Röhrling</b> (<i>Caloboletus calopus</i>): rot genetzter Stiel, aber <b>gelbe</b> Poren.</li>\n<li><b>Pfeffer-Röhrling</b> (<i>Chalciporus piperatus</i>): klein, rostbraune Poren, gelbes Fleisch in der Stielbasis.</li>\n</ul>\n<p>Diese lassen sich gefahrlos erkennen: Ein winziges Stück mit der Zungenspitze kosten, dann ausspucken.</p>\n\n<h3>„Kein Rot, keine Verfärbung = sicher“? Nein.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Kiefern-Dünen Spaniens und Portugals): blasse Poren, blaut nicht, giftig.</li>\n<li><b>Raufüße</b> (<i>Leccinum</i>): keine roten Poren, Fleisch wird grau bis schwarz. Ungenügend gegart haben sie Vergiftungen verursacht.</li>\n<li><b>Alle Röhrlinge sind roh giftig</b>, auch der Steinpilz.</li>\n<li><b>Alte, matschige oder schimmelige Exemplare</b> verursachen in der Praxis viele „Röhrlingsvergiftungen“: verdorbenes Eiweiß statt Gift, aber echte Magenkrämpfe.</li>\n<li>Umgekehrt stimmt es auch nicht: Viele gute Speisepilze blauen (Maronen-, Flockenstieliger Hexen-, Schwarzblauender Röhrling). <i>Neoboletus venenatus</i> (Japan) hat <b>gelbe</b> Poren und ist giftig.</li>\n</ul>\n\n<h3>Ist es überhaupt ein Röhrling?</h3>\n<p>Unten muss ein <b>Schwamm aus Röhren</b> sein, keine Lamellen. Der Kahle Krempling (<i>Paxillus involutus</i>) ist mit den Röhrlingen verwandt, hat aber Lamellen und kann eine tödliche Immunreaktion auslösen. Kartoffelboviste (<i>Scleroderma</i>) sind giftig; auf ihnen wächst der Schmarotzer-Röhrling.</p>\n\n<h3>Sicherere Anfängerregel</h3>\n<ol>\n<li>Eindeutig Röhren und Poren auf der Unterseite.</li>\n<li>Poren nicht rot oder orange.</li>\n<li>Ein winziges Stück an der Zungenspitze (ausgespuckt) schmeckt nicht bitter oder pfeffrig.</li>\n<li>Nur feste, frische Exemplare.</li>\n<li>Mindestens 15 Minuten garen.</li>\n<li>Von Pilzsachverständigen (DGfM) prüfen lassen.</li>\n</ol>\n<p>Auch dann ist das ein Filter, keine Garantie.</p>\n<button class=\"show\" data-show=\"poisonous\">Alle giftigen Arten zeigen ↓</button>",
+      empty: 'Keine passenden Arten.',
+      noPhoto: 'Kein freies Foto verfügbar',
+      taste: 'Geschmack', trap: 'Angenehmer Geschmack sagt nichts über Giftigkeit.',
+      photos: n => `${n} Fotos`,
+      stage: { young: 'Jung', old: 'Alt', cut: 'Schnitt / Fleisch', pores: 'Poren' },
+      prev: 'Vorheriges Foto', next: 'Nächstes Foto', close: 'Schließen',
+      footer: 'Fotos: Wikimedia Commons, jeweils verlinkt zur Dateiseite mit Urheber und Lizenz. Die Systematik folgt aktuellen Gattungskonzepten (z. B. <i>Rubroboletus satanas</i>, früher <i>Boletus satanas</i>). Umfasst die Röhrlinge Mitteleuropas sowie mediterrane und bemerkenswerte ausländische Arten; seltene Varietäten und erst kürzlich abgetrennte Kleinarten können fehlen. Weltweit umfasst allein die Familie Boletaceae weit über 1.000 Arten.',
+      status: {
+        poisonous: { badge: 'Giftig', warn: 'GIFTIG', sub: 'Nicht essen. Verursacht Vergiftungen, auch gekocht.' },
+        bitter:    { badge: 'Ungenießbar', warn: 'SCHMECKT ÜBEL', sub: 'Ungenießbar — bitter, pfeffrig oder widerlich. Ein Exemplar verdirbt das ganze Gericht.' },
+        caution:   { badge: 'Nur gut durchgegart essbar' },
+        inedible:  { badge: 'Kein Speisepilz' },
+        edible:    { badge: 'Essbar' },
+      },
+    },
+  };
+  const ICON = { poisonous: '☠', bitter: '✖' };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
+  const store = {
+    get() { try { return localStorage.getItem('lang'); } catch { return null; } },
+    set(v) { try { localStorage.setItem('lang', v); } catch {} },
+  };
+  let lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+  let filter = 'all';
+  const q = document.getElementById('q');
+  const list = document.getElementById('list');
+
+  function card(s, idx) {
+    const t = T[lang], st = t.status[s.status];
+    const ph = s.photos ?? [];
+    const credit = p => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(p.file.replace(/ /g, '_'))}`;
+    const img = ph.length
+      ? `<img src="${esc(ph[0].src)}" alt="${esc(s.sci)}" loading="lazy">
+         ${ph.length > 1 ? `<span class="n">${t.photos(ph.length)}</span>` : ''}
+         <a class="credit" href="${credit(ph[0])}" target="_blank" rel="noopener">Wikimedia</a>`
+      : `<div class="none">${t.noPhoto}</div>`;
+    const strip = ph.length > 1
+      ? `<div class="strip">${ph.map((p, i) => `<button data-s="${idx}" data-i="${i}" aria-label="${esc(s.sci)} ${i + 1}">
+          <img src="${esc(p.thumb)}" alt="" loading="lazy">${p.stage ? `<span class="tag">${t.stage[p.stage]}</span>` : ''}</button>`).join('')}</div>`
+      : '';
+    const warn = st.warn
+      ? `<div class="warn ${s.status}" role="alert"><span class="icon">${ICON[s.status]}</span>${st.warn}<small>${st.sub}</small></div>`
+      : '';
+    const pr = s.protection && t.protect[s.protection];
+    const protWarn = s.protection === 'strict'
+      ? `<div class="warn protected" role="note">${pr.warn}<small>${pr.sub}</small></div>` : '';
+    const protNote = s.protection === 'personal' ? `<p class="prot">${pr.note}</p>` : '';
+    const names = (lang === 'de' ? [s.de, s.en] : [s.en, s.de]).filter(n => n !== '—').map(esc).join(' · ');
+    const taste = lang === 'de' ? s.taste_de : s.taste;
+    const habitat = [
+      s.trees?.length ? `${t.habitatTrees} <b>${s.trees.map(k => t.tree[k]).join(', ')}</b>` : '',
+      `${t.soilLabel}: <b>${t.soil[s.soil]}</b>`,
+      ...(s.extra ?? []).map(k => `<b>${t.extra[k]}</b>`),
+    ].filter(Boolean).join(' · ');
+    const trap = s.status === 'poisonous' && /^mild/i.test(taste) ? `<span class="trap">⚠ ${t.trap}</span>` : '';
+    return `<article class="card ${s.status}${s.protection ? ' protected-' + s.protection : ''}" id="${esc(s.sci)}" data-s="${idx}" data-i="0">
+      ${warn}${protWarn}
+      <div class="photo" data-s="${idx}" data-i="0">${img}</div>
+      ${strip}
+      <div class="body">
+        <div class="sci">${esc(s.sci)}${s.beginner ? `<span class="star" title="${t.starTip}">⭐</span>` : ''}</div>
+        <div class="names">${names}</div>
+        <p class="note">${esc(lang === 'de' ? s.note_de : s.note)}</p>
+        ${protNote}
+        <p class="taste"><b>${t.taste}:</b> ${esc(taste)}${trap}</p>
+        ${twinsLine(s)}
+        <p class="habitat">🌳 ${habitat} · <a class="card-map" href="karte.html#${encodeURIComponent(s.sci)}">${t.onMap}</a></p>
+        ${seasonChart(s)}
+        <span class="badge ${s.status}">${st.badge}</span>
+      </div>
+    </article>`;
+  }
+
+  const bySci = new Map(BOLETES.map(s => [s.sci, s]));
+  const commonName = s => { const n = ((lang === 'de' ? s.de : s.en) || '').split(',')[0].trim(); return n && n !== '—' ? n : s.sci; };
+
+  // "Can be confused with: …" — dangerous twins coloured, each links to its card.
+  function twinsLine(s) {
+    const t = T[lang];
+    const items = [
+      ...(s.lookalikes ?? []).map(n => bySci.get(n)).map(o => {
+        const tag = o.status === 'poisonous' ? ' ☠' : o.status === 'bitter' ? ' ✖' : '';
+        return `<a href="#${encodeURIComponent(o.sci)}" class="${o.status}">${esc(commonName(o))}${tag}</a>`;
+      }),
+      ...(s.extLookalikes ?? []).map(x => `<span class="${x.status}">${esc(lang === 'de' ? x.de : x.en)}${x.status === 'poisonous' ? ' ☠' : ''}</span>`),
+    ];
+    return items.length ? `<p class="twins">👥 ${t.twins}: ${items.join(', ')}</p>` : '';
+  }
+
+  const NOW = new Date().getMonth();
+  const seasonTotal = Pilzwetter.finds;
+  // In season = this month has at least 30 % of the peak month's finds.
+  const inSeason = s => Pilzwetter.inSeason(s, NOW);
+
+  // Twelve thin bars, current month highlighted; hover shows month + count.
+  function seasonChart(s) {
+    const t = T[lang];
+    const total = seasonTotal(s);
+    if (total < 20) return `<div class="season"><div class="lbl">${t.seasonFew}</div></div>`;
+    const m = s.season.months, max = Math.max(...m);
+    const W = 240, H = 32, slot = W / 12, bw = slot - 4;
+    const bars = m.map((v, i) => {
+      const bh = Math.max(v ? 2 : 0, (v / max) * H);
+      const x = i * slot + 2;
+      return `<g><title>${t.months[i]}: ${t.finds(v)}</title>
+        <rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H + 12}"/>
+        <rect class="bar${i === NOW ? ' now' : ''}" x="${x}" y="${H - bh}" width="${bw}" height="${bh}" rx="2"/>
+        <text x="${x + bw / 2}" y="${H + 10}"${i === NOW ? ' class="now"' : ''}>${t.monthsShort[i]}</text></g>`;
+    }).join('');
+    return `<div class="season">
+      <div class="lbl"><span>${s.season.region === 'EU' ? t.seasonLabel : t.seasonWorld}</span><span>${t.finds(total)}</span></div>
+      <svg viewBox="0 0 ${W} ${H + 12}" preserveAspectRatio="none" role="img" aria-label="${s.season.region === 'EU' ? t.seasonLabel : t.seasonWorld}">${bars}</svg>
+    </div>`;
+  }
+
+  let shownOrder = [];
+  function render() {
+    const t = T[lang];
+    const term = q.value.trim().toLowerCase();
+    const shown = BOLETES.filter(s =>
+      (filter === 'all' || s.status === filter || (filter === 'protected' && s.protection) || (filter === 'season' && inSeason(s)) || (filter === 'beginner' && s.beginner)) &&
+      (!term || [s.sci, s.en, s.de, s.group].join(' ').toLowerCase().includes(term)));
+    const groups = new Map();
+    for (const s of shown) groups.set(s.group, [...(groups.get(s.group) ?? []), s]);
+    shownOrder = [...groups.values()].flat();
+    list.innerHTML = shown.length
+      ? [...groups].map(([g, items]) =>
+          `<h2><i>${esc(g)}</i><small>${t.species(items.length)}</small></h2><div class="grid">${items.map(s => card(s, BOLETES.indexOf(s))).join('')}</div>`).join('')
+      : `<p class="empty">${t.empty}</p>`;
+    document.getElementById('count').textContent = t.count(shown.length, BOLETES.length);
+  }
+
+  function setLang(l) {
+    lang = l;
+    store.set(l);
+    const t = T[l];
+    document.documentElement.lang = l;
+    document.title = t.title;
+    document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = t[el.dataset.i18n]);
+    q.placeholder = t.search;
+    document.getElementById('wx-q').placeholder = t.wxPlaceholder;
+    if (typeof showWeather === 'function') showWeather();
+    if (typeof showGreeting === 'function') showGreeting();
+    q.setAttribute('aria-label', t.search);
+    document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
+    render();
+  }
+
+  document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+    filter = b.dataset.f;
+    document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+    render();
+  }));
+  q.addEventListener('input', render);
+
+  // ----- Pilzwetter (Open-Meteo, no key needed) -----
+  const wxOut = document.getElementById('wx-out');
+  let wxLast = null;
+
+  async function loadWeather(lat, lon, name) {
+    const t = T[lang];
+    wxOut.textContent = t.wxLoading;
+    try {
+      wxLast = { name, ...(await Pilzwetter.load(lat, lon)) };
+      showWeather();
+      greetAt(lat, lon, name, wxLast);
+    } catch (e) {
+      console.error(e);
+      wxOut.textContent = t.wxFail;
+    }
+  }
+  const assess = Pilzwetter.assess;
+
+  function rainChart(days, t) {
+    const W = 300, H = 80, slot = W / days.length, max = Math.max(10, ...days.map(d => d.rain));
+    const bars = days.map((d, i) => {
+      const bh = (d.rain / max) * H;
+      return `<g><title>${d.day}: ${d.rain.toFixed(1)} mm</title>
+        <rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H}"/>
+        <rect class="rain" x="${i * slot + 2}" y="${H - bh}" width="${slot - 4}" height="${bh}" rx="2"/></g>`;
+    }).join('');
+    return `<svg viewBox="0 0 ${W} ${H + 16}" role="img" aria-label="${t.wxRainChart}">
+      <line class="grid" x1="0" x2="${W}" y1="0" y2="0"/><text x="0" y="-3">${Math.round(max)} mm</text>
+      <line class="grid" x1="0" x2="${W}" y1="${H}" y2="${H}"/>${bars}
+      <text x="0" y="${H + 13}">${t.wxDaysAgo}</text><text x="${W}" y="${H + 13}" text-anchor="end">${t.wxToday}</text></svg>`;
+  }
+
+  function tempChart(days, t) {
+    const W = 300, H = 80, slot = W / days.length;
+    const lo = Math.min(0, ...days.map(d => d.tmin)), hi = Math.max(20, ...days.map(d => d.tmax));
+    const y = v => H - ((v - lo) / (hi - lo)) * H;
+    const bars = days.map((d, i) => `<g><title>${d.day}: ${d.tmin.toFixed(0)}–${d.tmax.toFixed(0)} °C</title>
+        <rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H}"/>
+        <rect class="temp" x="${i * slot + 3}" y="${y(d.tmax)}" width="${slot - 6}" height="${Math.max(2, y(d.tmin) - y(d.tmax))}" rx="3"/></g>`).join('');
+    return `<svg viewBox="0 0 ${W} ${H + 16}" role="img" aria-label="${t.wxTempChart}">
+      <line class="grid" x1="0" x2="${W}" y1="0" y2="0"/><text x="0" y="-3">${Math.round(hi)} °C</text>
+      <line class="zero" x1="0" x2="${W}" y1="${y(0)}" y2="${y(0)}"/><text x="${W}" y="${y(0) - 3}" text-anchor="end">0 °C</text>
+      ${bars}<text x="0" y="${H + 13}">${t.wxDaysAgo}</text><text x="${W}" y="${H + 13}" text-anchor="end">${t.wxToday}</text></svg>`;
+  }
+
+  function showWeather() {
+    if (!wxLast) return;
+    const t = T[lang], a = assess(wxLast.days), [title, base] = t.verdict[a.level];
+    const icon = { good: '🍄', medium: '🌤', poor: '🚫' }[a.level];
+    const reason = [base, a.why.map(k => t.why[k]).join(', ')].filter(Boolean).join(' ');
+    const nSeason = BOLETES.filter(inSeason).length;
+    const off = NOW < 5 || NOW > 10;
+    wxOut.innerHTML = `
+      <div class="wx-place">${esc(wxLast.name)} <span style="color:var(--muted);font-weight:400">(${wxLast.lat}°, ${wxLast.lon}°)</span></div>
+      <div class="verdict ${a.level}"><span class="ico" aria-hidden="true">${icon}</span>
+        <div><strong>${title}</strong><small>${reason}${off ? ' ' + t.offSeason : ''}</small></div></div>
+      <div class="wx-stats">
+        <div><b>${a.rain14.toFixed(0)} mm</b>${t.wxRain14}</div>
+        <div><b>${a.rain3.toFixed(0)} mm</b>${t.wxRain3}</div>
+        <div><b>${a.tmean7.toFixed(1)} °C</b>${t.wxTemp7}</div>
+        <div><b>${a.frost}</b>${t.wxFrost}</div>
+      </div>
+      <div class="wx-charts">
+        <div class="wx-chart"><h3>${t.wxRainChart}</h3>${rainChart(wxLast.days, t)}</div>
+        <div class="wx-chart"><h3>${t.wxTempChart}</h3>${tempChart(wxLast.days, t)}</div>
+      </div>
+      <div class="wx-season">${t.inSeason(nSeason)} <button class="wx-btn" id="wx-show">${t.showSeason}</button></div>
+      <div class="wx-note">${t.wxSource}</div>`;
+    document.getElementById('wx-show').onclick = () => {
+      document.querySelector('.chip[data-f="season"]').click();
+      document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
+    };
+  }
+
+  document.getElementById('wx-here').addEventListener('click', () => {
+    wxOut.textContent = T[lang].wxLoading;
+    Pilzwetter.locate().then(p => loadWeather(p.lat, p.lon, T[lang].wxHereName),
+      () => { wxOut.textContent = T[lang].wxNoGeo; });
+  });
+  document.getElementById('wx-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const t = T[lang], name = document.getElementById('wx-q').value.trim();
+    if (!name) return;
+    wxOut.textContent = t.wxLoading;
+    try {
+      const p = await Pilzwetter.geocode(name, lang);
+      if (!p) { wxOut.textContent = t.wxNoPlace; return; }
+      loadWeather(p.lat, p.lon, p.name);
+    } catch (err) {
+      console.error(err);
+      wxOut.textContent = t.wxFail;
+    }
+  });
+
+  // ----- Greeting: weather + season + trees around the user → one recommendation -----
+  const greetEl = document.getElementById('greet');
+  let greetLast = null;
+
+  async function greetAt(lat, lon, name, wx) {
+    let trees = null;
+    try { trees = await TreeGrid.load(); } catch (e) { console.error(e); }
+    const cell = trees && trees.cell(lat, lon);
+    const forest = cell ? trees.around(lat, lon, trees.forest) : null;
+    // Candidates: edible, not strictly protected, native, in season; ranked by host trees nearby,
+    // how far into its season we are, and how common it is.
+    const picks = BOLETES
+      .filter(s => (s.status === 'edible' || s.status === 'caution') && s.protection !== 'strict'
+        && !TreeGrid.NOT_IN_DE.has(s.sci) && Pilzwetter.inSeason(s, NOW))
+      .map(s => {
+        const share = cell ? trees.around(lat, lon, idx => trees.cellScore(trees.weights(s), idx)) : 10;
+        return { s, share, score: share * Pilzwetter.seasonShare(s, NOW) * Math.log10(Pilzwetter.finds(s) + 10) };
+      })
+      .filter(x => x.share >= 3)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3);
+    greetLast = { lat, lon, name, wx, cell: !!cell, forest, picks };
+    showGreeting();
+  }
+
+  function showGreeting() {
+    const t = T[lang], g = greetLast;
+    if (!g) return;
+    const nameOf = s => esc(((lang === 'de' ? s.de : s.en) || s.sci).split(',')[0].replace('—', s.sci));
+    const link = s => `<a href="#${encodeURIComponent(s.sci)}">${nameOf(s)}</a>`;
+    const place = g.name === t.wxHereName ? t.gYourRegion : esc(g.name);
+    const a = g.wx ? Pilzwetter.assess(g.wx.days) : null;
+    const why = a ? a.why.map(k => t.why[k]).join(', ') : '';
+    const [top, ...more] = g.picks.map(p => p.s);
+    let head, sub = '';
+    if (g.cell && g.forest < 5) head = t.gNoForest(place);
+    else if (!top) head = t.gOffSeason;
+    else if (!a) head = t.gNoWeather(link(top));
+    else head = t[{ good: 'gGood', medium: 'gMedium', poor: 'gPoor' }[a.level]](place, link(top), why);
+    if (top && more.length) sub += t.gAlso(more.map(link).join(', ')) + ' ';
+    if (a) sub += t.gStats(a.rain14.toFixed(0), a.tmean7.toFixed(0));
+    if (!g.cell) sub += ' ' + t.gNoTrees;
+    const icon = !a ? '🍄' : { good: '🍄', medium: '🌤', poor: '🌵' }[a.level];
+    greetEl.className = 'greet ' + (a ? a.level : 'medium');
+    greetEl.innerHTML = `<button class="g-close" aria-label="${t.close}">✕</button>
+      <div class="g-icon" aria-hidden="true">${icon}</div>
+      <div><p class="g-hello">${t.gHello}</p><p class="g-head">${head}</p>${sub ? `<p class="g-sub">${sub}</p>` : ''}
+        <div class="g-actions">${top ? `<a class="wx-btn primary" href="karte.html#${encodeURIComponent(top.sci)}@${g.lat.toFixed(2)},${g.lon.toFixed(2)}">${t.gMap}</a>` : ''}
+          <a class="wx-btn" href="#wx-out">${t.gWeather}</a></div>
+        <p class="g-note">${t.gNote}</p></div>`;
+    greetEl.hidden = false;
+    greetEl.querySelector('.g-close').onclick = () => { greetEl.hidden = true; };
+  }
+
+  function greetAsk(msg) {
+    const t = T[lang];
+    greetEl.className = 'greet medium';
+    greetEl.innerHTML = `<div class="g-icon" aria-hidden="true">🍄</div>
+      <div><p class="g-hello">${t.gHello}</p><p class="g-head">${msg}</p>
+      <div class="g-actions"><button class="wx-btn primary" id="g-locate">${t.wxHere}</button>
+        <a class="wx-btn" href="#wx-q">${t.gEnterPlace}</a></div></div>`;
+    greetEl.hidden = false;
+    document.getElementById('g-locate').onclick = startGreeting;
+  }
+
+  // On every app start: locate, then weather + trees → greeting. Fills the weather panel too.
+  async function startGreeting() {
+    greetAsk(T[lang].gLocating);
+    try {
+      const p = await Pilzwetter.locate();
+      await loadWeather(p.lat, p.lon, T[lang].wxHereName);
+      if (!wxLast) greetAt(p.lat, p.lon, T[lang].wxHereName, null);   // offline: trees + season only
+    } catch {
+      greetAsk(T[lang].gNoLocation);
+    }
+  }
+
+  document.querySelector('.guide').addEventListener('click', e => {
+    const b = e.target.closest('[data-show]');
+    if (!b) return;
+    document.querySelector(`.chip[data-f="${b.dataset.show}"]`).click();
+    document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // ----- Viewer: ←/→ photos of this mushroom, ↑ its look-alikes, ↓ next search result -----
+  // Every photo carries a headline with the name and, where needed, a poison / inedible warning.
+  const viewer = document.getElementById('viewer'), vImg = document.getElementById('v-img');
+  const V = { open: false, list: [], i: 0, twin: -1, p: 0 };
+  const withPhotos = s => s && s.photos?.length;
+  const base = () => V.list[V.i];
+  const twinsOf = s => (s.lookalikes ?? []).map(n => bySci.get(n)).filter(withPhotos);
+  const current = () => V.twin < 0 ? base() : twinsOf(base())[V.twin];
+
+  function vShow(dir) {
+    const t = T[lang], s = current(), p = s.photos[V.p], twins = twinsOf(base());
+    vImg.classList.add('out');
+    setTimeout(() => { vImg.src = p.src; vImg.alt = s.sci; vImg.classList.remove('out'); }, dir ? 120 : 0);
+    const tags = [
+      s.status === 'poisonous' ? `<span class="v-tag poisonous">${ICON.poisonous} ${t.status.poisonous.warn}</span>` : '',
+      s.status === 'bitter' ? `<span class="v-tag bitter">${ICON.bitter} ${t.status.bitter.warn}</span>` : '',
+      s.protection === 'strict' ? `<span class="v-tag protected">${t.vProtected}</span>` : '',
+      s.beginner ? `<span class="v-tag star">${t.vStar}</span>` : '',
+      ...(s.extLookalikes ?? []).filter(x => x.status === 'poisonous')
+        .map(x => `<span class="v-tag ext">👥 ${esc(lang === 'de' ? x.de : x.en)} ☠</span>`),
+    ].join('');
+    document.getElementById('v-head').innerHTML =
+      (V.twin >= 0 ? `<div class="v-twin">${t.vTwinOf(esc(commonName(base())), V.twin + 1, twins.length)}</div>` : '') +
+      `<div class="v-name">${esc(commonName(s))}</div><div class="v-sci">${esc(s.sci)}</div>` +
+      (tags ? `<div class="v-tags">${tags}</div>` : '');
+    const dots = s.photos.map((_, i) => `<i class="${i === V.p ? 'on' : ''}"></i>`).join('');
+    document.getElementById('v-foot').innerHTML = `
+      ${s.photos.length > 1 ? `<div class="v-dots">${dots}</div>` : ''}
+      <div class="v-nav">
+        ${V.twin >= 0 ? `<button data-v="back">${t.vBackBtn}</button>` : ''}
+        <button data-v="twin" ${twins.length ? '' : 'disabled'}>${t.vTwinsBtn(twins.length)}</button>
+        <button data-v="next" ${V.i < V.list.length - 1 ? '' : 'disabled'}>${t.vNextBtn}</button>
+        <a href="#${encodeURIComponent(s.sci)}" data-v="card">${t.vCard}</a>
+      </div>
+      <div class="v-credit">${p.stage ? t.stage[p.stage] + ' · ' : ''}${esc(p.artist || '?')} · ${esc(p.license)} ·
+        <a href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(p.file.replace(/ /g, '_'))}" target="_blank" rel="noopener">Wikimedia</a>
+        <br>${t.vHint}</div>`;
+    document.getElementById('v-close').setAttribute('aria-label', t.close);
+  }
+
+  function toast(msg) {
+    const el = document.getElementById('v-toast');
+    el.textContent = msg; el.classList.add('show');
+    clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove('show'), 1200);
+  }
+  const vPhoto = d => { const n = current().photos.length; if (n < 2) return; V.p = (V.p + d + n) % n; vShow(d); };
+  function vTwin() {
+    const twins = twinsOf(base());
+    if (!twins.length) return toast(T[lang].vNoTwins);
+    V.twin = (V.twin + 1) % twins.length; V.p = 0; vShow(1);
+  }
+  function vNext(d = 1) {
+    let j = V.i + d;
+    while (j >= 0 && j < V.list.length && !withPhotos(V.list[j])) j += d;
+    if (j < 0 || j >= V.list.length) return toast(T[lang].vLast);
+    V.i = j; V.twin = -1; V.p = 0; vShow(1);
+  }
+  function vOpen(s, p = 0) {
+    V.list = shownOrder.filter(withPhotos);
+    V.i = Math.max(0, V.list.indexOf(s)); V.twin = -1; V.p = p;
+    if (!V.list.length || !withPhotos(s)) return;
+    V.open = true; viewer.classList.add('open'); document.body.style.overflow = 'hidden';
+    history.pushState({ viewer: true }, '');   // Android back button closes the viewer
+    vShow();
+  }
+  function vClose(fromHistory) {
+    if (!V.open) return;
+    V.open = false; viewer.classList.remove('open'); document.body.style.overflow = '';
+    if (!fromHistory) history.back();
+  }
+  window.addEventListener('popstate', () => vClose(true));
+
+  // Tap a card (or one of its photos) to open the viewer.
+  list.addEventListener('click', e => {
+    if (e.target.closest('a, button.chip, svg')) return;
+    const el = e.target.closest('[data-s]');
+    if (!el) return;
+    vOpen(BOLETES[+el.dataset.s], +el.dataset.i || 0);
+  });
+  document.getElementById('v-close').onclick = () => vClose();
+  document.getElementById('v-prev').onclick = () => vPhoto(-1);
+  document.getElementById('v-next').onclick = () => vPhoto(1);
+  document.getElementById('v-foot').addEventListener('click', e => {
+    const a = e.target.closest('[data-v]');
+    if (!a) return;
+    if (a.dataset.v === 'twin') vTwin();
+    if (a.dataset.v === 'next') vNext(1);
+    if (a.dataset.v === 'back') { V.twin = -1; V.p = 0; vShow(1); }
+    if (a.dataset.v === 'card') { e.preventDefault(); const id = current().sci; vClose(); setTimeout(() => document.getElementById(id)?.scrollIntoView(), 50); }
+  });
+
+  // Swipes: dominant axis decides; 40 px threshold.
+  let touch = null;
+  viewer.addEventListener('touchstart', e => { const t = e.touches[0]; touch = { x: t.clientX, y: t.clientY }; }, { passive: true });
+  viewer.addEventListener('touchend', e => {
+    if (!touch) return;
+    const t = e.changedTouches[0], dx = t.clientX - touch.x, dy = t.clientY - touch.y;
+    touch = null;
+    if (Math.max(Math.abs(dx), Math.abs(dy)) < 40) return;
+    if (Math.abs(dx) > Math.abs(dy)) vPhoto(dx < 0 ? 1 : -1);
+    else if (dy < 0) vTwin();          // swipe up → look-alikes
+    else vNext(1);                     // swipe down → next search result
+  });
+  document.addEventListener('keydown', e => {
+    if (!V.open) return;
+    if (e.key === 'Escape') vClose();
+    if (e.key === 'ArrowLeft') vPhoto(-1);
+    if (e.key === 'ArrowRight') vPhoto(1);
+    if (e.key === 'ArrowUp') { e.preventDefault(); vTwin(); }
+    if (e.key === 'ArrowDown') { e.preventDefault(); vNext(1); }
+  });
+
+  setLang(lang);
+  startGreeting();
+  if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+</script>
+</body>
+</html>

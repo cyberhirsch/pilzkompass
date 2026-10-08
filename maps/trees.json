@@ -1,0 +1,25 @@
+{
+ "width": 742,
+ "height": 935,
+ "crs": "EPSG:3857",
+ "bounds": [
+  619902.451878942,
+  5966708.449366134,
+  1732902.451878942,
+  7368091.986750844
+ ],
+ "classes": [
+  "birch",
+  "beech",
+  "douglas",
+  "oak",
+  "alder",
+  "spruce",
+  "pine",
+  "larch",
+  "fir",
+  "odh",
+  "odl"
+ ],
+ "source": "Blickensd\u00f6rfer et al. (2022): Dominant Tree Species for Germany (2017/2018), Th\u00fcnen-Institut, CC BY 4.0, doi:10.3220/DATA20221214084846"
+}

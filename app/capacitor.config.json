@@ -1,0 +1,6 @@
+{
+  "appId": "de.boletus.app",
+  "appName": "Boletus",
+  "webDir": "www",
+  "android": { "backgroundColor": "#14110d" }
+}

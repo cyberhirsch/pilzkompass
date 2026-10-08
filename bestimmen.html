@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Boletus.de — Bestimmungshilfe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14110d; --surface: #1f1a14; --surface-2: #2a231b; --line: #3a3127;
+    --text: #efe6d8; --muted: #a99a85;
+    --edible: #6fae5a; --caution: #e0a83a; --bitter: #d9771f; --poison: #e5322d;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 Inter, system-ui, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header { position: relative; padding: 40px 0 16px; }
+  .back { color: var(--muted); font-size: 13px; text-decoration: none; }
+  .back:hover { color: var(--text); }
+  h1 { font: 900 clamp(34px, 6vw, 56px)/1.05 Fraunces, Georgia, serif; margin: 10px 0 10px; letter-spacing: -0.02em; }
+  h1 span { color: var(--caution); }
+  .lede { color: var(--muted); margin: 0; }
+  .lang { position: absolute; top: 20px; right: 0; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { background: var(--surface); color: var(--muted); border: 0; padding: 6px 14px; font: 700 12px Inter, sans-serif; letter-spacing: .06em; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+
+  .box { border-radius: var(--radius); padding: 14px 18px; font-size: 14px; margin: 16px 0; }
+  .box.danger { border: 2px solid var(--poison); background: rgba(229, 50, 45, .08); }
+  .box.danger strong { color: var(--poison); }
+  .box.note { border: 1px solid var(--line); background: var(--surface); color: var(--muted); }
+
+  .drop {
+    display: grid; place-items: center; text-align: center; gap: 10px;
+    border: 2px dashed var(--line); border-radius: var(--radius); background: var(--surface);
+    padding: 36px 16px; margin: 20px 0;
+  }
+  .drop:hover, .drop.over { border-color: var(--caution); }
+  .drop .big { font: 700 20px Fraunces, Georgia, serif; }
+  .drop .small { color: var(--muted); font-size: 13px; }
+  .drop input { display: none; }
+  .btn { background: var(--caution); color: #14110d; border: 0; border-radius: 999px; padding: 10px 20px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+  .btn.alt { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+
+  .result { display: grid; grid-template-columns: minmax(0, 260px) 1fr; gap: 20px; align-items: start; }
+  @media (max-width: 640px) { .result { grid-template-columns: 1fr; } }
+  .shot { width: 100%; border-radius: var(--radius); display: block; }
+  .status { color: var(--muted); font-size: 14px; margin: 8px 0; }
+
+  .pred { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; margin-bottom: 10px; }
+  .pred.poisonous { border: 3px solid var(--poison); }
+  .pred.bitter { border: 3px solid var(--bitter); }
+  .pred .warn { color: #fff; font: 800 15px Inter, sans-serif; padding: 8px 12px; letter-spacing: .02em; }
+  .pred .warn.poisonous { background: repeating-linear-gradient(-45deg, #c4211d 0 14px, #a81a17 14px 28px); }
+  .pred .warn.protected { background: repeating-linear-gradient(-45deg, #2f6fb8 0 14px, #275e9e 14px 28px); }
+  .pred .prot { font-size: 12px; color: #9cc3ef; margin-top: 3px; }
+  .pred .warn.bitter { background: repeating-linear-gradient(-45deg, #c0631a 0 14px, #a65414 14px 28px); }
+  .pred .row { display: flex; gap: 12px; padding: 10px 12px; align-items: center; }
+  .pred img { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; flex: none; background: var(--surface-2); }
+  .pred .ph { width: 64px; height: 64px; border-radius: 6px; flex: none; background: var(--surface-2); }
+  .pred .info { flex: 1; min-width: 0; }
+  .pred .sci { font: italic 700 17px/1.2 Fraunces, Georgia, serif; }
+  .pred .names { color: var(--muted); font-size: 13px; }
+  .pred .meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 4px; }
+  .bar { height: 6px; border-radius: 3px; background: var(--surface-2); margin-top: 6px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--text); }
+  .pct { font: 700 14px Inter, sans-serif; min-width: 48px; text-align: right; }
+  .badge { padding: 2px 8px; border-radius: 999px; font: 700 10px Inter, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #14110d; }
+  .badge.edible { background: var(--edible); } .badge.caution { background: var(--caution); }
+  .badge.bitter { background: var(--bitter); } .badge.poisonous { background: var(--poison); color: #fff; }
+  .badge.inedible, .badge.other { background: var(--muted); }
+  .names a { color: inherit; }
+  .link { font-size: 12px; color: var(--muted); }
+
+  footer { color: var(--muted); font-size: 12px; padding: 32px 0 48px; border-top: 1px solid var(--line); margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="lang" role="group" aria-label="Language / Sprache">
+      <button data-lang="de">DE</button><button data-lang="en">EN</button>
+    </div>
+    <a class="back" href="index.html" data-i18n="back"></a>
+    <h1 data-i18n="title"></h1>
+    <p class="lede" data-i18n="lede"></p>
+  </header>
+
+  <div class="box danger" data-i18n="danger"></div>
+
+  <div class="drop" id="drop">
+    <span class="big" data-i18n="pick"></span>
+    <div class="btns">
+      <label class="btn"><input type="file" class="file" accept="image/*" capture="environment"><span data-i18n="cameraBtn"></span></label>
+      <label class="btn alt"><input type="file" class="file" accept="image/*"><span data-i18n="pickBtn"></span></label>
+    </div>
+    <span class="small" data-i18n="pickHint"></span>
+  </div>
+
+  <section id="out" hidden>
+    <div class="result">
+      <div>
+        <img class="shot" id="shot" alt="">
+        <p class="status" id="status"></p>
+      </div>
+      <div id="preds"></div>
+    </div>
+    <div id="extra"></div>
+  </section>
+
+  <footer data-i18n="footer"></footer>
+</div>
+
+<script src="data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/ort.wasm.min.js"></script>
+<script>
+  const T = {
+    de: {
+      back: '← Alle Röhrlinge',
+      title: 'Bestimmungs<span>hilfe</span>',
+      lede: 'Foto eines Pilzes aufnehmen oder hochladen. Eine KI schlägt die wahrscheinlichsten Arten vor — als erste Eingrenzung.',
+      danger: '<strong>Nur zur ersten Eingrenzung — niemals zur Essbarkeits-Entscheidung.</strong> Die KI verwechselt Doppelgänger (z. B. Steinpilz und Gallen-Röhrling, die giftigen Rotporer untereinander). Jeden Fund von Pilzsachverständigen (DGfM) prüfen lassen.',
+      pick: 'Foto aufnehmen oder auswählen',
+      cameraBtn: '📷 Foto aufnehmen', pickBtn: 'Aus Galerie wählen',
+      pickHint: 'Am besten: ganzer Pilz von der Seite, Poren sichtbar, scharf und gut beleuchtet. Das Foto bleibt auf deinem Gerät.',
+      loading: 'KI wird geladen (einmalig ca. 25 MB)…',
+      running: 'Analysiere…',
+      done: ms => `Fertig in ${ms} ms — läuft komplett auf diesem Gerät.`,
+      failed: 'Die KI konnte nicht geladen werden. Bitte Internetverbindung prüfen und neu laden.',
+      toCard: 'Zur Art →', starTip: 'Anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger',
+      low: '<strong>Unsicheres Ergebnis.</strong> Der beste Vorschlag liegt unter 50 %. Anderes Foto versuchen: ganzer Pilz, Poren und Stiel sichtbar.',
+      poisonSum: p => `<strong>Zusammen ${p} % Wahrscheinlichkeit für eine giftige Art</strong> unter den Vorschlägen. Behandle den Fund als giftig, bis Pilzsachverständige etwas anderes sagen.`,
+      groups: {
+        'rare-poisonous': ['Seltene giftige Röhrlinge', 'Eine der seltenen giftigen Arten:'],
+        'rare-other': ['Seltene Röhrlinge', 'Eine der seltenen Arten:'],
+        'other-fungi': ['Anderer Pilz — kein Röhrling', 'Die KI hält das Foto für einen Pilz außerhalb der Röhrlinge.'],
+      },
+      look: 'Doppelgänger, kein Röhrling',
+      status: { poisonous: 'Giftig', deadly: 'Tödlich giftig', bitter: 'Ungenießbar', caution: 'Nur gut durchgegart essbar', edible: 'Essbar', inedible: 'Kein Speisepilz', other: 'Unbekannt' },
+      warn: { poisonous: '☠ GIFTIG', deadly: '☠ TÖDLICH GIFTIG', bitter: '✖ SCHMECKT ÜBEL' },
+      protect: { strict: '🛡 GESCHÜTZT — NICHT SAMMELN', personal: '🛡 Geschützt: nur geringe Mengen für den Eigenbedarf' },
+      footer: 'KI-Modell: DINOv2 ViT-S/14 (Meta AI, Apache 2.0), feinjustiert für Boletus.de auf rund 40.000 Fotos von iNaturalist (research grade). Die Fotos stehen unter Creative-Commons-Lizenzen ihrer Urheber, teils nicht-kommerziell; die vollständige Urheberliste steht in <a href="model/photo-credits.csv">photo-credits.csv</a>. Nur für nicht-kommerzielle Nutzung. Das Modell läuft im Browser über ONNX Runtime Web; Fotos werden nicht hochgeladen.',
+    },
+    en: {
+      back: '← All boletes',
+      title: 'Identification <span>aid</span>',
+      lede: 'Take or upload a photo of a mushroom. An AI suggests the most likely species, as a first narrowing-down.',
+      danger: '<strong>Only for a first narrowing-down — never for deciding edibility.</strong> The AI confuses look-alikes (e.g. cep and bitter bolete, or the poisonous red-pored boletes with each other). Have every find checked by a mushroom expert (DGfM).',
+      pick: 'Take or choose a photo',
+      cameraBtn: '📷 Take photo', pickBtn: 'Choose from gallery',
+      pickHint: 'Best: whole mushroom from the side, pores visible, sharp and well lit. The photo stays on your device.',
+      loading: 'Loading AI (one-time, about 25 MB)…',
+      running: 'Analysing…',
+      done: ms => `Done in ${ms} ms — runs entirely on this device.`,
+      failed: 'The AI could not be loaded. Please check your connection and reload.',
+      toCard: 'Go to species →', starTip: 'Beginner-friendly: tastes good, no poisonous or inedible look-alike',
+      low: '<strong>Uncertain result.</strong> The best suggestion is below 50%. Try another photo: whole mushroom, pores and stem visible.',
+      poisonSum: p => `<strong>Together ${p}% probability of a poisonous species</strong> among the suggestions. Treat the find as poisonous until a mushroom expert says otherwise.`,
+      groups: {
+        'rare-poisonous': ['Rare poisonous boletes', 'One of the rare poisonous species:'],
+        'rare-other': ['Rare boletes', 'One of the rare species:'],
+        'other-fungi': ['Other fungus — not a bolete', 'The AI thinks this is a fungus outside the boletes.'],
+      },
+      look: 'Look-alike, not a bolete',
+      status: { poisonous: 'Poisonous', deadly: 'Deadly poisonous', bitter: 'Tastes bad', caution: 'Edible only well cooked', edible: 'Edible', inedible: 'Not edible', other: 'Unknown' },
+      warn: { poisonous: '☠ POISONOUS', deadly: '☠ DEADLY POISONOUS', bitter: '✖ TASTES TERRIBLE' },
+      protect: { strict: '🛡 PROTECTED — DO NOT PICK', personal: '🛡 Protected: small amounts for own use only' },
+      footer: 'AI model: DINOv2 ViT-S/14 (Meta AI, Apache 2.0), fine-tuned for Boletus.de on about 40,000 research-grade iNaturalist photos. The photos are under their authors\' Creative Commons licences, some non-commercial; the full credit list is in <a href="model/photo-credits.csv">photo-credits.csv</a>. Non-commercial use only. The model runs in the browser via ONNX Runtime Web; photos are not uploaded.',
+    },
+  };
+  // Non-bolete look-alikes the model knows.
+  const LOOKALIKES = {
+    'Paxillus involutus': { de: 'Kahler Krempling', en: 'Brown roll-rim', status: 'deadly' },
+    'Scleroderma citrinum': { de: 'Dickschaliger Kartoffelbovist', en: 'Common earthball', status: 'poisonous' },
+    'Scleroderma areolatum': { de: 'Leopardfleckiger Kartoffelbovist', en: 'Leopard earthball', status: 'poisonous' },
+    'Hygrophoropsis aurantiaca': { de: 'Falscher Pfifferling', en: 'False chanterelle', status: 'inedible' },
+    'Amanita phalloides': { de: 'Grüner Knollenblätterpilz', en: 'Death cap', status: 'deadly' },
+    'Amanita muscaria': { de: 'Fliegenpilz', en: 'Fly agaric', status: 'poisonous' },
+    'Amanita pantherina': { de: 'Pantherpilz', en: 'Panther cap', status: 'poisonous' },
+    'Amanita rubescens': { de: 'Perlpilz', en: 'Blusher', status: 'caution' },
+    'Fistulina hepatica': { de: 'Leberreischling', en: 'Beefsteak fungus', status: 'edible' },
+    'Russula ochroleuca': { de: 'Ocker-Täubling', en: 'Ochre brittlegill', status: 'inedible' },
+    'Lactarius deliciosus': { de: 'Edel-Reizker', en: 'Saffron milkcap', status: 'edible' },
+    'Cantharellus cibarius': { de: 'Echter Pfifferling', en: 'Chanterelle', status: 'edible', protection: 'personal' },
+  };
+  const POISON = new Set(['poisonous', 'deadly']);
+  const SIZE = 224, MEAN = [0.485, 0.456, 0.406], STD = [0.229, 0.224, 0.225];
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const store = {
+    get() { try { return localStorage.getItem('lang'); } catch { return null; } },
+    set(v) { try { localStorage.setItem('lang', v); } catch {} },
+  };
+  let lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+  const bySci = new Map(BOLETES.map(s => [s.sci, s]));
+  let session, classes, last = null;
+
+  async function load() {
+    if (session) return;
+    // Absolute URL: ONNX Runtime resolves relative paths against its own script, not the page.
+    ort.env.wasm.wasmPaths = new URL('https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/', location.href).href;
+    [session, classes] = await Promise.all([
+      ort.InferenceSession.create('model/boletus.onnx', { executionProviders: ['wasm'] }),
+      fetch('model/boletus-classes.json').then(r => r.json()),
+    ]);
+  }
+
+  // Same preprocessing as training evaluation: shorter side to 224, centre crop, ImageNet mean/std.
+  // createImageBitmap with resizeQuality 'high' avoids the aliasing of a plain canvas downscale.
+  async function toTensor(blob) {
+    const full = await createImageBitmap(blob);
+    const side = Math.min(full.width, full.height);
+    const bmp = await createImageBitmap(full, (full.width - side) / 2, (full.height - side) / 2, side, side,
+      { resizeWidth: SIZE, resizeHeight: SIZE, resizeQuality: 'high' });
+    const c = document.createElement('canvas');
+    c.width = c.height = SIZE;
+    const ctx = c.getContext('2d');
+    ctx.drawImage(bmp, 0, 0);
+    const px = ctx.getImageData(0, 0, SIZE, SIZE).data;
+    const data = new Float32Array(3 * SIZE * SIZE);
+    for (let i = 0; i < SIZE * SIZE; i++)
+      for (let ch = 0; ch < 3; ch++)
+        data[ch * SIZE * SIZE + i] = (px[i * 4 + ch] / 255 - MEAN[ch]) / STD[ch];
+    return new ort.Tensor('float32', data, [1, 3, SIZE, SIZE]);
+  }
+
+  function softmax(logits) {
+    const max = Math.max(...logits);
+    const exp = Array.from(logits, v => Math.exp(v - max));
+    const sum = exp.reduce((a, b) => a + b, 0);
+    return exp.map(v => v / sum);
+  }
+
+  async function analyse(file) {
+    const t = T[lang];
+    const out = document.getElementById('out');
+    const status = document.getElementById('status');
+    const shot = document.getElementById('shot');
+    out.hidden = false;
+    document.getElementById('preds').innerHTML = '';
+    document.getElementById('extra').innerHTML = '';
+    shot.src = URL.createObjectURL(file);
+    try {
+      status.textContent = t.loading;
+      await load();
+      status.textContent = t.running;
+      const t0 = performance.now();
+      const res = await session.run({ image: await toTensor(file) });
+      const probs = softmax(res.logits.data);
+      last = {
+        results: probs.map((p, i) => ({ i, p })).sort((a, b) => b.p - a.p).slice(0, 5),
+        poison: probs.reduce((sum, p, i) => sum + (POISON.has(describe(classes[i]).status) ? p : 0), 0),
+        ms: Math.round(performance.now() - t0),
+      };
+      showResults();
+    } catch (err) {
+      console.error(err);
+      status.textContent = t.failed;
+    }
+  }
+
+  // Turns a model class into what the page shows: name, names line, status, species card, etc.
+  function describe(c) {
+    const t = T[lang];
+    if (c.kind === 'species') {
+      const s = bySci.get(c.site[0]);
+      const also = c.site.slice(1).map(n => `<i>${esc(n)}</i>`).join(', ');
+      return { s, sci: s.sci, status: s.status, protection: s.protection,
+        names: (lang === 'de' ? [s.de, s.en] : [s.en, s.de]).filter(n => n !== '—').map(esc).join(' · ') + (also ? ` · = ${also}` : ''),
+        thumb: s.photos?.[0]?.thumb };
+    }
+    if (c.kind === 'lookalike') {
+      const l = LOOKALIKES[c.key] ?? {};
+      return { sci: c.key, status: l.status ?? 'other', protection: l.protection,
+        names: `${esc(lang === 'de' ? l.de : l.en)} · ${t.look}` };
+    }
+    const [title, intro] = t.groups[c.key];
+    const members = c.site.map(n => `<a href="index.html#${encodeURIComponent(n)}"><i>${esc(n)}</i></a>`).join(', ');
+    return { sci: title, plain: true, status: c.key === 'rare-poisonous' ? 'poisonous' : 'other',
+      names: members ? `${intro} ${members}` : intro };
+  }
+
+  function showResults() {
+    if (!last) return;
+    const t = T[lang];
+    document.getElementById('status').textContent = t.done(last.ms);
+    document.getElementById('preds').innerHTML = last.results.map(({ i, p }) => {
+      const d = describe(classes[i]);
+      const st = d.status;
+      return `<div class="pred ${POISON.has(st) ? 'poisonous' : st}">
+        ${t.warn[st] ? `<div class="warn ${POISON.has(st) ? 'poisonous' : st}">${t.warn[st]}</div>` : ''}
+        ${d.protection === 'strict' ? `<div class="warn protected">${t.protect.strict}</div>` : ''}
+        <div class="row">
+          ${d.thumb ? `<img src="${esc(d.thumb)}" alt="">` : '<div class="ph"></div>'}
+          <div class="info">
+            <div class="sci"${d.plain ? ' style="font-style:normal"' : ''}>${esc(d.sci)}${d.s?.beginner ? ' <span title="${t.starTip}" style="font-style:normal">⭐</span>' : ''}</div>
+            <div class="names">${d.names}</div>
+            ${d.protection === 'personal' ? `<div class="prot">${t.protect.personal}</div>` : ''}
+            <div class="meta"><span class="badge ${POISON.has(st) ? 'poisonous' : st}">${t.status[st]}</span>
+              ${d.s ? `<a class="link" href="index.html#${encodeURIComponent(d.s.sci)}">${t.toCard}</a>` : ''}</div>
+            <div class="bar"><i style="width:${(p * 100).toFixed(1)}%"></i></div>
+          </div>
+          <div class="pct">${(p * 100).toFixed(p < 0.1 ? 1 : 0)}%</div>
+        </div>
+      </div>`;
+    }).join('');
+
+    const extra = [];
+    if (last.poison >= 0.1) extra.push(`<div class="box danger">${t.poisonSum(Math.round(last.poison * 100))}</div>`);
+    if (last.results[0].p < 0.5) extra.push(`<div class="box note">${t.low}</div>`);
+    document.getElementById('extra').innerHTML = extra.join('');
+  }
+
+  function setLang(l) {
+    lang = l;
+    store.set(l);
+    document.documentElement.lang = l;
+    document.title = 'Boletus.de — ' + (l === 'de' ? 'Bestimmungshilfe' : 'Identification aid');
+    document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = T[l][el.dataset.i18n]);
+    document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
+    showResults();
+  }
+
+  document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  const drop = document.getElementById('drop');
+  document.querySelectorAll('.file').forEach(inp => inp.addEventListener('change', e => {
+    if (e.target.files[0]) analyse(e.target.files[0]);
+    e.target.value = '';  // allow picking the same photo again
+  }));
+  drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
+  drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+  drop.addEventListener('drop', e => {
+    e.preventDefault(); drop.classList.remove('over');
+    const f = [...e.dataTransfer.files].find(f => f.type.startsWith('image/'));
+    if (f) analyse(f);
+  });
+  setLang(lang);
+</script>
+</body>
+</html>

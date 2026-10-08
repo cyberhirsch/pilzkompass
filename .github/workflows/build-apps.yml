@@ -1,0 +1,93 @@
+name: Build apps
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: build-apps-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Cache Wikimedia photos
+        uses: actions/cache@v4
+        with:
+          path: app/cache
+          key: wikimedia-photos-${{ hashFiles('data.js') }}
+          restore-keys: wikimedia-photos-
+      - name: Assemble offline web bundle
+        working-directory: app
+        run: |
+          pip install requests pillow
+          npm ci
+          python ../tools/build-app.py
+      - name: Build debug APK
+        working-directory: app
+        run: |
+          npx cap sync android
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: boletus-android-apk
+          path: app/android/app/build/outputs/apk/debug/app-debug.apk
+          compression-level: 0
+
+  ios:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Cache Wikimedia photos
+        uses: actions/cache@v4
+        with:
+          path: app/cache
+          key: wikimedia-photos-${{ hashFiles('data.js') }}
+          restore-keys: wikimedia-photos-
+      - name: Assemble offline web bundle
+        working-directory: app
+        run: |
+          pip install requests pillow
+          npm ci
+          python ../tools/build-app.py
+      - name: Build unsigned iOS app
+        working-directory: app
+        run: |
+          npx cap sync ios
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+          # Unsigned .ipa: sign it yourself (e.g. Sideloadly/AltStore with your Apple ID) to install.
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/App.app Payload/
+          zip -qry Boletus-unsigned.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: boletus-ios-unsigned-ipa
+          path: app/Boletus-unsigned.ipa
+          compression-level: 0
