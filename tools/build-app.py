@@ -69,7 +69,13 @@ def photo(p):
 
 
 def fonts():
-    """Self-hosts the Google Fonts used by the pages (woff2, Latin subsets)."""
+    """Self-hosts the Google Fonts used by the pages (woff2, Latin subsets).
+
+    Uses the committed copy in app/vendor/fonts; only fetches from Google when that is missing."""
+    vendored = APP / "vendor" / "fonts"
+    if (vendored / "fonts.css").exists():
+        shutil.copytree(vendored, WWW / "fonts", dirs_exist_ok=True)
+        return
     css = session.get(FONTS_CSS, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                                          "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"}).text
     blocks = re.findall(r"/\*\s*([\w-]+)\s*\*/\s*(@font-face\s*{[^}]*})", css)
@@ -77,7 +83,10 @@ def fonts():
     for subset, block in blocks:
         if subset not in ("latin", "latin-ext"):
             continue
-        url = re.search(r"url\((https://[^)]+\.woff2)\)", block).group(1)
+        m = re.search(r"url\((https://[^)]+\.woff2)\)", block)
+        if not m:
+            continue
+        url = m.group(1)
         name = hashlib.md5(url.encode()).hexdigest()[:12] + ".woff2"
         (WWW / "fonts" / name).write_bytes(fetch(url) or b"")
         out.append(block.replace(url, name))
@@ -130,8 +139,11 @@ def main():
     for name in ("trees.bin", "trees.json"):
         shutil.copy(PROJECT / "maps" / name, WWW / "maps" / name)
     shutil.copytree(PROJECT / "maps" / "tiles", WWW / "maps" / "tiles")   # 10 m tree tiles, ~280 MB
-    for name in ("leaflet.min.js", "leaflet.min.css"):
-        (WWW / "vendor" / "leaflet" / name).write_bytes(fetch(LEAFLET_CDN + name))
+    # Leaflet from npm (app/node_modules), named like the CDN files the pages reference.
+    leaflet = APP / "node_modules" / "leaflet" / "dist"
+    shutil.copy(leaflet / "leaflet.js", WWW / "vendor" / "leaflet" / "leaflet.min.js")
+    shutil.copy(leaflet / "leaflet.css", WWW / "vendor" / "leaflet" / "leaflet.min.css")
+    shutil.copytree(leaflet / "images", WWW / "vendor" / "leaflet" / "images", dirs_exist_ok=True)
 
     size = sum(f.stat().st_size for f in WWW.rglob("*") if f.is_file())
     print(f"www: {size / 1e6:.0f} MB")
