@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>Pilzkompass — Baumkarte</title>
+<title>Pilzkompass — Pilzkarte</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -96,7 +96,7 @@
 <script>
   const T = {
     de: {
-      back: '← Alle Röhrlinge', title: 'Baum<span>karte</span>',
+      back: '← Alle Röhrlinge', title: 'Pilz<span>karte</span>',
       modeSpecies: 'Pilzart', modeTree: 'Baumart', here: '📍 Mein Standort',
       legendSpecies: name => `Anteil passender Baumpartner für <i>${name}</i> (1-km-Übersicht, ab Zoom 10 in 10 m)`,
       legendTree: name => `Waldanteil mit vorherrschend ${name}`,
@@ -111,7 +111,7 @@
       tag: { poisonous: '☠ giftig', bitter: '✖ ungenießbar', strict: '🛡 geschützt' }, calc: 'nur auf Kalk', rare: 'selten',
     },
     en: {
-      back: '← All boletes', title: 'Tree <span>map</span>',
+      back: '← All boletes', title: 'Mushroom <span>map</span>',
       modeSpecies: 'Mushroom', modeTree: 'Tree species', here: '📍 My location',
       legendSpecies: name => `Share of matching host trees for <i>${name}</i> (1 km overview, 10 m from zoom 10)`,
       legendTree: name => `Forest share dominated by ${name}`,
@@ -273,6 +273,7 @@
     if (mode === 'species') {
       const name = s => (lang === 'de' ? s.de : s.en).split(',')[0];
       sel.innerHTML = BOLETES.filter(s => !NOT_IN_DE.has(s.sci) && s.trees?.some(c => HOST[c]))
+        .sort((a, b) => finds(b) - finds(a))   // most popular (most reported finds) first
         .map(s => `<option value="${esc(s.sci)}">${esc(s.sci)}${s.de !== '—' ? ' — ' + esc(name(s)) : ''}</option>`).join('');
     } else {
       sel.innerHTML = meta.classes.map(c => `<option value="${c}">${esc(t.trees[c])}</option>`).join('');
@@ -312,7 +313,7 @@
   function setLang(l) {
     lang = l; store.set('lang', l);
     document.documentElement.lang = l;
-    document.title = 'Pilzkompass — ' + (l === 'de' ? 'Baumkarte' : 'Tree map');
+    document.title = 'Pilzkompass — ' + (l === 'de' ? 'Pilzkarte' : 'Mushroom map');
     document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = T[l][el.dataset.i18n]);
     document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
     if (meta) { fillPick(); legend(); }

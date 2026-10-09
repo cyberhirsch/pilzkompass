@@ -106,6 +106,8 @@
   .chip .dot { width: 9px; height: 9px; border-radius: 50%; }
   .chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
   .count { color: var(--muted); font-size: 13px; margin-left: auto; }
+  .sort { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+  .sort select { background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; }
 
   main { max-width: 1240px; margin: 0 auto; padding: 8px 16px 64px; }
   h2 {
@@ -288,6 +290,8 @@
   .wx-chart text { fill: var(--muted); font: 10px Inter, sans-serif; }
   .wx-chart .rain { fill: #5b9bd8; }
   .wx-chart .temp { fill: var(--caution); }
+  .wx-chart .fc { opacity: .4; }
+  .wx-chart .today { stroke: var(--text); stroke-width: 1; stroke-dasharray: 2 3; }
   .wx-chart g:hover rect:not(.hit) { opacity: .75; }
   .wx-chart .hit { fill: transparent; }
   .wx-season { margin-top: 12px; font-size: 13px; }
@@ -357,6 +361,8 @@
     <button class="chip" data-f="protected" aria-pressed="false"><span class="dot" style="background:var(--protect)"></span><span data-i18n="f_protected"></span></button>
     <button class="chip" data-f="season" aria-pressed="false"><span class="dot" style="background:var(--text)"></span><span data-i18n="f_season"></span></button>
     <button class="chip" data-f="beginner" aria-pressed="false">⭐ <span data-i18n="f_beginner"></span></button>
+    <label class="sort"><span data-i18n="sortLabel"></span>
+      <select id="sort"><option value="popular" data-i18n="sortPopular"></option><option value="genus" data-i18n="sortGenus"></option></select></label>
     <span class="count" id="count"></span>
   </div>
 </nav>
@@ -385,7 +391,8 @@
       lede: 'The boletes of Central Europe — true <i>Boletus</i> and every genus split from it, plus the rough-stalks, slippery jacks and a few notorious poisonous species from abroad. Poisonous and foul-tasting species carry a warning you cannot miss.',
       disclaimer: '<strong>Never eat a mushroom based on a website or photo.</strong> Identification needs several features at once — pores, flesh colour change, stem, smell, habitat. Have every find checked by a certified mushroom expert (in Germany: DGfM Pilzsachverständige). Almost all boletes are poisonous raw — always cook thoroughly (at least 15 minutes). Taste is no guide: several poisonous boletes taste mild and pleasant. Taste descriptions here come from the literature — never swallow a tasting sample. Blue 🛡 marks species protected in Germany. ⭐ = beginner-friendly: tastes good, no poisonous or inedible look-alike.',
       search: 'Search Latin, English or German name…',
-      f_all: 'All', f_poisonous: 'Poisonous', f_bitter: 'Tastes bad', f_caution: 'Cook thoroughly', f_edible: 'Edible', f_inedible: 'Not edible', f_protected: 'Protected', f_season: 'In season now', f_beginner: 'Beginner-friendly',
+      f_all: 'All', f_poisonous: 'Poisonous', f_bitter: 'Tastes bad', f_caution: 'Cook thoroughly', f_edible: 'Edible', f_inedible: 'Not edible', f_protected: 'Protected', f_season: 'In season now', sortLabel: 'Sort:', sortPopular: 'Popularity', sortGenus: 'Genus',
+      popularHead: 'By popularity', popularNote: 'most reported finds in Europe (GBIF) first', f_beginner: 'Beginner-friendly',
       starTip: 'Beginner-friendly: tastes good and has no poisonous or inedible look-alike',
       twins: 'Can be confused with',
       vTwinOf: (name, i, n) => `👥 Look-alike of ${name} · ${i}/${n}`, vNoTwins: 'No look-alikes listed',
@@ -406,7 +413,16 @@
       wxLoading: 'Loading weather…', wxNoPlace: 'Place not found.', wxFail: 'Weather data could not be loaded (offline?).',
       wxNoGeo: 'Location not available. Enter a town instead.', wxHereName: 'Your location',
       wxRain14: 'rain, 14 days', wxRain3: 'rain, last 3 days', wxTemp7: 'mean temp., 7 days', wxFrost: 'nights below 0 °C (7 days)',
-      wxRainChart: 'Rain per day (mm)', wxTempChart: 'Temperature per day, min–max (°C)', wxToday: 'today', wxDaysAgo: '14 days ago',
+      wxRainChart: 'Rain per day (mm)', wxTempChart: 'Temperature per day, min–max (°C)', wxToday: 'today', wxDaysAgo: '14 days ago', wxAhead: '+7 days', wxForecast: 'forecast',
+      rainWhen: iso => { const n = Math.round((new Date().setHours(12) - new Date(iso + 'T12:00')) / 864e5); return n === 0 ? 'today' : n === 1 ? 'yesterday' : n > 1 ? `on ${Pilzwetter.fmtDay(iso, 'en')}` : `on ${Pilzwetter.fmtDay(iso, 'en')}`; },
+      fNow: 'Mushroom time now', fNowText: (when, mm) => `The rain ${when} (${mm} mm) is bringing up mushrooms — the coming days are worth a walk.`,
+      fComing: n => `Mushrooms in about ${n} day${n === 1 ? '' : 's'}`,
+      fComingText: (when, mm, date) => `After the rain ${when} (${mm} mm) mushrooms are growing — expect the first finds around ${date}.`,
+      fAhead: n => `Rain forecast — mushrooms in about ${n} days`,
+      fAheadText: (day, mm, lag, date) => `About ${mm} mm of rain is forecast for ${day}. At current temperatures mushrooms follow about ${lag} days later, around ${date}.`,
+      fDry: 'Too dry', fDryText: n => `No real rain for ${n} days and none forecast. Boletes appear about 1–2 weeks after a good soaking (10 mm or more).`,
+      fCold: 'Too cold', fColdText: 'With frost and below about 5 °C hardly any new boletes grow.',
+      fFrost: 'Frosty nights slow growth down.',
       verdict: {
         good: ['Good mushroom weather', 'Plenty of rain and mild temperatures. Boletes usually appear 1–2 weeks after heavy rain.'],
         medium: ['Moderate', ''],
@@ -418,17 +434,19 @@
       wxSource: 'Weather data: Open-Meteo.com (CC BY 4.0), based on national weather services incl. DWD. Rule of thumb only.',
       gHello: 'Welcome!', gYourRegion: 'your region', gLocating: 'Checking the weather, season and trees around you…',
       gNoLocation: 'Share your location or enter a town for a personal recommendation.', gEnterPlace: 'Enter a town ↓',
-      gGood: (p, s) => `Conditions in ${p} are ideal right now for: ${s}.`,
-      gMedium: (p, s, why) => `Conditions in ${p} are moderate (${why}). Your best chance: ${s}.`,
-      gPoor: (p, s, why) => `Poor mushroom weather in ${p} at the moment (${why}). After the next good rain, look for: ${s}.`,
+      gNow: (p, s) => `It's mushroom time in ${p}. Best chance right now: ${s}.`,
+      gComing: (p, s, when, n) => `After the rain ${when}, mushrooms will be up in ${p} in about ${n} day${n === 1 ? '' : 's'} — most likely: ${s}.`,
+      gAhead: (p, s, n) => `Rain is on its way — in about ${n} days mushrooms will grow in ${p}, most likely: ${s}.`,
+      gDry: (p, s) => `Too dry in ${p} right now. After the next good rain, look for: ${s}.`,
+      gCold: (p, s) => `Too cold in ${p} for new growth. If anything: ${s}.`,
       gNoWeather: s => `No weather data right now (offline?). By season and trees, your best chance is: ${s}.`,
       gOffSeason: 'It is not bolete season right now. The main season runs from June to November.',
-      gNoForest: p => `According to the tree map there is hardly any forest around ${p}.`,
+      gNoForest: p => `According to the mushroom map there is hardly any forest around ${p}.`,
       gAlso: list => `Also in season with suitable trees nearby: ${list}.`,
       gStats: (rain, temp) => `Last 14 days: ${rain} mm rain, about ${temp} °C.`,
       gNoTrees: 'Tree data only covers Germany.',
       gMap: '🗺 Show on map', gWeather: 'Weather details ↓',
-      gNote: 'Rule of thumb from weather, season and tree map — not a guarantee. Never eat a mushroom without a certain identification.',
+      gNote: 'Rule of thumb from weather, season and the trees on the mushroom map — not a guarantee. Never eat a mushroom without a certain identification.',
       protect: {
         strict: { warn: '🛡 PROTECTED — DO NOT PICK', sub: 'Specially protected in Germany (BArtSchV). Collecting is prohibited.' },
         personal: { note: '🛡 Protected in Germany: only small amounts for your own use (BArtSchV § 2).' },
@@ -436,7 +454,7 @@
       count: (n, t) => `${n} of ${t} species`,
       species: n => `${n} species`,
       guideTitle: '☠ How to recognise poisonous boletes',
-      aiLink: '📷 Identify from a photo (AI)', mapLink: '🗺 Tree map', onMap: 'Where its trees grow →',
+      aiLink: '📷 Identify from a photo (AI)', mapLink: '🗺 Mushroom map', onMap: 'Where its trees grow →',
       guide: "\n<p class=\"rule\">Main rule for beginners: do not eat any bolete with red or orange pores. Almost every poisonous bolete in Central Europe belongs to this group.</p>\n<p>The group also contains good edible species (e.g. the scarletina bolete), which experienced foragers eat. For beginners, skipping the whole group removes nearly all the risk.</p>\n\n<h3>The poisonous red-pored boletes</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Species</th><th>Features</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satan's bolete</td><td>Chalky white-grey cap, blood-red pores, swollen stem with red net. Old specimens smell of carrion. Summer, on limestone under beech and oak.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolf bolete</td><td>Pinkish-ochre cap, red pores, <b>no net</b> on the stem, bluing flesh.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purple bolete</td><td>Purple-red cap, flesh turns ink-blue <b>instantly</b>.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Brawny bolete</td><td>Unusually heavy and massive, ochre-yellow cap with purple tones, deep bluing.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Pale to pink caps, red pores, mostly on limestone in warm deciduous woods.</td></tr>\n</table></div>\n<p class=\"rule\">Taste is no guide: all of these taste mild. Do not use the tongue test on red-pored boletes.</p>\n\n<h3>Bad-tasting look-alikes (spoil the meal, not poisonous)</h3>\n<ul>\n<li><b>Bitter bolete</b> (<i>Tylopilus felleus</i>) vs. cep: <b>pink</b> pores and a <b>dark brown</b> net on the stem. The cep has white to yellow-green pores and a <b>white</b> net.</li>\n<li><b>Bitter beech bolete</b> (<i>Caloboletus calopus</i>): red-netted stem but <b>yellow</b> pores.</li>\n<li><b>Peppery bolete</b> (<i>Chalciporus piperatus</i>): small, rusty-brown pores, yellow flesh in the stem base.</li>\n</ul>\n<p>These can be detected safely: touch a tiny piece to the tongue tip, then spit it out.</p>\n\n<h3>\"No red, no colour change = safe\"? No.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Spanish and Portuguese pine dunes): pale pores, no bluing, poisonous.</li>\n<li><b>Rough-stalks</b> (<i>Leccinum</i>): no red pores, flesh turns grey or black. Undercooked, they have caused poisonings.</li>\n<li><b>Every bolete is poisonous raw</b>, the cep included.</li>\n<li><b>Old, soggy or mouldy specimens</b> cause many bolete \"poisonings\" in practice: spoiled protein rather than toxins, but real stomach cramps.</li>\n<li>The reverse fails too: many good edible species turn blue (bay bolete, scarletina bolete, inkstain bolete). <i>Neoboletus venenatus</i> (Japan) has <b>yellow</b> pores and is poisonous.</li>\n</ul>\n\n<h3>Is it a bolete at all?</h3>\n<p>Underneath there must be a <b>sponge of tubes</b>, not gills. The brown roll-rim (<i>Paxillus involutus</i>) is related to boletes but has gills, and can cause a fatal immune reaction. Earthballs (<i>Scleroderma</i>) are poisonous; the parasitic bolete grows on them.</p>\n\n<h3>Safer beginner rule</h3>\n<ol>\n<li>Definitely tubes and pores underneath.</li>\n<li>Pores not red or orange.</li>\n<li>A tiny piece on the tongue tip (spat out) is not bitter or peppery.</li>\n<li>Only firm, fresh specimens.</li>\n<li>Cook for at least 15 minutes.</li>\n<li>Have it checked by a mushroom expert (DGfM).</li>\n</ol>\n<p>Even then this is a filter, not a guarantee.</p>\n<button class=\"show\" data-show=\"poisonous\">Show all poisonous species ↓</button>",
       empty: 'No species match.',
       noPhoto: 'No free photo available',
@@ -458,7 +476,8 @@
       lede: 'Die Röhrlinge Mitteleuropas — echte <i>Boletus</i> und alle davon abgetrennten Gattungen, dazu Raufüße, Schmierröhrlinge und einige berüchtigte Giftpilze aus aller Welt. Giftige und ungenießbare Arten tragen eine Warnung, die man nicht übersehen kann.',
       disclaimer: '<strong>Niemals einen Pilz aufgrund einer Website oder eines Fotos essen.</strong> Zur Bestimmung braucht es mehrere Merkmale zugleich — Poren, Verfärbung des Fleisches, Stiel, Geruch, Standort. Jeden Fund von geprüften Pilzsachverständigen (DGfM) kontrollieren lassen. Fast alle Röhrlinge sind roh giftig — immer gründlich garen (mindestens 15 Minuten). Der Geschmack ist kein Kriterium: mehrere giftige Röhrlinge schmecken mild und angenehm. Die Geschmacksangaben stammen aus der Literatur — Kostproben niemals schlucken. Blaues 🛡 markiert in Deutschland geschützte Arten. ⭐ = anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger.',
       search: 'Lateinischen, deutschen oder englischen Namen suchen…',
-      f_all: 'Alle', f_poisonous: 'Giftig', f_bitter: 'Ungenießbar', f_caution: 'Gut durchgaren', f_edible: 'Essbar', f_inedible: 'Kein Speisepilz', f_protected: 'Geschützt', f_season: 'Jetzt in Saison', f_beginner: 'Anfängerfreundlich',
+      f_all: 'Alle', f_poisonous: 'Giftig', f_bitter: 'Ungenießbar', f_caution: 'Gut durchgaren', f_edible: 'Essbar', f_inedible: 'Kein Speisepilz', f_protected: 'Geschützt', f_season: 'Jetzt in Saison', sortLabel: 'Sortieren:', sortPopular: 'Beliebtheit', sortGenus: 'Gattung',
+      popularHead: 'Nach Beliebtheit', popularNote: 'die am häufigsten gefundenen Arten in Europa (GBIF) zuerst', f_beginner: 'Anfängerfreundlich',
       starTip: 'Anfängerfreundlich: schmeckt gut und hat keinen giftigen oder ungenießbaren Doppelgänger',
       twins: 'Verwechslung mit',
       vTwinOf: (name, i, n) => `👥 Doppelgänger von ${name} · ${i}/${n}`, vNoTwins: 'Keine Doppelgänger eingetragen',
@@ -479,7 +498,16 @@
       wxLoading: 'Lade Wetterdaten…', wxNoPlace: 'Ort nicht gefunden.', wxFail: 'Wetterdaten konnten nicht geladen werden (offline?).',
       wxNoGeo: 'Standort nicht verfügbar. Bitte einen Ort eingeben.', wxHereName: 'Dein Standort',
       wxRain14: 'Regen, 14 Tage', wxRain3: 'Regen, letzte 3 Tage', wxTemp7: 'Ø Temperatur, 7 Tage', wxFrost: 'Frostnächte (7 Tage)',
-      wxRainChart: 'Regen pro Tag (mm)', wxTempChart: 'Temperatur pro Tag, min–max (°C)', wxToday: 'heute', wxDaysAgo: 'vor 14 Tagen',
+      wxRainChart: 'Regen pro Tag (mm)', wxTempChart: 'Temperatur pro Tag, min–max (°C)', wxToday: 'heute', wxDaysAgo: 'vor 14 Tagen', wxAhead: '+7 Tage', wxForecast: 'Vorhersage',
+      rainWhen: iso => { const n = Math.round((new Date().setHours(12) - new Date(iso + 'T12:00')) / 864e5); return n === 0 ? 'von heute' : n === 1 ? 'von gestern' : `vom ${Pilzwetter.fmtDay(iso, 'de')}`; },
+      fNow: 'Jetzt ist Pilzzeit', fNowText: (when, mm) => `Der Regen ${when} (${mm} mm) lässt gerade Pilze wachsen — die nächsten Tage lohnen sich.`,
+      fComing: n => `Pilze in etwa ${n} Tag${n === 1 ? '' : 'en'}`,
+      fComingText: (when, mm, date) => `Nach dem Regen ${when} (${mm} mm) wachsen die Pilze — rechne um den ${date} mit den ersten Funden.`,
+      fAhead: n => `Regen angesagt — Pilze in etwa ${n} Tagen`,
+      fAheadText: (day, mm, lag, date) => `Für ${day} sind etwa ${mm} mm Regen vorhergesagt. Bei den aktuellen Temperaturen folgen die Pilze etwa ${lag} Tage später, um den ${date}.`,
+      fDry: 'Zu trocken', fDryText: n => `Seit ${n} Tagen kein nennenswerter Regen und keiner in Sicht. Röhrlinge erscheinen etwa 1–2 Wochen nach kräftigem Regen (ab etwa 10 mm).`,
+      fCold: 'Zu kalt', fColdText: 'Bei Frost und unter etwa 5 °C wachsen kaum noch neue Röhrlinge.',
+      fFrost: 'Frostnächte bremsen das Wachstum.',
       verdict: {
         good: ['Gutes Pilzwetter', 'Viel Regen und milde Temperaturen. Röhrlinge erscheinen meist 1–2 Wochen nach kräftigem Regen.'],
         medium: ['Mittelmäßig', ''],
@@ -491,17 +519,19 @@
       wxSource: 'Wetterdaten: Open-Meteo.com (CC BY 4.0), auf Basis nationaler Wetterdienste inkl. DWD. Nur eine Faustregel.',
       gHello: 'Willkommen!', gYourRegion: 'deiner Region', gLocating: 'Prüfe Wetter, Saison und Bäume in deiner Nähe…',
       gNoLocation: 'Gib deinen Standort frei oder trag einen Ort ein, dann bekommst du eine persönliche Empfehlung.', gEnterPlace: 'Ort eingeben ↓',
-      gGood: (p, s) => `Die Bedingungen in ${p} sind gerade ideal für: ${s}.`,
-      gMedium: (p, s, why) => `Die Bedingungen in ${p} sind mittelmäßig (${why}). Die besten Chancen hat: ${s}.`,
-      gPoor: (p, s, why) => `Gerade schlechtes Pilzwetter in ${p} (${why}). Nach dem nächsten kräftigen Regen lohnt sich vor allem: ${s}.`,
+      gNow: (p, s) => `In ${p} ist gerade Pilzzeit. Die besten Chancen hat: ${s}.`,
+      gComing: (p, s, when, n) => `Nach dem Regen ${when} wachsen in ${p} in etwa ${n} Tag${n === 1 ? '' : 'en'} Pilze — am ehesten: ${s}.`,
+      gAhead: (p, s, n) => `Regen ist angesagt — in etwa ${n} Tagen wachsen in ${p} Pilze, am ehesten: ${s}.`,
+      gDry: (p, s) => `Gerade zu trocken in ${p}. Nach dem nächsten kräftigen Regen lohnt sich vor allem: ${s}.`,
+      gCold: (p, s) => `In ${p} ist es zu kalt für neues Wachstum. Wenn überhaupt: ${s}.`,
       gNoWeather: s => `Gerade keine Wetterdaten (offline?). Nach Saison und Bäumen passt am besten: ${s}.`,
       gOffSeason: 'Gerade ist keine Röhrlingssaison. Die Hauptsaison geht von Juni bis November.',
-      gNoForest: p => `Laut Baumkarte gibt es rund um ${p} kaum Wald.`,
+      gNoForest: p => `Laut Pilzkarte gibt es rund um ${p} kaum Wald.`,
       gAlso: list => `Ebenfalls in Saison und mit passenden Bäumen in der Nähe: ${list}.`,
       gStats: (rain, temp) => `Letzte 14 Tage: ${rain} mm Regen, um ${temp} °C.`,
       gNoTrees: 'Baumdaten gibt es nur für Deutschland.',
       gMap: '🗺 Auf der Karte zeigen', gWeather: 'Wetter im Detail ↓',
-      gNote: 'Faustregel aus Wetter, Saison und Baumkarte — keine Garantie. Pilze nur mit sicherer Bestimmung essen.',
+      gNote: 'Faustregel aus Wetter, Saison und den Bäumen der Pilzkarte — keine Garantie. Pilze nur mit sicherer Bestimmung essen.',
       protect: {
         strict: { warn: '🛡 GESCHÜTZT — NICHT SAMMELN', sub: 'In Deutschland besonders geschützt (BArtSchV). Sammeln ist verboten.' },
         personal: { note: '🛡 In Deutschland geschützt: nur geringe Mengen für den Eigenbedarf (BArtSchV § 2).' },
@@ -509,7 +539,7 @@
       count: (n, t) => `${n} von ${t} Arten`,
       species: n => `${n} ${n === 1 ? 'Art' : 'Arten'}`,
       guideTitle: '☠ Giftige Röhrlinge erkennen',
-      aiLink: '📷 Per Foto bestimmen (KI)', mapLink: '🗺 Baumkarte', onMap: 'Wo seine Bäume wachsen →',
+      aiLink: '📷 Per Foto bestimmen (KI)', mapLink: '🗺 Pilzkarte', onMap: 'Wo seine Bäume wachsen →',
       guide: "\n<p class=\"rule\">Hauptregel für Anfänger: Keine Röhrlinge mit roten oder orangen Poren essen. Fast alle giftigen Röhrlinge Mitteleuropas gehören zu dieser Gruppe.</p>\n<p>Die Gruppe enthält auch gute Speisepilze (z. B. den Flockenstieligen Hexen-Röhrling), die Erfahrene essen. Für Anfänger beseitigt der Verzicht auf die ganze Gruppe fast das gesamte Risiko.</p>\n\n<h3>Die giftigen Rotporer</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Art</th><th>Merkmale</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satans-Röhrling</td><td>Kreideweiß-grauer Hut, blutrote Poren, bauchiger Stiel mit rotem Netz. Alte Exemplare riechen nach Aas. Sommer, auf Kalk unter Buche und Eiche.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolfs-Röhrling</td><td>Rosa-ockerfarbener Hut, rote Poren, <b>kein Netz</b> am Stiel, blauendes Fleisch.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purpur-Röhrling</td><td>Purpurroter Hut, Fleisch wird <b>sofort</b> tintenblau.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Ochsen-Röhrling</td><td>Auffallend schwer und massig, ockergelber Hut mit Purpurtönen, stark blauend.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Blasse bis rosa Hüte, rote Poren, meist auf Kalk in warmen Laubwäldern.</td></tr>\n</table></div>\n<p class=\"rule\">Der Geschmack hilft nicht: Alle diese Arten schmecken mild. Bei Rotporern keine Geschmacksprobe machen.</p>\n\n<h3>Ungenießbare Doppelgänger (verderben das Essen, nicht giftig)</h3>\n<ul>\n<li><b>Gallen-Röhrling</b> (<i>Tylopilus felleus</i>) vs. Steinpilz: <b>rosa</b> Poren und <b>dunkelbraunes</b> Netz am Stiel. Der Steinpilz hat weiße bis gelbgrüne Poren und ein <b>weißes</b> Netz.</li>\n<li><b>Schönfuß-Röhrling</b> (<i>Caloboletus calopus</i>): rot genetzter Stiel, aber <b>gelbe</b> Poren.</li>\n<li><b>Pfeffer-Röhrling</b> (<i>Chalciporus piperatus</i>): klein, rostbraune Poren, gelbes Fleisch in der Stielbasis.</li>\n</ul>\n<p>Diese lassen sich gefahrlos erkennen: Ein winziges Stück mit der Zungenspitze kosten, dann ausspucken.</p>\n\n<h3>„Kein Rot, keine Verfärbung = sicher“? Nein.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Kiefern-Dünen Spaniens und Portugals): blasse Poren, blaut nicht, giftig.</li>\n<li><b>Raufüße</b> (<i>Leccinum</i>): keine roten Poren, Fleisch wird grau bis schwarz. Ungenügend gegart haben sie Vergiftungen verursacht.</li>\n<li><b>Alle Röhrlinge sind roh giftig</b>, auch der Steinpilz.</li>\n<li><b>Alte, matschige oder schimmelige Exemplare</b> verursachen in der Praxis viele „Röhrlingsvergiftungen“: verdorbenes Eiweiß statt Gift, aber echte Magenkrämpfe.</li>\n<li>Umgekehrt stimmt es auch nicht: Viele gute Speisepilze blauen (Maronen-, Flockenstieliger Hexen-, Schwarzblauender Röhrling). <i>Neoboletus venenatus</i> (Japan) hat <b>gelbe</b> Poren und ist giftig.</li>\n</ul>\n\n<h3>Ist es überhaupt ein Röhrling?</h3>\n<p>Unten muss ein <b>Schwamm aus Röhren</b> sein, keine Lamellen. Der Kahle Krempling (<i>Paxillus involutus</i>) ist mit den Röhrlingen verwandt, hat aber Lamellen und kann eine tödliche Immunreaktion auslösen. Kartoffelboviste (<i>Scleroderma</i>) sind giftig; auf ihnen wächst der Schmarotzer-Röhrling.</p>\n\n<h3>Sicherere Anfängerregel</h3>\n<ol>\n<li>Eindeutig Röhren und Poren auf der Unterseite.</li>\n<li>Poren nicht rot oder orange.</li>\n<li>Ein winziges Stück an der Zungenspitze (ausgespuckt) schmeckt nicht bitter oder pfeffrig.</li>\n<li>Nur feste, frische Exemplare.</li>\n<li>Mindestens 15 Minuten garen.</li>\n<li>Von Pilzsachverständigen (DGfM) prüfen lassen.</li>\n</ol>\n<p>Auch dann ist das ein Filter, keine Garantie.</p>\n<button class=\"show\" data-show=\"poisonous\">Alle giftigen Arten zeigen ↓</button>",
       empty: 'Keine passenden Arten.',
       noPhoto: 'Kein freies Foto verfügbar',
@@ -628,6 +658,11 @@
   }
 
   let shownOrder = [];
+  let sortBy = 'popular';
+  try { sortBy = localStorage.getItem('sort') || sortBy; } catch {}
+  const sortSel = document.getElementById('sort');
+  sortSel.value = sortBy;
+  sortSel.addEventListener('change', () => { sortBy = sortSel.value; try { localStorage.setItem('sort', sortBy); } catch {} render(); });
   function render() {
     const t = T[lang];
     const term = q.value.trim().toLowerCase();
@@ -635,11 +670,15 @@
       (filter === 'all' || s.status === filter || (filter === 'protected' && s.protection) || (filter === 'season' && inSeason(s)) || (filter === 'beginner' && s.beginner)) &&
       (!term || [s.sci, s.en, s.de, s.group].join(' ').toLowerCase().includes(term)));
     const groups = new Map();
-    for (const s of shown) groups.set(s.group, [...(groups.get(s.group) ?? []), s]);
+    if (sortBy === 'popular') {
+      // Popularity = number of reported finds in Europe (GBIF), most popular first.
+      shown.sort((a, b) => seasonTotal(b) - seasonTotal(a));
+      groups.set(null, shown);
+    } else for (const s of shown) groups.set(s.group, [...(groups.get(s.group) ?? []), s]);
     shownOrder = [...groups.values()].flat();
     list.innerHTML = shown.length
       ? [...groups].map(([g, items]) =>
-          `<h2><i>${esc(g)}</i><small>${t.species(items.length)}</small></h2><div class="grid">${items.map(s => card(s, BOLETES.indexOf(s))).join('')}</div>`).join('')
+          `<h2>${g ? `<i>${esc(g)}</i>` : t.popularHead}<small>${g ? t.species(items.length) : t.popularNote}</small></h2><div class="grid">${items.map(s => card(s, BOLETES.indexOf(s))).join('')}</div>`).join('')
       : `<p class="empty">${t.empty}</p>`;
     document.getElementById('count').textContent = t.count(shown.length, BOLETES.length);
   }
@@ -686,38 +725,58 @@
   }
   const assess = Pilzwetter.assess;
 
+  // Headline + explanation for the fruiting forecast (state from Pilzwetter.assess).
+  function fruitText(f) {
+    const t = T[lang], P = Pilzwetter, when = f.rainDay && t.rainWhen(f.rainDay);
+    const out = {
+      now: [t.fNow, t.fNowText(when, f.mm.toFixed(0))],
+      coming: [t.fComing(f.inDays), t.fComingText(when, f.mm.toFixed(0), P.dateIn(f.inDays, lang))],
+      rainAhead: [t.fAhead(f.inDays), t.fAheadText(f.rainDay && P.fmtDay(f.rainDay, lang), f.mm.toFixed(0), f.lag, P.dateIn(f.inDays, lang))],
+      dry: [t.fDry, t.fDryText(f.dryDays)],
+      cold: [t.fCold, t.fColdText],
+    }[f.state];
+    if (f.frost) out[1] += ' ' + t.fFrost;
+    return out;
+  }
+
   function rainChart(days, t) {
     const W = 300, H = 80, slot = W / days.length, max = Math.max(10, ...days.map(d => d.rain));
+    const tx = (wxLast.today + .5) * slot;
+    const marks = `<line class="today" x1="${tx}" x2="${tx}" y1="0" y2="${H}"/>
+      <text x="0" y="${H + 13}">${t.wxDaysAgo}</text><text x="${tx}" y="${H + 13}" text-anchor="middle">${t.wxToday}</text>
+      <text x="${W}" y="${H + 13}" text-anchor="end">${t.wxAhead}</text>`;
     const bars = days.map((d, i) => {
-      const bh = (d.rain / max) * H;
-      return `<g><title>${d.day}: ${d.rain.toFixed(1)} mm</title>
+      const bh = (d.rain / max) * H, fc = i > wxLast.today ? ' fc' : '';
+      return `<g><title>${Pilzwetter.fmtDay(d.day, lang)}: ${d.rain.toFixed(1)} mm${fc ? ' (' + t.wxForecast + ')' : ''}</title>
         <rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H}"/>
-        <rect class="rain" x="${i * slot + 2}" y="${H - bh}" width="${slot - 4}" height="${bh}" rx="2"/></g>`;
+        <rect class="rain${fc}" x="${i * slot + 1.5}" y="${H - bh}" width="${slot - 3}" height="${bh}" rx="2"/></g>`;
     }).join('');
     return `<svg viewBox="0 0 ${W} ${H + 16}" role="img" aria-label="${t.wxRainChart}">
       <line class="grid" x1="0" x2="${W}" y1="0" y2="0"/><text x="0" y="-3">${Math.round(max)} mm</text>
-      <line class="grid" x1="0" x2="${W}" y1="${H}" y2="${H}"/>${bars}
-      <text x="0" y="${H + 13}">${t.wxDaysAgo}</text><text x="${W}" y="${H + 13}" text-anchor="end">${t.wxToday}</text></svg>`;
+      <line class="grid" x1="0" x2="${W}" y1="${H}" y2="${H}"/>${bars}${marks}</svg>`;
   }
 
   function tempChart(days, t) {
     const W = 300, H = 80, slot = W / days.length;
+    const tx = (wxLast.today + .5) * slot;
+    const marks = `<line class="today" x1="${tx}" x2="${tx}" y1="0" y2="${H}"/>
+      <text x="0" y="${H + 13}">${t.wxDaysAgo}</text><text x="${tx}" y="${H + 13}" text-anchor="middle">${t.wxToday}</text>
+      <text x="${W}" y="${H + 13}" text-anchor="end">${t.wxAhead}</text>`;
     const lo = Math.min(0, ...days.map(d => d.tmin)), hi = Math.max(20, ...days.map(d => d.tmax));
     const y = v => H - ((v - lo) / (hi - lo)) * H;
-    const bars = days.map((d, i) => `<g><title>${d.day}: ${d.tmin.toFixed(0)}–${d.tmax.toFixed(0)} °C</title>
+    const bars = days.map((d, i) => `<g><title>${Pilzwetter.fmtDay(d.day, lang)}: ${d.tmin.toFixed(0)}–${d.tmax.toFixed(0)} °C</title>
         <rect class="hit" x="${i * slot}" y="0" width="${slot}" height="${H}"/>
-        <rect class="temp" x="${i * slot + 3}" y="${y(d.tmax)}" width="${slot - 6}" height="${Math.max(2, y(d.tmin) - y(d.tmax))}" rx="3"/></g>`).join('');
+        <rect class="temp${i > wxLast.today ? ' fc' : ''}" x="${i * slot + 2}" y="${y(d.tmax)}" width="${slot - 4}" height="${Math.max(2, y(d.tmin) - y(d.tmax))}" rx="3"/></g>`).join('');
     return `<svg viewBox="0 0 ${W} ${H + 16}" role="img" aria-label="${t.wxTempChart}">
       <line class="grid" x1="0" x2="${W}" y1="0" y2="0"/><text x="0" y="-3">${Math.round(hi)} °C</text>
       <line class="zero" x1="0" x2="${W}" y1="${y(0)}" y2="${y(0)}"/><text x="${W}" y="${y(0) - 3}" text-anchor="end">0 °C</text>
-      ${bars}<text x="0" y="${H + 13}">${t.wxDaysAgo}</text><text x="${W}" y="${H + 13}" text-anchor="end">${t.wxToday}</text></svg>`;
+      ${bars}${marks}</svg>`;
   }
 
   function showWeather() {
     if (!wxLast) return;
-    const t = T[lang], a = assess(wxLast.days), [title, base] = t.verdict[a.level];
-    const icon = { good: '🍄', medium: '🌤', poor: '🚫' }[a.level];
-    const reason = [base, a.why.map(k => t.why[k]).join(', ')].filter(Boolean).join(' ');
+    const t = T[lang], a = assess(wxLast.days, wxLast.today), [title, reason] = fruitText(a.fruit);
+    const icon = { now: '🍄', coming: '🌱', rainAhead: '🌧', dry: '🌵', cold: '❄️' }[a.fruit.state];
     const nSeason = BOLETES.filter(inSeason).length;
     const off = NOW < 5 || NOW > 10;
     wxOut.innerHTML = `
@@ -793,18 +852,27 @@
     const nameOf = s => esc(((lang === 'de' ? s.de : s.en) || s.sci).split(',')[0].replace('—', s.sci));
     const link = s => `<a href="#${encodeURIComponent(s.sci)}">${nameOf(s)}</a>`;
     const place = g.name === t.wxHereName ? t.gYourRegion : esc(g.name);
-    const a = g.wx ? Pilzwetter.assess(g.wx.days) : null;
+    const a = g.wx ? Pilzwetter.assess(g.wx.days, g.wx.today) : null;
     const why = a ? a.why.map(k => t.why[k]).join(', ') : '';
     const [top, ...more] = g.picks.map(p => p.s);
     let head, sub = '';
     if (g.cell && g.forest < 5) head = t.gNoForest(place);
     else if (!top) head = t.gOffSeason;
     else if (!a) head = t.gNoWeather(link(top));
-    else head = t[{ good: 'gGood', medium: 'gMedium', poor: 'gPoor' }[a.level]](place, link(top), why);
+    else {
+      const f = a.fruit, when = f.rainDay && t.rainWhen(f.rainDay);
+      head = {
+        now: () => t.gNow(place, link(top)),
+        coming: () => t.gComing(place, link(top), when, f.inDays),
+        rainAhead: () => t.gAhead(place, link(top), f.inDays),
+        dry: () => t.gDry(place, link(top)),
+        cold: () => t.gCold(place, link(top)),
+      }[f.state]();
+    }
     if (top && more.length) sub += t.gAlso(more.map(link).join(', ')) + ' ';
     if (a) sub += t.gStats(a.rain14.toFixed(0), a.tmean7.toFixed(0));
     if (!g.cell) sub += ' ' + t.gNoTrees;
-    const icon = !a ? '🍄' : { good: '🍄', medium: '🌤', poor: '🌵' }[a.level];
+    const icon = !a ? '🍄' : { now: '🍄', coming: '🌱', rainAhead: '🌧', dry: '🌵', cold: '❄️' }[a.fruit.state];
     greetEl.className = 'greet ' + (a ? a.level : 'medium');
     greetEl.innerHTML = `<button class="g-close" aria-label="${t.close}">✕</button>
       <div class="g-icon" aria-hidden="true">${icon}</div>
