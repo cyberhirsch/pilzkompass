@@ -98,7 +98,7 @@ jobs:
           mv pilzkompass-android-apk/app-debug.apk "Pilzkompass-$TAG.apk"
           mv pilzkompass-ios-unsigned-ipa/Pilzkompass-unsigned.ipa "Pilzkompass-$TAG-unsigned.ipa"
           gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --prerelease --title "Pilzkompass $TAG"             --notes-file - "Pilzkompass-$TAG.apk" "Pilzkompass-$TAG-unsigned.ipa" <<'NOTES'
-          Erste Testversion (Alpha). Nicht für Essensentscheidungen verwenden — jeden Fund von Pilzsachverständigen prüfen lassen.
+          Testversion (Alpha). Nicht für Essensentscheidungen verwenden — jeden Fund von Pilzsachverständigen prüfen lassen.
 
           **Android:** APK herunterladen und installieren („Unbekannte Apps installieren“ erlauben). Debug-signiert.
           **iOS:** unsignierte IPA — vor der Installation mit eigener Apple-ID signieren (z. B. Sideloadly oder AltStore).
