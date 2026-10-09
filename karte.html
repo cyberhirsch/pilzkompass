@@ -36,8 +36,15 @@
   .btn { border: 1px solid var(--line); background: var(--surface-2); color: var(--text); border-radius: 999px; padding: 7px 14px; font: 600 13px Inter, sans-serif; cursor: pointer; }
 
   main { position: relative; flex: 1; min-height: 360px; }
-  #map { position: absolute; inset: 0; background: #ddd; }
+  #map { position: absolute; inset: 0; background: #0e0d0b; }
   .leaflet-image-layer, .leaflet-tile { image-rendering: pixelated; }
+  .base-dark .leaflet-tile, .leaflet-tile.base-dark, .base-dark { image-rendering: auto; }
+  .base-dark { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) sepia(.35) saturate(.6); }
+  .leaflet-bar a, .leaflet-bar a:hover { background: var(--surface); color: var(--text); border-bottom-color: var(--line); }
+  .leaflet-bar a:hover { background: var(--surface-2); }
+  .leaflet-bar { border-color: var(--line) !important; }
+  .leaflet-container .leaflet-control-attribution { background: rgba(20, 17, 13, .85); color: var(--muted); }
+  .leaflet-container .leaflet-control-attribution a { color: var(--text); }
   .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 6px; }
   .legend .row { margin-top: 4px; }
   .here { margin-bottom: 10px; padding: 6px 8px; border-radius: 6px; background: var(--surface-2); }
@@ -53,7 +60,7 @@
   .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
   .pp h3 { margin: 0 0 6px; font: 700 13px Inter, sans-serif; color: var(--muted); }
   .mix { display: grid; grid-template-columns: auto 1fr auto; gap: 3px 8px; align-items: center; margin-bottom: 10px; }
-  .mix .b { height: 8px; border-radius: 0 4px 4px 0; background: #b5652a; }
+  .mix .b { height: 8px; border-radius: 0 4px 4px 0; background: var(--caution); }
   .mix .v { color: var(--muted); text-align: right; }
   .fit { list-style: none; margin: 0; padding: 0; }
   .fit li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid var(--line); }
@@ -129,7 +136,8 @@
 
   const HOST = TreeGrid.HOST, NOT_IN_DE = TreeGrid.NOT_IN_DE;
   const finds = s => s.season ? s.season.months.reduce((a, b) => a + b, 0) : 0;
-  const RAMP = [[255, 237, 200], [181, 101, 42], [74, 28, 6]];  // one hue, light → dark (sequential)
+  // One hue (the site's amber), dark → bright: on the dark base map more host trees = brighter.
+  const RAMP = [[96, 62, 22], [224, 168, 58], [255, 236, 190]];
 
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
   const store = {
@@ -142,8 +150,10 @@
   const map = L.map('map', { minZoom: 5, maxZoom: 17 }).setView([51.2, 10.4], 6);
   const DETAIL_ZOOM = 10;   // from here on the 10 m tiles replace the 1 km overview
   let W = null;             // current weights per map class (index 0..10)
+  // Standard OpenStreetMap tiles, darkened and warmed by a CSS filter (.base-dark) to match the site.
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Bäume/Trees: Thünen-Institut (CC BY 4.0)',
+    maxZoom: 19, className: 'base-dark',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Bäume/Trees: Thünen-Institut (CC BY 4.0)',
   }).addTo(map);
 
   // Weights over map classes for one bolete; several codes may hit the same class → keep the max.
@@ -194,7 +204,7 @@
   }
 
   // ----- 10 m tiles: each pixel stores a tree class (red = class * 20); recoloured here -----
-  const FULL = [181, 101, 42], PART = [232, 180, 120];
+  const FULL = [236, 178, 64], PART = [150, 104, 40];
   function paint(canvas) {
     if (!canvas._cls || !W) return;
     const ctx = canvas.getContext('2d'), d = ctx.createImageData(256, 256), px = d.data;
@@ -204,7 +214,7 @@
       const w = W[c - 1];
       if (!w) continue;
       const [r, g, b] = w >= 1 ? FULL : PART;
-      px[i * 4] = r; px[i * 4 + 1] = g; px[i * 4 + 2] = b; px[i * 4 + 3] = w >= 1 ? 220 : 170;
+      px[i * 4] = r; px[i * 4 + 1] = g; px[i * 4 + 2] = b; px[i * 4 + 3] = w >= 1 ? 150 : 110;
     }
     ctx.putImageData(d, 0, 0);
   }
