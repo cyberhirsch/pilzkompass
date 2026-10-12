@@ -46,10 +46,43 @@
   .btn { background: var(--caution); color: #14110d; border: 0; border-radius: 999px; padding: 10px 20px; font: 700 14px Inter, sans-serif; cursor: pointer; }
   .btn.alt { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); }
   .btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .views { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .views figure { margin: 0; width: 88px; font-size: 12px; color: var(--muted); }
+  .views svg { width: 64px; height: 64px; display: block; margin: 0 auto 4px; }
 
   .result { display: grid; grid-template-columns: minmax(0, 260px) 1fr; gap: 20px; align-items: start; }
   @media (max-width: 640px) { .result { grid-template-columns: 1fr; } }
-  .shot { width: 100%; border-radius: var(--radius); display: block; }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .shots figure { margin: 0; font-size: 11px; color: var(--muted); line-height: 1.3; }
+  .shots img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 3px; }
+  .shots .pz { color: var(--poison); font-weight: 700; }
+
+  /* Guided camera: three views, each with a see-through mushroom outline to line the find up with. */
+  #cam { position: fixed; inset: 0; z-index: 50; background: #000; overflow: hidden; touch-action: none; }
+  #cam[hidden] { display: none; }
+  #cam video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #cam .frame { position: absolute; left: 50%; top: 46%; width: min(86vw, 58vh); aspect-ratio: 1; transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, .55); border-radius: 18px; box-shadow: 0 0 0 100vmax rgba(10, 8, 6, .5); }
+  #cam .guide svg { width: 100%; height: 100%; display: block; opacity: .6; }
+  #cam .nocam { position: absolute; left: 0; right: 0; top: 46%; transform: translateY(calc(min(43vw, 29vh) + 14px)); text-align: center; color: var(--muted); font-size: 13px; padding: 0 24px; }
+  .camtop { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 12px; padding: max(14px, env(safe-area-inset-top)) 14px 10px; background: linear-gradient(rgba(0,0,0,.7), transparent); }
+  .camtop .x { background: rgba(0,0,0,.4); color: #fff; border: 1px solid rgba(255,255,255,.3); width: 38px; height: 38px; border-radius: 50%; font-size: 18px; cursor: pointer; flex: none; }
+  .steps { display: flex; gap: 8px; margin-left: auto; }
+  .steps button { width: 52px; height: 52px; padding: 0; border-radius: 10px; border: 2px solid rgba(255,255,255,.25); background: rgba(0,0,0,.45); overflow: hidden; cursor: pointer; position: relative; }
+  .steps button.cur { border-color: var(--caution); }
+  .steps button.ok::after { content: '✓'; position: absolute; right: 2px; bottom: 0; color: #fff; font: 800 13px Inter, sans-serif; text-shadow: 0 0 3px #000; }
+  .steps img, .steps svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .camtip { position: absolute; left: 0; right: 0; bottom: calc(max(20px, env(safe-area-inset-bottom)) + 96px); text-align: center; padding: 0 20px; color: #fff; text-shadow: 0 1px 4px #000; }
+  .camtip b { display: block; font: 700 22px Fraunces, Georgia, serif; }
+  .camtip small { display: block; color: var(--caution); font: 700 11px Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+  .camtip span { font-size: 14px; }
+  .cambar { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: space-around; padding: 14px 20px max(20px, env(safe-area-inset-bottom)); }
+  .cambar .side { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.3); color: #fff; font-size: 20px; cursor: pointer; }
+  .cambar .side input { display: none; }
+  .shutter { width: 74px; height: 74px; border-radius: 50%; border: 5px solid #fff; background: var(--caution); cursor: pointer; box-shadow: 0 0 0 3px rgba(0,0,0,.35); }
+  .shutter:active { transform: scale(.94); }
+  .flash { animation: flash .25s; }
+  @keyframes flash { from { background: #fff; } }
   .status { color: var(--muted); font-size: 14px; margin: 8px 0; }
 
   .pred { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; margin-bottom: 10px; }
@@ -95,17 +128,15 @@
 
   <div class="drop" id="drop">
     <span class="big" data-i18n="pick"></span>
-    <div class="btns">
-      <label class="btn"><input type="file" class="file" accept="image/*" capture="environment"><span data-i18n="cameraBtn"></span></label>
-      <label class="btn alt"><input type="file" class="file" accept="image/*"><span data-i18n="pickBtn"></span></label>
-    </div>
+    <div class="views" id="views"></div>
+    <div class="btns"><button class="btn" id="start" data-i18n="cameraBtn"></button></div>
     <span class="small" data-i18n="pickHint"></span>
   </div>
 
   <section id="out" hidden>
     <div class="result">
       <div>
-        <img class="shot" id="shot" alt="">
+        <div class="shots" id="shots"></div>
         <p class="status" id="status"></p>
       </div>
       <div id="preds"></div>
@@ -116,6 +147,20 @@
   <footer data-i18n="footer"></footer>
 </div>
 
+<div id="cam" hidden>
+  <video id="video" playsinline muted autoplay></video>
+  <div class="frame"><div class="guide" id="guide"></div></div>
+  <div class="nocam" id="nocam" hidden></div>
+  <div class="camtop"><button class="x" id="camClose" aria-label="Close">✕</button><div class="steps" id="steps"></div></div>
+  <div class="camtip"><small id="stepNo"></small><b id="stepTitle"></b><span id="stepHint"></span></div>
+  <div class="cambar">
+    <label class="side" id="galleryBtn"><input type="file" accept="image/*" id="camPick"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg></label>
+    <button class="shutter" id="shutter" aria-label="Foto"></button>
+    <label class="side" style="visibility:hidden"></label>
+  </div>
+  <input type="file" accept="image/*" capture="environment" id="camNative" hidden>
+</div>
+
 <script src="data.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/ort.wasm.min.js"></script>
 <script>
@@ -123,17 +168,27 @@
     de: {
       back: '← Alle Röhrlinge',
       title: 'Bestimmungs<span>hilfe</span>',
-      lede: 'Foto eines Pilzes aufnehmen oder hochladen. Eine KI schlägt die wahrscheinlichsten Arten vor — als erste Eingrenzung.',
+      lede: 'Den Pilz aus drei Blickwinkeln fotografieren. Eine KI schlägt die wahrscheinlichsten Arten vor — als erste Eingrenzung.',
       danger: '<strong>Nur zur ersten Eingrenzung — niemals zur Essbarkeits-Entscheidung.</strong> Die KI verwechselt Doppelgänger (z. B. Steinpilz und Gallen-Röhrling, die giftigen Rotporer untereinander). Jeden Fund von Pilzsachverständigen (DGfM) prüfen lassen.',
-      pick: 'Foto aufnehmen oder auswählen',
-      cameraBtn: '📷 Foto aufnehmen', pickBtn: 'Aus Galerie wählen',
-      pickHint: 'Am besten: ganzer Pilz von der Seite, Poren sichtbar, scharf und gut beleuchtet. Das Foto bleibt auf deinem Gerät.',
+      pick: 'Drei Fotos, drei Ansichten',
+      cameraBtn: '📷 Pilz fotografieren',
+      pickHint: 'Die Kamera blendet für jede Ansicht eine Schablone ein. Scharf und gut beleuchtet; die Fotos bleiben auf deinem Gerät.',
+      views: [
+        ['Von der Seite', 'Ganzer Pilz mit Stiel und Stielbasis — vorsichtig herausdrehen, nicht abschneiden.'],
+        ['Hut von oben', 'Hutoberseite gerade von oben, der Hut füllt den Kreis.'],
+        ['Unterseite', 'Pilz umdrehen: Poren bzw. Röhren und Stielansatz scharf zeigen.'],
+      ],
+      stepNo: (i, n) => `Ansicht ${i} von ${n}`,
+      nocam: 'Live-Kamera nicht verfügbar — der Auslöser öffnet die Kamera-App, der linke Knopf die Galerie.',
+      view: i => ['Seite', 'Oben', 'Unten'][i],
+      disagree: '<strong>Die drei Ansichten passen nicht zur selben Art.</strong> Das Ergebnis ist unsicher; Fotos schärfer oder näher wiederholen.',
+      viewPoison: v => `<strong>Ansicht „${v}“ sieht nach einer giftigen Art aus.</strong> Behandle den Fund als giftig, bis Pilzsachverständige etwas anderes sagen.`,
       loading: 'KI wird geladen (einmalig ca. 25 MB)…',
       running: 'Analysiere…',
       done: ms => `Fertig in ${ms} ms — läuft komplett auf diesem Gerät.`,
       failed: 'Die KI konnte nicht geladen werden. Bitte Internetverbindung prüfen und neu laden.',
       toCard: 'Zur Art →', starTip: 'Anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger',
-      low: '<strong>Unsicheres Ergebnis.</strong> Der beste Vorschlag liegt unter 50 %. Anderes Foto versuchen: ganzer Pilz, Poren und Stiel sichtbar.',
+      low: '<strong>Unsicheres Ergebnis.</strong> Der beste Vorschlag liegt unter 50 %. Fotos wiederholen: schärfer, näher, besser beleuchtet.',
       poisonSum: p => `<strong>Zusammen ${p} % Wahrscheinlichkeit für eine giftige Art</strong> unter den Vorschlägen. Behandle den Fund als giftig, bis Pilzsachverständige etwas anderes sagen.`,
       groups: {
         'rare-poisonous': ['Seltene giftige Röhrlinge', 'Eine der seltenen giftigen Arten:'],
@@ -149,17 +204,27 @@
     en: {
       back: '← All boletes',
       title: 'Identification <span>aid</span>',
-      lede: 'Take or upload a photo of a mushroom. An AI suggests the most likely species, as a first narrowing-down.',
+      lede: 'Photograph the mushroom from three angles. An AI suggests the most likely species, as a first narrowing-down.',
       danger: '<strong>Only for a first narrowing-down — never for deciding edibility.</strong> The AI confuses look-alikes (e.g. cep and bitter bolete, or the poisonous red-pored boletes with each other). Have every find checked by a mushroom expert (DGfM).',
-      pick: 'Take or choose a photo',
-      cameraBtn: '📷 Take photo', pickBtn: 'Choose from gallery',
-      pickHint: 'Best: whole mushroom from the side, pores visible, sharp and well lit. The photo stays on your device.',
+      pick: 'Three photos, three views',
+      cameraBtn: '📷 Photograph mushroom',
+      pickHint: 'The camera shows a template for each view. Sharp and well lit; the photos stay on your device.',
+      views: [
+        ['From the side', 'Whole mushroom with stem and stem base — twist it out gently, do not cut it.'],
+        ['Cap from above', 'Top of the cap straight from above, filling the circle.'],
+        ['Underside', 'Turn it over: show pores or tubes and the stem top sharply.'],
+      ],
+      stepNo: (i, n) => `View ${i} of ${n}`,
+      nocam: 'Live camera not available — the shutter opens the camera app, the left button the gallery.',
+      view: i => ['Side', 'Top', 'Under'][i],
+      disagree: '<strong>The three views do not point to the same species.</strong> The result is uncertain; retake sharper or closer photos.',
+      viewPoison: v => `<strong>The “${v}” view looks like a poisonous species.</strong> Treat the find as poisonous until a mushroom expert says otherwise.`,
       loading: 'Loading AI (one-time, about 25 MB)…',
       running: 'Analysing…',
       done: ms => `Done in ${ms} ms — runs entirely on this device.`,
       failed: 'The AI could not be loaded. Please check your connection and reload.',
       toCard: 'Go to species →', starTip: 'Beginner-friendly: tastes good, no poisonous or inedible look-alike',
-      low: '<strong>Uncertain result.</strong> The best suggestion is below 50%. Try another photo: whole mushroom, pores and stem visible.',
+      low: '<strong>Uncertain result.</strong> The best suggestion is below 50%. Retake the photos: sharper, closer, better lit.',
       poisonSum: p => `<strong>Together ${p}% probability of a poisonous species</strong> among the suggestions. Treat the find as poisonous until a mushroom expert says otherwise.`,
       groups: {
         'rare-poisonous': ['Rare poisonous boletes', 'One of the rare poisonous species:'],
@@ -236,25 +301,32 @@
     return exp.map(v => v / sum);
   }
 
-  async function analyse(file) {
+  // Runs the model on each view and averages the probabilities.
+  async function analyse(blobs) {
     const t = T[lang];
     const out = document.getElementById('out');
     const status = document.getElementById('status');
-    const shot = document.getElementById('shot');
     out.hidden = false;
+    last = null;
     document.getElementById('preds').innerHTML = '';
     document.getElementById('extra').innerHTML = '';
-    shot.src = URL.createObjectURL(file);
+    urls.forEach(u => URL.revokeObjectURL(u));
+    urls = blobs.map(b => URL.createObjectURL(b));
+    renderShots(null);
+    out.scrollIntoView({ behavior: 'smooth', block: 'start' });
     try {
       status.textContent = t.loading;
       await load();
       status.textContent = t.running;
       const t0 = performance.now();
-      const res = await session.run({ image: await toTensor(file) });
-      const probs = softmax(res.logits.data);
+      const views = [];
+      for (const b of blobs) views.push(softmax((await session.run({ image: await toTensor(b) })).logits.data));
+      const probs = views[0].map((_, i) => views.reduce((s, v) => s + v[i], 0) / views.length);
+      const isPoison = i => POISON.has(describe(classes[i]).status);
       last = {
         results: probs.map((p, i) => ({ i, p })).sort((a, b) => b.p - a.p).slice(0, 5),
-        poison: probs.reduce((sum, p, i) => sum + (POISON.has(describe(classes[i]).status) ? p : 0), 0),
+        poison: probs.reduce((sum, p, i) => sum + (isPoison(i) ? p : 0), 0),
+        views: views.map(v => { const i = v.indexOf(Math.max(...v)); return { i, p: v[i], poison: isPoison(i) }; }),
         ms: Math.round(performance.now() - t0),
       };
       showResults();
@@ -262,6 +334,15 @@
       console.error(err);
       status.textContent = t.failed;
     }
+  }
+
+  // The three photos, each with its own best guess underneath.
+  function renderShots(views) {
+    const t = T[lang];
+    document.getElementById('shots').innerHTML = urls.map((u, k) => {
+      const v = views?.[k], d = v && describe(classes[v.i]);
+      return `<figure><img src="${u}" alt=""><b>${t.view(k)}</b>${d ? `<br><span class="${v.poison ? 'pz' : ''}">${d.plain ? esc(d.sci) : `<i>${esc(d.sci)}</i>`} ${Math.round(v.p * 100)} %</span>` : ''}</figure>`;
+    }).join('');
   }
 
   // Turns a model class into what the page shows: name, names line, status, species card, etc.
@@ -289,6 +370,7 @@
     if (!last) return;
     const t = T[lang];
     document.getElementById('status').textContent = t.done(last.ms);
+    renderShots(last.views);
     document.getElementById('preds').innerHTML = last.results.map(({ i, p }) => {
       const d = describe(classes[i]);
       const st = d.status;
@@ -312,6 +394,8 @@
 
     const extra = [];
     if (last.poison >= 0.1) extra.push(`<div class="box danger">${t.poisonSum(Math.round(last.poison * 100))}</div>`);
+    else last.views.forEach((v, k) => { if (v.poison) extra.push(`<div class="box danger">${t.viewPoison(t.views[k][0])}</div>`); });
+    if (new Set(last.views.map(v => v.i)).size > 1) extra.push(`<div class="box note">${t.disagree}</div>`);
     if (last.results[0].p < 0.5) extra.push(`<div class="box note">${t.low}</div>`);
     document.getElementById('extra').innerHTML = extra.join('');
   }
@@ -323,21 +407,150 @@
     document.title = 'Pilzkompass — ' + (l === 'de' ? 'Bestimmungshilfe' : 'Identification aid');
     document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = T[l][el.dataset.i18n]);
     document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
+    renderViews();
+    if (!cam.hidden) renderCam();
     showResults();
   }
 
   document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
-  const drop = document.getElementById('drop');
-  document.querySelectorAll('.file').forEach(inp => inp.addEventListener('change', e => {
-    if (e.target.files[0]) analyse(e.target.files[0]);
+  // ---------- Guided camera: side, top, underside ----------
+  // See-through outlines (viewBox 200×200) the user lines the mushroom up with.
+  const dots = (() => {
+    let d = '';
+    for (let r = 30; r <= 68; r += 9)
+      for (let n = Math.round(r / 3.2), k = 0; k < n; k++) {
+        const a = (k + (r % 2) / 2) / n * 2 * Math.PI;
+        d += `<circle cx="${(100 + r * Math.cos(a)).toFixed(1)}" cy="${(100 + r * Math.sin(a)).toFixed(1)}" r="2.2"/>`;
+      }
+    return d;
+  })();
+  const OUTLINES = [
+    // side: domed cap over a thick, bulbous stem, on the ground
+    `<path d="M28 96C28 46 68 24 100 24s72 22 72 72c-20 8-124 8-144 0Z"/>
+     <path d="M40 99c30 12 90 12 120 0" stroke-dasharray="3 5"/>
+     <path d="M80 104c-6 28-18 54-8 76 12 9 44 9 56 0 10-22-2-48-8-76"/>
+     <path d="M30 186h140" stroke-dasharray="2 6" fill="none"/>`,
+    // top: round cap, slightly irregular, with a soft highlight
+    `<path d="M100 22c44 0 80 32 78 78s-36 78-80 78-78-34-76-80 34-76 78-76Z"/>
+     <path d="M62 58c12-12 28-18 44-18" fill="none" stroke-dasharray="3 6"/>`,
+    // underside: cap rim, pore field and the stem top in the middle
+    `<circle cx="100" cy="100" r="78"/>
+     <g fill="currentColor" stroke="none" opacity=".55">${dots}</g>
+     <circle cx="100" cy="100" r="20" fill="rgba(255,255,255,.18)"/>`,
+  ];
+  const outline = (k, color = '#fff') => `<svg viewBox="0 0 200 200" fill="rgba(255,255,255,.08)" stroke="currentColor" color="${color}"
+    stroke-width="2.5" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${OUTLINES[k]}</svg>`;
+
+  const cam = document.getElementById('cam'), video = document.getElementById('video');
+  const shutter = document.getElementById('shutter'), camNative = document.getElementById('camNative');
+  let stream = null, step = 0, shots = [null, null, null], urls = [], thumbs = [null, null, null];
+
+  function renderViews() {
+    document.getElementById('views').innerHTML = T[lang].views
+      .map(([title], k) => `<figure>${outline(k, 'var(--caution)')}${title}</figure>`).join('');
+  }
+
+  function renderCam() {
+    const t = T[lang];
+    document.getElementById('guide').innerHTML = outline(step);
+    document.getElementById('stepNo').textContent = t.stepNo(step + 1, 3);
+    document.getElementById('stepTitle').textContent = t.views[step][0];
+    document.getElementById('stepHint').textContent = t.views[step][1];
+    document.getElementById('nocam').textContent = t.nocam;
+    document.getElementById('steps').innerHTML = shots.map((s, k) =>
+      `<button data-k="${k}" class="${k === step ? 'cur' : ''} ${s ? 'ok' : ''}" aria-label="${esc(t.views[k][0])}">${s ? `<img src="${thumbs[k]}" alt="">` : outline(k)}</button>`).join('');
+  }
+
+  async function openCam() {
+    shots = [null, null, null];
+    thumbs.forEach(u => u && URL.revokeObjectURL(u));
+    thumbs = [null, null, null];
+    step = 0;
+    cam.hidden = false;
+    document.body.style.overflow = 'hidden';
+    history.pushState({ cam: true }, '');
+    renderCam();
+    load().catch(() => {});  // warm up the model while the user aims
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: false,
+        video: { facingMode: { ideal: 'environment' }, width: { ideal: 1920 }, height: { ideal: 1440 } } });
+      if (cam.hidden) return stopStream();
+      video.srcObject = stream;
+      await video.play();
+      document.getElementById('nocam').hidden = true;
+    } catch (err) {
+      console.warn('camera', err);
+      stopStream();
+      document.getElementById('nocam').hidden = false;
+    }
+  }
+
+  function stopStream() {
+    stream?.getTracks().forEach(tr => tr.stop());
+    stream = null;
+    video.srcObject = null;
+  }
+
+  function closeCam(fromHistory) {
+    if (cam.hidden) return;
+    stopStream();
+    cam.hidden = true;
+    document.body.style.overflow = '';
+    if (!fromHistory && history.state?.cam) history.back();
+  }
+
+  // Grabs exactly the square the frame shows on screen (the video is object-fit: cover).
+  function grab() {
+    const vw = video.videoWidth, vh = video.videoHeight;
+    const box = video.getBoundingClientRect(), fr = document.querySelector('#cam .frame').getBoundingClientRect();
+    const scale = Math.max(box.width / vw, box.height / vh);
+    const ox = (box.width - vw * scale) / 2, oy = (box.height - vh * scale) / 2;
+    const side = Math.min(fr.width / scale, vw, vh);
+    const sx = Math.max(0, Math.min(vw - side, (fr.left - box.left - ox) / scale));
+    const sy = Math.max(0, Math.min(vh - side, (fr.top - box.top - oy) / scale));
+    const c = document.createElement('canvas');
+    c.width = c.height = Math.min(1024, Math.round(side));
+    c.getContext('2d').drawImage(video, sx, sy, side, side, 0, 0, c.width, c.height);
+    return new Promise(res => c.toBlob(res, 'image/jpeg', 0.9));
+  }
+
+  function take(blob) {
+    if (!blob) return;
+    shots[step] = blob;
+    if (thumbs[step]) URL.revokeObjectURL(thumbs[step]);
+    thumbs[step] = URL.createObjectURL(blob);
+    const next = shots.findIndex(s => !s);
+    if (next < 0) { closeCam(); analyse(shots); return; }
+    step = next;
+    renderCam();
+  }
+
+  shutter.addEventListener('click', async () => {
+    if (!stream || !video.videoWidth) return camNative.click();
+    cam.classList.remove('flash'); void cam.offsetWidth; cam.classList.add('flash');
+    take(await grab());
+  });
+  [camNative, document.getElementById('camPick')].forEach(inp => inp.addEventListener('change', e => {
+    if (e.target.files[0]) take(e.target.files[0]);
     e.target.value = '';  // allow picking the same photo again
   }));
+  document.getElementById('steps').addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (b) { step = +b.dataset.k; renderCam(); }  // tap a view to (re)take it
+  });
+  document.getElementById('camClose').addEventListener('click', () => closeCam());
+  addEventListener('popstate', () => closeCam(true));
+  document.getElementById('start').addEventListener('click', openCam);
+
+  // Desktop: dropping three photos works too (in the order side, top, underside).
+  const drop = document.getElementById('drop');
   drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
   drop.addEventListener('dragleave', () => drop.classList.remove('over'));
   drop.addEventListener('drop', e => {
     e.preventDefault(); drop.classList.remove('over');
-    const f = [...e.dataTransfer.files].find(f => f.type.startsWith('image/'));
-    if (f) analyse(f);
+    const files = [...e.dataTransfer.files].filter(f => f.type.startsWith('image/')).slice(0, 3);
+    if (files.length === 3) analyse(files);
+    else if (files.length) { openCam(); files.forEach(take); }
   });
   setLang(lang);
 </script>
