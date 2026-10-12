@@ -176,7 +176,7 @@
       views: [
         ['Von der Seite', 'Ganzer Pilz mit Stiel und Stielbasis — vorsichtig herausdrehen, nicht abschneiden.'],
         ['Schräg von oben (45°)', 'Kamera etwa 45° über dem Pilz: Hutoberseite und Stiel zugleich sichtbar.'],
-        ['Unterseite', 'Pilz umdrehen: Poren bzw. Röhren und Stielansatz scharf zeigen.'],
+        ['Schräg von unten (45°)', 'Kamera etwa 45° unter dem Hut: Poren bzw. Röhren und Stiel zugleich scharf zeigen.'],
       ],
       stepNo: (i, n) => `Ansicht ${i} von ${n}`,
       nocam: 'Live-Kamera nicht verfügbar — der Auslöser öffnet die Kamera-App, der linke Knopf die Galerie.',
@@ -212,7 +212,7 @@
       views: [
         ['From the side', 'Whole mushroom with stem and stem base — twist it out gently, do not cut it.'],
         ['From above at 45°', 'Camera about 45° above the mushroom: cap top and stem visible at once.'],
-        ['Underside', 'Turn it over: show pores or tubes and the stem top sharply.'],
+        ['From below at 45°', 'Camera about 45° below the cap: show pores or tubes and the stem sharply at once.'],
       ],
       stepNo: (i, n) => `View ${i} of ${n}`,
       nocam: 'Live camera not available — the shutter opens the camera app, the left button the gallery.',
@@ -417,10 +417,12 @@
   // See-through outlines (viewBox 200×200) the user lines the mushroom up with.
   const dots = (() => {
     let d = '';
-    for (let r = 30; r <= 68; r += 9)
+    for (let r = 26; r <= 68; r += 9)
       for (let n = Math.round(r / 3.2), k = 0; k < n; k++) {
         const a = (k + (r % 2) / 2) / n * 2 * Math.PI;
-        d += `<circle cx="${(100 + r * Math.cos(a)).toFixed(1)}" cy="${(100 + r * Math.sin(a)).toFixed(1)}" r="2.2"/>`;
+        const x = 100 + r * Math.cos(a), y = 96 + r * 0.42 * Math.sin(a);
+        if (Math.abs(x - 100) < 20 && y > 92) continue;  // hidden behind the stem
+        d += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2"/>`;
       }
     return d;
   })();
@@ -435,10 +437,11 @@
      <path d="M58 52c12-10 26-14 40-14" fill="none" stroke-dasharray="3 6"/>
      <path d="M80 122c-2 18-8 36-2 52 10 8 34 8 44 0 6-16 0-34-2-52"/>
      <ellipse cx="100" cy="176" rx="64" ry="12" fill="none" stroke-dasharray="2 6"/>`,
-    // underside: cap rim, pore field and the stem top in the middle
-    `<circle cx="100" cy="100" r="78"/>
+    // 45° from below: dome edge above, the foreshortened pore surface, the stem coming towards the camera
+    `<path d="M24 96C24 58 60 32 100 32s76 26 76 64" fill="none"/>
+     <ellipse cx="100" cy="96" rx="76" ry="32"/>
      <g fill="currentColor" stroke="none" opacity=".55">${dots}</g>
-     <circle cx="100" cy="100" r="20" fill="rgba(255,255,255,.18)"/>`,
+     <path d="M82 96c-2 28-6 56 0 82 10 8 30 8 40 0 6-26 2-54 0-82" fill="rgba(255,255,255,.12)"/>`,
   ];
   const outline = (k, color = '#fff') => `<svg viewBox="0 0 200 200" fill="rgba(255,255,255,.08)" stroke="currentColor" color="${color}"
     stroke-width="2.5" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${OUTLINES[k]}</svg>`;
