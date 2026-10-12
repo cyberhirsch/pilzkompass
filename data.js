@@ -486,7 +486,7 @@ window.BOLETES = [
     "file": "Boletus regius 37212.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Boletus_regius_37212.jpg/1280px-Boletus_regius_37212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Boletus_regius_37212.jpg/330px-Boletus_regius_37212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -708,7 +708,7 @@ window.BOLETES = [
     "file": "2012-08-26 Boletus fechtneri Velenovsky 254739 crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/2012-08-26_Boletus_fechtneri_Velenovsky_254739_crop.jpg/1280px-2012-08-26_Boletus_fechtneri_Velenovsky_254739_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/2012-08-26_Boletus_fechtneri_Velenovsky_254739_crop.jpg/330px-2012-08-26_Boletus_fechtneri_Velenovsky_254739_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -748,7 +748,7 @@ window.BOLETES = [
     "file": "2012-08-26 Boletus fechtneri Velenovsky 254739.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/2012-08-26_Boletus_fechtneri_Velenovsky_254739.jpg/1280px-2012-08-26_Boletus_fechtneri_Velenovsky_254739.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/2012-08-26_Boletus_fechtneri_Velenovsky_254739.jpg/330px-2012-08-26_Boletus_fechtneri_Velenovsky_254739.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -816,7 +816,7 @@ window.BOLETES = [
     "file": "2012-08-24 Boletus fuscoroseus Smotlacha 253660 crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2012-08-24_Boletus_fuscoroseus_Smotlacha_253660_crop.jpg/1280px-2012-08-24_Boletus_fuscoroseus_Smotlacha_253660_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2012-08-24_Boletus_fuscoroseus_Smotlacha_253660_crop.jpg/330px-2012-08-24_Boletus_fuscoroseus_Smotlacha_253660_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -824,7 +824,7 @@ window.BOLETES = [
     "file": "2015-06-21 Butyriboletus pseudoregius (Huber) D. Arora & J.L.Frank 530221.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/2015-06-21_Butyriboletus_pseudoregius_%28Huber%29_D._Arora_%26_J.L.Frank_530221.jpg/1280px-2015-06-21_Butyriboletus_pseudoregius_%28Huber%29_D._Arora_%26_J.L.Frank_530221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/2015-06-21_Butyriboletus_pseudoregius_%28Huber%29_D._Arora_%26_J.L.Frank_530221.jpg/330px-2015-06-21_Butyriboletus_pseudoregius_%28Huber%29_D._Arora_%26_J.L.Frank_530221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -939,7 +939,7 @@ window.BOLETES = [
     "file": "Boletus subappendiculatus Dermek, Lazebn. & J. Veselský (393636) ed.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Boletus_subappendiculatus_Dermek%2C_Lazebn._%26_J._Veselsk%C3%BD_%28393636%29_ed.jpg/1280px-Boletus_subappendiculatus_Dermek%2C_Lazebn._%26_J._Veselsk%C3%BD_%28393636%29_ed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Boletus_subappendiculatus_Dermek%2C_Lazebn._%26_J._Veselsk%C3%BD_%28393636%29_ed.jpg/330px-Boletus_subappendiculatus_Dermek%2C_Lazebn._%26_J._Veselsk%C3%BD_%28393636%29_ed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1017,7 +1017,7 @@ window.BOLETES = [
     "file": "Schoenfussroehrling.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Schoenfussroehrling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/66/Schoenfussroehrling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Walter J. Pilsak , Waldsassen",
+    "artist": "Walter J. Pilsak, Waldsassen",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1235,7 +1235,7 @@ window.BOLETES = [
     "file": "2012-08-15 Boletus kluzakii Sutara & Spinar 308609.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308609.jpg/1280px-2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308609.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308609.jpg/330px-2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308609.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1259,7 +1259,7 @@ window.BOLETES = [
     "file": "2012-08-15 Boletus kluzakii Sutara & Spinar 308633.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308633.jpg/1280px-2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308633.jpg/330px-2012-08-15_Boletus_kluzakii_Sutara_%26_Spinar_308633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -1315,7 +1315,7 @@ window.BOLETES = [
     "file": "Boletus satanas.JPG",
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Boletus_satanas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Boletus_satanas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Photo by Archenzo . Northern Apennine Mountains (Appennino piacentino).",
+    "artist": "Archenzo",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1567,7 +1567,7 @@ window.BOLETES = [
     "file": "Boletus sanguineus rhodoxanthus Krombholz Sir.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Boletus_sanguineus_rhodoxanthus_Krombholz_Sir.jpg/1280px-Boletus_sanguineus_rhodoxanthus_Krombholz_Sir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Boletus_sanguineus_rhodoxanthus_Krombholz_Sir.jpg/330px-Boletus_sanguineus_rhodoxanthus_Krombholz_Sir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Julius Vincenc Krombholz (1782-1843) František Šír (1804-1864) derivative work: ",
+    "artist": "Julius Vincenc Krombholz (1782-1843) František Šír (1804-1864) · Bearbeitung: Xth-Floor",
     "license": "Public domain",
     "stage": null
    },
@@ -1575,7 +1575,7 @@ window.BOLETES = [
     "file": "Rubroboletus rhodoxanthus (578794).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Rubroboletus_rhodoxanthus_%28578794%29.jpg/1280px-Rubroboletus_rhodoxanthus_%28578794%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Rubroboletus_rhodoxanthus_%28578794%29.jpg/330px-Rubroboletus_rhodoxanthus_%28578794%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user MichelBeeckman (MichelBeeckman) at Mushroom Obser",
+    "artist": "MichelBeeckman (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1583,7 +1583,7 @@ window.BOLETES = [
     "file": "2015-06-21 Rubroboletus rhodoxanthus (Krombh.) Kuan Zhao et Zhu L. Yang 530218.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/2015-06-21_Rubroboletus_rhodoxanthus_%28Krombh.%29_Kuan_Zhao_et_Zhu_L._Yang_530218.jpg/1280px-2015-06-21_Rubroboletus_rhodoxanthus_%28Krombh.%29_Kuan_Zhao_et_Zhu_L._Yang_530218.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/2015-06-21_Rubroboletus_rhodoxanthus_%28Krombh.%29_Kuan_Zhao_et_Zhu_L._Yang_530218.jpg/330px-2015-06-21_Rubroboletus_rhodoxanthus_%28Krombh.%29_Kuan_Zhao_et_Zhu_L._Yang_530218.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1766,7 +1766,7 @@ window.BOLETES = [
     "file": "2015-06-21 Rubroboletus lupinus 530214.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2015-06-21_Rubroboletus_lupinus_530214.jpg/1280px-2015-06-21_Rubroboletus_lupinus_530214.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2015-06-21_Rubroboletus_lupinus_530214.jpg/330px-2015-06-21_Rubroboletus_lupinus_530214.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1880,7 +1880,7 @@ window.BOLETES = [
     "file": "2009-11-25 Boletus pulcherrimus Thiers & Halling 66137.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66137.jpg/1280px-2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66137.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66137.jpg/330px-2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66137.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ryane Snow (snowman) at Mushroom Observer , a sou",
+    "artist": "Ryane Snow (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1896,7 +1896,7 @@ window.BOLETES = [
     "file": "2009-11-25 Boletus pulcherrimus Thiers & Halling 66138.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66138.jpg/1280px-2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66138.jpg/330px-2009-11-25_Boletus_pulcherrimus_Thiers_%26_Halling_66138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ryane Snow (snowman) at Mushroom Observer , a sou",
+    "artist": "Ryane Snow (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1962,7 +1962,7 @@ window.BOLETES = [
     "file": "2012-09-05 Boletus dupainii Boud 312265.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/2012-09-05_Boletus_dupainii_Boud_312265.jpg/1280px-2012-09-05_Boletus_dupainii_Boud_312265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/2012-09-05_Boletus_dupainii_Boud_312265.jpg/330px-2012-09-05_Boletus_dupainii_Boud_312265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Alan Rockefeller (Alan Rockefeller) at Mushroom O",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1978,7 +1978,7 @@ window.BOLETES = [
     "file": "2013-06-23 Boletus dupainii Boud 345716.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2013-06-23_Boletus_dupainii_Boud_345716.jpg/1280px-2013-06-23_Boletus_dupainii_Boud_345716.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2013-06-23_Boletus_dupainii_Boud_345716.jpg/330px-2013-06-23_Boletus_dupainii_Boud_345716.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Alan Rockefeller (Alan Rockefeller) at Mushroom O",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1986,7 +1986,7 @@ window.BOLETES = [
     "file": "2013-06-23 Boletus dupainii Boud 345717.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/2013-06-23_Boletus_dupainii_Boud_345717.jpg/1280px-2013-06-23_Boletus_dupainii_Boud_345717.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/2013-06-23_Boletus_dupainii_Boud_345717.jpg/330px-2013-06-23_Boletus_dupainii_Boud_345717.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Alan Rockefeller (Alan Rockefeller) at Mushroom O",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -1994,7 +1994,7 @@ window.BOLETES = [
     "file": "2013-06-23 Boletus dupainii Boud 345721.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013-06-23_Boletus_dupainii_Boud_345721.jpg/1280px-2013-06-23_Boletus_dupainii_Boud_345721.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2013-06-23_Boletus_dupainii_Boud_345721.jpg/330px-2013-06-23_Boletus_dupainii_Boud_345721.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Alan Rockefeller (Alan Rockefeller) at Mushroom O",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -2002,7 +2002,7 @@ window.BOLETES = [
     "file": "2013-06-23 Boletus dupainii Boud 403123.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2013-06-23_Boletus_dupainii_Boud_403123.jpg/1280px-2013-06-23_Boletus_dupainii_Boud_403123.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2013-06-23_Boletus_dupainii_Boud_403123.jpg/330px-2013-06-23_Boletus_dupainii_Boud_403123.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Alan Rockefeller (Alan Rockefeller) at Mushroom O",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -2010,7 +2010,7 @@ window.BOLETES = [
     "file": "2013-06-23 Boletus dupainii Boud 403124.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/2013-06-23_Boletus_dupainii_Boud_403124.jpg/1280px-2013-06-23_Boletus_dupainii_Boud_403124.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/2013-06-23_Boletus_dupainii_Boud_403124.jpg/330px-2013-06-23_Boletus_dupainii_Boud_403124.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Alan Rockefeller (Alan Rockefeller) at Mushroom O",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -2277,7 +2277,7 @@ window.BOLETES = [
     "file": "2008-08-04 Boletus rhodopurpureus 1 18733.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2008-08-04_Boletus_rhodopurpureus_1_18733.jpg/1280px-2008-08-04_Boletus_rhodopurpureus_1_18733.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2008-08-04_Boletus_rhodopurpureus_1_18733.jpg/330px-2008-08-04_Boletus_rhodopurpureus_1_18733.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user (Gerhard Koller) at Mushroom Observer , a source ",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -2505,7 +2505,7 @@ window.BOLETES = [
     "file": "2015-06-21 Imperator luteocupreus (Bertéa & Estadès)Koller et al 530219.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2015-06-21_Imperator_luteocupreus_%28Bert%C3%A9a_%26_Estad%C3%A8s%29Koller_et_al_530219.jpg/1280px-2015-06-21_Imperator_luteocupreus_%28Bert%C3%A9a_%26_Estad%C3%A8s%29Koller_et_al_530219.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2015-06-21_Imperator_luteocupreus_%28Bert%C3%A9a_%26_Estad%C3%A8s%29Koller_et_al_530219.jpg/330px-2015-06-21_Imperator_luteocupreus_%28Bert%C3%A9a_%26_Estad%C3%A8s%29Koller_et_al_530219.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -2754,7 +2754,7 @@ window.BOLETES = [
     "file": "2004-11-14 Boletus erythropus var junquilleus crop.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/2004-11-14_Boletus_erythropus_var_junquilleus_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/11/2004-11-14_Boletus_erythropus_var_junquilleus_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Boletus_junquilleus_JPG2.jpg : Jean-Pol GRANDMONT derivative work: Ak ccm",
+    "artist": "Jean-Pol GRANDMONT · Bearbeitung: Ak ccm",
     "license": "CC BY 3.0",
     "stage": null
    },
@@ -2871,7 +2871,7 @@ window.BOLETES = [
     "file": "2010-09-13 Boletus luridus Schaeff 104527 crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2010-09-13_Boletus_luridus_Schaeff_104527_crop.jpg/1280px-2010-09-13_Boletus_luridus_Schaeff_104527_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2010-09-13_Boletus_luridus_Schaeff_104527_crop.jpg/330px-2010-09-13_Boletus_luridus_Schaeff_104527_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Steinpilz at Mushroom Observer , a source for myc",
+    "artist": "Steinpilz (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -2980,7 +2980,7 @@ window.BOLETES = [
     "file": "2010-08-09 Boletus queletii Schulzer 97433.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2010-08-09_Boletus_queletii_Schulzer_97433.jpg/1280px-2010-08-09_Boletus_queletii_Schulzer_97433.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2010-08-09_Boletus_queletii_Schulzer_97433.jpg/330px-2010-08-09_Boletus_queletii_Schulzer_97433.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ryane Snow (snowman) at Mushroom Observer , a sou",
+    "artist": "Ryane Snow (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3192,7 +3192,7 @@ window.BOLETES = [
     "file": "2013-11-02 Boletus comptus Simonini 393827.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2013-11-02_Boletus_comptus_Simonini_393827.jpg/1280px-2013-11-02_Boletus_comptus_Simonini_393827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2013-11-02_Boletus_comptus_Simonini_393827.jpg/330px-2013-11-02_Boletus_comptus_Simonini_393827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3208,7 +3208,7 @@ window.BOLETES = [
     "file": "2013-11-02 Boletus comptus Simonini 393829.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/2013-11-02_Boletus_comptus_Simonini_393829.jpg/1280px-2013-11-02_Boletus_comptus_Simonini_393829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/2013-11-02_Boletus_comptus_Simonini_393829.jpg/330px-2013-11-02_Boletus_comptus_Simonini_393829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3216,7 +3216,7 @@ window.BOLETES = [
     "file": "2013-11-02 Boletus comptus Simonini 393830.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/2013-11-02_Boletus_comptus_Simonini_393830.jpg/1280px-2013-11-02_Boletus_comptus_Simonini_393830.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/2013-11-02_Boletus_comptus_Simonini_393830.jpg/330px-2013-11-02_Boletus_comptus_Simonini_393830.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3224,7 +3224,7 @@ window.BOLETES = [
     "file": "2013-11-02 Boletus comptus Simonini 393828.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/2013-11-02_Boletus_comptus_Simonini_393828.jpg/1280px-2013-11-02_Boletus_comptus_Simonini_393828.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/2013-11-02_Boletus_comptus_Simonini_393828.jpg/330px-2013-11-02_Boletus_comptus_Simonini_393828.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -3505,7 +3505,7 @@ window.BOLETES = [
     "file": "2011-09-24 Boletus depilatus Redeuilh 170406.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2011-09-24_Boletus_depilatus_Redeuilh_170406.jpg/1280px-2011-09-24_Boletus_depilatus_Redeuilh_170406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2011-09-24_Boletus_depilatus_Redeuilh_170406.jpg/330px-2011-09-24_Boletus_depilatus_Redeuilh_170406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Sporulator at Mushroom Observer , a source for my",
+    "artist": "Sporulator (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3836,7 +3836,7 @@ window.BOLETES = [
     "file": "Xerocomus ferrugineus 578086.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Xerocomus_ferrugineus_578086.jpg/1280px-Xerocomus_ferrugineus_578086.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Xerocomus_ferrugineus_578086.jpg/330px-Xerocomus_ferrugineus_578086.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3844,7 +3844,7 @@ window.BOLETES = [
     "file": "Xerocomus ferrugineus 578088.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Xerocomus_ferrugineus_578088.jpg/1280px-Xerocomus_ferrugineus_578088.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Xerocomus_ferrugineus_578088.jpg/330px-Xerocomus_ferrugineus_578088.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3852,7 +3852,7 @@ window.BOLETES = [
     "file": "2009-10-09 Xerocomus spadiceus (Fr.) Quél 60095.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2009-10-09_Xerocomus_spadiceus_%28Fr.%29_Qu%C3%A9l_60095.jpg/1280px-2009-10-09_Xerocomus_spadiceus_%28Fr.%29_Qu%C3%A9l_60095.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2009-10-09_Xerocomus_spadiceus_%28Fr.%29_Qu%C3%A9l_60095.jpg/330px-2009-10-09_Xerocomus_spadiceus_%28Fr.%29_Qu%C3%A9l_60095.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -3941,7 +3941,7 @@ window.BOLETES = [
     "file": "Xerocomus chrysonemus edited.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Xerocomus_chrysonemus_edited.jpg/1280px-Xerocomus_chrysonemus_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Xerocomus_chrysonemus_edited.jpg/330px-Xerocomus_chrysonemus_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "File:Xerocomus chrysonemus.jpg : Geoffrey Kibby derivative work: Ak ccm",
+    "artist": "Geoffrey Kibby · Bearbeitung: Ak ccm",
     "license": "CC BY-SA 4.0",
     "stage": null
    },
@@ -4189,7 +4189,7 @@ window.BOLETES = [
     "file": "2017-10-26 Xerocomellus pruinatus (Fr.) Šutara 803653.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2017-10-26_Xerocomellus_pruinatus_%28Fr.%29_%C5%A0utara_803653.jpg/1280px-2017-10-26_Xerocomellus_pruinatus_%28Fr.%29_%C5%A0utara_803653.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2017-10-26_Xerocomellus_pruinatus_%28Fr.%29_%C5%A0utara_803653.jpg/330px-2017-10-26_Xerocomellus_pruinatus_%28Fr.%29_%C5%A0utara_803653.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user James Baker (cepecity) at Mushroom Observer , a s",
+    "artist": "James Baker (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4272,7 +4272,7 @@ window.BOLETES = [
     "file": "Bol.poro.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bol.poro.jpg/1280px-Bol.poro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bol.poro.jpg/330px-Bol.poro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image is the work of photographer Zonda Grattus, aka User:luridiformis. The",
+    "artist": "Luridiformis (Wikipedia English)",
     "license": "CC BY 3.0",
     "stage": null
    },
@@ -4490,7 +4490,7 @@ window.BOLETES = [
     "file": "2013-07-17 Xerocomellus ripariellus (Redeuilh) Šutara 350064.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2013-07-17_Xerocomellus_ripariellus_%28Redeuilh%29_%C5%A0utara_350064.jpg/1280px-2013-07-17_Xerocomellus_ripariellus_%28Redeuilh%29_%C5%A0utara_350064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2013-07-17_Xerocomellus_ripariellus_%28Redeuilh%29_%C5%A0utara_350064.jpg/330px-2013-07-17_Xerocomellus_ripariellus_%28Redeuilh%29_%C5%A0utara_350064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Dmitriy Bochkov (convallaria) at Mushroom Observe",
+    "artist": "Dmitriy Bochkov (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4498,7 +4498,7 @@ window.BOLETES = [
     "file": "2008-09-30 Xerocomus ripariellus Redeuilh 37771.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/2008-09-30_Xerocomus_ripariellus_Redeuilh_37771.jpg/1280px-2008-09-30_Xerocomus_ripariellus_Redeuilh_37771.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/2008-09-30_Xerocomus_ripariellus_Redeuilh_37771.jpg/330px-2008-09-30_Xerocomus_ripariellus_Redeuilh_37771.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4611,7 +4611,7 @@ window.BOLETES = [
     "file": "2018-12-21 Xerocomellus redeuilhii A.F.S. Taylor, U. Eberh., Simonini, Gelardi & Vizzini 982281.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/2018-12-21_Xerocomellus_redeuilhii_A.F.S._Taylor%2C_U._Eberh.%2C_Simonini%2C_Gelardi_%26_Vizzini_982281.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f5/2018-12-21_Xerocomellus_redeuilhii_A.F.S._Taylor%2C_U._Eberh.%2C_Simonini%2C_Gelardi_%26_Vizzini_982281.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user maximus (theresakadish) at Mushroom Observer , a ",
+    "artist": "maximus (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4686,7 +4686,7 @@ window.BOLETES = [
     "file": "2012-08-16 Xerocomellus marekii (Šutara & Skála) Šutara 309303.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309303.jpg/1280px-2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309303.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309303.jpg/330px-2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309303.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4694,7 +4694,7 @@ window.BOLETES = [
     "file": "2012-08-16 Xerocomellus marekii (Šutara & Skála) Šutara 309304.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309304.jpg/1280px-2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309304.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309304.jpg/330px-2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309304.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4702,7 +4702,7 @@ window.BOLETES = [
     "file": "2012-08-16 Xerocomellus marekii (Šutara & Skála) Šutara 309308.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b6/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4710,7 +4710,7 @@ window.BOLETES = [
     "file": "2012-08-16 Xerocomellus marekii (Šutara & Skála) Šutara 309312.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bd/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -4718,7 +4718,7 @@ window.BOLETES = [
     "file": "2012-08-16 Xerocomellus marekii (Šutara & Skála) Šutara 309306.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1d/2012-08-16_Xerocomellus_marekii_%28%C5%A0utara_%26_Sk%C3%A1la%29_%C5%A0utara_309306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -5117,7 +5117,7 @@ window.BOLETES = [
     "file": "2012-08-29 Aureoboletus gentilis (Secretan)Wallroth 256338.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256338.jpg/1280px-2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256338.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256338.jpg/330px-2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256338.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -5125,7 +5125,7 @@ window.BOLETES = [
     "file": "2012-08-29 Aureoboletus gentilis (Secretan)Wallroth 256343.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256343.jpg/1280px-2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256343.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256343.jpg/330px-2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256343.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -5133,7 +5133,7 @@ window.BOLETES = [
     "file": "2012-08-29 Aureoboletus gentilis (Secretan)Wallroth 256346.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256346.jpg/1280px-2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256346.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256346.jpg/330px-2012-08-29_Aureoboletus_gentilis_%28Secretan%29Wallroth_256346.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -5149,7 +5149,7 @@ window.BOLETES = [
     "file": "Aureoboletus gentilis (Quél.) Pouzar 321721.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Aureoboletus_gentilis_%28Qu%C3%A9l.%29_Pouzar_321721.jpg/1280px-Aureoboletus_gentilis_%28Qu%C3%A9l.%29_Pouzar_321721.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Aureoboletus_gentilis_%28Qu%C3%A9l.%29_Pouzar_321721.jpg/330px-Aureoboletus_gentilis_%28Qu%C3%A9l.%29_Pouzar_321721.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user James Baker (cepecity) at Mushroom Observer , a s",
+    "artist": "James Baker (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -5198,7 +5198,7 @@ window.BOLETES = [
     "file": "Aureoboletus moravicus 01 crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Aureoboletus_moravicus_01_crop.jpg/1280px-Aureoboletus_moravicus_01_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Aureoboletus_moravicus_01_crop.jpg/330px-Aureoboletus_moravicus_01_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Jiří Čepelák derivative work: Xth-Floor",
+    "artist": "Jiří Čepelák · Bearbeitung: Xth-Floor",
     "license": "CC0",
     "stage": null
    },
@@ -5440,7 +5440,7 @@ window.BOLETES = [
     "file": "2016-09-14 Chalciporus piperatus (Bull.) Bataille 684066.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/2016-09-14_Chalciporus_piperatus_%28Bull.%29_Bataille_684066.jpg/1280px-2016-09-14_Chalciporus_piperatus_%28Bull.%29_Bataille_684066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/2016-09-14_Chalciporus_piperatus_%28Bull.%29_Bataille_684066.jpg/330px-2016-09-14_Chalciporus_piperatus_%28Bull.%29_Bataille_684066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Igor (Igor_Yevdokimov) at Mushroom Observer , a s",
+    "artist": "Igor (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -5638,7 +5638,7 @@ window.BOLETES = [
     "file": "2012-08-16 Chalciporus rubinus (W.G. Sm.) Singer 309082.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309082.jpg/1280px-2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309082.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309082.jpg/330px-2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309082.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -5646,7 +5646,7 @@ window.BOLETES = [
     "file": "2012-08-16 Chalciporus rubinus (W.G. Sm.) Singer 309089.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309089.jpg/1280px-2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309089.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309089.jpg/330px-2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309089.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -5654,7 +5654,7 @@ window.BOLETES = [
     "file": "2012-08-16 Chalciporus rubinus (W.G. Sm.) Singer 309094.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309094.jpg/1280px-2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309094.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309094.jpg/330px-2012-08-16_Chalciporus_rubinus_%28W.G._Sm.%29_Singer_309094.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -5830,7 +5830,7 @@ window.BOLETES = [
     "file": "2006-09-14 Tylopilus felleus crop.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2006-09-14_Tylopilus_felleus_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2006-09-14_Tylopilus_felleus_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Tylopilus_felleus_060914c.jpg : bernd gliwa derivative work: Ak ccm",
+    "artist": "bernd gliwa · Bearbeitung: Ak ccm",
     "license": "CC BY-SA 2.5",
     "stage": null
    },
@@ -6046,7 +6046,7 @@ window.BOLETES = [
     "file": "Strobilomyces floccopus 89374.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Strobilomyces_floccopus_89374.jpg/1280px-Strobilomyces_floccopus_89374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Strobilomyces_floccopus_89374.jpg/330px-Strobilomyces_floccopus_89374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Patrick Harvey (pg_harvey) at Mushroom Observer ,",
+    "artist": "Patrick Harvey (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -6379,7 +6379,7 @@ window.BOLETES = [
     "file": "2010-09-13 Leccinum aurantiacum 6555637461 crop.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/2010-09-13_Leccinum_aurantiacum_6555637461_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/52/2010-09-13_Leccinum_aurantiacum_6555637461_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "2010-09-13_Leccinum_aurantiacum_6555637461.jpg : About field station from Russia",
+    "artist": "About field station from Russia · Bearbeitung: Ak ccm",
     "license": "CC BY 2.0",
     "stage": null
    },
@@ -6387,7 +6387,7 @@ window.BOLETES = [
     "file": "Rotkappe-Querschnitt.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Rotkappe-Querschnitt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/34/Rotkappe-Querschnitt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Walter J. Pilsak , Waldsassen",
+    "artist": "Walter J. Pilsak, Waldsassen",
     "license": "CC BY-SA 3.0",
     "stage": "cut"
    },
@@ -6495,7 +6495,7 @@ window.BOLETES = [
     "file": "2016-08-11 Leccinum vulpinum Watling 664292.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2016-08-11_Leccinum_vulpinum_Watling_664292.jpg/1280px-2016-08-11_Leccinum_vulpinum_Watling_664292.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2016-08-11_Leccinum_vulpinum_Watling_664292.jpg/330px-2016-08-11_Leccinum_vulpinum_Watling_664292.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Igor (Igor_Yevdokimov) at Mushroom Observer , a s",
+    "artist": "Igor (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7081,7 +7081,7 @@ window.BOLETES = [
     "file": "2006 Leccinum albostipitatum crop.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/2006_Leccinum_albostipitatum_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c9/2006_Leccinum_albostipitatum_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Leccinum_aurantiacum.JPG : Archenzo derivative work: Ak ccm ( talk )",
+    "artist": "Archenzo · Bearbeitung: Ak ccm",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7196,7 +7196,7 @@ window.BOLETES = [
     "file": "Leccinum melaneum (Smotl.) Pilát & Dermek 708657.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Leccinum_melaneum_%28Smotl.%29_Pil%C3%A1t_%26_Dermek_708657.jpg/1280px-Leccinum_melaneum_%28Smotl.%29_Pil%C3%A1t_%26_Dermek_708657.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Leccinum_melaneum_%28Smotl.%29_Pil%C3%A1t_%26_Dermek_708657.jpg/330px-Leccinum_melaneum_%28Smotl.%29_Pil%C3%A1t_%26_Dermek_708657.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user MichelBeeckman (MichelBeeckman) at Mushroom Obser",
+    "artist": "MichelBeeckman (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7311,7 +7311,7 @@ window.BOLETES = [
     "file": "2011-09-17 Leccinum cyaneobasileucum Lannoy & Estadès 169200.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169200.jpg/1280px-2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169200.jpg/330px-2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7319,7 +7319,7 @@ window.BOLETES = [
     "file": "2011-09-17 Leccinum cyaneobasileucum Lannoy & Estadès 169201.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169201.jpg/1280px-2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169201.jpg/330px-2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7327,7 +7327,7 @@ window.BOLETES = [
     "file": "2011-09-17 Leccinum cyaneobasileucum Lannoy & Estadès 169204.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169204.jpg/1280px-2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169204.jpg/330px-2011-09-17_Leccinum_cyaneobasileucum_Lannoy_%26_Estad%C3%A8s_169204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7410,7 +7410,7 @@ window.BOLETES = [
     "file": "Leccinum schistophilum Bon 178049.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Leccinum_schistophilum_Bon_178049.jpg/1280px-Leccinum_schistophilum_Bon_178049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Leccinum_schistophilum_Bon_178049.jpg/330px-Leccinum_schistophilum_Bon_178049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Tim Sage (T. Sage) at Mushroom Observer , a sourc",
+    "artist": "Tim Sage (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -7570,7 +7570,7 @@ window.BOLETES = [
     "file": "2012-06-24 Leccinellum crocipodium (Letell.) Bresinsky & Manfr. Binder 236436.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/2012-06-24_Leccinellum_crocipodium_%28Letell.%29_Bresinsky_%26_Manfr._Binder_236436.jpg/1280px-2012-06-24_Leccinellum_crocipodium_%28Letell.%29_Bresinsky_%26_Manfr._Binder_236436.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/2012-06-24_Leccinellum_crocipodium_%28Letell.%29_Bresinsky_%26_Manfr._Binder_236436.jpg/330px-2012-06-24_Leccinellum_crocipodium_%28Letell.%29_Bresinsky_%26_Manfr._Binder_236436.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ron Pastorino (Ronpast) at Mushroom Observer , a ",
+    "artist": "Ron Pastorino (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7700,7 +7700,7 @@ window.BOLETES = [
     "file": "2014-12-07 Leccinellum lepidum (H. Bouchet ex Essette) Bresinsky & Manfr. Binder 490732.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2014-12-07_Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_490732.jpg/1280px-2014-12-07_Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_490732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2014-12-07_Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_490732.jpg/330px-2014-12-07_Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_490732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7708,7 +7708,7 @@ window.BOLETES = [
     "file": "Leccinellum lepidum (H. Bouchet ex Essette) Bresinsky & Manfr. Binder 594275 2016-01-23.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594275_2016-01-23.jpg/1280px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594275_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594275_2016-01-23.jpg/330px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594275_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7716,7 +7716,7 @@ window.BOLETES = [
     "file": "Leccinellum lepidum (H. Bouchet ex Essette) Bresinsky & Manfr. Binder 594279 2016-01-23.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594279_2016-01-23.jpg/1280px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594279_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594279_2016-01-23.jpg/330px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594279_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7724,7 +7724,7 @@ window.BOLETES = [
     "file": "Leccinellum lepidum (H. Bouchet ex Essette) Bresinsky & Manfr. Binder 594280 2016-01-23.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594280_2016-01-23.jpg/1280px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594280_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594280_2016-01-23.jpg/330px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594280_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7732,7 +7732,7 @@ window.BOLETES = [
     "file": "Leccinellum lepidum (H. Bouchet ex Essette) Bresinsky & Manfr. Binder 594281 2016-01-23.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594281_2016-01-23.jpg/1280px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594281_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594281_2016-01-23.jpg/330px-Leccinellum_lepidum_%28H._Bouchet_ex_Essette%29_Bresinsky_%26_Manfr._Binder_594281_2016-01-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -7781,7 +7781,7 @@ window.BOLETES = [
     "file": "2013-12-19 Leccinum corsicum (Rolland) Singer 399423.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2013-12-19_Leccinum_corsicum_%28Rolland%29_Singer_399423.jpg/1280px-2013-12-19_Leccinum_corsicum_%28Rolland%29_Singer_399423.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2013-12-19_Leccinum_corsicum_%28Rolland%29_Singer_399423.jpg/330px-2013-12-19_Leccinum_corsicum_%28Rolland%29_Singer_399423.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7789,7 +7789,7 @@ window.BOLETES = [
     "file": "Leccinellum corsicum (Rolland) Bresinsky & Manfr. Binder 607553 2016-03-18.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607553_2016-03-18.jpg/1280px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607553_2016-03-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607553_2016-03-18.jpg/330px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607553_2016-03-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7797,7 +7797,7 @@ window.BOLETES = [
     "file": "Leccinellum corsicum (Rolland) Bresinsky & Manfr. Binder 607556 2016-03-18 (cropped).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18_%28cropped%29.jpg/1280px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18_%28cropped%29.jpg/330px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7805,7 +7805,7 @@ window.BOLETES = [
     "file": "Leccinellum corsicum (Rolland) Bresinsky & Manfr. Binder 607556 2016-03-18.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18.jpg/1280px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18.jpg/330px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_607556_2016-03-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7813,7 +7813,7 @@ window.BOLETES = [
     "file": "Leccinellum corsicum (Rolland) Bresinsky & Manfr. Binder 608576 2016-03-29.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29.jpg/1280px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29.jpg/330px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7821,7 +7821,7 @@ window.BOLETES = [
     "file": "Leccinellum corsicum (Rolland) Singer 512093.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Leccinellum_corsicum_%28Rolland%29_Singer_512093.jpg/1280px-Leccinellum_corsicum_%28Rolland%29_Singer_512093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Leccinellum_corsicum_%28Rolland%29_Singer_512093.jpg/330px-Leccinellum_corsicum_%28Rolland%29_Singer_512093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7829,7 +7829,7 @@ window.BOLETES = [
     "file": "Leccinellum corsicum (Rolland) Bresinsky & Manfr. Binder 608576 2016-03-29 (cropped).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29_%28cropped%29.jpg/1280px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29_%28cropped%29.jpg/330px-Leccinellum_corsicum_%28Rolland%29_Bresinsky_%26_Manfr._Binder_608576_2016-03-29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -7837,7 +7837,7 @@ window.BOLETES = [
     "file": "Leccinum corsicum (Rolland) Singer 363925 crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Leccinum_corsicum_%28Rolland%29_Singer_363925_crop.jpg/1280px-Leccinum_corsicum_%28Rolland%29_Singer_363925_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Leccinum_corsicum_%28Rolland%29_Singer_363925_crop.jpg/330px-Leccinum_corsicum_%28Rolland%29_Singer_363925_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Davide Puddu (Davide Puddu) at Mushroom Observer ",
+    "artist": "Davide Puddu (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -8107,7 +8107,7 @@ window.BOLETES = [
     "file": "2017-10-01 Gyroporus ammophilus 794686.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2017-10-01_Gyroporus_ammophilus_794686.jpg/1280px-2017-10-01_Gyroporus_ammophilus_794686.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2017-10-01_Gyroporus_ammophilus_794686.jpg/330px-2017-10-01_Gyroporus_ammophilus_794686.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Joshua Hutchins (MycoMaven) at Mushroom Observer ",
+    "artist": "Joshua Hutchins (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -8552,7 +8552,7 @@ window.BOLETES = [
     "file": "SuillusGranulatus cut.JPG",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/SuillusGranulatus_cut.JPG/1280px-SuillusGranulatus_cut.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/SuillusGranulatus_cut.JPG/330px-SuillusGranulatus_cut.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "No machine-readable author provided. Yuvalif assumed (based on copyright claims)",
+    "artist": "Yuvalif",
     "license": "Public domain",
     "stage": "cut"
    },
@@ -8592,7 +8592,7 @@ window.BOLETES = [
     "file": "2017-08-09 Suillus granulatus (L.) Roussel 776585.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2017-08-09_Suillus_granulatus_%28L.%29_Roussel_776585.jpg/1280px-2017-08-09_Suillus_granulatus_%28L.%29_Roussel_776585.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2017-08-09_Suillus_granulatus_%28L.%29_Roussel_776585.jpg/330px-2017-08-09_Suillus_granulatus_%28L.%29_Roussel_776585.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user weed lady (Sylvia ) at Mushroom Observer , a sour",
+    "artist": "weed lady (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9077,7 +9077,7 @@ window.BOLETES = [
     "file": "Elfenbeinroehrling.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Elfenbeinroehrling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Elfenbeinroehrling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "The original uploader was W.J.Pilsak at German Wikipedia .. Uploaded to Commons ",
+    "artist": "W.J.Pilsak (Wikipedia German)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9085,7 +9085,7 @@ window.BOLETES = [
     "file": "Suillus placidus 97717.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Suillus_placidus_97717.jpg/1280px-Suillus_placidus_97717.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Suillus_placidus_97717.jpg/330px-Suillus_placidus_97717.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Ryane Snow (snowman) at Mushroom Observer , a sou",
+    "artist": "Ryane Snow (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9093,7 +9093,7 @@ window.BOLETES = [
     "file": "2009-10-13 Suillus placidus (Bonord.) Singer 282595.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/2009-10-13_Suillus_placidus_%28Bonord.%29_Singer_282595.jpg/1280px-2009-10-13_Suillus_placidus_%28Bonord.%29_Singer_282595.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/2009-10-13_Suillus_placidus_%28Bonord.%29_Singer_282595.jpg/330px-2009-10-13_Suillus_placidus_%28Bonord.%29_Singer_282595.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Jason Hollinger (jason) at Mushroom Observer , a ",
+    "artist": "Jason Hollinger (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9101,7 +9101,7 @@ window.BOLETES = [
     "file": "2008-10-04 Suillus placidus (Bonord.) Singer 24417.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2008-10-04_Suillus_placidus_%28Bonord.%29_Singer_24417.jpg/1280px-2008-10-04_Suillus_placidus_%28Bonord.%29_Singer_24417.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2008-10-04_Suillus_placidus_%28Bonord.%29_Singer_24417.jpg/330px-2008-10-04_Suillus_placidus_%28Bonord.%29_Singer_24417.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Paul Derbyshire (Twizzler) at Mushroom Observer ,",
+    "artist": "Paul Derbyshire (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9109,7 +9109,7 @@ window.BOLETES = [
     "file": "2011-09-13 Suillus placidus (Bonord.) Singer 211058.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/2011-09-13_Suillus_placidus_%28Bonord.%29_Singer_211058.jpg/1280px-2011-09-13_Suillus_placidus_%28Bonord.%29_Singer_211058.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/2011-09-13_Suillus_placidus_%28Bonord.%29_Singer_211058.jpg/330px-2011-09-13_Suillus_placidus_%28Bonord.%29_Singer_211058.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9191,7 +9191,7 @@ window.BOLETES = [
     "file": "2012-04-07 Suillus plorans (Rolland) Kuntze 211065.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/2012-04-07_Suillus_plorans_%28Rolland%29_Kuntze_211065.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/56/2012-04-07_Suillus_plorans_%28Rolland%29_Kuntze_211065.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9199,7 +9199,7 @@ window.BOLETES = [
     "file": "2012-04-07 Suillus plorans (Rolland) Kuntze 211065 crop.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/2012-04-07_Suillus_plorans_%28Rolland%29_Kuntze_211065_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/78/2012-04-07_Suillus_plorans_%28Rolland%29_Kuntze_211065_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user Gerhard Koller (Gerhard) at Mushroom Observer , a",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9207,7 +9207,7 @@ window.BOLETES = [
     "file": "2012-04-07 Suillus plorans crop.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/2012-04-07_Suillus_plorans_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/25/2012-04-07_Suillus_plorans_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "Suillus_plorans_211063.jpg : Gerhard Koller (Gerhard) derivative work: Ak ccm",
+    "artist": "Gerhard Koller (Gerhard) · Bearbeitung: Ak ccm",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -9257,7 +9257,7 @@ window.BOLETES = [
     "file": "Suillus sibiricus 72212.jpg",
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Suillus_sibiricus_72212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Suillus_sibiricus_72212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "This image was created by user Anna Baykalova (anna_ru) at Mushroom Observer , a",
+    "artist": "Anna Baykalova (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9273,7 +9273,7 @@ window.BOLETES = [
     "file": "Suillus sibiricus 72213.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Suillus_sibiricus_72213.jpg/1280px-Suillus_sibiricus_72213.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Suillus_sibiricus_72213.jpg/330px-Suillus_sibiricus_72213.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Anna Baykalova (anna_ru) at Mushroom Observer , a",
+    "artist": "Anna Baykalova (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    }
@@ -9603,7 +9603,7 @@ window.BOLETES = [
     "file": "Suillus lakei (Murrill) A.H. Sm. & Thiers 619852 2016-05-18.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619852_2016-05-18.jpg/1280px-Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619852_2016-05-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619852_2016-05-18.jpg/330px-Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619852_2016-05-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Chris Herrera (The Mushroom Whisperer) at Mushroo",
+    "artist": "Chris Herrera (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9611,7 +9611,7 @@ window.BOLETES = [
     "file": "Suillus lakei (Murrill) A.H. Sm. & Thiers 619853 2016-05-18.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619853_2016-05-18.jpg/1280px-Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619853_2016-05-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619853_2016-05-18.jpg/330px-Suillus_lakei_%28Murrill%29_A.H._Sm._%26_Thiers_619853_2016-05-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Chris Herrera (The Mushroom Whisperer) at Mushroo",
+    "artist": "Chris Herrera (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9695,7 +9695,7 @@ window.BOLETES = [
     "file": "2011-11-21 Suillus bellinii (Inzenga) Kuntze 183888 crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183888_crop.jpg/1280px-2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183888_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183888_crop.jpg/330px-2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183888_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9743,7 +9743,7 @@ window.BOLETES = [
     "file": "2011-11-21 Suillus bellinii (Inzenga) Kuntze 183889.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183889.jpg/1280px-2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183889.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183889.jpg/330px-2011-11-21_Suillus_bellinii_%28Inzenga%29_Kuntze_183889.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9801,7 +9801,7 @@ window.BOLETES = [
     "file": "Suillus mediterraneensis.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Suillus_mediterraneensis.jpg/1280px-Suillus_mediterraneensis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Suillus_mediterraneensis.jpg/330px-Suillus_mediterraneensis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user Gerhard Koller at Mushroom Observer , a source fo",
+    "artist": "Gerhard Koller (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9924,7 +9924,7 @@ window.BOLETES = [
     "file": "Lanmaoa fragrans (Vittad.) Vizzini, Gelardi, Simonini 459669.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459669.jpg/1280px-Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459669.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459669.jpg/330px-Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459669.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9932,7 +9932,7 @@ window.BOLETES = [
     "file": "Lanmaoa fragrans (Vittad.) Vizzini, Gelardi, Simonini 459670.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459670.jpg/1280px-Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459670.jpg/330px-Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459670.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9940,7 +9940,7 @@ window.BOLETES = [
     "file": "Lanmaoa fragrans (Vittad.) Vizzini, Gelardi, Simonini 459671.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459671.jpg/1280px-Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459671.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459671.jpg/330px-Lanmaoa_fragrans_%28Vittad.%29_Vizzini%2C_Gelardi%2C_Simonini_459671.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9948,7 +9948,7 @@ window.BOLETES = [
     "file": "Lanmaoa fragrans 484438.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Lanmaoa_fragrans_484438.jpg/1280px-Lanmaoa_fragrans_484438.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Lanmaoa_fragrans_484438.jpg/330px-Lanmaoa_fragrans_484438.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -9956,7 +9956,7 @@ window.BOLETES = [
     "file": "Lanmaoa fragrans 484440.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Lanmaoa_fragrans_484440.jpg/1280px-Lanmaoa_fragrans_484440.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Lanmaoa_fragrans_484440.jpg/330px-Lanmaoa_fragrans_484440.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "This image was created by user zaca at Mushroom Observer , a source for mycologi",
+    "artist": "zaca (Mushroom Observer)",
     "license": "CC BY-SA 3.0",
     "stage": null
    },
@@ -10220,7 +10220,7 @@ window.BOLETES = [
     "file": "Rohrbacher Goldblatt crop.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Rohrbacher_Goldblatt_crop.jpg/1280px-Rohrbacher_Goldblatt_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Rohrbacher_Goldblatt_crop.jpg/330px-Rohrbacher_Goldblatt_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Rohrbacher_Goldblatt.jpg : Gerhard Koller (Gerhard) derivative work: Natr ( talk",
+    "artist": "Gerhard Koller (Gerhard) · Bearbeitung: Natr",
     "license": "CC BY-SA 3.0",
     "stage": null
    },

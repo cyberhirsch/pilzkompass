@@ -104,6 +104,20 @@ async function fileInfo(titles) {
 }
 
 const strip = html => String(html ?? '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+// Author for the credit line: the Commons "Artist" field cleaned of boilerplate, at most 120 characters.
+function cleanArtist(html) {
+  let a = strip(html).replace(/\s+([,.)])/g, '$1').replace(/\(\s+/g, '(');
+  let m;
+  if ((m = a.match(/created by user\s*(.*?)\s*(?:\(([^)]*)\))?\s*at Mushroom Observer/i))) a = `${m[1] || m[2]} (Mushroom Observer)`;
+  else if ((m = a.match(/No machine-readable author provided\.\s*(.+?)\s+assumed/i))) a = m[1];
+  else if ((m = a.match(/original uploader was\s+(.+?)\s+at\s+(\w+) Wikipedia/i))) a = `${m[1]} (Wikipedia ${m[2]})`;
+  else if ((m = a.match(/work of photographer\s+([^,.]+)/i))) a = m[1];
+  else if ((m = a.match(/^Photo by\s+([^.]+)/i))) a = m[1];
+  a = a.replace(/^(File:)?[^:]*?\.(jpe?g|png|tiff?)\s*:\s*/i, '')  // "Original.jpg : Author"
+    .replace(/\s*\(\s*talk\s*\)?\s*$/i, '').replace(/\s*\(\s*talk\s*\)/gi, '')
+    .replace(/\s*derivative work:\s*/i, ' · Bearbeitung: ').replace(/[\s·:]+$/, '').trim();
+  return a.length > 120 ? a.slice(0, 119).trimEnd() + '…' : a;
+}
 const REJECT = /spores?|sporen|spore.?print|micro|mikro|cystid|basidi|hyph|stamp|briefmarke|illustrat|drawing|zeichnung|aquarell|painting|gemälde|\bplate\b|tafel|herbar|exsicc|dried|getrocknet|\bmap\b|karte|distribution|recipe|soup|suppe|market|markt|basket|korb|pizza|risotto|sauce|cooked|fried|gebraten|pfanne|dish|kitchen|küche|harvest|ernte|\bsale\b|verkauf|frozen|chemical|reagent|\bkoh\b|\bnh3\b|mycel|culture|petri|logo/i;
 // Checked against the file name only: descriptions often mention camera models etc.
 const REJECT_TITLE = /model|modell|wax|wachs|replica|sculpt|figurine|toy|spielzeug|museum|mhnt/i;
@@ -136,7 +150,7 @@ async function gallery(s, lead, extra = []) {
       file: title.replace(/^File:/, ''),
       src: ii.thumburl ?? ii.url,
       thumb: (ii.thumburl ?? ii.url).replace(/\/1280px-/, '/330px-'),
-      artist: strip(meta.Artist?.value).slice(0, 80),
+      artist: cleanArtist(meta.Artist?.value),
       license: strip(meta.LicenseShortName?.value),
       stage: stageOf(text),
       score: (title === 'File:' + lead ? 100 : 0) + (/Featured pictures|Quality images|Valued images/.test(cats) ? 10 : 0) + Math.min(ii.width / 1000, 4),
