@@ -431,7 +431,7 @@
       why: { cold: 'too cold', frost: 'frost in the last week', dry: 'too dry', littleRain: 'little rain', hot: 'very warm', cool: 'cool' },
       offSeason: 'Outside the main bolete season (June–November).',
       inSeason: n => `${n} species on this site are in season this month.`, showSeason: 'Show them ↓',
-      wxSource: 'Weather data: Open-Meteo.com (CC BY 4.0), based on national weather services incl. DWD. Rule of thumb only.',
+      wxSource: 'Weather data: Deutscher Wetterdienst (DWD), via Bright Sky. Place search: © OpenStreetMap contributors. Rule of thumb only.',
       gHello: 'Welcome!', gYourRegion: 'your region', gLocating: 'Checking the weather, season and trees around you…',
       gNoLocation: 'Share your location or enter a town for a personal recommendation.', gEnterPlace: 'Enter a town ↓',
       gNow: (p, s) => `It's mushroom time in ${p}. Best chance right now: ${s}.`,
@@ -516,7 +516,7 @@
       why: { cold: 'zu kalt', frost: 'Frost in der letzten Woche', dry: 'zu trocken', littleRain: 'wenig Regen', hot: 'sehr warm', cool: 'kühl' },
       offSeason: 'Außerhalb der Röhrlings-Hauptsaison (Juni–November).',
       inSeason: n => `${n} Arten dieser Seite haben diesen Monat Saison.`, showSeason: 'Anzeigen ↓',
-      wxSource: 'Wetterdaten: Open-Meteo.com (CC BY 4.0), auf Basis nationaler Wetterdienste inkl. DWD. Nur eine Faustregel.',
+      wxSource: 'Wetterdaten: Deutscher Wetterdienst (DWD), über Bright Sky. Ortssuche: © OpenStreetMap-Mitwirkende. Nur eine Faustregel.',
       gHello: 'Willkommen!', gYourRegion: 'deiner Region', gLocating: 'Prüfe Wetter, Saison und Bäume in deiner Nähe…',
       gNoLocation: 'Gib deinen Standort frei oder trag einen Ort ein, dann bekommst du eine persönliche Empfehlung.', gEnterPlace: 'Ort eingeben ↓',
       gNow: (p, s) => `In ${p} ist gerade Pilzzeit. Die besten Chancen hat: ${s}.`,
@@ -707,7 +707,7 @@
   }));
   q.addEventListener('input', render);
 
-  // ----- Pilzwetter (Open-Meteo, no key needed) -----
+  // ----- Pilzwetter (DWD via Bright Sky, no key needed) -----
   const wxOut = document.getElementById('wx-out');
   let wxLast = null;
 

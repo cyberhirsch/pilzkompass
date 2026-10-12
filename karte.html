@@ -150,10 +150,11 @@
   const map = L.map('map', { minZoom: 5, maxZoom: 17 }).setView([51.2, 10.4], 6);
   const DETAIL_ZOOM = 10;   // from here on the 10 m tiles replace the 1 km overview
   let W = null;             // current weights per map class (index 0..10)
-  // Standard OpenStreetMap tiles, darkened and warmed by a CSS filter (.base-dark) to match the site.
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  // basemap.de (Federal Agency for Cartography and Geodesy, CC BY 4.0, commercial use allowed), grey
+  // variant, darkened and warmed by a CSS filter (.base-dark) to match the site. Covers Germany.
+  L.tileLayer('https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_grau/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png', {
     maxZoom: 19, className: 'base-dark',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Bäume/Trees: Thünen-Institut (CC BY 4.0)',
+    attribution: '&copy; <a href="https://basemap.de">basemap.de</a> / BKG (CC BY 4.0) · Bäume/Trees: Thünen-Institut (CC BY 4.0)',
   }).addTo(map);
 
   // Weights over map classes for one bolete; several codes may hit the same class → keep the max.

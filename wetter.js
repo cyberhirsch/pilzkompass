@@ -4,17 +4,32 @@ window.Pilzwetter = (() => {
 
   // Rounded to ~10 km before anything leaves the device. 14 past days, today and a 7-day forecast;
   // days[today] is today, later entries are forecast.
-  const FORECAST = 7;
+  // Source: Bright Sky (api.brightsky.dev), free DWD open data — station observations plus the
+  // MOSMIX forecast, hourly; commercial use allowed with attribution. Covers Germany and its borders.
+  const FORECAST = 7, TZ = 'Europe/Berlin';
+  const isoDay = ms => new Date(ms).toLocaleDateString('sv-SE', { timeZone: TZ });  // YYYY-MM-DD
   async function load(lat, lon) {
     lat = round1(lat); lon = round1(lon);
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
-      `&daily=precipitation_sum,temperature_2m_max,temperature_2m_min&past_days=14&forecast_days=${FORECAST + 1}&timezone=auto`;
-    const r = await fetch(url);
+    const now = Date.now(), DAY = 864e5;
+    const url = `https://api.brightsky.dev/weather?lat=${lat}&lon=${lon}&tz=${TZ}` +
+      `&date=${isoDay(now - 14 * DAY)}T01:00&last_date=${isoDay(now + (FORECAST + 1) * DAY)}T00:00`;
+    let r = await fetch(url);
+    if (r.status >= 500) r = await new Promise(res => setTimeout(res, 1500)).then(() => fetch(url));  // one retry
     if (!r.ok) throw new Error('weather ' + r.status);
-    const d = (await r.json()).daily;
-    const days = d.time.map((day, i) => ({
-      day, rain: d.precipitation_sum[i] ?? 0, tmax: d.temperature_2m_max[i], tmin: d.temperature_2m_min[i] }));
-    return { lat, lon, days, today: days.length - 1 - FORECAST };
+    // Hourly values describe the hour ending at the timestamp, so 00:00 still belongs to the day before.
+    const byDay = new Map();
+    for (const h of (await r.json()).weather) {
+      const day = isoDay(Date.parse(h.timestamp) - 36e5);
+      const d = byDay.get(day) ?? byDay.set(day, { day, rain: 0, tmax: -Infinity, tmin: Infinity, hours: 0 }).get(day);
+      d.rain += h.precipitation ?? 0;
+      if (h.temperature != null) { d.tmax = Math.max(d.tmax, h.temperature); d.tmin = Math.min(d.tmin, h.temperature); d.hours++; }
+    }
+    // Drop incomplete days at the edges (a half day would understate the rain).
+    const days = [...byDay.values()].filter(d => d.hours >= 20)
+      .map(({ day, rain, tmax, tmin }) => ({ day, rain: Math.round(rain * 10) / 10, tmax, tmin }));
+    const today = days.findIndex(d => d.day === isoDay(now));
+    if (today < 0) throw new Error('weather: no data for today');
+    return { lat, lon, days: days.slice(0, today + FORECAST + 1), today };
   }
 
   // Rule of thumb for boletes: a soaking rain (>= 10 mm within 3 days) starts fruiting; mushrooms
@@ -94,11 +109,15 @@ window.Pilzwetter = (() => {
     });
   }
 
+  // Place search via Nominatim (OpenStreetMap, ODbL). Its usage policy allows commercial use at low
+  // volume: one request per search, no autocomplete.
   async function geocode(name, lang) {
-    const g = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(name)}&count=1&language=${lang}&format=json`)
-      .then(r => r.json());
-    const p = g.results?.[0];
-    return p ? { lat: p.latitude, lon: p.longitude, name: [p.name, p.admin1, p.country_code].filter(Boolean).join(', ') } : null;
+    const g = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(name)}` +
+      `&format=jsonv2&limit=1&addressdetails=1&accept-language=${lang}`).then(r => r.json());
+    const p = g[0];
+    if (!p) return null;
+    const a = p.address ?? {};
+    return { lat: +p.lat, lon: +p.lon, name: [p.name, a.state, a.country_code?.toUpperCase()].filter(Boolean).join(', ') };
   }
 
   return { load, assess, dateIn, fmtDay, finds, seasonShare, inSeason, locate, geocode };
