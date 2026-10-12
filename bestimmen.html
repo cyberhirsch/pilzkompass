@@ -60,7 +60,7 @@
   /* Guided camera: three views, each with a see-through mushroom outline to line the find up with. */
   #cam { position: fixed; inset: 0; z-index: 50; background: #000; overflow: hidden; touch-action: none; }
   #cam[hidden] { display: none; }
-  #cam video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #cam video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
   #cam .frame { position: absolute; left: 50%; top: 46%; width: min(86vw, 58vh); aspect-ratio: 1; transform: translate(-50%, -50%);
     border: 2px solid rgba(255, 255, 255, .55); border-radius: 18px; box-shadow: 0 0 0 100vmax rgba(10, 8, 6, .5); }
   #cam .guide svg { width: 100%; height: 100%; display: block; opacity: .6; }
@@ -175,12 +175,12 @@
       pickHint: 'Die Kamera blendet für jede Ansicht eine Schablone ein. Scharf und gut beleuchtet; die Fotos bleiben auf deinem Gerät.',
       views: [
         ['Von der Seite', 'Ganzer Pilz mit Stiel und Stielbasis — vorsichtig herausdrehen, nicht abschneiden.'],
-        ['Hut von oben', 'Hutoberseite gerade von oben, der Hut füllt den Kreis.'],
+        ['Schräg von oben (45°)', 'Kamera etwa 45° über dem Pilz: Hutoberseite und Stiel zugleich sichtbar.'],
         ['Unterseite', 'Pilz umdrehen: Poren bzw. Röhren und Stielansatz scharf zeigen.'],
       ],
       stepNo: (i, n) => `Ansicht ${i} von ${n}`,
       nocam: 'Live-Kamera nicht verfügbar — der Auslöser öffnet die Kamera-App, der linke Knopf die Galerie.',
-      view: i => ['Seite', 'Oben', 'Unten'][i],
+      view: i => ['Seite', '45°', 'Unten'][i],
       disagree: '<strong>Die drei Ansichten passen nicht zur selben Art.</strong> Das Ergebnis ist unsicher; Fotos schärfer oder näher wiederholen.',
       viewPoison: v => `<strong>Ansicht „${v}“ sieht nach einer giftigen Art aus.</strong> Behandle den Fund als giftig, bis Pilzsachverständige etwas anderes sagen.`,
       loading: 'KI wird geladen (einmalig ca. 25 MB)…',
@@ -211,12 +211,12 @@
       pickHint: 'The camera shows a template for each view. Sharp and well lit; the photos stay on your device.',
       views: [
         ['From the side', 'Whole mushroom with stem and stem base — twist it out gently, do not cut it.'],
-        ['Cap from above', 'Top of the cap straight from above, filling the circle.'],
+        ['From above at 45°', 'Camera about 45° above the mushroom: cap top and stem visible at once.'],
         ['Underside', 'Turn it over: show pores or tubes and the stem top sharply.'],
       ],
       stepNo: (i, n) => `View ${i} of ${n}`,
       nocam: 'Live camera not available — the shutter opens the camera app, the left button the gallery.',
-      view: i => ['Side', 'Top', 'Under'][i],
+      view: i => ['Side', '45°', 'Under'][i],
       disagree: '<strong>The three views do not point to the same species.</strong> The result is uncertain; retake sharper or closer photos.',
       viewPoison: v => `<strong>The “${v}” view looks like a poisonous species.</strong> Treat the find as poisonous until a mushroom expert says otherwise.`,
       loading: 'Loading AI (one-time, about 25 MB)…',
@@ -430,9 +430,11 @@
      <path d="M40 99c30 12 90 12 120 0" stroke-dasharray="3 5"/>
      <path d="M80 104c-6 28-18 54-8 76 12 9 44 9 56 0 10-22-2-48-8-76"/>
      <path d="M30 186h140" stroke-dasharray="2 6" fill="none"/>`,
-    // top: round cap, slightly irregular, with a soft highlight
-    `<path d="M100 22c44 0 80 32 78 78s-36 78-80 78-78-34-76-80 34-76 78-76Z"/>
-     <path d="M62 58c12-12 28-18 44-18" fill="none" stroke-dasharray="3 6"/>`,
+    // 45° from above: the cap top foreshortened to a wide oval, the stem below it, a ground ellipse
+    `<path d="M24 86C24 50 60 26 100 26s76 24 76 60c0 24-34 38-76 38S24 110 24 86Z"/>
+     <path d="M58 52c12-10 26-14 40-14" fill="none" stroke-dasharray="3 6"/>
+     <path d="M80 122c-2 18-8 36-2 52 10 8 34 8 44 0 6-16 0-34-2-52"/>
+     <ellipse cx="100" cy="176" rx="64" ry="12" fill="none" stroke-dasharray="2 6"/>`,
     // underside: cap rim, pore field and the stem top in the middle
     `<circle cx="100" cy="100" r="78"/>
      <g fill="currentColor" stroke="none" opacity=".55">${dots}</g>
@@ -478,6 +480,7 @@
       video.srcObject = stream;
       await video.play();
       document.getElementById('nocam').hidden = true;
+      placeFrame();
     } catch (err) {
       console.warn('camera', err);
       stopStream();
@@ -489,6 +492,7 @@
     stream?.getTracks().forEach(tr => tr.stop());
     stream = null;
     video.srcObject = null;
+    placeFrame();
   }
 
   function closeCam(fromHistory) {
@@ -499,18 +503,27 @@
     if (!fromHistory && history.state?.cam) history.back();
   }
 
-  // Grabs exactly the square the frame shows on screen (the video is object-fit: cover).
+  // The frame marks the centre square of the picture: exactly the part the AI looks at.
+  // The video keeps the camera's aspect ratio (object-fit: contain), so the square sits inside it.
+  function placeFrame() {
+    const fr = document.querySelector('#cam .frame');
+    const vw = video.videoWidth, vh = video.videoHeight;
+    if (!stream || !vw) { fr.removeAttribute('style'); return; }
+    const box = video.getBoundingClientRect();
+    const scale = Math.min(box.width / vw, box.height / vh);
+    const side = Math.min(vw, vh) * scale;
+    Object.assign(fr.style, { width: side + 'px', left: box.left + box.width / 2 + 'px', top: box.top + box.height / 2 + 'px' });
+  }
+  addEventListener('resize', () => cam.hidden || placeFrame());
+  video.addEventListener('resize', placeFrame);  // fires when the stream's size or orientation changes
+
+  // Saves the full camera frame in its own aspect ratio (long edge at most 1600 px).
   function grab() {
     const vw = video.videoWidth, vh = video.videoHeight;
-    const box = video.getBoundingClientRect(), fr = document.querySelector('#cam .frame').getBoundingClientRect();
-    const scale = Math.max(box.width / vw, box.height / vh);
-    const ox = (box.width - vw * scale) / 2, oy = (box.height - vh * scale) / 2;
-    const side = Math.min(fr.width / scale, vw, vh);
-    const sx = Math.max(0, Math.min(vw - side, (fr.left - box.left - ox) / scale));
-    const sy = Math.max(0, Math.min(vh - side, (fr.top - box.top - oy) / scale));
+    const k = Math.min(1, 1600 / Math.max(vw, vh));
     const c = document.createElement('canvas');
-    c.width = c.height = Math.min(1024, Math.round(side));
-    c.getContext('2d').drawImage(video, sx, sy, side, side, 0, 0, c.width, c.height);
+    c.width = Math.round(vw * k); c.height = Math.round(vh * k);
+    c.getContext('2d').drawImage(video, 0, 0, c.width, c.height);
     return new Promise(res => c.toBlob(res, 'image/jpeg', 0.9));
   }
 
@@ -539,7 +552,7 @@
     if (b) { step = +b.dataset.k; renderCam(); }  // tap a view to (re)take it
   });
   document.getElementById('camClose').addEventListener('click', () => closeCam());
-  addEventListener('popstate', () => closeCam(true));
+  addEventListener('popstate', () => { if (!history.state?.cam) closeCam(true); });
   document.getElementById('start').addEventListener('click', openCam);
 
   // Desktop: dropping three photos works too (in the order side, top, underside).
