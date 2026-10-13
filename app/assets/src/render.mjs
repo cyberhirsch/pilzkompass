@@ -7,7 +7,7 @@ const dir = new URL('../', import.meta.url);
 const mushroom = await readFile(new URL('./mushroom.svg', import.meta.url));
 const background = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024">
   <defs><radialGradient id="g" cx="50%" cy="42%" r="70%">
-    <stop offset="0" stop-color="#3f6136"/><stop offset="1" stop-color="#1c2d1a"/>
+    <stop offset="0" stop-color="#2f271e"/><stop offset="1" stop-color="#14110d"/>
   </radialGradient></defs>
   <rect width="1024" height="1024" fill="url(#g)"/></svg>`);
 
