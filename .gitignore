@@ -26,3 +26,6 @@ app/node_modules/
 app/www/
 app/cache/
 app/dist/
+
+# Map tiles copied into the Play asset pack by tools/play-bundle.sh
+app/android/tiles/src/

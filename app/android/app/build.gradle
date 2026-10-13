@@ -7,8 +7,9 @@ android {
         applicationId "de.pilzkompass.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        // CI sets these for store builds (VERSION_CODE must grow with every Play upload).
+        versionCode((System.getenv("VERSION_CODE") ?: "1").toInteger())
+        versionName(System.getenv("VERSION_NAME") ?: "1.0")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -16,8 +17,26 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    // Upload key for Google Play, only when CI provides it (see .github/workflows/build-apps.yml).
+    if (System.getenv("KEYSTORE_FILE")) {
+        signingConfigs {
+            upload {
+                storeFile file(System.getenv("KEYSTORE_FILE"))
+                storePassword System.getenv("KEYSTORE_PASSWORD")
+                keyAlias System.getenv("KEY_ALIAS")
+                keyPassword System.getenv("KEYSTORE_PASSWORD")
+            }
+        }
+    }
+    // Play build (-PtilePack): the 10 m map tiles go into an install-time asset pack, keeping the
+    // base module under Play's 200 MB limit. Install-time packs are read through AssetManager like
+    // normal assets, so the web app loads them unchanged.
+    if (project.hasProperty("tilePack")) {
+        assetPacks = [":tiles"]
+    }
     buildTypes {
         release {
+            if (System.getenv("KEYSTORE_FILE")) signingConfig signingConfigs.upload
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

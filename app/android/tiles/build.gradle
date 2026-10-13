@@ -1,0 +1,12 @@
+// Install-time asset pack for the Google Play build: holds src/main/assets/public/maps/tiles,
+// moved here by CI after 'cap sync'. Play installs it together with the app.
+plugins {
+    id 'com.android.asset-pack'
+}
+
+assetPack {
+    packName = 'tiles'
+    dynamicDelivery {
+        deliveryType = 'install-time'
+    }
+}

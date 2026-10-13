@@ -46,6 +46,51 @@ jobs:
           path: app/android/app/build/outputs/apk/debug/app-debug.apk
           compression-level: 0
 
+  # Google Play bundle (AAB), signed with the upload key; tiles in an install-time asset pack.
+  # Kept as a short-lived workflow artifact only, not attached to the public release.
+  play:
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Assemble offline web bundle
+        working-directory: app
+        run: |
+          pip install requests pillow
+          npm ci
+          python ../tools/build-app.py
+      - name: Build signed Play bundle
+        working-directory: app
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          VERSION_CODE: ${{ github.run_number }}
+          VERSION_NAME: ${{ github.ref_name }}
+        run: |
+          export KEYSTORE_FILE="$RUNNER_TEMP/upload.jks"
+          echo "$KEYSTORE_BASE64" | base64 -d > "$KEYSTORE_FILE"
+          bash ../tools/play-bundle.sh
+          rm -f "$KEYSTORE_FILE"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pilzkompass-play-aab
+          path: app/android/app/build/outputs/bundle/release/app-release.aab
+          compression-level: 0
+          retention-days: 14
+
   ios:
     runs-on: macos-15
     steps:
