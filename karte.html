@@ -219,22 +219,57 @@
     }
     ctx.putImageData(d, 0, 0);
   }
+  // Class array of one stored tile, or null where there is no forest (no file).
+  function loadCls(z, x, y) {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement('canvas');
+        c.width = c.height = 256;
+        const ctx = c.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        const raw = ctx.getImageData(0, 0, 256, 256).data, cls = new Uint8Array(65536);
+        for (let i = 0; i < 65536; i++) if (raw[i * 4 + 3]) cls[i] = Math.round(raw[i * 4] / 20);
+        resolve(cls);
+      };
+      img.onerror = () => resolve(null);
+      img.src = `maps/tiles/${z}/${x}/${y}.webp`;
+    });
+  }
+  // Zoom 12 is not stored (saves ~45 MB): it is built from its four zoom-13 tiles with the same
+  // 2×2 majority rule as maps/build_tiles.py (most frequent non-empty class, first one wins a tie).
+  const SYNTH_Z = 12;
+  async function synthCls(x, y) {
+    const kids = await Promise.all([[0, 0], [1, 0], [0, 1], [1, 1]].map(([dx, dy]) => loadCls(SYNTH_Z + 1, 2 * x + dx, 2 * y + dy)));
+    if (!kids.some(Boolean)) return null;
+    const out = new Uint8Array(65536), v = new Uint8Array(4);
+    for (let q = 0; q < 4; q++) {
+      const k = kids[q];
+      if (!k) continue;
+      const ox = (q & 1) * 128, oy = (q >> 1) * 128;
+      for (let j = 0; j < 128; j++)
+        for (let i = 0; i < 128; i++) {
+          const s = 2 * j * 256 + 2 * i;
+          v[0] = k[s]; v[1] = k[s + 1]; v[2] = k[s + 256]; v[3] = k[s + 257];
+          let best = 0, bestN = 0;
+          for (let a = 0; a < 4; a++) {
+            if (!v[a]) continue;
+            const n = (v[a] === v[0]) + (v[a] === v[1]) + (v[a] === v[2]) + (v[a] === v[3]);
+            if (n > bestN) { best = v[a]; bestN = n; }
+          }
+          out[(oy + j) * 256 + ox + i] = best;
+        }
+    }
+    return out;
+  }
   const TreeTiles = L.GridLayer.extend({
     createTile(coords, done) {
       const canvas = document.createElement('canvas');
       canvas.width = canvas.height = 256;
-      const img = new Image();
-      img.onload = () => {
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0);
-        const raw = ctx.getImageData(0, 0, 256, 256).data, cls = new Uint8Array(65536);
-        for (let i = 0; i < 65536; i++) if (raw[i * 4 + 3]) cls[i] = Math.round(raw[i * 4] / 20);
-        canvas._cls = cls;
-        paint(canvas);
+      (coords.z === SYNTH_Z ? synthCls(coords.x, coords.y) : loadCls(coords.z, coords.x, coords.y)).then(cls => {
+        if (cls) { canvas._cls = cls; paint(canvas); }   // null: no forest in this tile
         done(null, canvas);
-      };
-      img.onerror = () => done(null, canvas);   // no forest in this tile
-      img.src = `maps/tiles/${coords.z}/${coords.x}/${coords.y}.png`;
+      });
       return canvas;
     },
   });
@@ -242,7 +277,7 @@
 
   // Without the tile set (e.g. in the app before tiles are bundled) stay on the 1 km overview.
   let tilesOk = false;
-  fetch('maps/tiles/5/17/10.png', { method: 'HEAD' }).then(r => { tilesOk = r.ok; if (meta) zoomSwitch(); }, () => {});
+  fetch('maps/tiles/5/17/10.webp', { method: 'HEAD' }).then(r => { tilesOk = r.ok; if (meta) zoomSwitch(); }, () => {});
   function zoomSwitch() {
     const detail = tilesOk && map.getZoom() >= DETAIL_ZOOM;
     if (overlay) detail ? overlay.remove() : overlay.addTo(map);

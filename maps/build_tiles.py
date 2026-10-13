@@ -7,7 +7,7 @@ tree is selected, so one tile set serves every view.
 z13 is ~12 m per pixel in Germany, i.e. the native 10 m resolution; deeper zooms are upscaled
 by the map. Lower zooms keep the most frequent tree class of each 2x2 block.
 
-Usage: python maps/build_tiles.py      → maps/tiles/{z}/{x}/{y}.png
+Usage: python maps/build_tiles.py      → maps/tiles/{z}/{x}/{y}.webp
 """
 import math
 from pathlib import Path
@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "source" / "Dominant_Species_Class.tif"
 OUT = ROOT / "tiles"
 MAX_Z, MIN_Z, BLOCK = 13, 5, 16          # BLOCK x BLOCK z13 tiles are warped at once (= one z9 tile)
+SKIP_Z = {12}                            # built in the browser from z13 (karte.html, synthCls)
 CODES = [2, 3, 4, 5, 6, 8, 9, 10, 14, 16, 17]   # birch beech douglas oak alder spruce pine larch fir odh odl
 ORIGIN = 20037508.342789244
 
@@ -35,11 +36,13 @@ PALETTE = [0, 0, 0] + [v for i in range(1, len(CODES) + 1) for v in (i * 20, i *
 def save(arr, z, x, y):
     if not arr.any():
         return False
-    path = OUT / str(z) / str(x) / f"{y}.png"
+    path = OUT / str(z) / str(x) / f"{y}.webp"
     path.parent.mkdir(parents=True, exist_ok=True)
     img = Image.fromarray(arr, "P")
     img.putpalette(PALETTE)
-    img.save(path, optimize=True, bits=4, transparency=0)
+    img.info["transparency"] = 0
+    # Lossless WebP, red = class * 20, class 0 transparent (about 30 % smaller than PNG).
+    img.convert("RGBA").save(path, "WEBP", lossless=True, quality=100, method=4, exact=False)
     return True
 
 
@@ -83,7 +86,7 @@ def main():
                 level = block
                 for z in range(MAX_Z, 8, -1):                     # z13 … z9 from this block
                     k = BLOCK >> (MAX_Z - z)
-                    for j in range(k):
+                    for j in range(k if z not in SKIP_Z else 0):
                         for i in range(k):
                             count += save(level[j * 256:(j + 1) * 256, i * 256:(i + 1) * 256], z,
                                           (tx >> (MAX_Z - z)) + i, (ty >> (MAX_Z - z)) + j)
@@ -101,7 +104,7 @@ def main():
         tiles = {k: majority(v) for k, v in parents.items()}
         for (x, y), arr in tiles.items():
             count += save(arr, z, x, y)
-    size = sum(f.stat().st_size for f in OUT.rglob("*.png"))
+    size = sum(f.stat().st_size for f in OUT.rglob("*.webp"))
     print(f"{count} tiles, {size / 1e6:.0f} MB")
 
 

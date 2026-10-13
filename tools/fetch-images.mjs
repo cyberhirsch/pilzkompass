@@ -118,9 +118,13 @@ function cleanArtist(html) {
     .replace(/\s*derivative work:\s*/i, ' · Bearbeitung: ').replace(/[\s·:]+$/, '').trim();
   return a.length > 120 ? a.slice(0, 119).trimEnd() + '…' : a;
 }
-const REJECT = /spores?|sporen|spore.?print|micro|mikro|cystid|basidi|hyph|stamp|briefmarke|illustrat|drawing|zeichnung|aquarell|painting|gemälde|\bplate\b|tafel|herbar|exsicc|dried|getrocknet|\bmap\b|karte|distribution|recipe|soup|suppe|market|markt|basket|korb|pizza|risotto|sauce|cooked|fried|gebraten|pfanne|dish|kitchen|küche|harvest|ernte|\bsale\b|verkauf|frozen|chemical|reagent|\bkoh\b|\bnh3\b|mycel|culture|petri|logo/i;
+const REJECT = /\bspores?\b|sporen|spore.?print|micro|mikro|cystid|basidi|hyph|stamp|briefmarke|illustrat|drawing|zeichnung|aquarell|painting|gemälde|\bplate\b|tafel|herbar|exsicc|dried|getrocknet|\bmap\b|karte|distribution|recipe|soup|suppe|market|markt|basket|korb|bucket|eimer|pizza|risotto|sauce|cooked|fried|gebraten|pfanne|dish|kitchen|küche|harvest|ernte|\bsale\b|verkauf|frozen|chemical|reagent|\bkoh\b|\bnh3\b|mycel|culture|petri|logo/i;
 // Checked against the file name only: descriptions often mention camera models etc.
-const REJECT_TITLE = /model|modell|wax|wachs|replica|sculpt|figurine|toy|spielzeug|museum|mhnt/i;
+const REJECT_TITLE = /\bmodel\b|modell|\bwax\b|wachs|replica|sculpt|figurine|\btoy\b|spielzeug|museum|mhnt/i;
+// Files filed under a bolete category that show another fungus.
+const BAD_FILES = new Set([
+  'Calocera viscosa - Klebringer Hörnling - Yellow stagshorn fungi - 02.jpg',
+]);
 const STAGES = [
   ['cut', /cross.?section|section|\bcut\b|sliced|halved|schnitt|halbiert|aufgeschnitten|flesh|fleisch|bluing|blueing|blauend|verfärb|discolou?r|inside|innen/i],
   ['pores', /pores?\b|poren|underside|unterseite|hymeni|tubes|röhren|from below|von unten/i],
@@ -144,7 +148,7 @@ async function gallery(s, lead, extra = []) {
     const meta = ii.extmetadata ?? {};
     const desc = strip(meta.ImageDescription?.value);
     const text = `${title} ${desc} ${f.hint}`;
-    if (REJECT.test(text) || REJECT_TITLE.test(title)) continue;
+    if (REJECT.test(text) || REJECT_TITLE.test(title) || BAD_FILES.has(title.replace(/^File:/, ''))) continue;
     const cats = (p.categories ?? []).map(c => c.title).join(' ');
     items.push({
       file: title.replace(/^File:/, ''),

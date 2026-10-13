@@ -104,11 +104,11 @@ window.BOLETES = [
     "stage": null
    },
    {
-    "file": "Calocera viscosa - Klebringer Hörnling - Yellow stagshorn fungi - 02.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Calocera_viscosa_-_Klebringer_H%C3%B6rnling_-_Yellow_stagshorn_fungi_-_02.jpg/1280px-Calocera_viscosa_-_Klebringer_H%C3%B6rnling_-_Yellow_stagshorn_fungi_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Calocera_viscosa_-_Klebringer_H%C3%B6rnling_-_Yellow_stagshorn_fungi_-_02.jpg/330px-Calocera_viscosa_-_Klebringer_H%C3%B6rnling_-_Yellow_stagshorn_fungi_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Norbert Nagel",
-    "license": "CC BY-SA 3.0",
+    "file": "Steinpilze IMG 8103.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Steinpilze_IMG_8103.jpg/1280px-Steinpilze_IMG_8103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Steinpilze_IMG_8103.jpg/330px-Steinpilze_IMG_8103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Fischer.H",
+    "license": "CC BY-SA 4.0",
     "stage": null
    }
   ]
@@ -1030,14 +1030,6 @@ window.BOLETES = [
     "stage": "cut"
    },
    {
-    "file": "Caloboletus calopus 314633545.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Caloboletus_calopus_314633545.jpg/1280px-Caloboletus_calopus_314633545.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Caloboletus_calopus_314633545.jpg/330px-Caloboletus_calopus_314633545.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "bjoerns",
-    "license": "CC BY-SA 4.0",
-    "stage": "pores"
-   },
-   {
     "file": "Caloboletus calopus young collection.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Caloboletus_calopus_young_collection.jpg/1280px-Caloboletus_calopus_young_collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Caloboletus_calopus_young_collection.jpg/330px-Caloboletus_calopus_young_collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1073,6 +1065,14 @@ window.BOLETES = [
     "file": "Botanical Garden Gothenburg and Anggårdsbergen 13.08.2017 Bitter Beech Bolete - Caloboletus calopus (37369490141).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Bitter_Beech_Bolete_-_Caloboletus_calopus_%2837369490141%29.jpg/1280px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Bitter_Beech_Bolete_-_Caloboletus_calopus_%2837369490141%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Bitter_Beech_Bolete_-_Caloboletus_calopus_%2837369490141%29.jpg/330px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Bitter_Beech_Bolete_-_Caloboletus_calopus_%2837369490141%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Caloboletus calopus (23682345118).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Caloboletus_calopus_%2823682345118%29.jpg/1280px-Caloboletus_calopus_%2823682345118%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Caloboletus_calopus_%2823682345118%29.jpg/330px-Caloboletus_calopus_%2823682345118%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Björn S...",
     "license": "CC BY-SA 2.0",
     "stage": null
@@ -1540,14 +1540,6 @@ window.BOLETES = [
     "stage": null
    },
    {
-    "file": "Rubroboletus rhodoxanthus spores.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Rubroboletus_rhodoxanthus_spores.jpg/1280px-Rubroboletus_rhodoxanthus_spores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Rubroboletus_rhodoxanthus_spores.jpg/330px-Rubroboletus_rhodoxanthus_spores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "bjoerns",
-    "license": "CC BY-SA 4.0",
-    "stage": "pores"
-   },
-   {
     "file": "Roodnetboleet (Boletus rhodoxanthus).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Roodnetboleet_%28Boletus_rhodoxanthus%29.jpg/1280px-Roodnetboleet_%28Boletus_rhodoxanthus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Roodnetboleet_%28Boletus_rhodoxanthus%29.jpg/330px-Roodnetboleet_%28Boletus_rhodoxanthus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1593,6 +1585,14 @@ window.BOLETES = [
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Rubroboletus_rhodoxanthus_2025-08-04.jpg/330px-Rubroboletus_rhodoxanthus_2025-08-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Brozkeff",
     "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "2012-08-07 Boletus rhodoxanthus (Krombholz) Kallenbach 305598.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2012-08-07_Boletus_rhodoxanthus_%28Krombholz%29_Kallenbach_305598.jpg/1280px-2012-08-07_Boletus_rhodoxanthus_%28Krombholz%29_Kallenbach_305598.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2012-08-07_Boletus_rhodoxanthus_%28Krombholz%29_Kallenbach_305598.jpg/330px-2012-08-07_Boletus_rhodoxanthus_%28Krombholz%29_Kallenbach_305598.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Gerhard Koller (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
     "stage": null
    }
   ]
@@ -3436,9 +3436,9 @@ window.BOLETES = [
     "stage": null
    },
    {
-    "file": "Edible fungi in bucket 2011 G1.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Edible_fungi_in_bucket_2011_G1.jpg/1280px-Edible_fungi_in_bucket_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Edible_fungi_in_bucket_2011_G1.jpg/330px-Edible_fungi_in_bucket_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "file": "Boletus impolitus 2010 G2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Boletus_impolitus_2010_G2.jpg/1280px-Boletus_impolitus_2010_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Boletus_impolitus_2010_G2.jpg/330px-Boletus_impolitus_2010_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "George Chernilevsky",
     "license": "Public domain",
     "stage": null
@@ -4277,14 +4277,6 @@ window.BOLETES = [
     "stage": null
    },
    {
-    "file": "Xerocomellus porosporus spores (36540363795).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Xerocomellus_porosporus_spores_%2836540363795%29.jpg/1280px-Xerocomellus_porosporus_spores_%2836540363795%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Xerocomellus_porosporus_spores_%2836540363795%29.jpg/330px-Xerocomellus_porosporus_spores_%2836540363795%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Lukas from London, England",
-    "license": "CC BY-SA 2.0",
-    "stage": "pores"
-   },
-   {
     "file": "Sepia Bolete - Boletus porosporus (28164549801).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Sepia_Bolete_-_Boletus_porosporus_%2828164549801%29.jpg/1280px-Sepia_Bolete_-_Boletus_porosporus_%2828164549801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Sepia_Bolete_-_Boletus_porosporus_%2828164549801%29.jpg/330px-Sepia_Bolete_-_Boletus_porosporus_%2828164549801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4328,6 +4320,14 @@ window.BOLETES = [
     "file": "Xerocomellus porosporus - panoramio (1).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Xerocomellus_porosporus_-_panoramio_%281%29.jpg/1280px-Xerocomellus_porosporus_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Xerocomellus_porosporus_-_panoramio_%281%29.jpg/330px-Xerocomellus_porosporus_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S.",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Xerocomellus porosporus - panoramio (2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Xerocomellus_porosporus_-_panoramio_%282%29.jpg/1280px-Xerocomellus_porosporus_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Xerocomellus_porosporus_-_panoramio_%282%29.jpg/330px-Xerocomellus_porosporus_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Björn S.",
     "license": "CC BY-SA 3.0",
     "stage": null
@@ -4394,14 +4394,6 @@ window.BOLETES = [
     "stage": "cut"
    },
    {
-    "file": "Xerocomellus cisalpinus spores (35861980333).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Xerocomellus_cisalpinus_spores_%2835861980333%29.jpg/1280px-Xerocomellus_cisalpinus_spores_%2835861980333%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Xerocomellus_cisalpinus_spores_%2835861980333%29.jpg/330px-Xerocomellus_cisalpinus_spores_%2835861980333%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Lukas from London, England",
-    "license": "CC BY-SA 2.0",
-    "stage": "pores"
-   },
-   {
     "file": "Xerocomellus cisalpinus (36501718962).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Xerocomellus_cisalpinus_%2836501718962%29.jpg/1280px-Xerocomellus_cisalpinus_%2836501718962%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Xerocomellus_cisalpinus_%2836501718962%29.jpg/330px-Xerocomellus_cisalpinus_%2836501718962%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4437,6 +4429,14 @@ window.BOLETES = [
     "file": "Xerocomellus cisalpinus (36625073556).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Xerocomellus_cisalpinus_%2836625073556%29.jpg/1280px-Xerocomellus_cisalpinus_%2836625073556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Xerocomellus_cisalpinus_%2836625073556%29.jpg/330px-Xerocomellus_cisalpinus_%2836625073556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Xerocomellus cisalpinus (36625093876).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Xerocomellus_cisalpinus_%2836625093876%29.jpg/1280px-Xerocomellus_cisalpinus_%2836625093876%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Xerocomellus_cisalpinus_%2836625093876%29.jpg/330px-Xerocomellus_cisalpinus_%2836625093876%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Lukas from London, England",
     "license": "CC BY-SA 2.0",
     "stage": null
@@ -4777,14 +4777,6 @@ window.BOLETES = [
     "stage": null
    },
    {
-    "file": "Hortiboletus rubellus 565738406.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Hortiboletus_rubellus_565738406.jpg/1280px-Hortiboletus_rubellus_565738406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Hortiboletus_rubellus_565738406.jpg/330px-Hortiboletus_rubellus_565738406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Matej Frančeškin",
-    "license": "CC BY 4.0",
-    "stage": "pores"
-   },
-   {
     "file": "20220908.Röhrling.-11.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/20220908.R%C3%B6hrling.-11.jpg/1280px-20220908.R%C3%B6hrling.-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/20220908.R%C3%B6hrling.-11.jpg/330px-20220908.R%C3%B6hrling.-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4828,6 +4820,14 @@ window.BOLETES = [
     "file": "Hortiboletus rubellus (35702857764).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Hortiboletus_rubellus_%2835702857764%29.jpg/1280px-Hortiboletus_rubellus_%2835702857764%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Hortiboletus_rubellus_%2835702857764%29.jpg/330px-Hortiboletus_rubellus_%2835702857764%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Hortiboletus rubellus (35702937024).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Hortiboletus_rubellus_%2835702937024%29.jpg/1280px-Hortiboletus_rubellus_%2835702937024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Hortiboletus_rubellus_%2835702937024%29.jpg/330px-Hortiboletus_rubellus_%2835702937024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Lukas from London, England",
     "license": "CC BY-SA 2.0",
     "stage": null
@@ -7583,14 +7583,6 @@ window.BOLETES = [
     "stage": "cut"
    },
    {
-    "file": "Leccinellum crocipodium 547341329.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Leccinellum_crocipodium_547341329.jpg/1280px-Leccinellum_crocipodium_547341329.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Leccinellum_crocipodium_547341329.jpg/330px-Leccinellum_crocipodium_547341329.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Matej Frančeškin",
-    "license": "CC BY 4.0",
-    "stage": "pores"
-   },
-   {
     "file": "Leccinellum crocipodium 542993731.jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Leccinellum_crocipodium_542993731.jpg/1280px-Leccinellum_crocipodium_542993731.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Leccinellum_crocipodium_542993731.jpg/330px-Leccinellum_crocipodium_542993731.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -7628,6 +7620,14 @@ window.BOLETES = [
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Huge_Bolete_%28Yellow_cracking%5E%29._Leccinum_crocipodium_-_Flickr_-_gailhampshire.jpg/330px-Huge_Bolete_%28Yellow_cracking%5E%29._Leccinum_crocipodium_-_Flickr_-_gailhampshire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "gailhampshire from Cradley, Malvern, U.K",
     "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Leccinellum crocipodium 3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Leccinellum_crocipodium_3.jpg/1280px-Leccinellum_crocipodium_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Leccinellum_crocipodium_3.jpg/330px-Leccinellum_crocipodium_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
     "stage": null
    }
   ]
@@ -8657,19 +8657,11 @@ window.BOLETES = [
     "stage": null
    },
    {
-    "file": "Suillus bovinus 187483.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Suillus_bovinus_187483.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Suillus_bovinus_187483.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "artist": "amadej trnkoczy (amadej)",
-    "license": "CC BY-SA 3.0",
-    "stage": "cut"
-   },
-   {
-    "file": "Bolete fungi. (Suillus bovinus) (34259832982).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Bolete_fungi._%28Suillus_bovinus%29_%2834259832982%29.jpg/1280px-Bolete_fungi._%28Suillus_bovinus%29_%2834259832982%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Bolete_fungi._%28Suillus_bovinus%29_%2834259832982%29.jpg/330px-Bolete_fungi._%28Suillus_bovinus%29_%2834259832982%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "artist": "Bernard Spragg. NZ from Christchurch, New Zealand",
-    "license": "CC0",
+    "file": "Lukas Large - Suillus bovinus - Bovine Bolete pores (54874177465).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Lukas_Large_-_Suillus_bovinus_-_Bovine_Bolete_pores_%2854874177465%29.jpg/1280px-Lukas_Large_-_Suillus_bovinus_-_Bovine_Bolete_pores_%2854874177465%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Lukas_Large_-_Suillus_bovinus_-_Bovine_Bolete_pores_%2854874177465%29.jpg/330px-Lukas_Large_-_Suillus_bovinus_-_Bovine_Bolete_pores_%2854874177465%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas Large from Stourbridge, United Kingdom",
+    "license": "CC BY-SA 4.0",
     "stage": "pores"
    },
    {
@@ -8708,6 +8700,14 @@ window.BOLETES = [
     "file": "Bovine Bolete - Suillus bovinus (26842012429).jpg",
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bovine_Bolete_-_Suillus_bovinus_%2826842012429%29.jpg/1280px-Bovine_Bolete_-_Suillus_bovinus_%2826842012429%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bovine_Bolete_-_Suillus_bovinus_%2826842012429%29.jpg/330px-Bovine_Bolete_-_Suillus_bovinus_%2826842012429%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Bovine Bolete - Suillus bovinus (37732393145).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Bovine_Bolete_-_Suillus_bovinus_%2837732393145%29.jpg/1280px-Bovine_Bolete_-_Suillus_bovinus_%2837732393145%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Bovine_Bolete_-_Suillus_bovinus_%2837732393145%29.jpg/330px-Bovine_Bolete_-_Suillus_bovinus_%2837732393145%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Björn S...",
     "license": "CC BY-SA 2.0",
     "stage": null
