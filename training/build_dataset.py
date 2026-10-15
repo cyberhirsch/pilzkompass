@@ -3,16 +3,17 @@
 Classes:
   - every species in tools/species.json with >= MIN_OBS research-grade observations,
   - rare species pooled into two groups (rare poisonous / rare other),
-  - common non-bolete look-alikes,
-  - "other fungi" (random European non-Boletales fungi).
+  - "other fungi" (random European fungi outside Boletales and outside our species).
 
 Writes training/data/<class>/<photo_id>.jpg, training/classes.json and
-training/photos.csv (attribution + train/val split). Safe to re-run: existing files are skipped.
+training/photos.csv (attribution + train/val split). Safe to re-run: classes already in
+photos.csv keep their photos (pass --fresh to query them again), existing files are skipped.
 """
 import csv
 import hashlib
 import json
 import random
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -75,19 +76,21 @@ def class_list():
             seen_taxa[c["taxon_id"]]["site"].append(c["sci"])
             continue
         if c["kind"] == "lookalike":
-            entry = {"key": c["sci"], "kind": "lookalike", "taxa": [c["taxon_id"]], "site": []}
+            entry = {"key": c["sci"], "kind": "lookalike", "bolete": False, "taxa": [c["taxon_id"]], "site": []}
         elif c["all"] >= MIN_OBS:
-            entry = {"key": c["sci"], "kind": "species", "taxa": [c["taxon_id"]], "site": [c["sci"]]}
+            entry = {"key": c["sci"], "kind": "species", "bolete": c.get("bolete", True), "taxa": [c["taxon_id"]],
+                     "site": [c["sci"]]}
         else:
+            assert c.get("bolete", True), f"rare non-bolete {c['sci']}: the rare groups are boletes only"
             group = "rare-poisonous" if species[c["sci"]]["status"] == "poisonous" else "rare-other"
             rare[group].append(c)
             continue
         seen_taxa[c["taxon_id"]] = entry
         classes.append(entry)
     for key, members in rare.items():
-        classes.append({"key": key, "kind": "group", "taxa": [m["taxon_id"] for m in members],
+        classes.append({"key": key, "kind": "group", "bolete": True, "taxa": [m["taxon_id"] for m in members],
                         "site": [m["sci"] for m in members]})
-    classes.append({"key": "other-fungi", "kind": "other", "taxa": [], "site": []})
+    classes.append({"key": "other-fungi", "kind": "other", "bolete": False, "taxa": [], "site": []})
     return classes
 
 
@@ -95,7 +98,13 @@ def split_of(obs_id):
     return "val" if int(hashlib.md5(str(obs_id).encode()).hexdigest(), 16) % 100 < 15 else "train"
 
 
-def collect(entry):
+def ours(o, taxa):
+    """True if an observation is one of our classes (or below one, e.g. a subspecies)."""
+    t = o.get("taxon") or {}
+    return t.get("id") in taxa or bool(taxa.intersection(t.get("ancestor_ids") or []))
+
+
+def collect(entry, taxa):
     """Returns a list of photo records for one class."""
     records = []
     if entry["kind"] == "other":
@@ -107,8 +116,8 @@ def collect(entry):
             obs = observations(per_window, taxon_id=FUNGI, without_taxon_id=BOLETALES, place_id=97391,
                                d1=f"{y}-{m:02d}-01", d2=f"{y}-{m:02d}-28")
             for o in obs:
-                p = o["photos"][0]
-                records.append((o, p))
+                if not ours(o, taxa):
+                    records.append((o, o["photos"][0]))
         return records
     budget = MAX_PER_CLASS
     per_taxon = max(1, budget // len(entry["taxa"]))
@@ -137,15 +146,42 @@ def download(job):
     return False
 
 
+def previous_rows(taxa):
+    """Rows of the last run per class; other-fungi rows that show one of our classes are dropped."""
+    path = ROOT / "photos.csv"
+    if "--fresh" in sys.argv or not path.exists():
+        return {}
+    old = {}
+    for r in csv.DictReader(open(path, encoding="utf-8")):
+        old.setdefault(r["class"], []).append(r)
+    other = old.get("other-fungi", [])
+    if other:
+        ids = sorted({r["observation"] for r in other})
+        bad = set()
+        for i in range(0, len(ids), 200):
+            for o in api("observations", id=",".join(ids[i:i + 200]), per_page=200)["results"]:
+                if ours(o, taxa):
+                    bad.add(str(o["id"]))
+        old["other-fungi"] = [r for r in other if r["observation"] not in bad]
+        print(f"other-fungi: {len(bad)} observations of our classes dropped", flush=True)
+    return old
+
+
 def main():
     classes = class_list()
     (ROOT / "classes.json").write_text(json.dumps(classes, ensure_ascii=False, indent=1), encoding="utf-8")
     print(len(classes), "classes")
+    taxa = {t for c in classes for t in c["taxa"]}
+    old = previous_rows(taxa)
     rows, jobs = [], []
     for entry in classes:
         folder = DATA / entry["key"]
         folder.mkdir(parents=True, exist_ok=True)
-        recs = collect(entry)
+        if entry["key"] in old:  # keep last run's photos: same split, nothing to download
+            rows += old[entry["key"]]
+            print(f"{len(old[entry['key']]):5d}  {entry['key']} (kept)", flush=True)
+            continue
+        recs = collect(entry, taxa)
         for o, p in recs:
             url = p["url"].replace("/square.", "/medium.")
             path = folder / f"{p['id']}.jpg"

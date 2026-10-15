@@ -2,6 +2,7 @@
  {
   "key": "Boletus edulis",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    48701
   ],
@@ -12,6 +13,7 @@
  {
   "key": "Boletus reticulatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    350216
   ],
@@ -22,6 +24,7 @@
  {
   "key": "Boletus pinophilus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    335942
   ],
@@ -32,6 +35,7 @@
  {
   "key": "Boletus aereus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    333772
   ],
@@ -42,6 +46,7 @@
  {
   "key": "Butyriboletus regius",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    372725
   ],
@@ -52,6 +57,7 @@
  {
   "key": "Butyriboletus appendiculatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    372726
   ],
@@ -62,6 +68,7 @@
  {
   "key": "Butyriboletus fechtneri",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    508747
   ],
@@ -72,6 +79,7 @@
  {
   "key": "Butyriboletus pseudoregius",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544549
   ],
@@ -82,6 +90,7 @@
  {
   "key": "Butyriboletus subappendiculatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    778494
   ],
@@ -92,6 +101,7 @@
  {
   "key": "Caloboletus calopus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    701434
   ],
@@ -102,6 +112,7 @@
  {
   "key": "Caloboletus radicans",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    507493
   ],
@@ -112,6 +123,7 @@
  {
   "key": "Rubroboletus satanas",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544554
   ],
@@ -122,6 +134,7 @@
  {
   "key": "Rubroboletus legaliae",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544555
   ],
@@ -132,6 +145,7 @@
  {
   "key": "Rubroboletus rhodoxanthus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    824010
   ],
@@ -142,6 +156,7 @@
  {
   "key": "Rubroboletus rubrosanguineus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    790185
   ],
@@ -152,6 +167,7 @@
  {
   "key": "Rubroboletus lupinus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    824009
   ],
@@ -162,6 +178,7 @@
  {
   "key": "Rubroboletus pulcherrimus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    790951
   ],
@@ -172,6 +189,7 @@
  {
   "key": "Rubroboletus dupainii",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    1097790
   ],
@@ -182,6 +200,7 @@
  {
   "key": "Rubroboletus pulchrotinctus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    1097840
   ],
@@ -192,6 +211,7 @@
  {
   "key": "Imperator rhodopurpureus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    824670
   ],
@@ -202,6 +222,7 @@
  {
   "key": "Imperator luteocupreus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    824012
   ],
@@ -212,6 +233,7 @@
  {
   "key": "Neoboletus luridiformis",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    553907
   ],
@@ -222,6 +244,7 @@
  {
   "key": "Suillellus luridus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    824777
   ],
@@ -232,6 +255,7 @@
  {
   "key": "Suillellus queletii",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544542
   ],
@@ -242,6 +266,7 @@
  {
   "key": "Suillellus mendax",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    542911
   ],
@@ -252,6 +277,7 @@
  {
   "key": "Cyanoboletus pulverulentus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    517822
   ],
@@ -262,6 +288,7 @@
  {
   "key": "Hemileccinum impolitum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    542661
   ],
@@ -272,6 +299,7 @@
  {
   "key": "Hemileccinum depilatum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    542660
   ],
@@ -282,6 +310,7 @@
  {
   "key": "Imleria badia",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    510854
   ],
@@ -292,6 +321,7 @@
  {
   "key": "Xerocomus subtomentosus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    485374
   ],
@@ -302,6 +332,7 @@
  {
   "key": "Xerocomus ferrugineus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    928737
   ],
@@ -312,6 +343,7 @@
  {
   "key": "Xerocomellus chrysenteron",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    438013
   ],
@@ -322,6 +354,7 @@
  {
   "key": "Xerocomellus pruinatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    474502
   ],
@@ -332,6 +365,7 @@
  {
   "key": "Xerocomellus porosporus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    474202
   ],
@@ -342,6 +376,7 @@
  {
   "key": "Xerocomellus cisalpinus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    416306
   ],
@@ -352,6 +387,7 @@
  {
   "key": "Xerocomellus ripariellus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    460465
   ],
@@ -362,6 +398,7 @@
  {
   "key": "Xerocomellus redeuilhii",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544545
   ],
@@ -372,6 +409,7 @@
  {
   "key": "Hortiboletus rubellus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    833474
   ],
@@ -382,6 +420,7 @@
  {
   "key": "Hortiboletus engelii",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544548
   ],
@@ -392,6 +431,7 @@
  {
   "key": "Rheubarbariboletus armeniacus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    1105816
   ],
@@ -402,6 +442,7 @@
  {
   "key": "Aureoboletus gentilis",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    367880
   ],
@@ -412,6 +453,7 @@
  {
   "key": "Aureoboletus projectellus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    831551
   ],
@@ -422,6 +464,7 @@
  {
   "key": "Chalciporus piperatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    147354
   ],
@@ -432,6 +475,7 @@
  {
   "key": "Pseudoboletus parasiticus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    125724
   ],
@@ -442,6 +486,7 @@
  {
   "key": "Tylopilus felleus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    63489
   ],
@@ -452,6 +497,7 @@
  {
   "key": "Porphyrellus porphyrosporus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    351944
   ],
@@ -462,6 +508,7 @@
  {
   "key": "Strobilomyces strobilaceus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    352462
   ],
@@ -472,6 +519,7 @@
  {
   "key": "Leccinum scabrum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    63232
   ],
@@ -482,6 +530,7 @@
  {
   "key": "Leccinum versipelle",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    343661
   ],
@@ -492,6 +541,7 @@
  {
   "key": "Leccinum aurantiacum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    124085
   ],
@@ -503,6 +553,7 @@
  {
   "key": "Leccinum vulpinum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    351354
   ],
@@ -513,6 +564,7 @@
  {
   "key": "Leccinum duriusculum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363590
   ],
@@ -523,6 +575,7 @@
  {
   "key": "Leccinum variicolor",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363591
   ],
@@ -533,6 +586,7 @@
  {
   "key": "Leccinum holopus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363587
   ],
@@ -543,6 +597,7 @@
  {
   "key": "Leccinum piceinum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    543058
   ],
@@ -553,6 +608,7 @@
  {
   "key": "Leccinum albostipitatum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    1560580
   ],
@@ -563,6 +619,7 @@
  {
   "key": "Leccinum melaneum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    1521478
   ],
@@ -573,6 +630,7 @@
  {
   "key": "Leccinum cyaneobasileucum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    569090
   ],
@@ -583,6 +641,7 @@
  {
   "key": "Leccinellum pseudoscabrum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    824011
   ],
@@ -593,6 +652,7 @@
  {
   "key": "Leccinellum crocipodium",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363586
   ],
@@ -603,6 +663,7 @@
  {
   "key": "Leccinellum lepidum",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    332502
   ],
@@ -613,6 +674,7 @@
  {
   "key": "Gyroporus castaneus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    125688
   ],
@@ -623,6 +685,7 @@
  {
   "key": "Gyroporus cyanescens",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    335276
   ],
@@ -633,6 +696,7 @@
  {
   "key": "Gyrodon lividus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    508749
   ],
@@ -643,6 +707,7 @@
  {
   "key": "Suillus luteus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    53488
   ],
@@ -653,6 +718,7 @@
  {
   "key": "Suillus grevillei",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    147277
   ],
@@ -663,6 +729,7 @@
  {
   "key": "Suillus granulatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    179065
   ],
@@ -673,6 +740,7 @@
  {
   "key": "Suillus bovinus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    337850
   ],
@@ -683,6 +751,7 @@
  {
   "key": "Suillus variegatus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363593
   ],
@@ -693,6 +762,7 @@
  {
   "key": "Suillus viscidus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363594
   ],
@@ -703,6 +773,7 @@
  {
   "key": "Suillus collinitus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363592
   ],
@@ -713,6 +784,7 @@
  {
   "key": "Suillus placidus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    499954
   ],
@@ -723,6 +795,7 @@
  {
   "key": "Suillus plorans",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    861707
   ],
@@ -733,6 +806,7 @@
  {
   "key": "Suillus sibiricus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    346968
   ],
@@ -743,6 +817,7 @@
  {
   "key": "Suillus cavipes",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    410601
   ],
@@ -753,6 +828,7 @@
  {
   "key": "Suillus tridentinus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    554919
   ],
@@ -763,6 +839,7 @@
  {
   "key": "Suillus flavidus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    464150
   ],
@@ -773,6 +850,7 @@
  {
   "key": "Suillus lakei",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    118159
   ],
@@ -783,6 +861,7 @@
  {
   "key": "Suillus bellinii",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    499617
   ],
@@ -793,6 +872,7 @@
  {
   "key": "Suillus mediterraneensis",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    503193
   ],
@@ -803,6 +883,7 @@
  {
   "key": "Lanmaoa fragrans",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    544552
   ],
@@ -813,6 +894,7 @@
  {
   "key": "Buchwaldoboletus lignicola",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    363580
   ],
@@ -823,6 +905,7 @@
  {
   "key": "Buchwaldoboletus hemichrysus",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    350245
   ],
@@ -833,6 +916,7 @@
  {
   "key": "Phylloporus pelletieri",
   "kind": "species",
+  "bolete": true,
   "taxa": [
    508746
   ],
@@ -841,104 +925,625 @@
   ]
  },
  {
-  "key": "Paxillus involutus",
-  "kind": "lookalike",
-  "taxa": [
-   55941
-  ],
-  "site": []
- },
- {
-  "key": "Scleroderma citrinum",
-  "kind": "lookalike",
-  "taxa": [
-   55927
-  ],
-  "site": []
- },
- {
-  "key": "Scleroderma areolatum",
-  "kind": "lookalike",
-  "taxa": [
-   203805
-  ],
-  "site": []
- },
- {
-  "key": "Hygrophoropsis aurantiaca",
-  "kind": "lookalike",
-  "taxa": [
-   63538
-  ],
-  "site": []
- },
- {
-  "key": "Amanita phalloides",
-  "kind": "lookalike",
-  "taxa": [
-   52135
-  ],
-  "site": []
- },
- {
-  "key": "Amanita muscaria",
-  "kind": "lookalike",
-  "taxa": [
-   48715
-  ],
-  "site": []
- },
- {
-  "key": "Amanita pantherina",
-  "kind": "lookalike",
-  "taxa": [
-   48418
-  ],
-  "site": []
- },
- {
-  "key": "Amanita rubescens",
-  "kind": "lookalike",
-  "taxa": [
-   67661
-  ],
-  "site": []
- },
- {
-  "key": "Fistulina hepatica",
-  "kind": "lookalike",
-  "taxa": [
-   123897
-  ],
-  "site": []
- },
- {
-  "key": "Russula ochroleuca",
-  "kind": "lookalike",
-  "taxa": [
-   153459
-  ],
-  "site": []
- },
- {
-  "key": "Lactarius deliciosus",
-  "kind": "lookalike",
-  "taxa": [
-   155197
-  ],
-  "site": []
- },
- {
   "key": "Cantharellus cibarius",
-  "kind": "lookalike",
+  "kind": "species",
+  "bolete": false,
   "taxa": [
    47347
   ],
-  "site": []
+  "site": [
+   "Cantharellus cibarius"
+  ]
+ },
+ {
+  "key": "Craterellus tubaeformis",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   350511
+  ],
+  "site": [
+   "Craterellus tubaeformis"
+  ]
+ },
+ {
+  "key": "Craterellus cornucopioides",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48607
+  ],
+  "site": [
+   "Craterellus cornucopioides"
+  ]
+ },
+ {
+  "key": "Hydnum repandum",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48641
+  ],
+  "site": [
+   "Hydnum repandum"
+  ]
+ },
+ {
+  "key": "Sparassis crispa",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   63014
+  ],
+  "site": [
+   "Sparassis crispa"
+  ]
+ },
+ {
+  "key": "Macrolepiota procera",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   63401
+  ],
+  "site": [
+   "Macrolepiota procera"
+  ]
+ },
+ {
+  "key": "Chlorophyllum rhacodes",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   56535
+  ],
+  "site": [
+   "Chlorophyllum rhacodes"
+  ]
+ },
+ {
+  "key": "Agaricus campestris",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   143563
+  ],
+  "site": [
+   "Agaricus campestris"
+  ]
+ },
+ {
+  "key": "Agaricus arvensis",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   58699
+  ],
+  "site": [
+   "Agaricus arvensis"
+  ]
+ },
+ {
+  "key": "Amanita rubescens",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   67661
+  ],
+  "site": [
+   "Amanita rubescens"
+  ]
+ },
+ {
+  "key": "Lactarius deliciosus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   155197
+  ],
+  "site": [
+   "Lactarius deliciosus"
+  ]
+ },
+ {
+  "key": "Lactarius deterrimus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   194385
+  ],
+  "site": [
+   "Lactarius deterrimus"
+  ]
+ },
+ {
+  "key": "Russula cyanoxantha",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   194437
+  ],
+  "site": [
+   "Russula cyanoxantha"
+  ]
+ },
+ {
+  "key": "Russula vesca",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   352311
+  ],
+  "site": [
+   "Russula vesca"
+  ]
+ },
+ {
+  "key": "Armillaria mellea",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   55950
+  ],
+  "site": [
+   "Armillaria mellea"
+  ]
+ },
+ {
+  "key": "Armillaria ostoyae",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   192381
+  ],
+  "site": [
+   "Armillaria ostoyae"
+  ]
+ },
+ {
+  "key": "Kuehneromyces mutabilis",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   153033
+  ],
+  "site": [
+   "Kuehneromyces mutabilis"
+  ]
+ },
+ {
+  "key": "Pleurotus ostreatus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48494
+  ],
+  "site": [
+   "Pleurotus ostreatus"
+  ]
+ },
+ {
+  "key": "Coprinus comatus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   47392
+  ],
+  "site": [
+   "Coprinus comatus"
+  ]
+ },
+ {
+  "key": "Lepista nuda",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   1525548
+  ],
+  "site": [
+   "Lepista nuda"
+  ]
+ },
+ {
+  "key": "Calocybe gambosa",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   450829
+  ],
+  "site": [
+   "Calocybe gambosa"
+  ]
+ },
+ {
+  "key": "Marasmius oreades",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   118240
+  ],
+  "site": [
+   "Marasmius oreades"
+  ]
+ },
+ {
+  "key": "Morchella esculenta",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   58682
+  ],
+  "site": [
+   "Morchella esculenta"
+  ]
+ },
+ {
+  "key": "Laetiporus sulphureus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   53713
+  ],
+  "site": [
+   "Laetiporus sulphureus"
+  ]
+ },
+ {
+  "key": "Calvatia gigantea",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   57692
+  ],
+  "site": [
+   "Calvatia gigantea"
+  ]
+ },
+ {
+  "key": "Lycoperdon perlatum",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48443
+  ],
+  "site": [
+   "Lycoperdon perlatum"
+  ]
+ },
+ {
+  "key": "Auricularia auricula-judae",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   50813
+  ],
+  "site": [
+   "Auricularia auricula-judae"
+  ]
+ },
+ {
+  "key": "Fistulina hepatica",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   123897
+  ],
+  "site": [
+   "Fistulina hepatica"
+  ]
+ },
+ {
+  "key": "Hygrophoropsis aurantiaca",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   63538
+  ],
+  "site": [
+   "Hygrophoropsis aurantiaca"
+  ]
+ },
+ {
+  "key": "Omphalotus olearius",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   64021
+  ],
+  "site": [
+   "Omphalotus olearius"
+  ]
+ },
+ {
+  "key": "Cortinarius rubellus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   500053
+  ],
+  "site": [
+   "Cortinarius rubellus"
+  ]
+ },
+ {
+  "key": "Cortinarius orellanus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   337849
+  ],
+  "site": [
+   "Cortinarius orellanus"
+  ]
+ },
+ {
+  "key": "Chlorophyllum brunneum",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   58693
+  ],
+  "site": [
+   "Chlorophyllum brunneum"
+  ]
+ },
+ {
+  "key": "Lepiota brunneoincarnata",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   515954
+  ],
+  "site": [
+   "Lepiota brunneoincarnata"
+  ]
+ },
+ {
+  "key": "Lepiota cristata",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   58694
+  ],
+  "site": [
+   "Lepiota cristata"
+  ]
+ },
+ {
+  "key": "Amanita phalloides",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   52135
+  ],
+  "site": [
+   "Amanita phalloides"
+  ]
+ },
+ {
+  "key": "Amanita virosa",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   58685
+  ],
+  "site": [
+   "Amanita virosa"
+  ]
+ },
+ {
+  "key": "Amanita pantherina",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48418
+  ],
+  "site": [
+   "Amanita pantherina"
+  ]
+ },
+ {
+  "key": "Amanita muscaria",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48715
+  ],
+  "site": [
+   "Amanita muscaria"
+  ]
+ },
+ {
+  "key": "Amanita citrina",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   63271
+  ],
+  "site": [
+   "Amanita citrina"
+  ]
+ },
+ {
+  "key": "Agaricus xanthodermus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   118394
+  ],
+  "site": [
+   "Agaricus xanthodermus"
+  ]
+ },
+ {
+  "key": "Entoloma sinuatum",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   510199
+  ],
+  "site": [
+   "Entoloma sinuatum"
+  ]
+ },
+ {
+  "key": "Lactarius torminosus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   351313
+  ],
+  "site": [
+   "Lactarius torminosus"
+  ]
+ },
+ {
+  "key": "Russula emetica",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   49449
+  ],
+  "site": [
+   "Russula emetica"
+  ]
+ },
+ {
+  "key": "Galerina marginata",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   154735
+  ],
+  "site": [
+   "Galerina marginata"
+  ]
+ },
+ {
+  "key": "Hypholoma fasciculare",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48767
+  ],
+  "site": [
+   "Hypholoma fasciculare"
+  ]
+ },
+ {
+  "key": "Coprinopsis atramentaria",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   48521
+  ],
+  "site": [
+   "Coprinopsis atramentaria"
+  ]
+ },
+ {
+  "key": "Inosperma erubescens",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   1112491
+  ],
+  "site": [
+   "Inosperma erubescens"
+  ]
+ },
+ {
+  "key": "Clitocybe rivulosa",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   1525557
+  ],
+  "site": [
+   "Clitocybe rivulosa"
+  ]
+ },
+ {
+  "key": "Gyromitra esculenta",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   85120
+  ],
+  "site": [
+   "Gyromitra esculenta"
+  ]
+ },
+ {
+  "key": "Tricholoma equestre",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   118215
+  ],
+  "site": [
+   "Tricholoma equestre"
+  ]
+ },
+ {
+  "key": "Clitocybe nebularis",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   63255
+  ],
+  "site": [
+   "Clitocybe nebularis"
+  ]
+ },
+ {
+  "key": "Paxillus involutus",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   55941
+  ],
+  "site": [
+   "Paxillus involutus"
+  ]
+ },
+ {
+  "key": "Scleroderma citrinum",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   55927
+  ],
+  "site": [
+   "Scleroderma citrinum"
+  ]
+ },
+ {
+  "key": "Scleroderma areolatum",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   203805
+  ],
+  "site": [
+   "Scleroderma areolatum"
+  ]
+ },
+ {
+  "key": "Russula ochroleuca",
+  "kind": "species",
+  "bolete": false,
+  "taxa": [
+   153459
+  ],
+  "site": [
+   "Russula ochroleuca"
+  ]
  },
  {
   "key": "rare-poisonous",
   "kind": "group",
+  "bolete": true,
   "taxa": [
    1463131,
    824671,
@@ -953,6 +1558,7 @@
  {
   "key": "rare-other",
   "kind": "group",
+  "bolete": true,
   "taxa": [
    839557,
    714555,
@@ -981,6 +1587,7 @@
  {
   "key": "other-fungi",
   "kind": "other",
+  "bolete": false,
   "taxa": [],
   "site": []
  }

@@ -68,10 +68,18 @@ const EXTRA_NAMES = {
   'Neoboletus venenatus': ['Boletus venenatus', 'Sutorius venenatus'],
   'Porphyrellus porphyrosporus': ['Tylopilus porphyrosporus'],
   'Suillus sibiricus': ['Suillus sibiricus subsp. helveticus'],
+  'Lepista nuda': ['Clitocybe nuda'],
+  'Clitocybe nebularis': ['Lepista nebularis'],
+  'Inosperma erubescens': ['Inocybe erubescens', 'Inocybe patouillardii'],
+  'Kuehneromyces mutabilis': ['Pholiota mutabilis'],
+  'Chlorophyllum rhacodes': ['Macrolepiota rhacodes', 'Chlorophyllum rachodes'],
+  'Calvatia gigantea': ['Langermannia gigantea'],
+  'Craterellus tubaeformis': ['Cantharellus tubaeformis'],
 };
-function namesFor(sci) {
+function namesFor(sci, kind) {
   const epithet = sci.split(' ')[1];
-  return [...new Set([sci, ...OLD_GENERA.map(g => `${g} ${epithet}`), ...(EXTRA_NAMES[sci] ?? [])])];
+  const old = kind === 'bolete' ? OLD_GENERA.map(g => `${g} ${epithet}`) : [];
+  return [...new Set([sci, ...old, ...(EXTRA_NAMES[sci] ?? [])])];
 }
 
 async function categoryFiles(cat, depth = 1) {
@@ -118,10 +126,10 @@ function cleanArtist(html) {
     .replace(/\s*derivative work:\s*/i, ' · Bearbeitung: ').replace(/[\s·:]+$/, '').trim();
   return a.length > 120 ? a.slice(0, 119).trimEnd() + '…' : a;
 }
-const REJECT = /\bspores?\b|sporen|spore.?print|micro|mikro|cystid|basidi|hyph|stamp|briefmarke|illustrat|drawing|zeichnung|aquarell|painting|gemälde|\bplate\b|tafel|herbar|exsicc|dried|getrocknet|\bmap\b|karte|distribution|recipe|soup|suppe|market|markt|basket|korb|bucket|eimer|pizza|risotto|sauce|cooked|fried|gebraten|pfanne|dish|kitchen|küche|harvest|ernte|\bsale\b|verkauf|frozen|chemical|reagent|\bkoh\b|\bnh3\b|mycel|culture|petri|logo/i;
+const REJECT = /\bspores?\b|sporen|spore.?print|micro|mikro|cystid|basidi|\bhyph(ae|en)?\b|stamp|briefmarke|illustrat|drawing|zeichnung|aquarell|painting|gemälde|\bplate\b|tafel|herbar|exsicc|dried|getrocknet|\bmap\b|karte|distribution|recipe|soup|suppe|market|markt|basket|korb|bucket|eimer|pizza|risotto|sauce|cooked|fried|gebraten|pfanne|dish|kitchen|küche|harvest|ernte|\bsale\b|verkauf|frozen|chemical|reagent|\bkoh\b|\bnh3\b|mycel|culture|petri|logo/i;
 // Checked against the file name only: descriptions often mention camera models etc.
 const REJECT_TITLE = /\bmodel\b|modell|\bwax\b|wachs|replica|sculpt|figurine|\btoy\b|spielzeug|museum|mhnt/i;
-// Files filed under a bolete category that show another fungus.
+// Files filed under a species category that show another fungus.
 const BAD_FILES = new Set([
   'Calocera viscosa - Klebringer Hörnling - Yellow stagshorn fungi - 02.jpg',
 ]);
@@ -135,7 +143,7 @@ const stageOf = text => STAGES.find(([, re]) => re.test(text))?.[0] ?? null;
 
 async function gallery(s, lead, extra = []) {
   const seen = new Map(extra.map(t => [t, { title: t, hint: '' }]));
-  for (const name of namesFor(s.sci))
+  for (const name of namesFor(s.sci, s.kind))
     for (const f of await categoryFiles(name)) if (!seen.has(f.title)) seen.set(f.title, f);
   if (lead && !seen.has('File:' + lead)) seen.set('File:' + lead, { title: 'File:' + lead, hint: '' });
 

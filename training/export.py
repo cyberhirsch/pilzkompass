@@ -36,7 +36,8 @@ fp32.unlink()
 # Class list for the page: our species names, status and group members.
 classes = {c["key"]: c for c in json.loads((ROOT / "classes.json").read_text(encoding="utf-8"))}
 (MODEL / "boletus-classes.json").write_text(
-    json.dumps([{"key": k, "kind": classes[k]["kind"], "site": classes[k]["site"]} for k in keys], ensure_ascii=False),
+    json.dumps([{"key": k, "kind": classes[k]["kind"], "bolete": classes[k].get("bolete", True), "site": classes[k]["site"]}
+                for k in keys], ensure_ascii=False),
     encoding="utf-8")
 
 # Photo credits for the page (CC licences require attribution).

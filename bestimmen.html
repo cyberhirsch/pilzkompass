@@ -165,17 +165,16 @@
 <script>
   const T = {
     de: {
-      back: '← Alle Röhrlinge',
       title: 'Bestimmungs<span>hilfe</span>',
       lede: 'Den Pilz aus drei Blickwinkeln fotografieren. Eine KI schlägt die wahrscheinlichsten Arten vor — als erste Eingrenzung.',
-      danger: '<strong>Nur zur ersten Eingrenzung — niemals zur Essbarkeits-Entscheidung.</strong> Die KI verwechselt Doppelgänger (z. B. Steinpilz und Gallen-Röhrling, die giftigen Rotporer untereinander). Jeden Fund von Pilzsachverständigen (DGfM) prüfen lassen.',
+      danger: '<strong>Nur zur ersten Eingrenzung — niemals zur Essbarkeits-Entscheidung.</strong> Die KI verwechselt Doppelgänger (z. B. Steinpilz und Gallen-Röhrling, Champignon und Knollenblätterpilz). Sie kennt nur einen Teil der Pilzarten und sieht weder Geruch noch Sporenfarbe. Jeden Fund von Pilzsachverständigen (DGfM) prüfen lassen.',
       pick: 'Drei Fotos, drei Ansichten',
       cameraBtn: '📷 Pilz fotografieren',
       pickHint: 'Die Kamera blendet für jede Ansicht eine Schablone ein. Scharf und gut beleuchtet; die Fotos bleiben auf deinem Gerät.',
       views: [
         ['Von der Seite', 'Ganzer Pilz mit Stiel und Stielbasis — vorsichtig herausdrehen, nicht abschneiden.'],
         ['Schräg von oben (45°)', 'Kamera etwa 45° über dem Pilz: Hutoberseite und Stiel zugleich sichtbar.'],
-        ['Schräg von unten (45°)', 'Kamera etwa 45° unter dem Hut: Poren bzw. Röhren und Stiel zugleich scharf zeigen.'],
+        ['Schräg von unten (45°)', 'Kamera etwa 45° unter dem Hut: Poren, Lamellen oder Leisten und den Stiel zugleich scharf zeigen.'],
       ],
       stepNo: (i, n) => `Ansicht ${i} von ${n}`,
       nocam: 'Live-Kamera nicht verfügbar — der Auslöser öffnet die Kamera-App, der linke Knopf die Galerie.',
@@ -192,26 +191,25 @@
       groups: {
         'rare-poisonous': ['Seltene giftige Röhrlinge', 'Eine der seltenen giftigen Arten:'],
         'rare-other': ['Seltene Röhrlinge', 'Eine der seltenen Arten:'],
-        'other-fungi': ['Anderer Pilz — kein Röhrling', 'Die KI hält das Foto für einen Pilz außerhalb der Röhrlinge.'],
+        'other-fungi': ['Anderer Pilz — nicht in unserer Liste', 'Die KI hält das Foto für einen Pilz, den sie nicht kennt. Mehr kann sie nicht sagen — viele dieser Pilze sind giftig.'],
       },
-      look: 'Doppelgänger, kein Röhrling',
-      status: { poisonous: 'Giftig', deadly: 'Tödlich giftig', bitter: 'Ungenießbar', caution: 'Nur gut durchgegart essbar', edible: 'Essbar', inedible: 'Kein Speisepilz', other: 'Unbekannt' },
+      gilled: '<strong>Lamellenpilz.</strong> Darunter sind die tödlichsten Pilze überhaupt. Die KI sieht weder die Stielbasis im Boden noch Sporenfarbe oder Geruch — einen Lamellenpilz nie auf ihr Wort hin essen.',
+      status: { check: 'Speisepilz? Nur nach Prüfung', poisonous: 'Giftig', deadly: 'Tödlich giftig', bitter: 'Ungenießbar', caution: 'Nur gut durchgegart essbar', edible: 'Essbar', inedible: 'Kein Speisepilz', other: 'Unbekannt' },
       warn: { poisonous: '☠ GIFTIG', deadly: '☠ TÖDLICH GIFTIG', bitter: '✖ SCHMECKT ÜBEL' },
       protect: { strict: '🛡 GESCHÜTZT — NICHT SAMMELN', personal: '🛡 Geschützt: nur geringe Mengen für den Eigenbedarf' },
       footer: 'KI-Modell: DINOv2 ViT-S/14 (Meta AI, <a href="licenses/Apache-2.0.txt">Apache 2.0</a>), für den Pilzkompass mit Pilzfotos trainiert. Das Modell läuft offline auf deinem Gerät; Fotos werden nicht hochgeladen. <a href="quellen.html">Alle Quellen und Lizenzen →</a>',
     },
     en: {
-      back: '← All boletes',
       title: 'Identification <span>aid</span>',
       lede: 'Photograph the mushroom from three angles. An AI suggests the most likely species, as a first narrowing-down.',
-      danger: '<strong>Only for a first narrowing-down — never for deciding edibility.</strong> The AI confuses look-alikes (e.g. cep and bitter bolete, or the poisonous red-pored boletes with each other). Have every find checked by a mushroom expert (DGfM).',
+      danger: '<strong>Only for a first narrowing-down — never for deciding edibility.</strong> The AI confuses look-alikes (e.g. cep and bitter bolete, field mushroom and death cap). It knows only part of all mushroom species and cannot check smell or spore colour. Have every find checked by a mushroom expert (DGfM).',
       pick: 'Three photos, three views',
       cameraBtn: '📷 Photograph mushroom',
       pickHint: 'The camera shows a template for each view. Sharp and well lit; the photos stay on your device.',
       views: [
         ['From the side', 'Whole mushroom with stem and stem base — twist it out gently, do not cut it.'],
         ['From above at 45°', 'Camera about 45° above the mushroom: cap top and stem visible at once.'],
-        ['From below at 45°', 'Camera about 45° below the cap: show pores or tubes and the stem sharply at once.'],
+        ['From below at 45°', 'Camera about 45° below the cap: show pores, gills or ridges and the stem sharply at once.'],
       ],
       stepNo: (i, n) => `View ${i} of ${n}`,
       nocam: 'Live camera not available — the shutter opens the camera app, the left button the gallery.',
@@ -228,29 +226,14 @@
       groups: {
         'rare-poisonous': ['Rare poisonous boletes', 'One of the rare poisonous species:'],
         'rare-other': ['Rare boletes', 'One of the rare species:'],
-        'other-fungi': ['Other fungus — not a bolete', 'The AI thinks this is a fungus outside the boletes.'],
+        'other-fungi': ['Other fungus — not on our list', 'The AI thinks this is a fungus it does not know. It cannot say more — many of these are poisonous.'],
       },
-      look: 'Look-alike, not a bolete',
-      status: { poisonous: 'Poisonous', deadly: 'Deadly poisonous', bitter: 'Tastes bad', caution: 'Edible only well cooked', edible: 'Edible', inedible: 'Not edible', other: 'Unknown' },
+      gilled: '<strong>Gilled mushroom.</strong> Gilled mushrooms include the deadliest species of all. The AI cannot see the stem base in the soil, spore colour or smell — never eat a gilled mushroom on its word.',
+      status: { check: 'Edible? Only after an expert check', poisonous: 'Poisonous', deadly: 'Deadly poisonous', bitter: 'Tastes bad', caution: 'Edible only well cooked', edible: 'Edible', inedible: 'Not edible', other: 'Unknown' },
       warn: { poisonous: '☠ POISONOUS', deadly: '☠ DEADLY POISONOUS', bitter: '✖ TASTES TERRIBLE' },
       protect: { strict: '🛡 PROTECTED — DO NOT PICK', personal: '🛡 Protected: small amounts for own use only' },
       footer: 'AI model: DINOv2 ViT-S/14 (Meta AI, <a href="licenses/Apache-2.0.txt">Apache 2.0</a>), trained on mushroom photos for Pilzkompass. The model runs offline on your device; photos are not uploaded. <a href="quellen.html">All sources and licences →</a>',
     },
-  };
-  // Non-bolete look-alikes the model knows.
-  const LOOKALIKES = {
-    'Paxillus involutus': { de: 'Kahler Krempling', en: 'Brown roll-rim', status: 'deadly' },
-    'Scleroderma citrinum': { de: 'Dickschaliger Kartoffelbovist', en: 'Common earthball', status: 'poisonous' },
-    'Scleroderma areolatum': { de: 'Leopardfleckiger Kartoffelbovist', en: 'Leopard earthball', status: 'poisonous' },
-    'Hygrophoropsis aurantiaca': { de: 'Falscher Pfifferling', en: 'False chanterelle', status: 'inedible' },
-    'Amanita phalloides': { de: 'Grüner Knollenblätterpilz', en: 'Death cap', status: 'deadly' },
-    'Amanita muscaria': { de: 'Fliegenpilz', en: 'Fly agaric', status: 'poisonous' },
-    'Amanita pantherina': { de: 'Pantherpilz', en: 'Panther cap', status: 'poisonous' },
-    'Amanita rubescens': { de: 'Perlpilz', en: 'Blusher', status: 'caution' },
-    'Fistulina hepatica': { de: 'Leberreischling', en: 'Beefsteak fungus', status: 'edible' },
-    'Russula ochroleuca': { de: 'Ocker-Täubling', en: 'Ochre brittlegill', status: 'inedible' },
-    'Lactarius deliciosus': { de: 'Edel-Reizker', en: 'Saffron milkcap', status: 'edible' },
-    'Cantharellus cibarius': { de: 'Echter Pfifferling', en: 'Chanterelle', status: 'edible', protection: 'personal' },
   };
   const POISON = new Set(['poisonous', 'deadly']);
   const SIZE = 224, MEAN = [0.485, 0.456, 0.406], STD = [0.229, 0.224, 0.225];
@@ -347,17 +330,16 @@
   // Turns a model class into what the page shows: name, names line, status, species card, etc.
   function describe(c) {
     const t = T[lang];
-    if (c.kind === 'species') {
-      const s = bySci.get(c.site[0]);
+    // A species, or a look-alike class of an older model (no site list); groups list several species.
+    const card = c.kind === 'species' || c.kind === 'lookalike' ? bySci.get(c.site[0] ?? c.key) : null;
+    if (card) {
+      const s = card;
       const also = c.site.slice(1).map(n => `<i>${esc(n)}</i>`).join(', ');
-      return { s, sci: s.sci, status: s.status, protection: s.protection,
+      // Outside the boletes the AI never says "edible": that needs features a photo cannot show.
+      const status = s.deadly ? 'deadly' : s.kind !== 'bolete' && ['edible', 'caution'].includes(s.status) ? 'check' : s.status;
+      return { s, sci: s.sci, status, protection: s.protection,
         names: (lang === 'de' ? [s.de, s.en] : [s.en, s.de]).filter(n => n !== '—').map(esc).join(' · ') + (also ? ` · = ${also}` : ''),
         thumb: s.photos?.[0]?.thumb };
-    }
-    if (c.kind === 'lookalike') {
-      const l = LOOKALIKES[c.key] ?? {};
-      return { sci: c.key, status: l.status ?? 'other', protection: l.protection,
-        names: `${esc(lang === 'de' ? l.de : l.en)} · ${t.look}` };
     }
     const [title, intro] = t.groups[c.key];
     const members = c.site.map(n => `<a href="index.html#${encodeURIComponent(n)}"><i>${esc(n)}</i></a>`).join(', ');
@@ -372,8 +354,8 @@
     renderShots(last.views);
     document.getElementById('preds').innerHTML = last.results.map(({ i, p }) => {
       const d = describe(classes[i]);
-      const st = d.status;
-      return `<div class="pred ${POISON.has(st) ? 'poisonous' : st}">
+      const st = d.status, cls = POISON.has(st) ? 'poisonous' : st === 'check' ? 'caution' : st;
+      return `<div class="pred ${cls}">
         ${t.warn[st] ? `<div class="warn ${POISON.has(st) ? 'poisonous' : st}">${t.warn[st]}</div>` : ''}
         ${d.protection === 'strict' ? `<div class="warn protected">${t.protect.strict}</div>` : ''}
         <div class="row">
@@ -382,7 +364,7 @@
             <div class="sci"${d.plain ? ' style="font-style:normal"' : ''}>${esc(d.sci)}${d.s?.beginner ? ' <span title="${t.starTip}" style="font-style:normal">⭐</span>' : ''}</div>
             <div class="names">${d.names}</div>
             ${d.protection === 'personal' ? `<div class="prot">${t.protect.personal}</div>` : ''}
-            <div class="meta"><span class="badge ${POISON.has(st) ? 'poisonous' : st}">${t.status[st]}</span>
+            <div class="meta"><span class="badge ${cls}">${t.status[st]}</span>
               ${d.s ? `<a class="link" href="index.html#${encodeURIComponent(d.s.sci)}">${t.toCard}</a>` : ''}</div>
             <div class="bar"><i style="width:${(p * 100).toFixed(1)}%"></i></div>
           </div>
@@ -394,6 +376,7 @@
     const extra = [];
     if (last.poison >= 0.1) extra.push(`<div class="box danger">${t.poisonSum(Math.round(last.poison * 100))}</div>`);
     else last.views.forEach((v, k) => { if (v.poison) extra.push(`<div class="box danger">${t.viewPoison(t.views[k][0])}</div>`); });
+    if (describe(classes[last.results[0].i]).s?.kind === 'gilled') extra.push(`<div class="box danger">${t.gilled}</div>`);
     if (new Set(last.views.map(v => v.i)).size > 1) extra.push(`<div class="box note">${t.disagree}</div>`);
     if (last.results[0].p < 0.5) extra.push(`<div class="box note">${t.low}</div>`);
     document.getElementById('extra').innerHTML = extra.join('');

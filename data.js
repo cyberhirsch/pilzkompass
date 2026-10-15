@@ -22,18 +22,18 @@ window.BOLETES = [
   "extra": [],
   "season": {
    "months": [
-    179,
+    182,
     24,
     21,
     138,
     146,
-    948,
-    4951,
-    16577,
-    26067,
-    16975,
-    3480,
-    295
+    949,
+    4955,
+    16616,
+    26249,
+    17258,
+    3490,
+    298
    ],
    "region": "EU"
   },
@@ -46,6 +46,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus edulis IT.jpg",
@@ -138,11 +139,11 @@ window.BOLETES = [
     11,
     19,
     445,
-    3216,
-    3791,
+    3217,
+    3792,
     3830,
-    2924,
-    1078,
+    2939,
+    1097,
     198,
     35
    ],
@@ -156,6 +157,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus.JPG",
@@ -249,8 +251,8 @@ window.BOLETES = [
     302,
     489,
     1769,
-    2999,
-    1045,
+    3016,
+    1070,
     162,
     13
    ],
@@ -263,6 +265,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus pinophilus3.JPG",
@@ -354,12 +357,12 @@ window.BOLETES = [
     3,
     8,
     93,
-    55,
+    58,
     182,
     335,
-    595,
-    792,
-    739,
+    596,
+    797,
+    743,
     216,
     18
    ],
@@ -372,6 +375,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Bronze Roehrling.jpg",
@@ -466,8 +470,8 @@ window.BOLETES = [
     78,
     59,
     94,
-    168,
-    97,
+    170,
+    99,
     12,
     7
    ],
@@ -481,6 +485,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus regius 37212.jpg",
@@ -574,9 +579,9 @@ window.BOLETES = [
     6,
     118,
     668,
-    1288,
-    1226,
-    335,
+    1291,
+    1234,
+    342,
     28,
     5
    ],
@@ -593,6 +598,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Anhängsel-Röhrling Boletus appendiculatus.jpg",
@@ -688,8 +694,8 @@ window.BOLETES = [
     31,
     245,
     609,
-    501,
-    82,
+    503,
+    86,
     6,
     4
    ],
@@ -703,6 +709,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2012-08-26 Boletus fechtneri Velenovsky 254739 crop.jpg",
@@ -811,6 +818,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2012-08-24 Boletus fuscoroseus Smotlacha 253660 crop.jpg",
@@ -889,7 +897,7 @@ window.BOLETES = [
     203,
     354,
     367,
-    70,
+    72,
     3,
     0
    ],
@@ -902,6 +910,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2010-08-25 Boletus subappendiculatus.jpg",
@@ -995,10 +1004,10 @@ window.BOLETES = [
     32,
     667,
     1718,
-    3048,
-    3186,
-    1020,
-    61,
+    3047,
+    3193,
+    1058,
+    62,
     16
    ],
    "region": "EU"
@@ -1012,6 +1021,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Schoenfussroehrling.jpg",
@@ -1105,9 +1115,9 @@ window.BOLETES = [
     24,
     71,
     1146,
-    3516,
-    3071,
-    524,
+    3515,
+    3076,
+    539,
     25,
     16
    ],
@@ -1124,6 +1134,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus radicans-20.7.2012-1.JPG",
@@ -1230,6 +1241,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2012-08-15 Boletus kluzakii Sutara & Spinar 308609.jpg",
@@ -1289,11 +1301,11 @@ window.BOLETES = [
     63,
     5,
     25,
-    280,
+    283,
     1189,
-    1555,
-    547,
-    33,
+    1574,
+    555,
+    34,
     11
    ],
    "region": "EU"
@@ -1310,6 +1322,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus satanas.JPG",
@@ -1403,8 +1416,8 @@ window.BOLETES = [
     21,
     167,
     439,
-    228,
-    68,
+    230,
+    71,
     4,
     2
    ],
@@ -1420,6 +1433,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Luční - Boletus legaliae 02.jpg",
@@ -1530,6 +1544,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus rhodoxanthus.JPG",
@@ -1638,6 +1653,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus rubrosanguineus.jpg",
@@ -1731,7 +1747,7 @@ window.BOLETES = [
     3,
     45,
     77,
-    110,
+    111,
     26,
     1
    ],
@@ -1745,6 +1761,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "BoletusLupinus01.jpg",
@@ -1851,6 +1868,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus pulcherrimus 21538 ed.jpg",
@@ -1957,6 +1975,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2012-09-05 Boletus dupainii Boud 312265.jpg",
@@ -2051,7 +2070,7 @@ window.BOLETES = [
     2,
     5,
     57,
-    40,
+    41,
     12,
     0
    ],
@@ -2064,6 +2083,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Rubroboletus pulchrotinctus 2.jpg",
@@ -2170,6 +2190,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Rubroboletus demonensis 6.jpg",
@@ -2272,6 +2293,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2008-08-04 Boletus rhodopurpureus 1 18733.jpg",
@@ -2379,6 +2401,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus torosus 1.JPG",
@@ -2484,6 +2507,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus luteocupreus 37164.jpg",
@@ -2577,11 +2601,11 @@ window.BOLETES = [
     3,
     41,
     375,
-    623,
-    1544,
-    2589,
-    956,
-    131,
+    632,
+    1546,
+    2613,
+    1011,
+    134,
     9
    ],
    "region": "EU"
@@ -2601,6 +2625,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus erythropus 2010 G3.jpg",
@@ -2694,8 +2719,8 @@ window.BOLETES = [
     1698,
     2107,
     3613,
-    4636,
-    3467,
+    4652,
+    3517,
     818,
     77
    ],
@@ -2709,6 +2734,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Neoboletus luridiformis (36122576674).jpg",
@@ -2808,6 +2834,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Doku yamadori.jpg",
@@ -2846,11 +2873,11 @@ window.BOLETES = [
     13,
     96,
     321,
-    2598,
-    4621,
-    6064,
-    4848,
-    1306,
+    2602,
+    4634,
+    6082,
+    4881,
+    1347,
     200,
     38
    ],
@@ -2866,6 +2893,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2010-09-13 Boletus luridus Schaeff 104527 crop.jpg",
@@ -2960,8 +2988,8 @@ window.BOLETES = [
     227,
     422,
     719,
-    862,
-    601,
+    866,
+    607,
     120,
     34
    ],
@@ -2975,6 +3003,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2010-08-09 Boletus queletii Schulzer 97433.jpg",
@@ -3082,6 +3111,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Vrbenské rybníky - Boletus mendax 02.jpg",
@@ -3187,6 +3217,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2013-11-02 Boletus comptus Simonini 393827.jpg",
@@ -3254,11 +3285,11 @@ window.BOLETES = [
     67,
     16,
     175,
-    521,
-    1218,
-    1402,
-    815,
-    131,
+    524,
+    1229,
+    1410,
+    829,
+    132,
     21
    ],
    "region": "EU"
@@ -3271,6 +3302,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus pulverulentus 2011 G1.jpg",
@@ -3361,10 +3393,10 @@ window.BOLETES = [
     66,
     47,
     189,
-    291,
+    292,
     533,
-    701,
-    419,
+    709,
+    425,
     190,
     31
    ],
@@ -3378,6 +3410,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus impolitus 2009 G2.jpg",
@@ -3472,7 +3505,7 @@ window.BOLETES = [
     63,
     192,
     233,
-    75,
+    76,
     3,
     1
    ],
@@ -3484,6 +3517,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Hemileccinum depilatum.jpg",
@@ -3575,12 +3609,12 @@ window.BOLETES = [
     17,
     43,
     128,
-    486,
-    2520,
-    10555,
-    19999,
-    42909,
-    12993,
+    488,
+    2532,
+    10580,
+    20148,
+    43189,
+    13031,
     1100
    ],
    "region": "EU"
@@ -3597,6 +3631,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus badius JPG1.jpg",
@@ -3688,13 +3723,13 @@ window.BOLETES = [
     14,
     92,
     88,
-    724,
-    1929,
-    4224,
-    5189,
-    2822,
-    584,
-    89
+    730,
+    1947,
+    4271,
+    5310,
+    2904,
+    614,
+    92
    ],
    "region": "EU"
   },
@@ -3705,13 +3740,14 @@ window.BOLETES = [
    "Xerocomus chrysonemus",
    "Xerocomus silwoodensis",
    "Aureoboletus moravicus",
-   "Pseudoboletus parasiticus",
+   "Phylloporus pelletieri",
    "Gyrodon lividus",
-   "Phylloporus pelletieri"
+   "Pseudoboletus parasiticus"
   ],
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Ziegenlippe Xerocomus subtomentosus.jpg",
@@ -3805,9 +3841,9 @@ window.BOLETES = [
     26,
     140,
     599,
-    1942,
-    2414,
-    1108,
+    1945,
+    2418,
+    1129,
     145,
     15
    ],
@@ -3823,6 +3859,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomus ferrugineus 1.jpg",
@@ -3928,6 +3965,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomus chrysonemus.jpg",
@@ -3993,6 +4031,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomus silwoodensis.jpg",
@@ -4023,18 +4062,18 @@ window.BOLETES = [
   "extra": [],
   "season": {
    "months": [
-    199,
+    214,
     52,
     21,
     144,
-    242,
-    1197,
-    3268,
-    6866,
-    11004,
-    9833,
-    2338,
-    259
+    243,
+    1198,
+    3313,
+    6965,
+    11187,
+    10082,
+    2379,
+    262
    ],
    "region": "EU"
   },
@@ -4052,6 +4091,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomellus chrysenteron28.jpg",
@@ -4145,9 +4185,9 @@ window.BOLETES = [
     26,
     118,
     313,
-    951,
-    2596,
-    3827,
+    952,
+    2605,
+    3860,
     1087,
     221
    ],
@@ -4160,6 +4200,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2009-09-29 Xerocomellus pruinatus.jpg",
@@ -4252,10 +4293,10 @@ window.BOLETES = [
     84,
     45,
     224,
-    831,
-    1562,
-    1789,
-    845,
+    838,
+    1568,
+    1795,
+    862,
     181,
     29
    ],
@@ -4267,6 +4308,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Bol.poro.jpg",
@@ -4363,9 +4405,9 @@ window.BOLETES = [
     65,
     354,
     994,
-    1417,
-    1137,
-    212,
+    1422,
+    1146,
+    213,
     16
    ],
    "region": "EU"
@@ -4376,6 +4418,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomellus cisalpinus (35862039073).jpg",
@@ -4485,6 +4528,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2013-07-17 Xerocomellus ripariellus (Redeuilh) Šutara 350064.jpg",
@@ -4590,6 +4634,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomellus redeuilhii 4.jpg",
@@ -4681,6 +4726,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2012-08-16 Xerocomellus marekii (Šutara & Skála) Šutara 309303.jpg",
@@ -4743,17 +4789,17 @@ window.BOLETES = [
   ],
   "season": {
    "months": [
-    18,
+    20,
     2,
     5,
     6,
     18,
     258,
-    1307,
-    2430,
-    1927,
-    714,
-    123,
+    1311,
+    2437,
+    1934,
+    724,
+    124,
     25
    ],
    "region": "EU"
@@ -4767,6 +4813,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Hortiboletus rubellus 2016 G1.jpg",
@@ -4859,10 +4906,10 @@ window.BOLETES = [
     3,
     14,
     104,
-    384,
+    385,
     649,
     447,
-    273,
+    274,
     45,
     7
    ],
@@ -4874,6 +4921,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomellus engelii 7840.jpg",
@@ -4981,6 +5029,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Xerocomus armeniacus.jpg",
@@ -5075,8 +5124,8 @@ window.BOLETES = [
     28,
     72,
     381,
-    799,
-    518,
+    800,
+    519,
     130,
     18
    ],
@@ -5088,6 +5137,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Vrbenské rybníky - Aureoboletus gentilis 02.jpg",
@@ -5193,6 +5243,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Aureoboletus moravicus 01 crop.jpg",
@@ -5278,9 +5329,9 @@ window.BOLETES = [
     0,
     1,
     17,
-    212,
-    564,
-    133,
+    213,
+    576,
+    155,
     1,
     0
    ],
@@ -5292,6 +5343,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus projectellus 57511.jpg",
@@ -5384,11 +5436,11 @@ window.BOLETES = [
     8,
     32,
     769,
-    1748,
-    5458,
-    8311,
-    5768,
-    1298,
+    1760,
+    5465,
+    8336,
+    5853,
+    1314,
     159
    ],
    "region": "EU"
@@ -5403,6 +5455,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Chalciporus piperatus LC0182.jpg",
@@ -5494,11 +5547,11 @@ window.BOLETES = [
     8,
     32,
     769,
-    1748,
-    5458,
-    8311,
-    5768,
-    1298,
+    1760,
+    5465,
+    8336,
+    5853,
+    1314,
     159
    ],
    "region": "EU"
@@ -5510,6 +5563,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Chalciporus amarellus.jpg",
@@ -5593,6 +5647,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Rubinoboletus rubinus 01.jpg",
@@ -5684,9 +5739,9 @@ window.BOLETES = [
     6,
     18,
     138,
-    1721,
-    3754,
-    2437,
+    1722,
+    3762,
+    2445,
     189,
     24
    ],
@@ -5694,18 +5749,13 @@ window.BOLETES = [
   },
   "lookalikes": [
    "Xerocomus subtomentosus",
-   "Xerocomus ferrugineus"
+   "Xerocomus ferrugineus",
+   "Scleroderma citrinum"
   ],
   "quality": null,
   "beginner": false,
-  "extLookalikes": [
-   {
-    "sci": "Scleroderma citrinum",
-    "de": "Dickschaliger Kartoffelbovist",
-    "en": "Common earthball",
-    "status": "poisonous"
-   }
-  ],
+  "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus parasiticus on Scleroderma citrinum.jpg",
@@ -5798,10 +5848,10 @@ window.BOLETES = [
     90,
     110,
     375,
-    3450,
-    8242,
-    4939,
-    868,
+    3459,
+    8268,
+    4949,
+    898,
     74,
     496
    ],
@@ -5825,6 +5875,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2006-09-14 Tylopilus felleus crop.jpg",
@@ -5919,8 +5970,8 @@ window.BOLETES = [
     106,
     435,
     1175,
-    1673,
-    684,
+    1675,
+    697,
     86,
     6
    ],
@@ -5934,6 +5985,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Porphyrellus porphyrosporus Mexico.jpg",
@@ -6027,9 +6079,9 @@ window.BOLETES = [
     11,
     76,
     753,
-    2011,
-    2559,
-    1008,
+    2012,
+    2564,
+    1029,
     103,
     12
    ],
@@ -6041,6 +6093,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Strobilomyces floccopus 89374.jpg",
@@ -6126,17 +6179,17 @@ window.BOLETES = [
   "extra": [],
   "season": {
    "months": [
-    166,
+    171,
     18,
     18,
     39,
-    187,
+    188,
     1417,
-    4038,
-    11274,
-    17032,
-    9845,
-    1389,
+    4045,
+    11284,
+    17147,
+    10012,
+    1396,
     144
    ],
    "region": "EU"
@@ -6154,6 +6207,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Mushrooms of Tambov Oblast - 002.jpg",
@@ -6244,12 +6298,12 @@ window.BOLETES = [
     1,
     5,
     44,
-    633,
-    2210,
-    6519,
-    7033,
-    2266,
-    243,
+    634,
+    2212,
+    6521,
+    7054,
+    2297,
+    244,
     38
    ],
    "region": "EU"
@@ -6264,6 +6318,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum versipelle LC0366.jpg",
@@ -6354,12 +6409,12 @@ window.BOLETES = [
     5,
     140,
     23,
-    205,
-    638,
+    206,
+    639,
     2363,
-    4476,
-    2561,
-    338,
+    4482,
+    2581,
+    339,
     35
    ],
    "region": "EU"
@@ -6374,6 +6429,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2010-09-13 Leccinum aurantiacum 6555637461 crop.jpg",
@@ -6467,8 +6523,8 @@ window.BOLETES = [
     85,
     625,
     1403,
-    1226,
-    160,
+    1228,
+    165,
     5,
     0
    ],
@@ -6482,6 +6538,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum vulpinum 517473.jpg",
@@ -6571,12 +6628,12 @@ window.BOLETES = [
     0,
     1,
     78,
-    37,
+    38,
     143,
     385,
     662,
-    920,
-    538,
+    923,
+    542,
     108,
     11
    ],
@@ -6590,6 +6647,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum duriusculum 254194.jpg",
@@ -6683,10 +6741,10 @@ window.BOLETES = [
     1,
     6,
     37,
-    158,
+    159,
     1661,
-    3489,
-    1537,
+    3504,
+    1559,
     135,
     26
    ],
@@ -6700,6 +6758,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum variicolor LC0365.jpg",
@@ -6795,8 +6854,8 @@ window.BOLETES = [
     36,
     248,
     1833,
-    2994,
-    922,
+    3002,
+    940,
     64,
     13
    ],
@@ -6810,6 +6869,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum holopus 101772.jpg",
@@ -6918,6 +6978,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum piceinum.jpg",
@@ -7008,12 +7069,12 @@ window.BOLETES = [
     5,
     140,
     23,
-    205,
-    638,
+    206,
+    639,
     2363,
-    4476,
-    2561,
-    338,
+    4482,
+    2581,
+    339,
     35
    ],
    "region": "EU"
@@ -7025,6 +7086,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum aurantiacum.jpg",
@@ -7062,8 +7124,8 @@ window.BOLETES = [
     28,
     288,
     1235,
-    1601,
-    533,
+    1606,
+    540,
     50,
     1
    ],
@@ -7076,6 +7138,7 @@ window.BOLETES = [
   "quality": "excellent",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2006 Leccinum albostipitatum crop.jpg",
@@ -7170,7 +7233,7 @@ window.BOLETES = [
     20,
     82,
     255,
-    241,
+    242,
     43,
     1
    ],
@@ -7183,6 +7246,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum melaneum.jpg",
@@ -7276,8 +7340,8 @@ window.BOLETES = [
     37,
     81,
     329,
-    916,
-    795,
+    918,
+    796,
     126,
     20
    ],
@@ -7290,6 +7354,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Blaufüßiger Raufuß Leccinum cyaneobasileucum.jpg",
@@ -7384,7 +7449,7 @@ window.BOLETES = [
     73,
     217,
     287,
-    97,
+    100,
     8,
     4
    ],
@@ -7397,6 +7462,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum schistophilum 177908.jpg",
@@ -7443,8 +7509,8 @@ window.BOLETES = [
     529,
     1372,
     2192,
-    1682,
-    517,
+    1687,
+    525,
     49,
     16
    ],
@@ -7458,6 +7524,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinum pseudoscabrum1.JPG",
@@ -7551,8 +7618,8 @@ window.BOLETES = [
     123,
     309,
     645,
-    552,
-    165,
+    553,
+    166,
     32,
     10
    ],
@@ -7565,6 +7632,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2012-06-24 Leccinellum crocipodium (Letell.) Bresinsky & Manfr. Binder 236436.jpg",
@@ -7671,6 +7739,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Leccinellum lepidum 490735.jpg",
@@ -7776,6 +7845,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2013-12-19 Leccinum corsicum (Rolland) Singer 399423.jpg",
@@ -7870,10 +7940,10 @@ window.BOLETES = [
     80,
     6,
     43,
-    236,
-    1096,
-    1465,
-    735,
+    239,
+    1104,
+    1474,
+    744,
     222,
     38
    ],
@@ -7886,6 +7956,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Gyro.cast.jpg",
@@ -7981,9 +8052,9 @@ window.BOLETES = [
     19,
     39,
     381,
-    942,
-    1116,
-    364,
+    944,
+    1119,
+    377,
     34,
     4
    ],
@@ -7995,6 +8066,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2007-08-15 Gyroporus cyanescens.jpg",
@@ -8087,10 +8159,10 @@ window.BOLETES = [
     80,
     6,
     43,
-    236,
-    1096,
-    1465,
-    735,
+    239,
+    1104,
+    1474,
+    744,
     222,
     38
    ],
@@ -8102,6 +8174,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2017-10-01 Gyroporus ammophilus 794686.jpg",
@@ -8197,26 +8270,21 @@ window.BOLETES = [
     14,
     107,
     827,
-    1147,
-    300,
+    1149,
+    305,
     16,
     2
    ],
    "region": "EU"
   },
   "lookalikes": [
-   "Xerocomus subtomentosus"
+   "Xerocomus subtomentosus",
+   "Paxillus involutus"
   ],
   "quality": "mediocre",
   "beginner": false,
-  "extLookalikes": [
-   {
-    "sci": "Paxillus involutus",
-    "de": "Kahler Krempling",
-    "en": "Brown roll-rim",
-    "status": "poisonous"
-   }
-  ],
+  "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Erlengrübling Gyrodon lividus.jpg",
@@ -8287,17 +8355,17 @@ window.BOLETES = [
   ],
   "season": {
    "months": [
-    144,
+    145,
     7,
     6,
     108,
     103,
-    231,
-    806,
-    5194,
-    11105,
-    8338,
-    2065,
+    232,
+    807,
+    5196,
+    11145,
+    8429,
+    2074,
     172
    ],
    "region": "EU"
@@ -8312,6 +8380,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus luteus 475376.jpg",
@@ -8396,17 +8465,17 @@ window.BOLETES = [
   "extra": [],
   "season": {
    "months": [
-    38,
+    39,
     3,
     2,
     92,
     203,
     1103,
-    2616,
-    6683,
-    10876,
-    6873,
-    725,
+    2619,
+    6688,
+    10907,
+    6933,
+    726,
     52
    ],
    "region": "EU"
@@ -8421,14 +8490,8 @@ window.BOLETES = [
   ],
   "quality": "good",
   "beginner": true,
-  "extLookalikes": [
-   {
-    "sci": "Hygrophoropsis aurantiaca",
-    "de": "Falscher Pfifferling",
-    "en": "False chanterelle",
-    "status": "inedible"
-   }
-  ],
+  "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suill.grev.jpg",
@@ -8518,12 +8581,12 @@ window.BOLETES = [
     6,
     39,
     343,
-    876,
-    1577,
-    2929,
-    4142,
-    2699,
-    635,
+    877,
+    1583,
+    2944,
+    4180,
+    2774,
+    649,
     127
    ],
    "region": "EU"
@@ -8539,6 +8602,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Körnchen-Röhrling Suillus granulatus 1.jpg",
@@ -8625,17 +8689,17 @@ window.BOLETES = [
   ],
   "season": {
    "months": [
-    120,
+    121,
     9,
     19,
     93,
     195,
     83,
-    405,
-    3376,
-    10482,
-    10600,
-    2194,
+    407,
+    3382,
+    10508,
+    10686,
+    2199,
     235
    ],
    "region": "EU"
@@ -8647,6 +8711,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus bovinus 2011 10 07.jpg",
@@ -8738,12 +8803,12 @@ window.BOLETES = [
     5,
     9,
     82,
-    175,
-    1338,
+    177,
+    1340,
     5727,
-    8020,
-    3610,
-    710,
+    8048,
+    3690,
+    711,
     71
    ],
    "region": "EU"
@@ -8754,6 +8819,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suill.var.jpg",
@@ -8838,7 +8904,7 @@ window.BOLETES = [
   "extra": [],
   "season": {
    "months": [
-    16,
+    17,
     1,
     1,
     0,
@@ -8846,9 +8912,9 @@ window.BOLETES = [
     105,
     439,
     1261,
-    1815,
-    1057,
-    133,
+    1819,
+    1065,
+    137,
     20
    ],
    "region": "EU"
@@ -8859,6 +8925,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus viscidus.jpg",
@@ -8951,8 +9018,8 @@ window.BOLETES = [
     93,
     57,
     160,
-    588,
-    1076,
+    591,
+    1088,
     671,
     160
    ],
@@ -8966,6 +9033,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus collinitus.JPG",
@@ -9072,6 +9140,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Elfenbeinroehrling.jpg",
@@ -9178,6 +9247,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus plorans 211063.jpg",
@@ -9252,6 +9322,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus sibiricus 72212.jpg",
@@ -9304,8 +9375,8 @@ window.BOLETES = [
     29,
     97,
     755,
-    2262,
-    2257,
+    2263,
+    2274,
     305,
     5
    ],
@@ -9319,6 +9390,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus cavipes.jpg",
@@ -9410,9 +9482,9 @@ window.BOLETES = [
     2,
     7,
     80,
-    255,
-    457,
-    387,
+    256,
+    475,
+    390,
     33,
     3
    ],
@@ -9425,6 +9497,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus tridentinus.jpg",
@@ -9486,9 +9559,9 @@ window.BOLETES = [
     1,
     4,
     66,
-    576,
-    1414,
-    405,
+    577,
+    1415,
+    414,
     17,
     7
    ],
@@ -9501,6 +9574,7 @@ window.BOLETES = [
   "quality": "mediocre",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Třeboňsko - Suillus flavidus 01.jpg",
@@ -9570,7 +9644,7 @@ window.BOLETES = [
     0,
     3,
     8,
-    15,
+    17,
     14,
     0
    ],
@@ -9582,6 +9656,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus lakei 50606.jpg",
@@ -9690,6 +9765,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": true,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "2011-11-21 Suillus bellinii (Inzenga) Kuntze 183888 crop.jpg",
@@ -9796,6 +9872,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Suillus mediterraneensis.jpg",
@@ -9889,8 +9966,8 @@ window.BOLETES = [
     4,
     9,
     37,
+    103,
     102,
-    100,
     33,
     7
    ],
@@ -9903,6 +9980,7 @@ window.BOLETES = [
   "quality": "good",
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Boletus fragrans 459668.jpg",
@@ -9998,7 +10076,7 @@ window.BOLETES = [
     86,
     281,
     309,
-    167,
+    170,
     9,
     1
    ],
@@ -10010,6 +10088,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Buchwaldoboletus lignicola 102704.jpg",
@@ -10117,6 +10196,7 @@ window.BOLETES = [
   "quality": null,
   "beginner": false,
   "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Buchwaldoboletus-hemichrysus(390).JPG",
@@ -10196,25 +10276,20 @@ window.BOLETES = [
     277,
     466,
     485,
-    115,
+    118,
     9,
     3
    ],
    "region": "EU"
   },
   "lookalikes": [
-   "Xerocomus subtomentosus"
+   "Xerocomus subtomentosus",
+   "Paxillus involutus"
   ],
   "quality": "good",
   "beginner": false,
-  "extLookalikes": [
-   {
-    "sci": "Paxillus involutus",
-    "de": "Kahler Krempling",
-    "en": "Brown roll-rim",
-    "status": "poisonous"
-   }
-  ],
+  "extLookalikes": [],
+  "kind": "bolete",
   "photos": [
    {
     "file": "Rohrbacher Goldblatt crop.jpg",
@@ -10278,6 +10353,6247 @@ window.BOLETES = [
     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Eichhof_06.08.2017_Golden-gilled_Bolete_-_Phylloporus_pelletieri_%2837353646785%29.jpg/330px-Eichhof_06.08.2017_Golden-gilled_Bolete_-_Phylloporus_pelletieri_%2837353646785%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "artist": "Björn S...",
     "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": "personal",
+  "deadly": false,
+  "formerly": false,
+  "sci": "Cantharellus cibarius",
+  "de": "Echter Pfifferling",
+  "en": "Chanterelle",
+  "group": "Cantharellus",
+  "kind": "ridges",
+  "status": "edible",
+  "note": "Egg-yellow throughout. Blunt, forked ridges run down the stem — no true gills. Solid, whitish flesh, fruity apricot smell. Never grows in dense clusters on wood.",
+  "note_de": "Durchgehend dottergelb. Stumpfe, gegabelte Leisten laufen am Stiel herab — keine echten Lamellen. Festes, weißliches Fleisch, fruchtiger Aprikosenduft. Wächst nie büschelig auf Holz.",
+  "taste": "Mild, slightly peppery when raw, fruity.",
+  "taste_de": "Mild, roh leicht pfeffrig, fruchtig.",
+  "trees": [
+   "spruce",
+   "pine",
+   "beech",
+   "oak",
+   "birch"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Hygrophoropsis aurantiaca",
+   "Omphalotus olearius",
+   "Craterellus tubaeformis"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    486,
+    96,
+    44,
+    150,
+    412,
+    3888,
+    11424,
+    18295,
+    18712,
+    10207,
+    3146,
+    1054
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Chanterelle Cantharellus cibarius.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Chanterelle_Cantharellus_cibarius.jpg/1280px-Chanterelle_Cantharellus_cibarius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Chanterelle_Cantharellus_cibarius.jpg/330px-Chanterelle_Cantharellus_cibarius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cantharellus cibarius folds hymenium zoom.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Cantharellus_cibarius_folds_hymenium_zoom.jpg/1280px-Cantharellus_cibarius_folds_hymenium_zoom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Cantharellus_cibarius_folds_hymenium_zoom.jpg/330px-Cantharellus_cibarius_folds_hymenium_zoom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Inger-Lise Fonneland",
+    "license": "CC BY 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Pfifferlingjung02.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Pfifferlingjung02.JPG/1280px-Pfifferlingjung02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Pfifferlingjung02.JPG/330px-Pfifferlingjung02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Botanical Garden Gothenburg and Anggårdsbergen 13.08.2017 Chanterelle - Cantharellus cibarius (37248583152).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837248583152%29.jpg/1280px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837248583152%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837248583152%29.jpg/330px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837248583152%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Botanical Garden Gothenburg and Anggårdsbergen 13.08.2017 Chanterelle - Cantharellus cibarius (37321571732).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837321571732%29.jpg/1280px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837321571732%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837321571732%29.jpg/330px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837321571732%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Botanical Garden Gothenburg and Anggårdsbergen 13.08.2017 Chanterelle - Cantharellus cibarius (37411590105).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837411590105%29.jpg/1280px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837411590105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837411590105%29.jpg/330px-Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837411590105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Cantharellus cibarius (1) (50545288211).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cantharellus_cibarius_%281%29_%2850545288211%29.jpg/1280px-Cantharellus_cibarius_%281%29_%2850545288211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cantharellus_cibarius_%281%29_%2850545288211%29.jpg/330px-Cantharellus_cibarius_%281%29_%2850545288211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Cantharellus cibarius (35894304102).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Cantharellus_cibarius_%2835894304102%29.jpg/1280px-Cantharellus_cibarius_%2835894304102%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Cantharellus_cibarius_%2835894304102%29.jpg/330px-Cantharellus_cibarius_%2835894304102%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Craterellus tubaeformis",
+  "de": "Trompeten-Pfifferling",
+  "en": "Winter chanterelle",
+  "group": "Craterellus",
+  "kind": "ridges",
+  "status": "edible",
+  "note": "Brown cap with a hole in the centre, grey forked ridges, hollow yellow stem. Late autumn in mossy, damp conifer woods. Check every specimen: the deadly webcap grows in the same places.",
+  "note_de": "Brauner Hut mit Loch in der Mitte, graue gegabelte Leisten, hohler gelber Stiel. Spätherbst in moosigen, feuchten Nadelwäldern. Jedes Exemplar prüfen: Der tödliche Spitzgebuckelte Raukopf wächst an denselben Stellen.",
+  "taste": "Mild and earthy.",
+  "taste_de": "Mild und erdig.",
+  "trees": [
+   "spruce",
+   "pine",
+   "fir"
+  ],
+  "soil": "acid",
+  "extra": [
+   "wet"
+  ],
+  "lookalikes": [
+   "Cantharellus cibarius",
+   "Cortinarius rubellus",
+   "Cortinarius orellanus",
+   "Craterellus cornucopioides"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    417,
+    131,
+    29,
+    90,
+    127,
+    287,
+    593,
+    3440,
+    11142,
+    9763,
+    3596,
+    1132
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Craterellus tubaeformis 1345904803 69350246bb o.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Craterellus_tubaeformis_1345904803_69350246bb_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Craterellus_tubaeformis_1345904803_69350246bb_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Miika Silfverberg from Vantaa, Finland",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Craterellus lutescens vs Craterellus tubaeformis side by side.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Craterellus_lutescens_vs_Craterellus_tubaeformis_side_by_side.jpg/1280px-Craterellus_lutescens_vs_Craterellus_tubaeformis_side_by_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Craterellus_lutescens_vs_Craterellus_tubaeformis_side_by_side.jpg/330px-Craterellus_lutescens_vs_Craterellus_tubaeformis_side_by_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alex Ex",
+    "license": "CC BY 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "(Craterellus tubaeformis 4) - Flickr - Tero Karppinen.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/%28Craterellus_tubaeformis_4%29_-_Flickr_-_Tero_Karppinen.jpg/1280px-%28Craterellus_tubaeformis_4%29_-_Flickr_-_Tero_Karppinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/%28Craterellus_tubaeformis_4%29_-_Flickr_-_Tero_Karppinen.jpg/330px-%28Craterellus_tubaeformis_4%29_-_Flickr_-_Tero_Karppinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tero Karppinen from Finland",
+    "license": "CC BY 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "Trompetenpfifferling Craterellus tubaeformis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Trompetenpfifferling_Craterellus_tubaeformis.jpg/1280px-Trompetenpfifferling_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Trompetenpfifferling_Craterellus_tubaeformis.jpg/330px-Trompetenpfifferling_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Craterellus tubaeformis LC0374.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Craterellus_tubaeformis_LC0374.jpg/1280px-Craterellus_tubaeformis_LC0374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Craterellus_tubaeformis_LC0374.jpg/330px-Craterellus_tubaeformis_LC0374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jörg Hempel",
+    "license": "CC BY-SA 3.0 de",
+    "stage": null
+   },
+   {
+    "file": "2011-07-12 Craterellus tubaeformis 71471.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2011-07-12_Craterellus_tubaeformis_71471.jpg/1280px-2011-07-12_Craterellus_tubaeformis_71471.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2011-07-12_Craterellus_tubaeformis_71471.jpg/330px-2011-07-12_Craterellus_tubaeformis_71471.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "{{{2}}} (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cantharellus cibarius and Craterellus tubaeformis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Cantharellus_cibarius_and_Craterellus_tubaeformis.jpg/1280px-Cantharellus_cibarius_and_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Cantharellus_cibarius_and_Craterellus_tubaeformis.jpg/330px-Cantharellus_cibarius_and_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Ypsilon from Finland",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius rubellus with Craterellus tubaeformis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg/1280px-Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg/330px-Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wkee4ager",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Craterellus cornucopioides",
+  "de": "Herbsttrompete",
+  "en": "Horn of plenty",
+  "group": "Craterellus",
+  "kind": "ridges",
+  "status": "edible",
+  "note": "Black-grey, hollow funnel, the outside smooth to slightly wrinkled, no gills. Thin, leathery flesh. In groups in deciduous woods, easy to overlook.",
+  "note_de": "Schwarzgrauer, hohler Trichter, außen glatt bis leicht runzelig, keine Lamellen. Dünnes, ledriges Fleisch. Gesellig im Laubwald, leicht zu übersehen.",
+  "taste": "Mild, very aromatic, especially dried.",
+  "taste_de": "Mild, sehr aromatisch, besonders getrocknet.",
+  "trees": [
+   "beech",
+   "oak",
+   "hornbeam"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Craterellus tubaeformis",
+   "Auricularia auricula-judae"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": true,
+  "season": {
+   "months": [
+    112,
+    27,
+    13,
+    115,
+    33,
+    85,
+    467,
+    2775,
+    5794,
+    4300,
+    1218,
+    238
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Craterellus cornucopioides JPG1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Craterellus_cornucopioides_JPG1.jpg/1280px-Craterellus_cornucopioides_JPG1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Craterellus_cornucopioides_JPG1.jpg/330px-Craterellus_cornucopioides_JPG1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jean-Pol GRANDMONT",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Black trumpet Craterellus cornucopioides.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Black_trumpet_Craterellus_cornucopioides.jpg/1280px-Black_trumpet_Craterellus_cornucopioides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Black_trumpet_Craterellus_cornucopioides.jpg/330px-Black_trumpet_Craterellus_cornucopioides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Herbsttrompete Craterellus cornucopioides.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Herbsttrompete_Craterellus_cornucopioides.jpg/1280px-Herbsttrompete_Craterellus_cornucopioides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Herbsttrompete_Craterellus_cornucopioides.jpg/330px-Herbsttrompete_Craterellus_cornucopioides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Craterellus cornucopioides Eestis.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Craterellus_cornucopioides_Eestis.JPG/1280px-Craterellus_cornucopioides_Eestis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Craterellus_cornucopioides_Eestis.JPG/330px-Craterellus_cornucopioides_Eestis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Marko Vainu",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "0.2014 Craterellus cornucopioides aus beskidischen Waldkarpaten.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/0.2014_Craterellus_cornucopioides_aus_beskidischen_Waldkarpaten.JPG/1280px-0.2014_Craterellus_cornucopioides_aus_beskidischen_Waldkarpaten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/0.2014_Craterellus_cornucopioides_aus_beskidischen_Waldkarpaten.JPG/330px-0.2014_Craterellus_cornucopioides_aus_beskidischen_Waldkarpaten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Silar",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Cantharellus cornicopioides 90.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Cantharellus_cornicopioides_90.jpg/1280px-Cantharellus_cornicopioides_90.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Cantharellus_cornicopioides_90.jpg/330px-Cantharellus_cornicopioides_90.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "JovanaKoturov",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Craterellus cornucopioides (29074276793).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Craterellus_cornucopioides_%2829074276793%29.jpg/1280px-Craterellus_cornucopioides_%2829074276793%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Craterellus_cornucopioides_%2829074276793%29.jpg/330px-Craterellus_cornucopioides_%2829074276793%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Craterellus cornucopioides (29282666045).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Craterellus_cornucopioides_%2829282666045%29.jpg/1280px-Craterellus_cornucopioides_%2829282666045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Craterellus_cornucopioides_%2829282666045%29.jpg/330px-Craterellus_cornucopioides_%2829282666045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Hydnum repandum",
+  "de": "Semmel-Stoppelpilz",
+  "en": "Hedgehog mushroom",
+  "group": "Hydnum",
+  "kind": "other",
+  "status": "edible",
+  "note": "Pale ochre, irregular cap; underneath brittle spines instead of gills or pores. No dangerous look-alike.",
+  "note_de": "Blass ockerfarbener, unregelmäßiger Hut; unten brüchige Stacheln statt Lamellen oder Poren. Kein gefährlicher Doppelgänger.",
+  "taste": "Mild, nutty; older specimens slightly bitter.",
+  "taste_de": "Mild, nussig; ältere Exemplare leicht bitter.",
+  "trees": [
+   "beech",
+   "spruce",
+   "oak",
+   "fir"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": true,
+  "season": {
+   "months": [
+    431,
+    79,
+    21,
+    100,
+    26,
+    142,
+    1068,
+    4418,
+    7988,
+    7198,
+    2874,
+    1003
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Hedgehog fungi2.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hedgehog_fungi2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hedgehog_fungi2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "D J Kelly",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Semmelstoppelpilz (mushroom) jm154701.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Semmelstoppelpilz_%28mushroom%29_jm154701.jpg/1280px-Semmelstoppelpilz_%28mushroom%29_jm154701.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Semmelstoppelpilz_%28mushroom%29_jm154701.jpg/330px-Semmelstoppelpilz_%28mushroom%29_jm154701.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "joergens.mi",
+    "license": "CC BY-SA 3.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Chantrelle Mushroom.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Chantrelle_Mushroom.jpg/1280px-Chantrelle_Mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Chantrelle_Mushroom.jpg/330px-Chantrelle_Mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "LonMcGregor",
+    "license": "CC BY-SA 3.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Hydnum repandum semmelstoppelpilz.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Hydnum_repandum_semmelstoppelpilz.jpg/1280px-Hydnum_repandum_semmelstoppelpilz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Hydnum_repandum_semmelstoppelpilz.jpg/330px-Hydnum_repandum_semmelstoppelpilz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Semmel-Stoppelpilz Semmelgelber Stacheling Hydnum repandum.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Semmel-Stoppelpilz_Semmelgelber_Stacheling_Hydnum_repandum.JPG/1280px-Semmel-Stoppelpilz_Semmelgelber_Stacheling_Hydnum_repandum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Semmel-Stoppelpilz_Semmelgelber_Stacheling_Hydnum_repandum.JPG/330px-Semmel-Stoppelpilz_Semmelgelber_Stacheling_Hydnum_repandum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "2012-08-29 Hydnum repandum L 256175.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2012-08-29_Hydnum_repandum_L_256175.jpg/1280px-2012-08-29_Hydnum_repandum_L_256175.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2012-08-29_Hydnum_repandum_L_256175.jpg/330px-2012-08-29_Hydnum_repandum_L_256175.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alan Rockefeller (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Hedgehog mushroom (8525112768).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hedgehog_mushroom_%288525112768%29.jpg/1280px-Hedgehog_mushroom_%288525112768%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hedgehog_mushroom_%288525112768%29.jpg/330px-Hedgehog_mushroom_%288525112768%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Quinn Dombrowski from Berkeley, USA",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Hydnum repandum (30096528225).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Hydnum_repandum_%2830096528225%29.jpg/1280px-Hydnum_repandum_%2830096528225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Hydnum_repandum_%2830096528225%29.jpg/330px-Hydnum_repandum_%2830096528225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Sparassis crispa",
+  "de": "Krause Glucke",
+  "en": "Cauliflower fungus",
+  "group": "Sparassis",
+  "kind": "other",
+  "status": "edible",
+  "note": "Creamy, cauliflower-like ball of curly lobes, at the base of pines. Clean it carefully. No dangerous look-alike.",
+  "note_de": "Cremefarbener, blumenkohlartiger Ball aus krausen Lappen, am Fuß von Kiefern. Gründlich putzen. Kein gefährlicher Doppelgänger.",
+  "taste": "Mild and nutty; smell spicy.",
+  "taste_de": "Mild und nussig; Geruch würzig.",
+  "trees": [
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": true,
+  "season": {
+   "months": [
+    586,
+    93,
+    41,
+    102,
+    26,
+    47,
+    141,
+    2382,
+    10688,
+    15833,
+    5539,
+    1837
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Grote sponszwam (Sparassis crispa). 09-11-2023. (d.j.b).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Grote_sponszwam_%28Sparassis_crispa%29._09-11-2023._%28d.j.b%29.jpg/1280px-Grote_sponszwam_%28Sparassis_crispa%29._09-11-2023._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Grote_sponszwam_%28Sparassis_crispa%29._09-11-2023._%28d.j.b%29.jpg/330px-Grote_sponszwam_%28Sparassis_crispa%29._09-11-2023._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Krause Glucke, Herbst, 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Krause_Glucke%2C_Herbst%2C_03.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Krause_Glucke%2C_Herbst%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Krause_Glucke%2C_Herbst%2C_03.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Krause_Glucke%2C_Herbst%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "2025-08-29 D500-0564 Achim Lammerts Krause Glucke (Sparassis crispa).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/2025-08-29_D500-0564_Achim_Lammerts_Krause_Glucke_%28Sparassis_crispa%29.jpg/1280px-2025-08-29_D500-0564_Achim_Lammerts_Krause_Glucke_%28Sparassis_crispa%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/2025-08-29_D500-0564_Achim_Lammerts_Krause_Glucke_%28Sparassis_crispa%29.jpg/330px-2025-08-29_D500-0564_Achim_Lammerts_Krause_Glucke_%28Sparassis_crispa%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys) / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Sparassis crispakurttusieni blomkålsvamp.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Sparassis_crispakurttusieni_blomk%C3%A5lsvamp.jpg/1280px-Sparassis_crispakurttusieni_blomk%C3%A5lsvamp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Sparassis_crispakurttusieni_blomk%C3%A5lsvamp.jpg/330px-Sparassis_crispakurttusieni_blomk%C3%A5lsvamp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Olli Manninen",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "2025-11-04 D500-1685 Achim Lammerts Sparassis-crispa.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2025-11-04_D500-1685_Achim_Lammerts_Sparassis-crispa.jpg/1280px-2025-11-04_D500-1685_Achim_Lammerts_Sparassis-crispa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2025-11-04_D500-1685_Achim_Lammerts_Sparassis-crispa.jpg/330px-2025-11-04_D500-1685_Achim_Lammerts_Sparassis-crispa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys) / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Krause Glucke Sparassis crispa.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Krause_Glucke_Sparassis_crispa.JPG/1280px-Krause_Glucke_Sparassis_crispa.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Krause_Glucke_Sparassis_crispa.JPG/330px-Krause_Glucke_Sparassis_crispa.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Fette Henne - Sparassis crispa.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Fette_Henne_-_Sparassis_crispa.jpg/1280px-Fette_Henne_-_Sparassis_crispa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Fette_Henne_-_Sparassis_crispa.jpg/330px-Fette_Henne_-_Sparassis_crispa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Hohe Mark 17.09.2017 Cauliflower Fungus - Sparassis crispa (23832077578).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Hohe_Mark_17.09.2017_Cauliflower_Fungus_-_Sparassis_crispa_%2823832077578%29.jpg/1280px-Hohe_Mark_17.09.2017_Cauliflower_Fungus_-_Sparassis_crispa_%2823832077578%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Hohe_Mark_17.09.2017_Cauliflower_Fungus_-_Sparassis_crispa_%2823832077578%29.jpg/330px-Hohe_Mark_17.09.2017_Cauliflower_Fungus_-_Sparassis_crispa_%2823832077578%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Macrolepiota procera",
+  "de": "Parasol",
+  "en": "Parasol mushroom",
+  "group": "Macrolepiota",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Very large: cap 15–30 cm with brown scales, stem with a snakeskin pattern and a movable double ring. Only the cap is eaten. Never collect \"parasols\" under 10 cm: small dapperlings can be deadly.",
+  "note_de": "Sehr groß: Hut 15–30 cm mit braunen Schuppen, Stiel mit Natternmuster und verschiebbarem Doppelring. Nur der Hut wird gegessen. Nie „Parasole“ unter 10 cm sammeln: kleine Schirmlinge können tödlich sein.",
+  "taste": "Mild, nutty.",
+  "taste_de": "Mild, nussig.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Chlorophyllum rhacodes",
+   "Chlorophyllum brunneum",
+   "Lepiota brunneoincarnata",
+   "Lepiota cristata",
+   "Amanita pantherina"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    180,
+    27,
+    38,
+    144,
+    284,
+    1098,
+    2475,
+    7983,
+    15348,
+    23219,
+    7975,
+    590
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Parasol-Macrolepiota-procera.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Parasol-Macrolepiota-procera.jpg/1280px-Parasol-Macrolepiota-procera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Parasol-Macrolepiota-procera.jpg/330px-Parasol-Macrolepiota-procera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "20240928 xl 1055-Hexenring, Feenringe, Riesenschirmling, Macrolepiota procera 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/20240928_xl_1055-Hexenring%2C_Feenringe%2C_Riesenschirmling%2C_Macrolepiota_procera_2.jpg/1280px-20240928_xl_1055-Hexenring%2C_Feenringe%2C_Riesenschirmling%2C_Macrolepiota_procera_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/20240928_xl_1055-Hexenring%2C_Feenringe%2C_Riesenschirmling%2C_Macrolepiota_procera_2.jpg/330px-20240928_xl_1055-Hexenring%2C_Feenringe%2C_Riesenschirmling%2C_Macrolepiota_procera_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Molgreen",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Macrolepiota procera 2011 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Macrolepiota_procera_2011_G1.jpg/1280px-Macrolepiota_procera_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Macrolepiota_procera_2011_G1.jpg/330px-Macrolepiota_procera_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": "young"
+   },
+   {
+    "file": "Held Macrolepiota procera.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Held_Macrolepiota_procera.JPG/1280px-Held_Macrolepiota_procera.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Held_Macrolepiota_procera.JPG/330px-Held_Macrolepiota_procera.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "J Milburn",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Edible fungi caps 2024 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Edible_fungi_caps_2024_G1.jpg/1280px-Edible_fungi_caps_2024_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Edible_fungi_caps_2024_G1.jpg/330px-Edible_fungi_caps_2024_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Macrolepiota procera 2018 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Macrolepiota_procera_2018_G1.jpg/1280px-Macrolepiota_procera_2018_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Macrolepiota_procera_2018_G1.jpg/330px-Macrolepiota_procera_2018_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Macrolepiota procera 2020 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Macrolepiota_procera_2020_G1.jpg/1280px-Macrolepiota_procera_2020_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Macrolepiota_procera_2020_G1.jpg/330px-Macrolepiota_procera_2020_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Macrolepiota procera 2020 G2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Macrolepiota_procera_2020_G2.jpg/1280px-Macrolepiota_procera_2020_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Macrolepiota_procera_2020_G2.jpg/330px-Macrolepiota_procera_2020_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Chlorophyllum rhacodes",
+  "de": "Safran-Schirmling",
+  "en": "Shaggy parasol",
+  "group": "Chlorophyllum",
+  "kind": "gilled",
+  "status": "caution",
+  "note": "Like a parasol, but the stem is smooth without snakeskin pattern and the flesh turns saffron-red when cut. Upsets the stomach of some people.",
+  "note_de": "Wie ein Parasol, aber der Stiel ist glatt ohne Natternmuster, und das Fleisch läuft beim Anschneiden safranrot an. Manche Menschen vertragen ihn nicht.",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [
+   "spruce"
+  ],
+  "soil": "any",
+  "extra": [
+   "compost"
+  ],
+  "lookalikes": [
+   "Macrolepiota procera",
+   "Chlorophyllum brunneum",
+   "Lepiota brunneoincarnata",
+   "Amanita pantherina"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    137,
+    10,
+    12,
+    14,
+    62,
+    198,
+    398,
+    984,
+    3672,
+    6117,
+    2602,
+    397
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Chlorophyllum rhacodes LC0093.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Chlorophyllum_rhacodes_LC0093.jpg/1280px-Chlorophyllum_rhacodes_LC0093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Chlorophyllum_rhacodes_LC0093.jpg/330px-Chlorophyllum_rhacodes_LC0093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jörg Hempel",
+    "license": "CC BY-SA 2.0 de",
+    "stage": null
+   },
+   {
+    "file": "Knolparasolzwammen. 09-11-2023. (d.j.b).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Knolparasolzwammen._09-11-2023._%28d.j.b%29.jpg/1280px-Knolparasolzwammen._09-11-2023._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Knolparasolzwammen._09-11-2023._%28d.j.b%29.jpg/330px-Knolparasolzwammen._09-11-2023._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC0",
+    "stage": "young"
+   },
+   {
+    "file": "Beschadigde paddenstoel. Locatie, tuinreservaat Jonkervallei 03.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Beschadigde_paddenstoel._Locatie%2C_tuinreservaat_Jonkervallei_03.JPG/1280px-Beschadigde_paddenstoel._Locatie%2C_tuinreservaat_Jonkervallei_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Beschadigde_paddenstoel._Locatie%2C_tuinreservaat_Jonkervallei_03.JPG/330px-Beschadigde_paddenstoel._Locatie%2C_tuinreservaat_Jonkervallei_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Knolparasolzwam (Chlorophyllum rhacodes) (d.j.b.) 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_%28d.j.b.%29_03.jpg/1280px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_%28d.j.b.%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_%28d.j.b.%29_03.jpg/330px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_%28d.j.b.%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Knolparasolzwam (Chlorophyllum rhacodes) 06-11-2020 (actm.) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_01.jpg/1280px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_01.jpg/330px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Knolparasolzwam (Chlorophyllum rhacodes) 06-11-2020 (actm.) 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_02.jpg/1280px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_02.jpg/330px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_06-11-2020_%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Knolparasolzwam (Chlorophyllum rhacodes) 26-10-2020 (d.j.b.).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_26-10-2020_%28d.j.b.%29.jpg/1280px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_26-10-2020_%28d.j.b.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Knolparasolzwam_%28Chlorophyllum_rhacodes%29_26-10-2020_%28d.j.b.%29.jpg/330px-Knolparasolzwam_%28Chlorophyllum_rhacodes%29_26-10-2020_%28d.j.b.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Knolparasolzwam. (Chlorophyllum rhacodes) 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Knolparasolzwam._%28Chlorophyllum_rhacodes%29_02.jpg/1280px-Knolparasolzwam._%28Chlorophyllum_rhacodes%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Knolparasolzwam._%28Chlorophyllum_rhacodes%29_02.jpg/330px-Knolparasolzwam._%28Chlorophyllum_rhacodes%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Agaricus campestris",
+  "de": "Wiesen-Champignon",
+  "en": "Field mushroom",
+  "group": "Agaricus",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "On pastures. Gills pink, later chocolate-brown — never white in a grown specimen. Pleasant smell, not of ink. Always dig out the stem base: white gills plus a sack at the base means death cap.",
+  "note_de": "Auf Weiden. Lamellen rosa, später schokoladenbraun — bei ausgewachsenen Exemplaren nie weiß. Angenehmer Geruch, nicht nach Tinte. Immer die Stielbasis ausgraben: weiße Lamellen plus Knolle mit Scheide bedeutet Knollenblätterpilz.",
+  "taste": "Mild, mushroomy.",
+  "taste_de": "Mild, pilzig.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Agaricus arvensis",
+   "Amanita phalloides",
+   "Amanita virosa",
+   "Agaricus xanthodermus",
+   "Entoloma sinuatum",
+   "Lepiota brunneoincarnata"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    189,
+    23,
+    39,
+    91,
+    229,
+    529,
+    1204,
+    2601,
+    4031,
+    3880,
+    1243,
+    243
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Agaricus campestris.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Agaricus_campestris.jpg/1280px-Agaricus_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Agaricus_campestris.jpg/330px-Agaricus_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Goethestr. bei Hausnr. 16b, Wiesen-Champignon, Unterseite und Seitenansicht, Spätherbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Ruhland%2C_Goethestr._bei_Hausnr._16b%2C_Wiesen-Champignon%2C_Unterseite_und_Seitenansicht%2C_Sp%C3%A4therbst%2C_01.jpg/1280px-Ruhland%2C_Goethestr._bei_Hausnr._16b%2C_Wiesen-Champignon%2C_Unterseite_und_Seitenansicht%2C_Sp%C3%A4therbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Ruhland%2C_Goethestr._bei_Hausnr._16b%2C_Wiesen-Champignon%2C_Unterseite_und_Seitenansicht%2C_Sp%C3%A4therbst%2C_01.jpg/330px-Ruhland%2C_Goethestr._bei_Hausnr._16b%2C_Wiesen-Champignon%2C_Unterseite_und_Seitenansicht%2C_Sp%C3%A4therbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Agaricus campestris IMG 20200907 132426.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Agaricus_campestris_IMG_20200907_132426.jpg/1280px-Agaricus_campestris_IMG_20200907_132426.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Agaricus_campestris_IMG_20200907_132426.jpg/330px-Agaricus_campestris_IMG_20200907_132426.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Accuruss",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "A agaricus campestris.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/A_agaricus_campestris.jpg/1280px-A_agaricus_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/A_agaricus_campestris.jpg/330px-A_agaricus_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Chiranjivisubedi",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus campestris (48647010296).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Agaricus_campestris_%2848647010296%29.jpg/1280px-Agaricus_campestris_%2848647010296%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Agaricus_campestris_%2848647010296%29.jpg/330px-Agaricus_campestris_%2848647010296%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus campestris (49147948397).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Agaricus_campestris_%2849147948397%29.jpg/1280px-Agaricus_campestris_%2849147948397%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Agaricus_campestris_%2849147948397%29.jpg/330px-Agaricus_campestris_%2849147948397%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus campestris 1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Agaricus_campestris_1.jpg/1280px-Agaricus_campestris_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Agaricus_campestris_1.jpg/330px-Agaricus_campestris_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Beko",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus campestris 20230813 101640.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Agaricus_campestris_20230813_101640.jpg/1280px-Agaricus_campestris_20230813_101640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Agaricus_campestris_20230813_101640.jpg/330px-Agaricus_campestris_20230813_101640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "01x07x2022000",
+    "license": "CC0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Agaricus arvensis",
+  "de": "Schaf-Champignon",
+  "en": "Horse mushroom",
+  "group": "Agaricus",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Large, yellows slowly when rubbed, smells of anise or almond. Gills grey-pink, then dark brown; cogwheel-like ring. The poisonous yellow stainer yellows too, but smells of ink.",
+  "note_de": "Groß, gilbt langsam auf Druck, riecht nach Anis oder Mandel. Lamellen grau-rosa, dann dunkelbraun; zahnradartiger Ring. Der giftige Karbol-Champignon gilbt ebenfalls, riecht aber nach Tinte.",
+  "taste": "Mild, aniseed.",
+  "taste_de": "Mild, nach Anis.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Agaricus campestris",
+   "Amanita virosa",
+   "Amanita phalloides",
+   "Agaricus xanthodermus"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    95,
+    20,
+    13,
+    50,
+    265,
+    658,
+    933,
+    1685,
+    2982,
+    2652,
+    889,
+    108
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Pieczarka polowa vongrzanka.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Pieczarka_polowa_vongrzanka.JPG/1280px-Pieczarka_polowa_vongrzanka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Pieczarka_polowa_vongrzanka.JPG/330px-Pieczarka_polowa_vongrzanka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Von.grzanka",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "2008-08-Agaricus-Stuttgart-cut.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/2008-08-Agaricus-Stuttgart-cut.JPG/1280px-2008-08-Agaricus-Stuttgart-cut.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/2008-08-Agaricus-Stuttgart-cut.JPG/330px-2008-08-Agaricus-Stuttgart-cut.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Salix",
+    "license": "CC BY-SA 3.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Ruhland, Birkenweg, Waldrand bei Fichtestr. 14, Anis-Egerling Seitenansicht, Ober- und Unterseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._14%2C_Anis-Egerling_Seitenansicht%2C_Ober-_und_Unterseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._14%2C_Anis-Egerling_Seitenansicht%2C_Ober-_und_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._14%2C_Anis-Egerling_Seitenansicht%2C_Ober-_und_Unterseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._14%2C_Anis-Egerling_Seitenansicht%2C_Ober-_und_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Ruhland, Ortrander Str., Festwiese, Anis-Egerling, Oberseite und Seitenansicht, Sommer, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ruhland%2C_Ortrander_Str.%2C_Festwiese%2C_Anis-Egerling%2C_Oberseite_und_Seitenansicht%2C_Sommer%2C_01.jpg/1280px-Ruhland%2C_Ortrander_Str.%2C_Festwiese%2C_Anis-Egerling%2C_Oberseite_und_Seitenansicht%2C_Sommer%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ruhland%2C_Ortrander_Str.%2C_Festwiese%2C_Anis-Egerling%2C_Oberseite_und_Seitenansicht%2C_Sommer%2C_01.jpg/330px-Ruhland%2C_Ortrander_Str.%2C_Festwiese%2C_Anis-Egerling%2C_Oberseite_und_Seitenansicht%2C_Sommer%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Gewone anijschampignon (Agaricus arvensis). 14-10-2020 (d.j.b.).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gewone_anijschampignon_%28Agaricus_arvensis%29._14-10-2020_%28d.j.b.%29.jpg/1280px-Gewone_anijschampignon_%28Agaricus_arvensis%29._14-10-2020_%28d.j.b.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gewone_anijschampignon_%28Agaricus_arvensis%29._14-10-2020_%28d.j.b.%29.jpg/330px-Gewone_anijschampignon_%28Agaricus_arvensis%29._14-10-2020_%28d.j.b.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "20210720 gewone anijschampignon in Readtsjerk.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/20210720_gewone_anijschampignon_in_Readtsjerk.jpg/1280px-20210720_gewone_anijschampignon_in_Readtsjerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/20210720_gewone_anijschampignon_in_Readtsjerk.jpg/330px-20210720_gewone_anijschampignon_in_Readtsjerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Gouwenaar",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus arvensis - December 2024 - Sarah Stierch 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_01.jpg/1280px-Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_01.jpg/330px-Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Missvain",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus arvensis - December 2024 - Sarah Stierch 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_02.jpg/1280px-Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_02.jpg/330px-Agaricus_arvensis_-_December_2024_-_Sarah_Stierch_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Missvain",
+    "license": "CC0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Amanita rubescens",
+  "de": "Perlpilz",
+  "en": "Blusher",
+  "group": "Amanita",
+  "kind": "gilled",
+  "status": "caution",
+  "note": "Cap with grey-pink warts; flesh and feeding marks turn wine-red; ring grooved on top. Poisonous raw — cook thoroughly. The poisonous panther cap never reddens.",
+  "note_de": "Hut mit grau-rosa Flocken; Fleisch und Fraßstellen werden weinrot; Ring oben gerieft. Roh giftig — gründlich garen. Der giftige Pantherpilz rötet nie.",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [
+   "oak",
+   "beech",
+   "spruce",
+   "pine",
+   "birch"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Amanita pantherina",
+   "Amanita muscaria"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    278,
+    62,
+    63,
+    187,
+    1383,
+    7893,
+    16598,
+    25189,
+    29027,
+    22937,
+    5818,
+    715
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Amanita rubescens.JPG",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Amanita_rubescens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Amanita_rubescens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Archenzo",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita rubescens 2022 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Amanita_rubescens_2022_G1.jpg/1280px-Amanita_rubescens_2022_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Amanita_rubescens_2022_G1.jpg/330px-Amanita_rubescens_2022_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "20210710 Amanita rubescens 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/20210710_Amanita_rubescens_01.jpg/1280px-20210710_Amanita_rubescens_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/20210710_Amanita_rubescens_01.jpg/330px-20210710_Amanita_rubescens_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Flocci Nivis",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Perlpilze im Fichtelseemoor 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Perlpilze_im_Fichtelseemoor_2.jpg/1280px-Perlpilze_im_Fichtelseemoor_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Perlpilze_im_Fichtelseemoor_2.jpg/330px-Perlpilze_im_Fichtelseemoor_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stephan van Helden",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Pilz am Lochbach im Fichtelseemoor.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Pilz_am_Lochbach_im_Fichtelseemoor.jpg/1280px-Pilz_am_Lochbach_im_Fichtelseemoor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Pilz_am_Lochbach_im_Fichtelseemoor.jpg/330px-Pilz_am_Lochbach_im_Fichtelseemoor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stephan van Helden",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita rubescens 2025 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Amanita_rubescens_2025_G1.jpg/1280px-Amanita_rubescens_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Amanita_rubescens_2025_G1.jpg/330px-Amanita_rubescens_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Perlpilz am Ostufer des Fichtelsees.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Perlpilz_am_Ostufer_des_Fichtelsees.jpg/1280px-Perlpilz_am_Ostufer_des_Fichtelsees.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Perlpilz_am_Ostufer_des_Fichtelsees.jpg/330px-Perlpilz_am_Ostufer_des_Fichtelsees.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stephan van Helden",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Warburg - 2017-08-13 - Klippen und Felsenmeer bei Hardehausen (67).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Warburg_-_2017-08-13_-_Klippen_und_Felsenmeer_bei_Hardehausen_%2867%29.jpg/1280px-Warburg_-_2017-08-13_-_Klippen_und_Felsenmeer_bei_Hardehausen_%2867%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Warburg_-_2017-08-13_-_Klippen_und_Felsenmeer_bei_Hardehausen_%2867%29.jpg/330px-Warburg_-_2017-08-13_-_Klippen_und_Felsenmeer_bei_Hardehausen_%2867%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tsungam",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Lactarius deliciosus",
+  "de": "Edel-Reizker",
+  "en": "Saffron milk cap",
+  "group": "Lactarius",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Orange with concentric rings; when cut it bleeds carrot-orange milk that stays orange. Under pines, mostly on chalky soil.",
+  "note_de": "Orange mit konzentrischen Ringen; beim Anschneiden tritt karottenorange Milch aus, die orange bleibt. Unter Kiefern, meist auf Kalk.",
+  "taste": "Mild, slightly bitter, resinous.",
+  "taste_de": "Mild, leicht bitter, harzig.",
+  "trees": [
+   "pine"
+  ],
+  "soil": "calc",
+  "extra": [],
+  "lookalikes": [
+   "Lactarius deterrimus",
+   "Lactarius torminosus"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    136,
+    32,
+    16,
+    91,
+    19,
+    59,
+    172,
+    1602,
+    4821,
+    5338,
+    2260,
+    591
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Lactarius deliciosus.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Lactarius_deliciosus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/89/Lactarius_deliciosus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius deliciosus cut.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Lactarius_deliciosus_cut.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Lactarius_deliciosus_cut.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Roberto Zanon",
+    "license": "CC BY-SA 3.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Saffron Milk Cap - geograph.org.uk - 596877.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Saffron_Milk_Cap_-_geograph.org.uk_-_596877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/70/Saffron_Milk_Cap_-_geograph.org.uk_-_596877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "David Baird",
+    "license": "CC BY-SA 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "Lactarius deliciosus 2010 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Lactarius_deliciosus_2010_G1.jpg/1280px-Lactarius_deliciosus_2010_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Lactarius_deliciosus_2010_G1.jpg/330px-Lactarius_deliciosus_2010_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Echte Reizker Lactarius deliciosus.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Echte_Reizker_Lactarius_deliciosus.JPG/1280px-Echte_Reizker_Lactarius_deliciosus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Echte_Reizker_Lactarius_deliciosus.JPG/330px-Echte_Reizker_Lactarius_deliciosus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius-deliciosus-Finland.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Lactarius-deliciosus-Finland.jpg/1280px-Lactarius-deliciosus-Finland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Lactarius-deliciosus-Finland.jpg/330px-Lactarius-deliciosus-Finland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Petritap",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Isn't it lovely this Lactarius deliciosus (Smakelijke Melkzwam) with its soft colours and a thick stipe at Hoge Veluwe Park – panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Isn%27t_it_lovely_this_Lactarius_deliciosus_%28Smakelijke_Melkzwam%29_with_its_soft_colours_and_a_thick_stipe_at_Hoge_Veluwe_Park_%E2%80%93_panoramio.jpg/1280px-Isn%27t_it_lovely_this_Lactarius_deliciosus_%28Smakelijke_Melkzwam%29_with_its_soft_colours_and_a_thick_stipe_at_Hoge_Veluwe_Park_%E2%80%93_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Isn%27t_it_lovely_this_Lactarius_deliciosus_%28Smakelijke_Melkzwam%29_with_its_soft_colours_and_a_thick_stipe_at_Hoge_Veluwe_Park_%E2%80%93_panoramio.jpg/330px-Isn%27t_it_lovely_this_Lactarius_deliciosus_%28Smakelijke_Melkzwam%29_with_its_soft_colours_and_a_thick_stipe_at_Hoge_Veluwe_Park_%E2%80%93_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius deliciosus (32969568082).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Lactarius_deliciosus_%2832969568082%29.jpg/1280px-Lactarius_deliciosus_%2832969568082%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Lactarius_deliciosus_%2832969568082%29.jpg/330px-Lactarius_deliciosus_%2832969568082%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Lactarius deterrimus",
+  "de": "Fichten-Reizker",
+  "en": "False saffron milkcap",
+  "group": "Lactarius",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Like the saffron milk cap, but under spruce; the orange milk turns wine-red within half an hour and it quickly stains green.",
+  "note_de": "Wie der Edel-Reizker, aber unter Fichten; die orange Milch wird innerhalb einer halben Stunde weinrot, er verfärbt schnell grün.",
+  "taste": "Mild to slightly bitter.",
+  "taste_de": "Mild bis leicht bitter.",
+  "trees": [
+   "spruce"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Lactarius deliciosus",
+   "Lactarius torminosus"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    37,
+    13,
+    5,
+    15,
+    17,
+    158,
+    1556,
+    7010,
+    11355,
+    6715,
+    1460,
+    139
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Fichten-Reizker Lactarius deterrimus.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Fichten-Reizker_Lactarius_deterrimus.jpg/1280px-Fichten-Reizker_Lactarius_deterrimus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Fichten-Reizker_Lactarius_deterrimus.jpg/330px-Fichten-Reizker_Lactarius_deterrimus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius deterrimus (6).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Lactarius_deterrimus_%286%29.jpg/1280px-Lactarius_deterrimus_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Lactarius_deterrimus_%286%29.jpg/330px-Lactarius_deterrimus_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Th. Kuhnigk",
+    "license": "CC BY-SA 3.0 de",
+    "stage": "cut"
+   },
+   {
+    "file": "Lactarius deterrimus (2).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Lactarius_deterrimus_%282%29.JPG/1280px-Lactarius_deterrimus_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Lactarius_deterrimus_%282%29.JPG/330px-Lactarius_deterrimus_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Th. Kuhnigk",
+    "license": "CC BY-SA 3.0 de",
+    "stage": "young"
+   },
+   {
+    "file": "Lactaire des épicéas vert 19.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Lactaire_des_%C3%A9pic%C3%A9as_vert_19.jpg/1280px-Lactaire_des_%C3%A9pic%C3%A9as_vert_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Lactaire_des_%C3%A9pic%C3%A9as_vert_19.jpg/330px-Lactaire_des_%C3%A9pic%C3%A9as_vert_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Coyau",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius deterrimus 2026 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Lactarius_deterrimus_2026_G1.jpg/1280px-Lactarius_deterrimus_2026_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Lactarius_deterrimus_2026_G1.jpg/330px-Lactarius_deterrimus_2026_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius scrobicolatus Grubiger Milchling Bula Gherdëina te bosch.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Lactarius_scrobicolatus_Grubiger_Milchling_Bula_Gherd%C3%ABina_te_bosch.jpg/1280px-Lactarius_scrobicolatus_Grubiger_Milchling_Bula_Gherd%C3%ABina_te_bosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Lactarius_scrobicolatus_Grubiger_Milchling_Bula_Gherd%C3%ABina_te_bosch.jpg/330px-Lactarius_scrobicolatus_Grubiger_Milchling_Bula_Gherd%C3%ABina_te_bosch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a…",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius-deterrimus-Fichten-Reizker.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Lactarius-deterrimus-Fichten-Reizker.jpg/1280px-Lactarius-deterrimus-Fichten-Reizker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Lactarius-deterrimus-Fichten-Reizker.jpg/330px-Lactarius-deterrimus-Fichten-Reizker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Eichhof 06.08.2017 False Saffron Milkcap - Lactarius deterrimus (36922214170).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Eichhof_06.08.2017_False_Saffron_Milkcap_-_Lactarius_deterrimus_%2836922214170%29.jpg/1280px-Eichhof_06.08.2017_False_Saffron_Milkcap_-_Lactarius_deterrimus_%2836922214170%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Eichhof_06.08.2017_False_Saffron_Milkcap_-_Lactarius_deterrimus_%2836922214170%29.jpg/330px-Eichhof_06.08.2017_False_Saffron_Milkcap_-_Lactarius_deterrimus_%2836922214170%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Russula cyanoxantha",
+  "de": "Frauen-Täubling",
+  "en": "Charcoal burner",
+  "group": "Russula",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Cap violet, green or grey, very variable. Its gills are soft and flexible instead of brittle — rare for a brittlegill. White gills and a greenish cap: check for a ring and a sack at the base (death cap).",
+  "note_de": "Hut violett, grün oder grau, sehr variabel. Die Lamellen sind weich und biegsam statt brüchig — selten bei Täublingen. Weiße Lamellen und grünlicher Hut: auf Ring und Knolle mit Scheide prüfen (Knollenblätterpilz).",
+  "taste": "Mild, nutty.",
+  "taste_de": "Mild, nussig.",
+  "trees": [
+   "beech",
+   "oak"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Amanita phalloides",
+   "Russula vesca"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    218,
+    20,
+    30,
+    47,
+    452,
+    2884,
+    5262,
+    8049,
+    11070,
+    7768,
+    1629,
+    269
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Frauen-Täubling Russula cyanoxantha.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Frauen-T%C3%A4ubling_Russula_cyanoxantha.jpg/1280px-Frauen-T%C3%A4ubling_Russula_cyanoxantha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Frauen-T%C3%A4ubling_Russula_cyanoxantha.jpg/330px-Frauen-T%C3%A4ubling_Russula_cyanoxantha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Frauentaeubling jung (2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Frauentaeubling_jung_%282%29.jpg/1280px-Frauentaeubling_jung_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Frauentaeubling_jung_%282%29.jpg/330px-Frauentaeubling_jung_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Frauentaeubl alt.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Frauentaeubl_alt.jpg/1280px-Frauentaeubl_alt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Frauentaeubl_alt.jpg/330px-Frauentaeubl_alt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Llora blava, Santa perpètua de Gaià, 1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Llora_blava%2C_Santa_perp%C3%A8tua_de_Gai%C3%A0%2C_1.jpg/1280px-Llora_blava%2C_Santa_perp%C3%A8tua_de_Gai%C3%A0%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Llora_blava%2C_Santa_perp%C3%A8tua_de_Gai%C3%A0%2C_1.jpg/330px-Llora_blava%2C_Santa_perp%C3%A8tua_de_Gai%C3%A0%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Pere Orga Esteve",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Pilz im Sommer 2011 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Pilz_im_Sommer_2011_2.jpg/1280px-Pilz_im_Sommer_2011_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Pilz_im_Sommer_2011_2.jpg/330px-Pilz_im_Sommer_2011_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Sebastian Martin Dicke",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Russula cyanoxantha (31226607201).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Russula_cyanoxantha_%2831226607201%29.jpg/1280px-Russula_cyanoxantha_%2831226607201%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Russula_cyanoxantha_%2831226607201%29.jpg/330px-Russula_cyanoxantha_%2831226607201%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Russula cyanoxantha (31324290108).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Russula_cyanoxantha_%2831324290108%29.jpg/1280px-Russula_cyanoxantha_%2831324290108%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Russula_cyanoxantha_%2831324290108%29.jpg/330px-Russula_cyanoxantha_%2831324290108%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Russula cyanoxantha (43389477400).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Russula_cyanoxantha_%2843389477400%29.jpg/1280px-Russula_cyanoxantha_%2843389477400%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Russula_cyanoxantha_%2843389477400%29.jpg/330px-Russula_cyanoxantha_%2843389477400%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Russula vesca",
+  "de": "Speise-Täubling",
+  "en": "Bare-toothed brittlegill",
+  "group": "Russula",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Flesh-pink to brownish cap whose skin stops short of the margin and shows the flesh (\"teeth\"); white gills, white stem. Taste a crumb and spit it out: it must be mild.",
+  "note_de": "Fleischrosa bis bräunlicher Hut, dessen Haut den Rand nicht erreicht und das Fleisch zeigt („Zähnchen“); weiße Lamellen, weißer Stiel. Ein Krümelchen kosten und ausspucken: Er muss mild sein.",
+  "taste": "Mild, nutty.",
+  "taste_de": "Mild, nussig.",
+  "trees": [
+   "oak",
+   "beech"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Russula cyanoxantha",
+   "Amanita phalloides",
+   "Russula emetica",
+   "Russula ochroleuca"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    63,
+    7,
+    15,
+    21,
+    142,
+    1280,
+    4624,
+    7896,
+    7569,
+    2891,
+    439,
+    81
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Russ.ves.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Russ.ves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Russ.ves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Luridiformis at English Wikipedia",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Fleischroter Speise-Täubling.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Fleischroter_Speise-T%C3%A4ubling.jpg/1280px-Fleischroter_Speise-T%C3%A4ubling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Fleischroter_Speise-T%C3%A4ubling.jpg/330px-Fleischroter_Speise-T%C3%A4ubling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Sebastian Martin Dicke",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Russula vesca young.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Russula_vesca_young.jpg/1280px-Russula_vesca_young.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Russula_vesca_young.jpg/330px-Russula_vesca_young.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Per Marstad",
+    "license": "CC BY 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "2881. Russula vesca 240814.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/2881._Russula_vesca_240814.jpg/1280px-2881._Russula_vesca_240814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/2881._Russula_vesca_240814.jpg/330px-2881._Russula_vesca_240814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Mikko Veräjänkorva",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Champignon.Autriche.DSCF0345.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Champignon.Autriche.DSCF0345.jpg/1280px-Champignon.Autriche.DSCF0345.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Champignon.Autriche.DSCF0345.jpg/330px-Champignon.Autriche.DSCF0345.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rc1959",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "DSC01754 Russula vesca.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/DSC01754_Russula_vesca.jpg/1280px-DSC01754_Russula_vesca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/DSC01754_Russula_vesca.jpg/330px-DSC01754_Russula_vesca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Laura Tarvainen",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Russula vesca 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Russula_vesca_2.jpg/1280px-Russula_vesca_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Russula_vesca_2.jpg/330px-Russula_vesca_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Nativeplants garden",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Russula vesca 438665349.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Russula_vesca_438665349.jpg/1280px-Russula_vesca_438665349.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Russula_vesca_438665349.jpg/330px-Russula_vesca_438665349.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Matej Frančeškin",
+    "license": "CC BY 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Armillaria mellea",
+  "de": "Honiggelber Hallimasch",
+  "en": "Honey fungus",
+  "group": "Armillaria",
+  "kind": "gilled",
+  "status": "caution",
+  "note": "Dense tufts on wood or roots, honey-yellow caps with dark scales, ring, white spore print. Poisonous raw and sometimes even cooked: blanch, discard the water, cook at least 20 minutes, eat only small amounts.",
+  "note_de": "Dichte Büschel an Holz oder Wurzeln, honiggelbe Hüte mit dunklen Schüppchen, Ring, weißes Sporenpulver. Roh giftig, manchmal auch gegart unverträglich: abkochen, Wasser wegschütten, mindestens 20 Minuten garen, nur kleine Mengen.",
+  "taste": "Mild, astringent; raw unpleasantly scratchy.",
+  "taste_de": "Mild, herb; roh unangenehm kratzend.",
+  "trees": [
+   "oak",
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Armillaria ostoyae",
+   "Galerina marginata",
+   "Hypholoma fasciculare",
+   "Kuehneromyces mutabilis"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    416,
+    183,
+    231,
+    418,
+    378,
+    243,
+    365,
+    1235,
+    5657,
+    15162,
+    5421,
+    803
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Armillaria mellea, Honey Fungus, UK 1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg/1280px-Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg/330px-Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stu's Images",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Honey Fungus (Armillaria mellea) (10872462724).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Honey_Fungus_%28Armillaria_mellea%29_%2810872462724%29.jpg/1280px-Honey_Fungus_%28Armillaria_mellea%29_%2810872462724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Honey_Fungus_%28Armillaria_mellea%29_%2810872462724%29.jpg/330px-Honey_Fungus_%28Armillaria_mellea%29_%2810872462724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "AnemoneProjectors",
+    "license": "CC BY-SA 2.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Honey Mushroom Button (4037073609).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Honey_Mushroom_Button_%284037073609%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Honey_Mushroom_Button_%284037073609%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Jason Hollinger",
+    "license": "CC BY 2.0",
+    "stage": "young"
+   },
+   {
+    "file": "Armillaria mellea Laite.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Armillaria_mellea_Laite.jpg/1280px-Armillaria_mellea_Laite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Armillaria_mellea_Laite.jpg/330px-Armillaria_mellea_Laite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Syrio",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "20221020 Stadtbefestigung Lindau 05.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/20221020_Stadtbefestigung_Lindau_05.jpg/1280px-20221020_Stadtbefestigung_Lindau_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/20221020_Stadtbefestigung_Lindau_05.jpg/330px-20221020_Stadtbefestigung_Lindau_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Flocci Nivis",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Armillaria mellea 2011 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Armillaria_mellea_2011_G1.jpg/1280px-Armillaria_mellea_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Armillaria_mellea_2011_G1.jpg/330px-Armillaria_mellea_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Armillaria mellea 2014 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Armillaria_mellea_2014_G1.jpg/1280px-Armillaria_mellea_2014_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Armillaria_mellea_2014_G1.jpg/330px-Armillaria_mellea_2014_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Armillaria mellea 2014 G2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Armillaria_mellea_2014_G2.jpg/1280px-Armillaria_mellea_2014_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Armillaria_mellea_2014_G2.jpg/330px-Armillaria_mellea_2014_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Armillaria ostoyae",
+  "de": "Dunkler Hallimasch",
+  "en": "Dark honey fungus",
+  "group": "Armillaria",
+  "kind": "gilled",
+  "status": "caution",
+  "note": "Like the honey fungus but darker brown with coarse dark scales, mostly on conifers. Same rules: poisonous raw, blanch and cook thoroughly.",
+  "note_de": "Wie der Honiggelbe Hallimasch, aber dunkler braun mit groben dunklen Schuppen, meist an Nadelholz. Gleiche Regeln: roh giftig, abkochen und gründlich garen.",
+  "taste": "Mild, astringent.",
+  "taste_de": "Mild, herb.",
+  "trees": [
+   "spruce",
+   "pine"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Armillaria mellea",
+   "Galerina marginata",
+   "Hypholoma fasciculare"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    46,
+    4,
+    5,
+    10,
+    8,
+    29,
+    69,
+    290,
+    1823,
+    7868,
+    4096,
+    356
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Armillaria ostoyae.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Armillaria_ostoyae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Armillaria_ostoyae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "W.J.Pilsak (Walter J. Pilsak, Waldsassen) at de.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Alte Poststraße vor der Bahnbrücke, Dunkler Hallimasch auf Randstreifen, Unterseite, Oberseite und Seitenansicht, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Unterseite%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Unterseite%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Unterseite%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Unterseite%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Some real young Armillaria ostoyae (sombere honingzwam) at Schaarsbergen wood - panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Some_real_young_Armillaria_ostoyae_%28sombere_honingzwam%29_at_Schaarsbergen_wood_-_panoramio.jpg/1280px-Some_real_young_Armillaria_ostoyae_%28sombere_honingzwam%29_at_Schaarsbergen_wood_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Some_real_young_Armillaria_ostoyae_%28sombere_honingzwam%29_at_Schaarsbergen_wood_-_panoramio.jpg/330px-Some_real_young_Armillaria_ostoyae_%28sombere_honingzwam%29_at_Schaarsbergen_wood_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Ruhland, Alte Poststraße vor der Bahnbrücke, Dunkler Hallimasch auf Randstreifen, Oberseite und Seitenansicht, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Alte_Poststra%C3%9Fe_vor_der_Bahnbr%C3%BCcke%2C_Dunkler_Hallimasch_auf_Randstreifen%2C_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Sombere honingzwam (Armillaria ostoyae). Locatie, Sauerland Duitsland 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Sombere_honingzwam_%28Armillaria_ostoyae%29._Locatie%2C_Sauerland_Duitsland_03.jpg/1280px-Sombere_honingzwam_%28Armillaria_ostoyae%29._Locatie%2C_Sauerland_Duitsland_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Sombere_honingzwam_%28Armillaria_ostoyae%29._Locatie%2C_Sauerland_Duitsland_03.jpg/330px-Sombere_honingzwam_%28Armillaria_ostoyae%29._Locatie%2C_Sauerland_Duitsland_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Armillaria ostoyaea 2011 G2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Armillaria_ostoyaea_2011_G2.jpg/1280px-Armillaria_ostoyaea_2011_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Armillaria_ostoyaea_2011_G2.jpg/330px-Armillaria_ostoyaea_2011_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Armillaria ostoyaea 2011 G3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Armillaria_ostoyaea_2011_G3.jpg/1280px-Armillaria_ostoyaea_2011_G3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Armillaria_ostoyaea_2011_G3.jpg/330px-Armillaria_ostoyaea_2011_G3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Fonc sa Sacun Gherdëina Armillaria ostoyae.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Fonc_sa_Sacun_Gherd%C3%ABina_Armillaria_ostoyae.jpg/1280px-Fonc_sa_Sacun_Gherd%C3%ABina_Armillaria_ostoyae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Fonc_sa_Sacun_Gherd%C3%ABina_Armillaria_ostoyae.jpg/330px-Fonc_sa_Sacun_Gherd%C3%ABina_Armillaria_ostoyae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a…",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Kuehneromyces mutabilis",
+  "de": "Stockschwämmchen",
+  "en": "Sheathed woodtuft",
+  "group": "Kuehneromyces",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Tufts on deciduous stumps; caps two-coloured when drying; stem scaly below the ring. For experts only: the deadly funeral bell grows in the same places and looks almost identical.",
+  "note_de": "Büschel auf Laubholzstümpfen; Hüte beim Abtrocknen zweifarbig; Stiel unterhalb des Rings schuppig. Nur für Erfahrene: Der tödliche Gifthäubling wächst an denselben Stellen und sieht fast gleich aus.",
+  "taste": "Mild, aromatic.",
+  "taste_de": "Mild, aromatisch.",
+  "trees": [
+   "beech",
+   "birch"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Galerina marginata",
+   "Hypholoma fasciculare",
+   "Armillaria mellea"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    324,
+    99,
+    177,
+    562,
+    1486,
+    2533,
+    3136,
+    6354,
+    10033,
+    9313,
+    3119,
+    675
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "2025-10-11 D500-920 Achim-Lammerts Kuehneromyces-mutabilis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2025-10-11_D500-920_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/1280px-2025-10-11_D500-920_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2025-10-11_D500-920_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/330px-2025-10-11_D500-920_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Big funghi, small funghi (49032229306).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Big_funghi%2C_small_funghi_%2849032229306%29.jpg/1280px-Big_funghi%2C_small_funghi_%2849032229306%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Big_funghi%2C_small_funghi_%2849032229306%29.jpg/330px-Big_funghi%2C_small_funghi_%2849032229306%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Paul van de Velde",
+    "license": "CC BY 2.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Ruhland, Anglerweg, Wald am Rundweg beim Angelteich = alte Badeanstalt, Gewöhnliches Stockschwämmchen, Oberseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ruhland%2C_Anglerweg%2C_Wald_am_Rundweg_beim_Angelteich_%3D_alte_Badeanstalt%2C_Gew%C3%B6hnliches_Stockschw%C3%A4mmchen%2C_Oberseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Anglerweg%2C_Wald_am_Rundweg_beim_Angelteich_%3D_alte_Badeanstalt%2C_Gew%C3%B6hnliches_Stockschw%C3%A4mmchen%2C_Oberseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Ruhland%2C_Anglerweg%2C_Wald_am_Rundweg_beim_Angelteich_%3D_alte_Badeanstalt%2C_Gew%C3%B6hnliches_Stockschw%C3%A4mmchen%2C_Oberseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Anglerweg%2C_Wald_am_Rundweg_beim_Angelteich_%3D_alte_Badeanstalt%2C_Gew%C3%B6hnliches_Stockschw%C3%A4mmchen%2C_Oberseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "2025-10-26 D500-1255 Achim-Lammerts Kuehneromyces-mutabilis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/2025-10-26_D500-1255_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/1280px-2025-10-26_D500-1255_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/2025-10-26_D500-1255_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/330px-2025-10-26_D500-1255_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2025-10-26 D500-1285 Achim-Lammerts Kuehneromyces-mutabilis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/2025-10-26_D500-1285_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/1280px-2025-10-26_D500-1285_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/2025-10-26_D500-1285_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/330px-2025-10-26_D500-1285_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2025-10-26 D500-1275 Achim-Lammerts Kuehneromyces-mutabilis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2025-10-26_D500-1275_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/1280px-2025-10-26_D500-1275_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2025-10-26_D500-1275_Achim-Lammerts_Kuehneromyces-mutabilis.jpg/330px-2025-10-26_D500-1275_Achim-Lammerts_Kuehneromyces-mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Mushrooms in Scania.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Mushrooms_in_Scania.jpg/1280px-Mushrooms_in_Scania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Mushrooms_in_Scania.jpg/330px-Mushrooms_in_Scania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "This image was produced by me, David Castor (user:dcastor). The pictures I submit to the Wikipedia Project are released…",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Gemeine Stockschwämmchen Kuehneromyces mutabilis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Gemeine_Stockschw%C3%A4mmchen_Kuehneromyces_mutabilis.jpg/1280px-Gemeine_Stockschw%C3%A4mmchen_Kuehneromyces_mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Gemeine_Stockschw%C3%A4mmchen_Kuehneromyces_mutabilis.jpg/330px-Gemeine_Stockschw%C3%A4mmchen_Kuehneromyces_mutabilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Pleurotus ostreatus",
+  "de": "Austern-Seitling",
+  "en": "Oyster mushroom",
+  "group": "Pleurotus",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Shell-shaped, grey-brown caps in tiers on deciduous wood; white gills running down the short side stem. Mainly late autumn and winter.",
+  "note_de": "Muschelförmige, graubraune Hüte dachziegelig an Laubholz; weiße Lamellen laufen am kurzen seitlichen Stiel herab. Vor allem Spätherbst und Winter.",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": true,
+  "season": {
+   "months": [
+    6417,
+    3168,
+    1729,
+    940,
+    702,
+    743,
+    1091,
+    1558,
+    2813,
+    5613,
+    6036,
+    6291
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Pleurotus ostreatus JPG7.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Pleurotus_ostreatus_JPG7.jpg/1280px-Pleurotus_ostreatus_JPG7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Pleurotus_ostreatus_JPG7.jpg/330px-Pleurotus_ostreatus_JPG7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "voir ci-dessous / see below",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Oyster mushroom.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Oyster_mushroom.jpg/1280px-Oyster_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Oyster_mushroom.jpg/330px-Oyster_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "frankenstoen from Portland, Oregon",
+    "license": "CC BY 2.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Pleurotus ostreatus (Oyster Mushroom), gills from below. Sycamore tree host.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Pleurotus_ostreatus_%28Oyster_Mushroom%29%2C_gills_from_below._Sycamore_tree_host.jpg/1280px-Pleurotus_ostreatus_%28Oyster_Mushroom%29%2C_gills_from_below._Sycamore_tree_host.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Pleurotus_ostreatus_%28Oyster_Mushroom%29%2C_gills_from_below._Sycamore_tree_host.jpg/330px-Pleurotus_ostreatus_%28Oyster_Mushroom%29%2C_gills_from_below._Sycamore_tree_host.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rosser1954",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "20210718 Pleurotus ostreatus 116-138.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/20210718_Pleurotus_ostreatus_116-138.jpg/1280px-20210718_Pleurotus_ostreatus_116-138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/20210718_Pleurotus_ostreatus_116-138.jpg/330px-20210718_Pleurotus_ostreatus_116-138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Zinnmann",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Entzia - Tronco 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Entzia_-_Tronco_02.jpg/1280px-Entzia_-_Tronco_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Entzia_-_Tronco_02.jpg/330px-Entzia_-_Tronco_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Basotxerri",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Gewone oesterzwam (Pleurotus ostreatus) 25-12-2020 (d.j.b.) 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Gewone_oesterzwam_%28Pleurotus_ostreatus%29_25-12-2020_%28d.j.b.%29_03.jpg/1280px-Gewone_oesterzwam_%28Pleurotus_ostreatus%29_25-12-2020_%28d.j.b.%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Gewone_oesterzwam_%28Pleurotus_ostreatus%29_25-12-2020_%28d.j.b.%29_03.jpg/330px-Gewone_oesterzwam_%28Pleurotus_ostreatus%29_25-12-2020_%28d.j.b.%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Gewone oesterzwam (Pleurotus ostreatus) 31-12-2020 (d.j.b.) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Gewone_oesterzwam_%28Pleurotus_ostreatus%29_31-12-2020_%28d.j.b.%29_01.jpg/1280px-Gewone_oesterzwam_%28Pleurotus_ostreatus%29_31-12-2020_%28d.j.b.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Gewone_oesterzwam_%28Pleurotus_ostreatus%29_31-12-2020_%28d.j.b.%29_01.jpg/330px-Gewone_oesterzwam_%28Pleurotus_ostreatus%29_31-12-2020_%28d.j.b.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Gewone oesterzwam (Pleurotus ostreatus). Paddenstoel op els 01.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Gewone_oesterzwam_%28Pleurotus_ostreatus%29._Paddenstoel_op_els_01.JPG/1280px-Gewone_oesterzwam_%28Pleurotus_ostreatus%29._Paddenstoel_op_els_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Gewone_oesterzwam_%28Pleurotus_ostreatus%29._Paddenstoel_op_els_01.JPG/330px-Gewone_oesterzwam_%28Pleurotus_ostreatus%29._Paddenstoel_op_els_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Coprinus comatus",
+  "de": "Schopf-Tintling",
+  "en": "Shaggy ink cap",
+  "group": "Coprinus",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Tall white shaggy cylinder on meadows and roadsides. Gills white, then pink, then black ink. Only eat specimens with pure white gills, the same day.",
+  "note_de": "Hoher, weißer, schuppiger Zylinder auf Wiesen und an Wegrändern. Lamellen weiß, dann rosa, dann schwarze Tinte. Nur Exemplare mit rein weißen Lamellen essen, am selben Tag.",
+  "taste": "Mild, delicate.",
+  "taste_de": "Mild, zart.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Coprinopsis atramentaria"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    331,
+    76,
+    241,
+    818,
+    871,
+    881,
+    1004,
+    4451,
+    23696,
+    67666,
+    18422,
+    1783
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Coprinus comatus, the shaggy ink cap, lawyer's wig, or shaggy mane mushroom.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Coprinus_comatus%2C_the_shaggy_ink_cap%2C_lawyer%27s_wig%2C_or_shaggy_mane_mushroom.jpg/1280px-Coprinus_comatus%2C_the_shaggy_ink_cap%2C_lawyer%27s_wig%2C_or_shaggy_mane_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Coprinus_comatus%2C_the_shaggy_ink_cap%2C_lawyer%27s_wig%2C_or_shaggy_mane_mushroom.jpg/330px-Coprinus_comatus%2C_the_shaggy_ink_cap%2C_lawyer%27s_wig%2C_or_shaggy_mane_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Bigredwine1",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Coprinus comatus inside.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Coprinus_comatus_inside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Coprinus_comatus_inside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Christian Schulte",
+    "license": "CC BY-SA 3.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Coprinus comatus, or shaggy mane.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Coprinus_comatus%2C_or_shaggy_mane.jpg/1280px-Coprinus_comatus%2C_or_shaggy_mane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Coprinus_comatus%2C_or_shaggy_mane.jpg/330px-Coprinus_comatus%2C_or_shaggy_mane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alfonex",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Geschubde inktzwam (Coprinus comatus). Locatie, Paddenstoelenreservaat. 11-10-2021. (actm.) 04.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_04.jpg/1280px-Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_04.jpg/330px-Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Breil-Brigels (actm) 18.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Breil-Brigels_%28actm%29_18.jpg/1280px-Breil-Brigels_%28actm%29_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Breil-Brigels_%28actm%29_18.jpg/330px-Breil-Brigels_%28actm%29_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "20221106 Coprinus comatus.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/20221106_Coprinus_comatus.jpg/1280px-20221106_Coprinus_comatus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/20221106_Coprinus_comatus.jpg/330px-20221106_Coprinus_comatus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Flocci Nivis",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Geschubde inktzwam (Coprinus comatus). Locatie, Paddenstoelenreservaat. 11-10-2021. (actm.) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_01.jpg/1280px-Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_01.jpg/330px-Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Geschubde inktzwam (Coprinus comatus). Locatie, Paddenstoelenreservaat. 11-10-2021. (actm.) 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg/1280px-Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg/330px-Geschubde_inktzwam_%28Coprinus_comatus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Lepista nuda",
+  "de": "Violetter Rötelritterling",
+  "en": "Wood blewit",
+  "group": "Lepista",
+  "kind": "gilled",
+  "status": "caution",
+  "note": "Lilac to violet cap and gills, pinkish spore print, perfumed smell; late autumn, also on compost. Poisonous raw. Violet webcaps look similar but have rusty-brown spores and a cobweb veil.",
+  "note_de": "Lila bis violetter Hut und Lamellen, rosa Sporenpulver, parfümartiger Geruch; Spätherbst, auch auf Kompost. Roh giftig. Violette Schleierlinge sehen ähnlich aus, haben aber rostbraune Sporen und einen spinnwebartigen Schleier.",
+  "taste": "Mild, perfumed.",
+  "taste_de": "Mild, parfümiert.",
+  "trees": [
+   "spruce",
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [
+   "compost"
+  ],
+  "lookalikes": [
+   "Clitocybe nebularis"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    964,
+    254,
+    209,
+    197,
+    320,
+    184,
+    137,
+    310,
+    3431,
+    14554,
+    11322,
+    2893
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Clitocybe nuda (Fr.) H.E. Bigelow & A.H. Sm 267650.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Clitocybe_nuda_%28Fr.%29_H.E._Bigelow_%26_A.H._Sm_267650.jpg/1280px-Clitocybe_nuda_%28Fr.%29_H.E._Bigelow_%26_A.H._Sm_267650.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Clitocybe_nuda_%28Fr.%29_H.E._Bigelow_%26_A.H._Sm_267650.jpg/330px-Clitocybe_nuda_%28Fr.%29_H.E._Bigelow_%26_A.H._Sm_267650.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jimmie Veitch (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Geschwister-Scholl-Weg Ruhland, \"Heldenhain\" unweit Neugrabenweg, Violetter Rötelritterling Oberseite und Seitenansicht, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Geschwister-Scholl-Weg_Ruhland%2C_%22Heldenhain%22_unweit_Neugrabenweg%2C_Violetter_R%C3%B6telritterling_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg/1280px-Geschwister-Scholl-Weg_Ruhland%2C_%22Heldenhain%22_unweit_Neugrabenweg%2C_Violetter_R%C3%B6telritterling_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Geschwister-Scholl-Weg_Ruhland%2C_%22Heldenhain%22_unweit_Neugrabenweg%2C_Violetter_R%C3%B6telritterling_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg/330px-Geschwister-Scholl-Weg_Ruhland%2C_%22Heldenhain%22_unweit_Neugrabenweg%2C_Violetter_R%C3%B6telritterling_Oberseite_und_Seitenansicht%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Paarse schijnridderzwam (Lepista nuda). 14-12-2023. (d.j.b).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Paarse_schijnridderzwam_%28Lepista_nuda%29._14-12-2023._%28d.j.b%29.jpg/1280px-Paarse_schijnridderzwam_%28Lepista_nuda%29._14-12-2023._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Paarse_schijnridderzwam_%28Lepista_nuda%29._14-12-2023._%28d.j.b%29.jpg/330px-Paarse_schijnridderzwam_%28Lepista_nuda%29._14-12-2023._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Lepista nuda 2022 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Lepista_nuda_2022_G1.jpg/1280px-Lepista_nuda_2022_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Lepista_nuda_2022_G1.jpg/330px-Lepista_nuda_2022_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lepista nuda LC0372.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lepista_nuda_LC0372.jpg/1280px-Lepista_nuda_LC0372.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lepista_nuda_LC0372.jpg/330px-Lepista_nuda_LC0372.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jörg Hempel",
+    "license": "CC BY-SA 3.0 de",
+    "stage": null
+   },
+   {
+    "file": "Blewits.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blewits.jpg/1280px-Blewits.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blewits.jpg/330px-Blewits.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dmitry Brant",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe nuda - January 2023 - Sarah Stierch 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_01.jpg/1280px-Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_01.jpg/330px-Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Missvain",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe nuda - January 2023 - Sarah Stierch 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_02.jpg/1280px-Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_02.jpg/330px-Clitocybe_nuda_-_January_2023_-_Sarah_Stierch_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Missvain",
+    "license": "CC BY 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Calocybe gambosa",
+  "de": "Mairitterling",
+  "en": "St George's mushroom",
+  "group": "Calocybe",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "Spring (April to June), cream-white, very crowded white gills, strong smell of fresh meal or cucumber, often in rings on meadows and forest edges. The deadly fibrecap grows at the same time: it stains brick-red.",
+  "note_de": "Frühling (April bis Juni), cremeweiß, sehr gedrängte weiße Lamellen, kräftiger Geruch nach frischem Mehl oder Gurke, oft in Ringen auf Wiesen und an Waldrändern. Der tödliche Ziegelrote Risspilz wächst zur selben Zeit: Er verfärbt ziegelrot.",
+  "taste": "Mild, mealy.",
+  "taste_de": "Mild, mehlig.",
+  "trees": [],
+  "soil": "calc",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Inosperma erubescens",
+   "Entoloma sinuatum",
+   "Clitocybe rivulosa"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    91,
+    13,
+    317,
+    5086,
+    9271,
+    2817,
+    278,
+    119,
+    94,
+    373,
+    63,
+    84
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Calocybe gambosa 080420wa.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Calocybe_gambosa_080420wa.jpg/1280px-Calocybe_gambosa_080420wa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Calocybe_gambosa_080420wa.jpg/330px-Calocybe_gambosa_080420wa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "User:Strobilomyces",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Calocybe gambosa 080420wb.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Calocybe_gambosa_080420wb.jpg/1280px-Calocybe_gambosa_080420wb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Calocybe_gambosa_080420wb.jpg/330px-Calocybe_gambosa_080420wb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "User:Strobilomyces",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Maipilz Calocybe gambosa.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Maipilz_Calocybe_gambosa.jpg/1280px-Maipilz_Calocybe_gambosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Maipilz_Calocybe_gambosa.jpg/330px-Maipilz_Calocybe_gambosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Calocybe gambosa (27014325317).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Calocybe_gambosa_%2827014325317%29.jpg/1280px-Calocybe_gambosa_%2827014325317%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Calocybe_gambosa_%2827014325317%29.jpg/330px-Calocybe_gambosa_%2827014325317%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Calocybe gambosa (34375878814).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Calocybe_gambosa_%2834375878814%29.jpg/1280px-Calocybe_gambosa_%2834375878814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Calocybe_gambosa_%2834375878814%29.jpg/330px-Calocybe_gambosa_%2834375878814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Calocybe gambosa (34410861793).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Calocybe_gambosa_%2834410861793%29.jpg/1280px-Calocybe_gambosa_%2834410861793%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Calocybe_gambosa_%2834410861793%29.jpg/330px-Calocybe_gambosa_%2834410861793%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Calocybe gambosa (34412661523).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Calocybe_gambosa_%2834412661523%29.jpg/1280px-Calocybe_gambosa_%2834412661523%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Calocybe_gambosa_%2834412661523%29.jpg/330px-Calocybe_gambosa_%2834412661523%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Calocybe gambosa (36064595975).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Calocybe_gambosa_%2836064595975%29.jpg/1280px-Calocybe_gambosa_%2836064595975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Calocybe_gambosa_%2836064595975%29.jpg/330px-Calocybe_gambosa_%2836064595975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Marasmius oreades",
+  "de": "Nelken-Schwindling",
+  "en": "Fairy ring champignon",
+  "group": "Marasmius",
+  "kind": "gilled",
+  "status": "edible",
+  "note": "In fairy rings on lawns. Tough stem that can be twisted without breaking, widely spaced gills, smell of cloves or almond. The poisonous fool's funnel grows on the same lawns: crowded gills running down the stem.",
+  "note_de": "In Hexenringen auf Rasen. Zäher Stiel, der sich verdrehen lässt, ohne zu brechen, entfernt stehende Lamellen, Geruch nach Nelken oder Mandel. Der giftige Feld-Trichterling wächst auf denselben Rasen: gedrängte, herablaufende Lamellen.",
+  "taste": "Mild, nutty.",
+  "taste_de": "Mild, nussig.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Clitocybe rivulosa"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    226,
+    41,
+    78,
+    642,
+    2198,
+    3514,
+    4914,
+    6874,
+    9899,
+    9593,
+    2935,
+    382
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Michigan Marasmius oreades.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Michigan_Marasmius_oreades.jpg/1280px-Michigan_Marasmius_oreades.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Michigan_Marasmius_oreades.jpg/330px-Michigan_Marasmius_oreades.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alan Rockefeller",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Grenzstr., Straßenrand nahe der Energieschneise, Nelken-Schwindling, Unterseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Ruhland%2C_Grenzstr.%2C_Stra%C3%9Fenrand_nahe_der_Energieschneise%2C_Nelken-Schwindling%2C_Unterseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Grenzstr.%2C_Stra%C3%9Fenrand_nahe_der_Energieschneise%2C_Nelken-Schwindling%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Ruhland%2C_Grenzstr.%2C_Stra%C3%9Fenrand_nahe_der_Energieschneise%2C_Nelken-Schwindling%2C_Unterseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Grenzstr.%2C_Stra%C3%9Fenrand_nahe_der_Energieschneise%2C_Nelken-Schwindling%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Weidekringzwam (Marasmius oreades). Locatie, Paddenstoelenreservaat. 31-10-2022. (actm.) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_01.jpg/1280px-Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_01.jpg/330px-Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Weidekringzwam (Marasmius oreades). Locatie, Paddenstoelenreservaat. 31-10-2022. (actm.) 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_02.jpg/1280px-Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_02.jpg/330px-Weidekringzwam_%28Marasmius_oreades%29._Locatie%2C_Paddenstoelenreservaat._31-10-2022._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Faux mousserons.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Faux_mousserons.jpg/1280px-Faux_mousserons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Faux_mousserons.jpg/330px-Faux_mousserons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "JJA81500",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Hösel 23.07.2017 Scotch Bonnet - Marasmius oreades (36850145676).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836850145676%29.jpg/1280px-H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836850145676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836850145676%29.jpg/330px-H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836850145676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Hösel 23.07.2017 Scotch Bonnet - Marasmius oreades (36856852842).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836856852842%29.jpg/1280px-H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836856852842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836856852842%29.jpg/330px-H%C3%B6sel_23.07.2017_Scotch_Bonnet_-_Marasmius_oreades_%2836856852842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Marasmius oreades (24473429478).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Marasmius_oreades_%2824473429478%29.jpg/1280px-Marasmius_oreades_%2824473429478%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Marasmius_oreades_%2824473429478%29.jpg/330px-Marasmius_oreades_%2824473429478%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": "personal",
+  "deadly": false,
+  "formerly": false,
+  "sci": "Morchella esculenta",
+  "de": "Speise-Morchel",
+  "en": "Morel",
+  "group": "Morchella",
+  "kind": "other",
+  "status": "caution",
+  "note": "Spring. Honeycomb cap with deep pits. Cut lengthwise: cap and stem form ONE continuous hollow. Poisonous raw — cook thoroughly.",
+  "note_de": "Frühling. Wabenartiger Hut mit tiefen Gruben. Längs aufgeschnitten: Hut und Stiel bilden EINEN durchgehenden Hohlraum. Roh giftig — gründlich garen.",
+  "taste": "Mild, aromatic.",
+  "taste_de": "Mild, aromatisch.",
+  "trees": [],
+  "soil": "calc",
+  "extra": [
+   "wet"
+  ],
+  "lookalikes": [
+   "Gyromitra esculenta"
+  ],
+  "quality": "excellent",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    54,
+    8,
+    543,
+    5727,
+    4316,
+    504,
+    92,
+    20,
+    18,
+    35,
+    6,
+    17
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Morchella esculenta - DE - TH - 2013-05-01 - 01.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Morchella_esculenta_-_DE_-_TH_-_2013-05-01_-_01.JPG/1280px-Morchella_esculenta_-_DE_-_TH_-_2013-05-01_-_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Morchella_esculenta_-_DE_-_TH_-_2013-05-01_-_01.JPG/330px-Morchella_esculenta_-_DE_-_TH_-_2013-05-01_-_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "TOMMES-WIKI",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Fichtestr. 16, Speise-Morchel im Rasen, Seiten- und Schnittansicht, Frühling, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ruhland%2C_Fichtestr._16%2C_Speise-Morchel_im_Rasen%2C_Seiten-_und_Schnittansicht%2C_Fr%C3%BChling%2C_01.jpg/1280px-Ruhland%2C_Fichtestr._16%2C_Speise-Morchel_im_Rasen%2C_Seiten-_und_Schnittansicht%2C_Fr%C3%BChling%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ruhland%2C_Fichtestr._16%2C_Speise-Morchel_im_Rasen%2C_Seiten-_und_Schnittansicht%2C_Fr%C3%BChling%2C_01.jpg/330px-Ruhland%2C_Fichtestr._16%2C_Speise-Morchel_im_Rasen%2C_Seiten-_und_Schnittansicht%2C_Fr%C3%BChling%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Morchella esculenta (common morel).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Morchella_esculenta_%28common_morel%29.jpg/1280px-Morchella_esculenta_%28common_morel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Morchella_esculenta_%28common_morel%29.jpg/330px-Morchella_esculenta_%28common_morel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "James St. John",
+    "license": "CC BY 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "2026-04-04 Z5-3750E Achim-Lammerts Morchella-esculenta.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2026-04-04_Z5-3750E_Achim-Lammerts_Morchella-esculenta.jpg/1280px-2026-04-04_Z5-3750E_Achim-Lammerts_Morchella-esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2026-04-04_Z5-3750E_Achim-Lammerts_Morchella-esculenta.jpg/330px-2026-04-04_Z5-3750E_Achim-Lammerts_Morchella-esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2026-04-05 Z5-3990E Achim-Lammerts Morchella-esculenta.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2026-04-05_Z5-3990E_Achim-Lammerts_Morchella-esculenta.jpg/1280px-2026-04-05_Z5-3990E_Achim-Lammerts_Morchella-esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2026-04-05_Z5-3990E_Achim-Lammerts_Morchella-esculenta.jpg/330px-2026-04-05_Z5-3990E_Achim-Lammerts_Morchella-esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2026-04-05 Z5-4020E Achim-Lammerts Morchella-esculenta.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2026-04-05_Z5-4020E_Achim-Lammerts_Morchella-esculenta.jpg/1280px-2026-04-05_Z5-4020E_Achim-Lammerts_Morchella-esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2026-04-05_Z5-4020E_Achim-Lammerts_Morchella-esculenta.jpg/330px-2026-04-05_Z5-4020E_Achim-Lammerts_Morchella-esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Speise-Morchel Morchella esculenta.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Speise-Morchel_Morchella_esculenta.jpg/1280px-Speise-Morchel_Morchella_esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Speise-Morchel_Morchella_esculenta.jpg/330px-Speise-Morchel_Morchella_esculenta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Horn-Bad Meinberg - 2021-05-17 - Brautberg (DSC03898).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Horn-Bad_Meinberg_-_2021-05-17_-_Brautberg_%28DSC03898%29.jpg/1280px-Horn-Bad_Meinberg_-_2021-05-17_-_Brautberg_%28DSC03898%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Horn-Bad_Meinberg_-_2021-05-17_-_Brautberg_%28DSC03898%29.jpg/330px-Horn-Bad_Meinberg_-_2021-05-17_-_Brautberg_%28DSC03898%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tsungam",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Laetiporus sulphureus",
+  "de": "Schwefelporling",
+  "en": "Chicken of the woods",
+  "group": "Laetiporus",
+  "kind": "other",
+  "status": "caution",
+  "note": "Sulphur-yellow to orange brackets in tiers on living deciduous trees. Only the soft young edges, cooked thoroughly; not from yew or robinia. Some people react with stomach upset.",
+  "note_de": "Schwefelgelbe bis orange Konsolen dachziegelig an lebenden Laubbäumen. Nur die weichen jungen Ränder, gründlich gegart; nicht von Eibe oder Robinie. Manche Menschen reagieren mit Magenbeschwerden.",
+  "taste": "Mild, slightly sour.",
+  "taste_de": "Mild, leicht säuerlich.",
+  "trees": [
+   "oak",
+   "willow"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Fistulina hepatica"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    1151,
+    998,
+    1032,
+    2818,
+    17756,
+    12804,
+    6541,
+    19240,
+    18395,
+    7485,
+    2366,
+    1117
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Laetiporus sulphureus big.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Laetiporus_sulphureus_big.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Laetiporus_sulphureus_big.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Rror",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Sulphur Polypore, or 'Chicken of the Woods'. Laetiporus sulphureus - Flickr - gailhampshire.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Sulphur_Polypore%2C_or_%27Chicken_of_the_Woods%27._Laetiporus_sulphureus_-_Flickr_-_gailhampshire.jpg/1280px-Sulphur_Polypore%2C_or_%27Chicken_of_the_Woods%27._Laetiporus_sulphureus_-_Flickr_-_gailhampshire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Sulphur_Polypore%2C_or_%27Chicken_of_the_Woods%27._Laetiporus_sulphureus_-_Flickr_-_gailhampshire.jpg/330px-Sulphur_Polypore%2C_or_%27Chicken_of_the_Woods%27._Laetiporus_sulphureus_-_Flickr_-_gailhampshire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "gailhampshire from Cradley, Malvern, U.K",
+    "license": "CC BY 2.0",
+    "stage": "cut"
+   },
+   {
+    "file": "2015.07.04.-05-Eilenburg Ost--Gemeiner Schwefelporling.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2015.07.04.-05-Eilenburg_Ost--Gemeiner_Schwefelporling.jpg/1280px-2015.07.04.-05-Eilenburg_Ost--Gemeiner_Schwefelporling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2015.07.04.-05-Eilenburg_Ost--Gemeiner_Schwefelporling.jpg/330px-2015.07.04.-05-Eilenburg_Ost--Gemeiner_Schwefelporling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Eichler",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Laetiporus sulphureus 5061.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Laetiporus_sulphureus_5061.jpg/1280px-Laetiporus_sulphureus_5061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Laetiporus_sulphureus_5061.jpg/330px-Laetiporus_sulphureus_5061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Anaxibia",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Białowieża National Park, Poland (4664493618).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bia%C5%82owie%C5%BCa_National_Park%2C_Poland_%284664493618%29.jpg/1280px-Bia%C5%82owie%C5%BCa_National_Park%2C_Poland_%284664493618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bia%C5%82owie%C5%BCa_National_Park%2C_Poland_%284664493618%29.jpg/330px-Bia%C5%82owie%C5%BCa_National_Park%2C_Poland_%284664493618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Frank Vassen from Brussels, Belgium",
+    "license": "CC BY 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "1972 Fungi but where (50874998248).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1972_Fungi_but_where_%2850874998248%29.jpg/1280px-1972_Fungi_but_where_%2850874998248%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1972_Fungi_but_where_%2850874998248%29.jpg/330px-1972_Fungi_but_where_%2850874998248%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Donald Judge",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "A walk in the woods near Onion Lake XC ski area, S of Terrace, BC - \"Chicken of the Woods\" (Laetiporus sulphureus) - (21532519846).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/A_walk_in_the_woods_near_Onion_Lake_XC_ski_area%2C_S_of_Terrace%2C_BC_-_%22Chicken_of_the_Woods%22_%28Laetiporus_sulphureus%29_-_%2821532519846%29.jpg/1280px-A_walk_in_the_woods_near_Onion_Lake_XC_ski_area%2C_S_of_Terrace%2C_BC_-_%22Chicken_of_the_Woods%22_%28Laetiporus_sulphureus%29_-_%2821532519846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/A_walk_in_the_woods_near_Onion_Lake_XC_ski_area%2C_S_of_Terrace%2C_BC_-_%22Chicken_of_the_Woods%22_%28Laetiporus_sulphureus%29_-_%2821532519846%29.jpg/330px-A_walk_in_the_woods_near_Onion_Lake_XC_ski_area%2C_S_of_Terrace%2C_BC_-_%22Chicken_of_the_Woods%22_%28Laetiporus_sulphureus%29_-_%2821532519846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Murray Foubister",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Chicken of the woods (29199396363).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Chicken_of_the_woods_%2829199396363%29.jpg/1280px-Chicken_of_the_woods_%2829199396363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Chicken_of_the_woods_%2829199396363%29.jpg/330px-Chicken_of_the_woods_%2829199396363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "liz west from Boxborough, MA, USA",
+    "license": "CC BY 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Calvatia gigantea",
+  "de": "Riesenbovist",
+  "en": "Giant puffball",
+  "group": "Calvatia",
+  "kind": "other",
+  "status": "edible",
+  "note": "White ball up to football size on meadows. Always cut it through: it must be pure white and uniform inside, with no outline of a mushroom (an egg of a death cap).",
+  "note_de": "Weiße Kugel bis Fußballgröße auf Wiesen. Immer durchschneiden: Innen muss sie rein weiß und gleichmäßig sein, ohne Umriss eines Pilzes (Ei eines Knollenblätterpilzes).",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Scleroderma citrinum",
+   "Amanita phalloides",
+   "Lycoperdon perlatum"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    350,
+    224,
+    412,
+    520,
+    467,
+    1440,
+    1428,
+    3283,
+    4308,
+    3230,
+    1043,
+    364
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Giant Puffball.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Giant_Puffball.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Giant_Puffball.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Sulfur (Wikipedia English)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "2026-09-07 12 20 00 Giant puffball within Ann M. Banchoff Park in the Mountainview section of Ewing Township, Mercer County, New Jersey.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/2026-09-07_12_20_00_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/1280px-2026-09-07_12_20_00_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/2026-09-07_12_20_00_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/330px-2026-09-07_12_20_00_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Riesenbovist Unterseite.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Riesenbovist_Unterseite.JPG/1280px-Riesenbovist_Unterseite.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Riesenbovist_Unterseite.JPG/330px-Riesenbovist_Unterseite.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hedwig Storch",
+    "license": "CC BY-SA 3.0",
+    "stage": "pores"
+   },
+   {
+    "file": "DeWayne Young with Mushroom - DPLA - 48ec7092cbeceb4491cc6c122e27529d.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/DeWayne_Young_with_Mushroom_-_DPLA_-_48ec7092cbeceb4491cc6c122e27529d.jpg/1280px-DeWayne_Young_with_Mushroom_-_DPLA_-_48ec7092cbeceb4491cc6c122e27529d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/DeWayne_Young_with_Mushroom_-_DPLA_-_48ec7092cbeceb4491cc6c122e27529d.jpg/330px-DeWayne_Young_with_Mushroom_-_DPLA_-_48ec7092cbeceb4491cc6c122e27529d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "",
+    "license": "Public domain",
+    "stage": "young"
+   },
+   {
+    "file": "Calvatia gigantea (syn. Langermannia gigantea, Lycoperdon gigantea) in the state of decay (50199121472).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Calvatia_gigantea_%28syn._Langermannia_gigantea%2C_Lycoperdon_gigantea%29_in_the_state_of_decay_%2850199121472%29.jpg/1280px-Calvatia_gigantea_%28syn._Langermannia_gigantea%2C_Lycoperdon_gigantea%29_in_the_state_of_decay_%2850199121472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Calvatia_gigantea_%28syn._Langermannia_gigantea%2C_Lycoperdon_gigantea%29_in_the_state_of_decay_%2850199121472%29.jpg/330px-Calvatia_gigantea_%28syn._Langermannia_gigantea%2C_Lycoperdon_gigantea%29_in_the_state_of_decay_%2850199121472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "Riesenbovist Calvatia gigantea.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Riesenbovist_Calvatia_gigantea.JPG/1280px-Riesenbovist_Calvatia_gigantea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Riesenbovist_Calvatia_gigantea.JPG/330px-Riesenbovist_Calvatia_gigantea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "2026-09-07 12 20 11 Giant puffball within Ann M. Banchoff Park in the Mountainview section of Ewing Township, Mercer County, New Jersey.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2026-09-07_12_20_11_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/1280px-2026-09-07_12_20_11_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2026-09-07_12_20_11_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/330px-2026-09-07_12_20_11_Giant_puffball_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "A giant Langermannia gigantea (or Calvatia gigantea) in this mountain meadow (GB= Giant puffball, D= Riesenbovist, NL= Reuzenbovist) mushroom (some 300 mm) near Les Chapelles in the Isere Valley - panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/A_giant_Langermannia_gigantea_%28or_Calvatia_gigantea%29_in_this_mountain_meadow_%28GB%3D_Giant_puffball%2C_D%3D_Riesenbovist%2C_NL%3D_Reuzenbovist%29_mushroom_%28some_300_mm%29_near_Les_Chapelles_in_the_Isere_Valley_-_panoramio.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/A_giant_Langermannia_gigantea_%28or_Calvatia_gigantea%29_in_this_mountain_meadow_%28GB%3D_Giant_puffball%2C_D%3D_Riesenbovist%2C_NL%3D_Reuzenbovist%29_mushroom_%28some_300_mm%29_near_Les_Chapelles_in_the_Isere_Valley_-_panoramio.jpg/330px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Lycoperdon perlatum",
+  "de": "Flaschen-Stäubling",
+  "en": "Common puffball",
+  "group": "Lycoperdon",
+  "kind": "other",
+  "status": "edible",
+  "note": "Pear-shaped, white with conical warts. Only young specimens; cut lengthwise they must be pure white and uniform — no gills, no outline (death cap egg), no dark core (earthball).",
+  "note_de": "Birnenförmig, weiß mit kegeligen Stacheln. Nur junge Exemplare; längs aufgeschnitten müssen sie rein weiß und gleichmäßig sein — keine Lamellen, kein Umriss (Ei eines Knollenblätterpilzes), kein dunkler Kern (Kartoffelbovist).",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [
+   "spruce",
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Scleroderma citrinum",
+   "Scleroderma areolatum",
+   "Amanita phalloides",
+   "Calvatia gigantea"
+  ],
+  "quality": "mediocre",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    1092,
+    538,
+    533,
+    564,
+    433,
+    465,
+    1491,
+    6735,
+    19058,
+    23593,
+    8015,
+    2058
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Single lycoperdon perlatum.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Single_lycoperdon_perlatum.jpg/1280px-Single_lycoperdon_perlatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Single_lycoperdon_perlatum.jpg/330px-Single_lycoperdon_perlatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Daniel Ullrich, Threedots",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lycoperdon perlatum sideview and cross section.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lycoperdon_perlatum_sideview_and_cross_section.JPG/1280px-Lycoperdon_perlatum_sideview_and_cross_section.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lycoperdon_perlatum_sideview_and_cross_section.JPG/330px-Lycoperdon_perlatum_sideview_and_cross_section.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dwergenpaartje",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "2025-10-15 D500-1015 Achim-Lammerts Lycoperdon-perlatum.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/2025-10-15_D500-1015_Achim-Lammerts_Lycoperdon-perlatum.jpg/1280px-2025-10-15_D500-1015_Achim-Lammerts_Lycoperdon-perlatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/2025-10-15_D500-1015_Achim-Lammerts_Lycoperdon-perlatum.jpg/330px-2025-10-15_D500-1015_Achim-Lammerts_Lycoperdon-perlatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Lycoperdon-perlatum-flaschenstaeubling-alt.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Lycoperdon-perlatum-flaschenstaeubling-alt.jpg/1280px-Lycoperdon-perlatum-flaschenstaeubling-alt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Lycoperdon-perlatum-flaschenstaeubling-alt.jpg/330px-Lycoperdon-perlatum-flaschenstaeubling-alt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Lycoperdon perlatum - Flaschenstäubling - Puffball - 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Lycoperdon_perlatum_-_Flaschenst%C3%A4ubling_-_Puffball_-_02.jpg/1280px-Lycoperdon_perlatum_-_Flaschenst%C3%A4ubling_-_Puffball_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Lycoperdon_perlatum_-_Flaschenst%C3%A4ubling_-_Puffball_-_02.jpg/330px-Lycoperdon_perlatum_-_Flaschenst%C3%A4ubling_-_Puffball_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lycoperdon perlatum 2026 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Lycoperdon_perlatum_2026_G1.jpg/1280px-Lycoperdon_perlatum_2026_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Lycoperdon_perlatum_2026_G1.jpg/330px-Lycoperdon_perlatum_2026_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lycoperdon Perlatum LO (img1).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Lycoperdon_Perlatum_LO_%28img1%29.jpg/1280px-Lycoperdon_Perlatum_LO_%28img1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Lycoperdon_Perlatum_LO_%28img1%29.jpg/330px-Lycoperdon_Perlatum_LO_%28img1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Florstein (Telegram: WikiPhoto.Space)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lycoperdon perlatum, Common Puffball , UK.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Lycoperdon_perlatum%2C_Common_Puffball_%2C_UK.jpg/1280px-Lycoperdon_perlatum%2C_Common_Puffball_%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Lycoperdon_perlatum%2C_Common_Puffball_%2C_UK.jpg/330px-Lycoperdon_perlatum%2C_Common_Puffball_%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stu's Images",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Auricularia auricula-judae",
+  "de": "Judasohr",
+  "en": "Jelly ear",
+  "group": "Auricularia",
+  "kind": "other",
+  "status": "caution",
+  "note": "Ear-shaped, rubbery-gelatinous, brown; mostly on elder, all year. Cook thoroughly.",
+  "note_de": "Ohrförmig, gummiartig-gallertig, braun; meist an Holunder, ganzjährig. Gründlich garen.",
+  "taste": "Neutral, crunchy.",
+  "taste_de": "Neutral, knackig.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Craterellus cornucopioides"
+  ],
+  "quality": "mediocre",
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    14040,
+    11903,
+    8463,
+    7988,
+    6274,
+    3465,
+    2579,
+    2728,
+    5181,
+    13694,
+    12795,
+    11624
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Jelly Ear, Auricularia auricula-judae, UK 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Jelly_Ear%2C_Auricularia_auricula-judae%2C_UK_2.jpg/1280px-Jelly_Ear%2C_Auricularia_auricula-judae%2C_UK_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Jelly_Ear%2C_Auricularia_auricula-judae%2C_UK_2.jpg/330px-Jelly_Ear%2C_Auricularia_auricula-judae%2C_UK_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stu's Images",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Echt judasoor (Auricularia auricula-judae). 20-11-2025. (d.j.b.).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Echt_judasoor_%28Auricularia_auricula-judae%29._20-11-2025._%28d.j.b.%29.jpg/1280px-Echt_judasoor_%28Auricularia_auricula-judae%29._20-11-2025._%28d.j.b.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Echt_judasoor_%28Auricularia_auricula-judae%29._20-11-2025._%28d.j.b.%29.jpg/330px-Echt_judasoor_%28Auricularia_auricula-judae%29._20-11-2025._%28d.j.b.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma.",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Old, dark Jew's ear.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Old%2C_dark_Jew%27s_ear.jpg/1280px-Old%2C_dark_Jew%27s_ear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Old%2C_dark_Jew%27s_ear.jpg/330px-Old%2C_dark_Jew%27s_ear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Josh Milburn (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Echt judasoor (Auricularia auricula-judae) Familie Auriculariaceae op een dode tak 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_02.jpg/1280px-Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_02.jpg/330px-Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Echt judasoor (Auricularia auricula-judae) Familie Auriculariaceae op een dode tak 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_03.jpg/1280px-Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_03.jpg/330px-Echt_judasoor_%28Auricularia_auricula-judae%29_Familie_Auriculariaceae_op_een_dode_tak_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Echt judasoor (Auricularia auricula-judae) op een stam van een vlier. 15-02-2024. (actm.) 15-02-2024. (actm.).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Echt_judasoor_%28Auricularia_auricula-judae%29_op_een_stam_van_een_vlier._15-02-2024._%28actm.%29_15-02-2024._%28actm.%29.jpg/1280px-Echt_judasoor_%28Auricularia_auricula-judae%29_op_een_stam_van_een_vlier._15-02-2024._%28actm.%29_15-02-2024._%28actm.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Echt_judasoor_%28Auricularia_auricula-judae%29_op_een_stam_van_een_vlier._15-02-2024._%28actm.%29_15-02-2024._%28actm.%29.jpg/330px-Echt_judasoor_%28Auricularia_auricula-judae%29_op_een_stam_van_een_vlier._15-02-2024._%28actm.%29_15-02-2024._%28actm.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Echt judasoor (Auricularia auricula-judae, synoniem, Hirneola auricula-judae) bedekt met rijp. Locatie, Natuurterrein De Famberhorst 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_01.jpg/1280px-Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_01.jpg/330px-Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Echt judasoor (Auricularia auricula-judae, synoniem, Hirneola auricula-judae) bedekt met rijp. Locatie, Natuurterrein De Famberhorst 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_02.jpg/1280px-Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_02.jpg/330px-Echt_judasoor_%28Auricularia_auricula-judae%2C_synoniem%2C_Hirneola_auricula-judae%29_bedekt_met_rijp._Locatie%2C_Natuurterrein_De_Famberhorst_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Fistulina hepatica",
+  "de": "Leberreischling",
+  "en": "Beefsteak fungus",
+  "group": "Fistulina",
+  "kind": "other",
+  "status": "edible",
+  "note": "Liver-like red tongue on oak or sweet chestnut; red juice; fine tubes underneath that come apart individually.",
+  "note_de": "Leberartige rote Zunge an Eiche oder Esskastanie; roter Saft; unten feine Röhrchen, die sich einzeln lösen.",
+  "taste": "Sour, slightly acidic.",
+  "taste_de": "Säuerlich.",
+  "trees": [
+   "oak",
+   "chestnut"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Laetiporus sulphureus"
+  ],
+  "quality": "good",
+  "extLookalikes": [],
+  "beginner": true,
+  "season": {
+   "months": [
+    345,
+    158,
+    149,
+    247,
+    130,
+    198,
+    1039,
+    8243,
+    18849,
+    16283,
+    2607,
+    401
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Fistulina hepatica.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Fistulina_hepatica.JPG/1280px-Fistulina_hepatica.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Fistulina_hepatica.JPG/330px-Fistulina_hepatica.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jiří Berkovec",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "A bracket fungus (Polyporus species?); fruiting bodies on wo Wellcome V0043408.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/A_bracket_fungus_%28Polyporus_species%3F%29%3B_fruiting_bodies_on_wo_Wellcome_V0043408.jpg/1280px-A_bracket_fungus_%28Polyporus_species%3F%29%3B_fruiting_bodies_on_wo_Wellcome_V0043408.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/A_bracket_fungus_%28Polyporus_species%3F%29%3B_fruiting_bodies_on_wo_Wellcome_V0043408.jpg/330px-A_bracket_fungus_%28Polyporus_species%3F%29%3B_fruiting_bodies_on_wo_Wellcome_V0043408.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "",
+    "license": "CC BY 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Fistulina hepatica (Eichen-Leberreischling, Ochsenzunge, Leberpilz) 126.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Fistulina_hepatica_%28Eichen-Leberreischling%2C_Ochsenzunge%2C_Leberpilz%29_126.jpg/1280px-Fistulina_hepatica_%28Eichen-Leberreischling%2C_Ochsenzunge%2C_Leberpilz%29_126.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Fistulina_hepatica_%28Eichen-Leberreischling%2C_Ochsenzunge%2C_Leberpilz%29_126.jpg/330px-Fistulina_hepatica_%28Eichen-Leberreischling%2C_Ochsenzunge%2C_Leberpilz%29_126.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stuhlfauth Thomas",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Fistulina hepatica (Russia) 1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Fistulina_hepatica_%28Russia%29_1.jpg/1280px-Fistulina_hepatica_%28Russia%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Fistulina_hepatica_%28Russia%29_1.jpg/330px-Fistulina_hepatica_%28Russia%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Le.Loup.Gris",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Fistulina hepatica (8398840791).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Fistulina_hepatica_%288398840791%29.jpg/1280px-Fistulina_hepatica_%288398840791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Fistulina_hepatica_%288398840791%29.jpg/330px-Fistulina_hepatica_%288398840791%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "20150925 024 Well Wandeling De Hamertl (21521395269).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/20150925_024_Well_Wandeling_De_Hamertl_%2821521395269%29.jpg/1280px-20150925_024_Well_Wandeling_De_Hamertl_%2821521395269%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/20150925_024_Well_Wandeling_De_Hamertl_%2821521395269%29.jpg/330px-20150925_024_Well_Wandeling_De_Hamertl_%2821521395269%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jac. Janssen from Baarlo lb, NL",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Beefsteak fungus (Fistulina hepatica) at Borthwood Lynch (1).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%281%29.jpg/1280px-Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%281%29.jpg/330px-Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Shlumble",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Beefsteak fungus (Fistulina hepatica) at Borthwood Lynch (2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%282%29.jpg/1280px-Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%282%29.jpg/330px-Beefsteak_fungus_%28Fistulina_hepatica%29_at_Borthwood_Lynch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Shlumble",
+    "license": "CC0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Hygrophoropsis aurantiaca",
+  "de": "Falscher Pfifferling",
+  "en": "False chanterelle",
+  "group": "Hygrophoropsis",
+  "kind": "gilled",
+  "status": "inedible",
+  "note": "Orange, with thin, crowded true gills that fork many times, soft flesh, no fruity smell; often on rotting conifer wood. Not seriously poisonous, but indigestible.",
+  "note_de": "Orange, mit dünnen, gedrängten echten Lamellen, die sich vielfach gabeln, weiches Fleisch, kein fruchtiger Geruch; oft auf morschem Nadelholz. Nicht ernsthaft giftig, aber unbekömmlich.",
+  "taste": "Mild, insipid.",
+  "taste_de": "Mild, fade.",
+  "trees": [
+   "pine",
+   "spruce"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Cantharellus cibarius"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    436,
+    44,
+    23,
+    121,
+    29,
+    79,
+    677,
+    4734,
+    14162,
+    18098,
+    7226,
+    1702
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Hygrophoropsis aurantiaca 241718.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Hygrophoropsis_aurantiaca_241718.jpg/1280px-Hygrophoropsis_aurantiaca_241718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Hygrophoropsis_aurantiaca_241718.jpg/330px-Hygrophoropsis_aurantiaca_241718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "walt sturgeon (Mycowalt)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Falscher Pfifferling, Unterseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Falscher_Pfifferling%2C_Unterseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Falscher_Pfifferling%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Falscher_Pfifferling%2C_Unterseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Falscher_Pfifferling%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Ruhland, Waldschneise zwischen Alter Poststraße und Autobahn, Falscher Pfifferling, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Falscher_Pfifferling%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Falscher_Pfifferling%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Falscher_Pfifferling%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Falscher_Pfifferling%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Falscher Pfifferling (Hygrophoropsis aurantiaca) nahe der Silberquelle an der Straße vom Silberhaus nach Nagel.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Falscher_Pfifferling_%28Hygrophoropsis_aurantiaca%29_nahe_der_Silberquelle_an_der_Stra%C3%9Fe_vom_Silberhaus_nach_Nagel.jpg/1280px-Falscher_Pfifferling_%28Hygrophoropsis_aurantiaca%29_nahe_der_Silberquelle_an_der_Stra%C3%9Fe_vom_Silberhaus_nach_Nagel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Falscher_Pfifferling_%28Hygrophoropsis_aurantiaca%29_nahe_der_Silberquelle_an_der_Stra%C3%9Fe_vom_Silberhaus_nach_Nagel.jpg/330px-Falscher_Pfifferling_%28Hygrophoropsis_aurantiaca%29_nahe_der_Silberquelle_an_der_Stra%C3%9Fe_vom_Silberhaus_nach_Nagel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stephan van Helden",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Rebezuelo anaranjado (Hygrophoropsis aurantiaca), Hartelholz, Múnich, Alemania, 2020-11-21, DD 468-522 FS.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-21%2C_DD_468-522_FS.jpg/1280px-Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-21%2C_DD_468-522_FS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-21%2C_DD_468-522_FS.jpg/330px-Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-21%2C_DD_468-522_FS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Rebezuelo anaranjado (Hygrophoropsis aurantiaca), Hartelholz, Múnich, Alemania, 2020-11-28, DD 267-332 FS.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-28%2C_DD_267-332_FS.jpg/1280px-Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-28%2C_DD_267-332_FS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-28%2C_DD_267-332_FS.jpg/330px-Rebezuelo_anaranjado_%28Hygrophoropsis_aurantiaca%29%2C_Hartelholz%2C_M%C3%BAnich%2C_Alemania%2C_2020-11-28%2C_DD_267-332_FS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "False Chanterelle Hygrophoropsis aurantiaca.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/False_Chanterelle_Hygrophoropsis_aurantiaca.jpg/1280px-False_Chanterelle_Hygrophoropsis_aurantiaca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/False_Chanterelle_Hygrophoropsis_aurantiaca.jpg/330px-False_Chanterelle_Hygrophoropsis_aurantiaca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "20141128 050 Well Wandeling Reindersmeer Paddenstoel Maasduinen (15874953686).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/20141128_050_Well_Wandeling_Reindersmeer_Paddenstoel_Maasduinen_%2815874953686%29.jpg/1280px-20141128_050_Well_Wandeling_Reindersmeer_Paddenstoel_Maasduinen_%2815874953686%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/20141128_050_Well_Wandeling_Reindersmeer_Paddenstoel_Maasduinen_%2815874953686%29.jpg/330px-20141128_050_Well_Wandeling_Reindersmeer_Paddenstoel_Maasduinen_%2815874953686%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jac. Janssen from Baarlo lb, NL",
+    "license": "CC BY 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Omphalotus olearius",
+  "de": "Ölbaum-Trichterling",
+  "en": "Jack-o'-lantern",
+  "group": "Omphalotus",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Bright orange, in dense tufts at the base of oaks or olive trees in warm regions, with true gills. Chanterelles never grow in tufts on wood. Severe vomiting and diarrhoea.",
+  "note_de": "Leuchtend orange, in dichten Büscheln am Fuß von Eichen oder Ölbäumen in warmen Gegenden, mit echten Lamellen. Pfifferlinge wachsen nie büschelig an Holz. Schweres Erbrechen und Durchfall.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [
+   "oak",
+   "chestnut"
+  ],
+  "soil": "calc",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Cantharellus cibarius"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    20,
+    8,
+    7,
+    19,
+    14,
+    31,
+    19,
+    121,
+    310,
+    714,
+    555,
+    136
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Omphalotus olearius.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Omphalotus_olearius.JPG/1280px-Omphalotus_olearius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Omphalotus_olearius.JPG/330px-Omphalotus_olearius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Antonio Abbatiello",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "A composition of young and old Omphalotus olearus at Schaarsbergen Hoge Erf - panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/A_composition_of_young_and_old_Omphalotus_olearus_at_Schaarsbergen_Hoge_Erf_-_panoramio.jpg/1280px-A_composition_of_young_and_old_Omphalotus_olearus_at_Schaarsbergen_Hoge_Erf_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/A_composition_of_young_and_old_Omphalotus_olearus_at_Schaarsbergen_Hoge_Erf_-_panoramio.jpg/330px-A_composition_of_young_and_old_Omphalotus_olearus_at_Schaarsbergen_Hoge_Erf_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Bioluminescence of Omphalotus olearius from Lausanne, Switzerland.png",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Bioluminescence_of_Omphalotus_olearius_from_Lausanne%2C_Switzerland.png/1280px-Bioluminescence_of_Omphalotus_olearius_from_Lausanne%2C_Switzerland.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Bioluminescence_of_Omphalotus_olearius_from_Lausanne%2C_Switzerland.png/330px-Bioluminescence_of_Omphalotus_olearius_from_Lausanne%2C_Switzerland.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "The Brook",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe trompeur.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Clitocybe_trompeur.jpg/1280px-Clitocybe_trompeur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Clitocybe_trompeur.jpg/330px-Clitocybe_trompeur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Epitalon",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Fabre 163 Pleurotus phosphoreus Omphalotus illudens.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Fabre_163_Pleurotus_phosphoreus_Omphalotus_illudens.jpg/1280px-Fabre_163_Pleurotus_phosphoreus_Omphalotus_illudens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Fabre_163_Pleurotus_phosphoreus_Omphalotus_illudens.jpg/330px-Fabre_163_Pleurotus_phosphoreus_Omphalotus_illudens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jean-Henri Fabre",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Fallen mushroom (20884303396).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Fallen_mushroom_%2820884303396%29.jpg/1280px-Fallen_mushroom_%2820884303396%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Fallen_mushroom_%2820884303396%29.jpg/330px-Fallen_mushroom_%2820884303396%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "liz west from Boxborough, MA, USA",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Jack o lantern mushrooms.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Jack_o_lantern_mushrooms.jpg/1280px-Jack_o_lantern_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Jack_o_lantern_mushrooms.jpg/330px-Jack_o_lantern_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "liz west",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Jack-o'-Lantern Mushroom - Omphalotus olearius (30731591688).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Jack-o%27-Lantern_Mushroom_-_Omphalotus_olearius_%2830731591688%29.jpg/1280px-Jack-o%27-Lantern_Mushroom_-_Omphalotus_olearius_%2830731591688%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Jack-o%27-Lantern_Mushroom_-_Omphalotus_olearius_%2830731591688%29.jpg/330px-Jack-o%27-Lantern_Mushroom_-_Omphalotus_olearius_%2830731591688%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Cortinarius rubellus",
+  "de": "Spitzgebuckelter Raukopf",
+  "en": "Deadly webcap",
+  "group": "Cortinarius",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Orange-brown with a pointed boss, rusty gills, yellowish bands on the stem; in damp conifer woods next to winter chanterelles. Destroys the kidneys; symptoms only 2 to 20 days later.",
+  "note_de": "Orangebraun mit spitzem Buckel, rostbraune Lamellen, gelbliche Bänder am Stiel; in feuchten Nadelwäldern neben Trompeten-Pfifferlingen. Zerstört die Nieren; Beschwerden erst 2 bis 20 Tage später.",
+  "taste": "Mild — no warning. Smell faintly of radish.",
+  "taste_de": "Mild — keine Warnung. Geruch schwach rettichartig.",
+  "trees": [
+   "spruce",
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [
+   "wet"
+  ],
+  "lookalikes": [
+   "Craterellus tubaeformis"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    17,
+    2,
+    0,
+    44,
+    8,
+    39,
+    771,
+    3455,
+    3352,
+    758,
+    82,
+    23
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Cortinarius rubellus 01.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Cortinarius_rubellus_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/Cortinarius_rubellus_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Eric Steinert",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius rubellus with Craterellus tubaeformis.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg/1280px-Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg/330px-Cortinarius_rubellus_with_Craterellus_tubaeformis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wkee4ager",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Kühmvöödik.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/K%C3%BChmv%C3%B6%C3%B6dik.jpg/1280px-K%C3%BChmv%C3%B6%C3%B6dik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/K%C3%BChmv%C3%B6%C3%B6dik.jpg/330px-K%C3%BChmv%C3%B6%C3%B6dik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Svencapoeira",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius rubellus (51410169812).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Cortinarius_rubellus_%2851410169812%29.jpg/1280px-Cortinarius_rubellus_%2851410169812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Cortinarius_rubellus_%2851410169812%29.jpg/330px-Cortinarius_rubellus_%2851410169812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tero Karppinen from Finland",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius-rubellus063.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cortinarius-rubellus063.jpg/1280px-Cortinarius-rubellus063.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cortinarius-rubellus063.jpg/330px-Cortinarius-rubellus063.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Danny Steven S.",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius-rubellus064.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Cortinarius-rubellus064.jpg/1280px-Cortinarius-rubellus064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Cortinarius-rubellus064.jpg/330px-Cortinarius-rubellus064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Danny Steven S.",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "2006-07-12 Cortinarius rubellus 1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2006-07-12_Cortinarius_rubellus_1.jpg/1280px-2006-07-12_Cortinarius_rubellus_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2006-07-12_Cortinarius_rubellus_1.jpg/330px-2006-07-12_Cortinarius_rubellus_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "2006-07-12 Cortinarius rubellus 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2006-07-12_Cortinarius_rubellus_2.jpg/1280px-2006-07-12_Cortinarius_rubellus_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2006-07-12_Cortinarius_rubellus_2.jpg/330px-2006-07-12_Cortinarius_rubellus_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Cortinarius orellanus",
+  "de": "Orangefuchsiger Raukopf",
+  "en": "Fool's webcap",
+  "group": "Cortinarius",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Fox-orange, rusty gills, no bands on the stem; in warm deciduous woods. Destroys the kidneys; symptoms only days later, often too late.",
+  "note_de": "Fuchsig orange, rostbraune Lamellen, keine Bänder am Stiel; in warmen Laubwäldern. Zerstört die Nieren; Beschwerden erst nach Tagen, oft zu spät.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [
+   "oak",
+   "beech"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Craterellus tubaeformis"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    17,
+    1,
+    3,
+    1,
+    2,
+    28,
+    63,
+    202,
+    462,
+    317,
+    76,
+    11
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Corellanus.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Corellanus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/60/Corellanus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Michaelll (Wikipedia English)",
+    "license": "CC BY-SA 2.5",
+    "stage": null
+   },
+   {
+    "file": "C. orellanus jung.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/C._orellanus_jung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e8/C._orellanus_jung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "2013-10-16 Cortinarius orellanus 1b.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/2013-10-16_Cortinarius_orellanus_1b.jpg/1280px-2013-10-16_Cortinarius_orellanus_1b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/2013-10-16_Cortinarius_orellanus_1b.jpg/330px-2013-10-16_Cortinarius_orellanus_1b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius orellanus (1).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Cortinarius_orellanus_%281%29.JPG/1280px-Cortinarius_orellanus_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Cortinarius_orellanus_%281%29.JPG/330px-Cortinarius_orellanus_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius orellanus (2).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Cortinarius_orellanus_%282%29.JPG/1280px-Cortinarius_orellanus_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Cortinarius_orellanus_%282%29.JPG/330px-Cortinarius_orellanus_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius orellanus (3).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Cortinarius_orellanus_%283%29.JPG/1280px-Cortinarius_orellanus_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Cortinarius_orellanus_%283%29.JPG/330px-Cortinarius_orellanus_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Cortinarius orellanus (4).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Cortinarius_orellanus_%284%29.JPG/1280px-Cortinarius_orellanus_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Cortinarius_orellanus_%284%29.JPG/330px-Cortinarius_orellanus_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "2013-10-16 Cortinarius orellanus 1a.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/2013-10-16_Cortinarius_orellanus_1a.jpg/1280px-2013-10-16_Cortinarius_orellanus_1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/2013-10-16_Cortinarius_orellanus_1a.jpg/330px-2013-10-16_Cortinarius_orellanus_1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Chlorophyllum brunneum",
+  "de": "Garten-Riesenschirmling",
+  "en": "Brown parasol",
+  "group": "Chlorophyllum",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Like the shaggy parasol, with a large, abruptly rimmed bulb; flesh reddens. In gardens and on compost. Severe stomach upset.",
+  "note_de": "Wie der Safran-Schirmling, mit großer, abrupt gerandeter Knolle; Fleisch rötet. In Gärten und auf Kompost. Starke Magen-Darm-Beschwerden.",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "compost"
+  ],
+  "lookalikes": [
+   "Macrolepiota procera",
+   "Chlorophyllum rhacodes"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    28,
+    3,
+    9,
+    11,
+    10,
+    50,
+    80,
+    132,
+    346,
+    521,
+    271,
+    46
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Chlorophyllum rhacodes LC0093.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Chlorophyllum_rhacodes_LC0093.jpg/1280px-Chlorophyllum_rhacodes_LC0093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Chlorophyllum_rhacodes_LC0093.jpg/330px-Chlorophyllum_rhacodes_LC0093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jörg Hempel",
+    "license": "CC BY-SA 2.0 de",
+    "stage": null
+   },
+   {
+    "file": "Chlorophyllum brunneum ts1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Chlorophyllum_brunneum_ts1.jpg/1280px-Chlorophyllum_brunneum_ts1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Chlorophyllum_brunneum_ts1.jpg/330px-Chlorophyllum_brunneum_ts1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tomasz Sobczak",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Chlorophyllum brunneum ts2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Chlorophyllum_brunneum_ts2.jpg/1280px-Chlorophyllum_brunneum_ts2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Chlorophyllum_brunneum_ts2.jpg/330px-Chlorophyllum_brunneum_ts2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tomasz Sobczak",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Macrolepiota hortensis, Syn. M. Bohemica (GB= Parasol,D= Gartenriesenschirmling, F= Lépiote vénéneuse, NL= Tuinparasolzwam), poisonness, at Posbank along the bicycle path between grass - panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Macrolepiota_hortensis%2C_Syn._M._Bohemica_%28GB%3D_Parasol%2CD%3D_Gartenriesenschirmling%2C_F%3D_L%C3%A9piote_v%C3%A9n%C3%A9neuse%2C_NL%3D_Tuinparasolzwam%29%2C_poisonness%2C_at_Posbank_along_the_bicycle_path_between_grass_-_panoramio.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Macrolepiota_hortensis%2C_Syn._M._Bohemica_%28GB%3D_Parasol%2CD%3D_Gartenriesenschirmling%2C_F%3D_L%C3%A9piote_v%C3%A9n%C3%A9neuse%2C_NL%3D_Tuinparasolzwam%29%2C_poisonness%2C_at_Posbank_along_the_bicycle_path_between_grass_-_panoramio.jpg/330px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Macrolepiota hortensis, Syn. M. Bohemica (GB= Parasol,D= Gartenriesenschirmling, F= Lépiote vénéneuse, NL= Tuinparasolzwam), poisonous, at Posbank at 14 November 2014 - panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Macrolepiota_hortensis%2C_Syn._M._Bohemica_%28GB%3D_Parasol%2CD%3D_Gartenriesenschirmling%2C_F%3D_L%C3%A9piote_v%C3%A9n%C3%A9neuse%2C_NL%3D_Tuinparasolzwam%29%2C_poisonous%2C_at_Posbank_at_14_November_2014_-_panoramio.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Macrolepiota_hortensis%2C_Syn._M._Bohemica_%28GB%3D_Parasol%2CD%3D_Gartenriesenschirmling%2C_F%3D_L%C3%A9piote_v%C3%A9n%C3%A9neuse%2C_NL%3D_Tuinparasolzwam%29%2C_poisonous%2C_at_Posbank_at_14_November_2014_-_panoramio.jpg/330px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Chlorophyllum brunneum ts1 cropped.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Chlorophyllum_brunneum_ts1_cropped.jpg/1280px-Chlorophyllum_brunneum_ts1_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Chlorophyllum_brunneum_ts1_cropped.jpg/330px-Chlorophyllum_brunneum_ts1_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tomasz Sobczak",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Chlorophyllumbrunneum1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Chlorophyllumbrunneum1.jpg/1280px-Chlorophyllumbrunneum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Chlorophyllumbrunneum1.jpg/330px-Chlorophyllumbrunneum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hagen Graebner",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Chlorophyllumbrunneum3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chlorophyllumbrunneum3.jpg/1280px-Chlorophyllumbrunneum3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chlorophyllumbrunneum3.jpg/330px-Chlorophyllumbrunneum3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hagen Graebner",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Lepiota brunneoincarnata",
+  "de": "Fleischbräunlicher Schirmling",
+  "en": "Deadly dapperling",
+  "group": "Lepiota",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Small (up to 5 cm), pinkish-brown scales, banded stem; in parks and gardens. Contains the same toxin as the death cap. Rule: never eat small \"parasols\".",
+  "note_de": "Klein (bis 5 cm), fleischbräunliche Schuppen, gebänderter Stiel; in Parks und Gärten. Enthält dasselbe Gift wie der Knollenblätterpilz. Regel: Nie kleine „Parasole“ essen.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "park"
+  ],
+  "lookalikes": [
+   "Macrolepiota procera",
+   "Chlorophyllum rhacodes",
+   "Agaricus campestris"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    14,
+    1,
+    0,
+    3,
+    16,
+    21,
+    45,
+    123,
+    190,
+    292,
+    162,
+    25
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Lepiota brunneoincarnata 060823w.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Lepiota_brunneoincarnata_060823w.jpg/1280px-Lepiota_brunneoincarnata_060823w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Lepiota_brunneoincarnata_060823w.jpg/330px-Lepiota_brunneoincarnata_060823w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "User:Strobilomyces",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "2015-10-11 Lepiota brunneoincarnata Chodat & C. Martín 564314.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/2015-10-11_Lepiota_brunneoincarnata_Chodat_%26_C._Mart%C3%ADn_564314.jpg/1280px-2015-10-11_Lepiota_brunneoincarnata_Chodat_%26_C._Mart%C3%ADn_564314.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/2015-10-11_Lepiota_brunneoincarnata_Chodat_%26_C._Mart%C3%ADn_564314.jpg/330px-2015-10-11_Lepiota_brunneoincarnata_Chodat_%26_C._Mart%C3%ADn_564314.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Murselin Guney (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Lepiota brunneoincarnata 170929w.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lepiota_brunneoincarnata_170929w.JPG/1280px-Lepiota_brunneoincarnata_170929w.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lepiota_brunneoincarnata_170929w.JPG/330px-Lepiota_brunneoincarnata_170929w.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Strobilomyces",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lange - Lepiota brunneoincarnata.png",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lange_-_Lepiota_brunneoincarnata.png/1280px-Lange_-_Lepiota_brunneoincarnata.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lange_-_Lepiota_brunneoincarnata.png/330px-Lange_-_Lepiota_brunneoincarnata.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jakob Emanuel Lange",
+    "license": "Public domain",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Lepiota cristata",
+  "de": "Stink-Schirmling",
+  "en": "Stinking dapperling",
+  "group": "Lepiota",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Small, white cap with a brown centre and brown scales, unpleasant rubbery smell; common on paths and in parks.",
+  "note_de": "Klein, weißer Hut mit braunem Scheitel und braunen Schüppchen, unangenehmer Gummigeruch; häufig an Wegen und in Parks.",
+  "taste": "Unpleasant.",
+  "taste_de": "Unangenehm.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "park"
+  ],
+  "lookalikes": [
+   "Macrolepiota procera"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    195,
+    6,
+    6,
+    42,
+    36,
+    169,
+    773,
+    2969,
+    7388,
+    7592,
+    1941,
+    220
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "2011-12-01 Lepiota cristata (Bolton) P. Kumm 186612.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/2011-12-01_Lepiota_cristata_%28Bolton%29_P._Kumm_186612.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fe/2011-12-01_Lepiota_cristata_%28Bolton%29_P._Kumm_186612.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Copyright ©2011 the tnihekr (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "A Lepiota cristata.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/A_Lepiota_cristata.jpg/1280px-A_Lepiota_cristata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/A_Lepiota_cristata.jpg/330px-A_Lepiota_cristata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Chiranjivisubedi",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Galanperna usaintsua azpitik ikusita.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Galanperna_usaintsua_azpitik_ikusita.jpg/1280px-Galanperna_usaintsua_azpitik_ikusita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Galanperna_usaintsua_azpitik_ikusita.jpg/330px-Galanperna_usaintsua_azpitik_ikusita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lepiota cristata (2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Lepiota_cristata_%282%29.jpg/1280px-Lepiota_cristata_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Lepiota_cristata_%282%29.jpg/330px-Lepiota_cristata_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Neq00",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lepiota cristata (29965321581).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Lepiota_cristata_%2829965321581%29.jpg/1280px-Lepiota_cristata_%2829965321581%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Lepiota_cristata_%2829965321581%29.jpg/330px-Lepiota_cristata_%2829965321581%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Maastricht-Stinkparasolzwam met erachter rode zwavelkopjes op de Sint-Pietersberg (1).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%281%29.jpg/1280px-Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%281%29.jpg/330px-Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Romaine",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Maastricht-Stinkparasolzwam met erachter rode zwavelkopjes op de Sint-Pietersberg (2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%282%29.jpg/1280px-Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%282%29.jpg/330px-Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Romaine",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Maastricht-Stinkparasolzwam met erachter rode zwavelkopjes op de Sint-Pietersberg (3).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%283%29.jpg/1280px-Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%283%29.jpg/330px-Maastricht-Stinkparasolzwam_met_erachter_rode_zwavelkopjes_op_de_Sint-Pietersberg_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Romaine",
+    "license": "CC0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Amanita phalloides",
+  "de": "Grüner Knollenblätterpilz",
+  "en": "Death cap",
+  "group": "Amanita",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Olive-green to yellowish cap, gills always white, ring, and a sack-like volva on a bulbous base — often hidden in the soil, so dig out the whole mushroom. Causes most mushroom deaths: symptoms 6–24 hours later, then liver failure. Half a cap can kill.",
+  "note_de": "Olivgrüner bis gelblicher Hut, Lamellen immer weiß, Ring und eine sackartige Scheide an der Knolle — oft im Boden verborgen, deshalb den ganzen Pilz ausgraben. Verursacht die meisten Pilztoten: Beschwerden nach 6–24 Stunden, dann Leberversagen. Ein halber Hut kann tödlich sein.",
+  "taste": "Mild, even pleasant — no warning.",
+  "taste_de": "Mild, sogar angenehm — keine Warnung.",
+  "trees": [
+   "oak",
+   "beech",
+   "hornbeam",
+   "chestnut",
+   "lime"
+  ],
+  "soil": "any",
+  "extra": [
+   "park"
+  ],
+  "lookalikes": [
+   "Agaricus campestris",
+   "Agaricus arvensis",
+   "Amanita citrina",
+   "Russula cyanoxantha",
+   "Russula vesca",
+   "Calvatia gigantea",
+   "Lycoperdon perlatum"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    110,
+    21,
+    16,
+    118,
+    21,
+    180,
+    1248,
+    6118,
+    9503,
+    10317,
+    2172,
+    358
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Amanita phalloides 1.JPG",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_phalloides_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_phalloides_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Archenzo",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita phalloides - young.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Amanita_phalloides_-_young.JPG/1280px-Amanita_phalloides_-_young.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Amanita_phalloides_-_young.JPG/330px-Amanita_phalloides_-_young.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stu's Images",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Amanita phalloides old 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Amanita_phalloides_old_2.jpg/1280px-Amanita_phalloides_old_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Amanita_phalloides_old_2.jpg/330px-Amanita_phalloides_old_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stanisław Skowron",
+    "license": "Public domain",
+    "stage": "old"
+   },
+   {
+    "file": "Grüner Knollenblätterpilz(Amanita phalloides)Bruderwald focus stacking-20251017-RM-160322.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Gr%C3%BCner_Knollenbl%C3%A4tterpilz%28Amanita_phalloides%29Bruderwald_focus_stacking-20251017-RM-160322.jpg/1280px-Gr%C3%BCner_Knollenbl%C3%A4tterpilz%28Amanita_phalloides%29Bruderwald_focus_stacking-20251017-RM-160322.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Gr%C3%BCner_Knollenbl%C3%A4tterpilz%28Amanita_phalloides%29Bruderwald_focus_stacking-20251017-RM-160322.jpg/330px-Gr%C3%BCner_Knollenbl%C3%A4tterpilz%28Amanita_phalloides%29Bruderwald_focus_stacking-20251017-RM-160322.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Reinhold Möller Ermell",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Mushrooms of Tambov Oblast - 003.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Mushrooms_of_Tambov_Oblast_-_003.jpg/1280px-Mushrooms_of_Tambov_Oblast_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Mushrooms_of_Tambov_Oblast_-_003.jpg/330px-Mushrooms_of_Tambov_Oblast_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alexander Novikov",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita phalloides 2025 G3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amanita_phalloides_2025_G3.jpg/1280px-Amanita_phalloides_2025_G3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amanita_phalloides_2025_G3.jpg/330px-Amanita_phalloides_2025_G3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita phalloides 2025 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amanita_phalloides_2025_G1.jpg/1280px-Amanita_phalloides_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amanita_phalloides_2025_G1.jpg/330px-Amanita_phalloides_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita phalloides 2011 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Amanita_phalloides_2011_G1.jpg/1280px-Amanita_phalloides_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Amanita_phalloides_2011_G1.jpg/330px-Amanita_phalloides_2011_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Amanita virosa",
+  "de": "Kegelhütiger Knollenblätterpilz",
+  "en": "Destroying angel",
+  "group": "Amanita",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Pure white, conical cap, shaggy stem, ring and volva. As deadly as the death cap. Every white mushroom with white gills and a bulb: hands off.",
+  "note_de": "Rein weiß, kegeliger Hut, faseriger Stiel, Ring und Scheide. So tödlich wie der Grüne Knollenblätterpilz. Jeder weiße Pilz mit weißen Lamellen und Knolle: Finger weg.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [
+   "spruce",
+   "beech",
+   "birch"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Agaricus campestris",
+   "Agaricus arvensis",
+   "Amanita citrina"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    27,
+    0,
+    0,
+    65,
+    7,
+    41,
+    310,
+    4421,
+    4698,
+    742,
+    47,
+    47
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Destroying Angel 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Destroying_Angel_02.jpg/1280px-Destroying_Angel_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Destroying_Angel_02.jpg/330px-Destroying_Angel_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "en:User:Ben DeRoy",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Destroying Angel.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Destroying_Angel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/91/Destroying_Angel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "en:User:Rafti Institute &amp; en:User:Ms. havisham",
+    "license": "Copyrighted free use",
+    "stage": "young"
+   },
+   {
+    "file": "Amanita virosa UL 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Amanita_virosa_UL_01.jpg/1280px-Amanita_virosa_UL_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Amanita_virosa_UL_01.jpg/330px-Amanita_virosa_UL_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Cephas",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita virosa albotik.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Amanita_virosa_albotik.jpg/1280px-Amanita_virosa_albotik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Amanita_virosa_albotik.jpg/330px-Amanita_virosa_albotik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita virosa azpitik.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Amanita_virosa_azpitik.jpg/1280px-Amanita_virosa_azpitik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Amanita_virosa_azpitik.jpg/330px-Amanita_virosa_azpitik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita virosa UL 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Amanita_virosa_UL_02.jpg/1280px-Amanita_virosa_UL_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Amanita_virosa_UL_02.jpg/330px-Amanita_virosa_UL_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Cephas",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita virosa UL 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Amanita_virosa_UL_03.jpg/1280px-Amanita_virosa_UL_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Amanita_virosa_UL_03.jpg/330px-Amanita_virosa_UL_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Cephas",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita virosa UL 04.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Amanita_virosa_UL_04.jpg/1280px-Amanita_virosa_UL_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Amanita_virosa_UL_04.jpg/330px-Amanita_virosa_UL_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Cephas",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Amanita pantherina",
+  "de": "Pantherpilz",
+  "en": "Panther cap",
+  "group": "Amanita",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Brown cap with pure white warts, smooth ring, bulb with a rim. The flesh never reddens (unlike the blusher). Confusion, delirium, in severe cases coma.",
+  "note_de": "Brauner Hut mit reinweißen Flocken, glatter Ring, Knolle mit Wulst. Das Fleisch rötet nie (anders als beim Perlpilz). Verwirrtheit, Rauschzustände, in schweren Fällen Koma.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [
+   "beech",
+   "oak",
+   "spruce",
+   "pine"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Macrolepiota procera",
+   "Chlorophyllum rhacodes",
+   "Amanita rubescens",
+   "Amanita muscaria"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    56,
+    6,
+    16,
+    105,
+    82,
+    720,
+    1949,
+    4290,
+    7644,
+    7753,
+    2244,
+    209
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Amanita pantherina 2013 G1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Amanita_pantherina_2013_G1.jpg/1280px-Amanita_pantherina_2013_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Amanita_pantherina_2013_G1.jpg/330px-Amanita_pantherina_2013_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Subsection Pantherinae - Mendocino Coast Botanical Gardens - November 2022 - Sarah Stierch 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Subsection_Pantherinae_-_Mendocino_Coast_Botanical_Gardens_-_November_2022_-_Sarah_Stierch_01.jpg/1280px-Subsection_Pantherinae_-_Mendocino_Coast_Botanical_Gardens_-_November_2022_-_Sarah_Stierch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Subsection_Pantherinae_-_Mendocino_Coast_Botanical_Gardens_-_November_2022_-_Sarah_Stierch_01.jpg/330px-Subsection_Pantherinae_-_Mendocino_Coast_Botanical_Gardens_-_November_2022_-_Sarah_Stierch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Missvain",
+    "license": "CC BY 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Ruhland, Birkenweg, Waldrand bei Fichtestr. 15, Pantherpilz Unterseite, Spätherbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._15%2C_Pantherpilz_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg/1280px-Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._15%2C_Pantherpilz_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._15%2C_Pantherpilz_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg/330px-Ruhland%2C_Birkenweg%2C_Waldrand_bei_Fichtestr._15%2C_Pantherpilz_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Amanita pantherina; DSC 0385.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Amanita_pantherina%3B_DSC_0385.jpg/1280px-Amanita_pantherina%3B_DSC_0385.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Amanita_pantherina%3B_DSC_0385.jpg/330px-Amanita_pantherina%3B_DSC_0385.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "EmillimeS",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Amanita pantherina capell.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Amanita_pantherina_capell.JPG/1280px-Amanita_pantherina_capell.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Amanita_pantherina_capell.JPG/330px-Amanita_pantherina_capell.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Victor M. Vicente Selvas",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Pantherpilz Amanita pantherina.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Pantherpilz_Amanita_pantherina.jpg/1280px-Pantherpilz_Amanita_pantherina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Pantherpilz_Amanita_pantherina.jpg/330px-Pantherpilz_Amanita_pantherina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita Ameripantherina.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Amanita_Ameripantherina.jpg/1280px-Amanita_Ameripantherina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Amanita_Ameripantherina.jpg/330px-Amanita_Ameripantherina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Twelvizm",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita pantherina (29421883804).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Amanita_pantherina_%2829421883804%29.jpg/1280px-Amanita_pantherina_%2829421883804%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Amanita_pantherina_%2829421883804%29.jpg/330px-Amanita_pantherina_%2829421883804%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Amanita muscaria",
+  "de": "Fliegenpilz",
+  "en": "Fly agaric",
+  "group": "Amanita",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Red cap with white warts, which rain can wash off — then it looks orange and plain. White gills, ring, bulb. Delirium and vomiting.",
+  "note_de": "Roter Hut mit weißen Flocken, die der Regen abwaschen kann — dann wirkt er orange und kahl. Weiße Lamellen, Ring, Knolle. Rauschzustände und Erbrechen.",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [
+   "birch",
+   "spruce",
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Amanita rubescens",
+   "Amanita pantherina"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    421,
+    63,
+    75,
+    196,
+    123,
+    352,
+    2356,
+    13985,
+    45494,
+    155858,
+    33788,
+    1843
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Amanita muscaria Aberystwyth 2023.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Amanita_muscaria_Aberystwyth_2023.jpg/1280px-Amanita_muscaria_Aberystwyth_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Amanita_muscaria_Aberystwyth_2023.jpg/330px-Amanita_muscaria_Aberystwyth_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Kieran Roy Powell",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita muscaria at Hambach Forest.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Amanita_muscaria_at_Hambach_Forest.jpg/1280px-Amanita_muscaria_at_Hambach_Forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Amanita_muscaria_at_Hambach_Forest.jpg/330px-Amanita_muscaria_at_Hambach_Forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hambinfo",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Amanita muscaria - Ida Brennodden.png",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Amanita_muscaria_-_Ida_Brennodden.png/1280px-Amanita_muscaria_-_Ida_Brennodden.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Amanita_muscaria_-_Ida_Brennodden.png/330px-Amanita_muscaria_-_Ida_Brennodden.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Ida Brennodden",
+    "license": "CC BY 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "2 young amanita muscaria.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/2_young_amanita_muscaria.jpg/1280px-2_young_amanita_muscaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/2_young_amanita_muscaria.jpg/330px-2_young_amanita_muscaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Spielvogel",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Amanita muscaria (8071931191).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Amanita_muscaria_%288071931191%29.jpg/1280px-Amanita_muscaria_%288071931191%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Amanita_muscaria_%288071931191%29.jpg/330px-Amanita_muscaria_%288071931191%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "Amanita muscaria - fly agaric - fly amanita - Roter Fliegenpilz - 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Amanita_muscaria_-_fly_agaric_-_fly_amanita_-_Roter_Fliegenpilz_-_02.jpg/1280px-Amanita_muscaria_-_fly_agaric_-_fly_amanita_-_Roter_Fliegenpilz_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Amanita_muscaria_-_fly_agaric_-_fly_amanita_-_Roter_Fliegenpilz_-_02.jpg/330px-Amanita_muscaria_-_fly_agaric_-_fly_amanita_-_Roter_Fliegenpilz_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita muscaria 2018 G01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Amanita_muscaria_2018_G01.jpg/1280px-Amanita_muscaria_2018_G01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Amanita_muscaria_2018_G01.jpg/330px-Amanita_muscaria_2018_G01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   },
+   {
+    "file": "Amanita muscaria 2018 G02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Amanita_muscaria_2018_G02.jpg/1280px-Amanita_muscaria_2018_G02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Amanita_muscaria_2018_G02.jpg/330px-Amanita_muscaria_2018_G02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Amanita citrina",
+  "de": "Gelber Knollenblätterpilz",
+  "en": "False death cap",
+  "group": "Amanita",
+  "kind": "gilled",
+  "status": "inedible",
+  "note": "Pale lemon to white, smells of raw potato, round bulb with a rim. Not deadly, but easily confused with the death cap — not edible.",
+  "note_de": "Blass zitronengelb bis weiß, riecht nach roher Kartoffel, rundliche Knolle mit Rand. Nicht tödlich, aber leicht mit dem Grünen Knollenblätterpilz zu verwechseln — kein Speisepilz.",
+  "taste": "Unpleasant, like raw potato.",
+  "taste_de": "Unangenehm, nach roher Kartoffel.",
+  "trees": [
+   "beech",
+   "oak",
+   "pine",
+   "spruce"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Amanita phalloides",
+   "Amanita virosa",
+   "Russula ochroleuca"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    202,
+    30,
+    29,
+    46,
+    46,
+    127,
+    470,
+    4936,
+    20004,
+    25352,
+    5703,
+    571
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Amanita sp. 2010-10-31.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Amanita_sp._2010-10-31.jpg/1280px-Amanita_sp._2010-10-31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Amanita_sp._2010-10-31.jpg/330px-Amanita_sp._2010-10-31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "The High Fin Sperm Whale",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita citrina underside, possibly - Flickr - gailhampshire.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Amanita_citrina_underside%2C_possibly_-_Flickr_-_gailhampshire.jpg/1280px-Amanita_citrina_underside%2C_possibly_-_Flickr_-_gailhampshire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Amanita_citrina_underside%2C_possibly_-_Flickr_-_gailhampshire.jpg/330px-Amanita_citrina_underside%2C_possibly_-_Flickr_-_gailhampshire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "gailhampshire from Cradley, Malvern, U.K",
+    "license": "CC BY 2.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Young Amanita citrina.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Young_Amanita_citrina.jpg/1280px-Young_Amanita_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Young_Amanita_citrina.jpg/330px-Young_Amanita_citrina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Daniel Eriksson",
+    "license": "CC BY 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Amanita citrina 3.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Amanita_citrina_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Amanita_citrina_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "W.J.Pilsak (Wikipedia German)",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Gelber Knollenblätterpilz Bruderwald-20241025-RM-170802.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gelber_Knollenbl%C3%A4tterpilz_Bruderwald-20241025-RM-170802.jpg/1280px-Gelber_Knollenbl%C3%A4tterpilz_Bruderwald-20241025-RM-170802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gelber_Knollenbl%C3%A4tterpilz_Bruderwald-20241025-RM-170802.jpg/330px-Gelber_Knollenbl%C3%A4tterpilz_Bruderwald-20241025-RM-170802.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Reinhold Möller Ermell",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita citrina - Gelber Knollenblätterpilz - false death cap - Citron Amanita - Amanita citrina - 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_01.jpg/1280px-Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_01.jpg/330px-Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita citrina - Gelber Knollenblätterpilz - false death cap - Citron Amanita - Amanita citrina - 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_02.jpg/1280px-Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_02.jpg/330px-Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Amanita citrina - Gelber Knollenblätterpilz - false death cap - Citron Amanita - Amanita citrina - 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_03.jpg/1280px-Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_03.jpg/330px-Amanita_citrina_-_Gelber_Knollenbl%C3%A4tterpilz_-_false_death_cap_-_Citron_Amanita_-_Amanita_citrina_-_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Agaricus xanthodermus",
+  "de": "Karbol-Champignon",
+  "en": "Yellow stainer",
+  "group": "Agaricus",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Looks like a field mushroom, but scratching turns it chrome-yellow at once, especially in the stem base, and it smells of ink or phenol — more strongly when heated.",
+  "note_de": "Sieht aus wie ein Champignon, wird aber beim Kratzen sofort chromgelb, besonders in der Stielbasis, und riecht nach Tinte oder Karbol — beim Erhitzen stärker.",
+  "taste": "Unpleasant, chemical.",
+  "taste_de": "Unangenehm, chemisch.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "park"
+  ],
+  "lookalikes": [
+   "Agaricus campestris",
+   "Agaricus arvensis"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    83,
+    7,
+    21,
+    106,
+    145,
+    442,
+    605,
+    1038,
+    1995,
+    2478,
+    1165,
+    194
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Agaricus xanthodermus section.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/Agaricus_xanthodermus_section.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/08/Agaricus_xanthodermus_section.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Velella",
+    "license": "CC BY-SA 3.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Yellow staining mushroom.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Yellow_staining_mushroom.jpg/1280px-Yellow_staining_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Yellow_staining_mushroom.jpg/330px-Yellow_staining_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "frankenstoen",
+    "license": "CC BY 2.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Ruhland, Grenzstr. 3, Karbol-Champignon im Garten, Unterseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ruhland%2C_Grenzstr._3%2C_Karbol-Champignon_im_Garten%2C_Unterseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Grenzstr._3%2C_Karbol-Champignon_im_Garten%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ruhland%2C_Grenzstr._3%2C_Karbol-Champignon_im_Garten%2C_Unterseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Grenzstr._3%2C_Karbol-Champignon_im_Garten%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Agaricus xanthodermus ts3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Agaricus_xanthodermus_ts3.jpg/1280px-Agaricus_xanthodermus_ts3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Agaricus_xanthodermus_ts3.jpg/330px-Agaricus_xanthodermus_ts3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tomasz Sobczak",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Agaricus xanthoderma 10.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Agaricus_xanthoderma_10.jpg/1280px-Agaricus_xanthoderma_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Agaricus_xanthoderma_10.jpg/330px-Agaricus_xanthoderma_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus xanthodermus (yellow stainer), Noosa June 1963 1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_1.jpg/1280px-Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_1.jpg/330px-Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jack Bain",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus xanthodermus (yellow stainer), Noosa June 1963 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_2.jpg/1280px-Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_2.jpg/330px-Agaricus_xanthodermus_%28yellow_stainer%29%2C_Noosa_June_1963_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jack Bain",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Agaricus xanthodermus - December 2022 - Sarah Stierch.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Agaricus_xanthodermus_-_December_2022_-_Sarah_Stierch.jpg/1280px-Agaricus_xanthodermus_-_December_2022_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Agaricus_xanthodermus_-_December_2022_-_Sarah_Stierch.jpg/330px-Agaricus_xanthodermus_-_December_2022_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Missvain",
+    "license": "CC BY 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Entoloma sinuatum",
+  "de": "Riesen-Rötling",
+  "en": "Livid pinkgill",
+  "group": "Entoloma",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Large, grey-white cap; gills yellowish, later pink; smells of meal. Often mistaken for the clouded funnel or St George's mushroom. Severe vomiting and diarrhoea.",
+  "note_de": "Großer, grauweißer Hut; Lamellen gelblich, später rosa; riecht nach Mehl. Wird oft mit Nebelkappe oder Mairitterling verwechselt. Schweres Erbrechen und Durchfall.",
+  "taste": "Mild, mealy — no warning.",
+  "taste_de": "Mild, mehlig — keine Warnung.",
+  "trees": [
+   "oak",
+   "beech",
+   "hornbeam"
+  ],
+  "soil": "calc",
+  "extra": [],
+  "lookalikes": [
+   "Agaricus campestris",
+   "Calocybe gambosa",
+   "Clitocybe nebularis"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    28,
+    3,
+    3,
+    82,
+    31,
+    61,
+    132,
+    775,
+    1426,
+    845,
+    230,
+    51
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Entoloma sinuatum group.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Entoloma_sinuatum_group.JPG/1280px-Entoloma_sinuatum_group.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Entoloma_sinuatum_group.JPG/330px-Entoloma_sinuatum_group.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Archenzo",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Riesen-Rötling Entoloma sinuatum.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Riesen-R%C3%B6tling_Entoloma_sinuatum.JPG/1280px-Riesen-R%C3%B6tling_Entoloma_sinuatum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Riesen-R%C3%B6tling_Entoloma_sinuatum.JPG/330px-Riesen-R%C3%B6tling_Entoloma_sinuatum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Entoloma sinuatum 573398400.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Entoloma_sinuatum_573398400.jpg/1280px-Entoloma_sinuatum_573398400.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Entoloma_sinuatum_573398400.jpg/330px-Entoloma_sinuatum_573398400.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Matej Frančeškin",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Entoloma sinuatum 573398401.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Entoloma_sinuatum_573398401.jpg/1280px-Entoloma_sinuatum_573398401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Entoloma_sinuatum_573398401.jpg/330px-Entoloma_sinuatum_573398401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Matej Frančeškin",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Entoloma sinuatum bat.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Entoloma_sinuatum_bat.jpg/1280px-Entoloma_sinuatum_bat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Entoloma_sinuatum_bat.jpg/330px-Entoloma_sinuatum_bat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Entoloma sinuatum bi.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Entoloma_sinuatum_bi.jpg/1280px-Entoloma_sinuatum_bi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Entoloma_sinuatum_bi.jpg/330px-Entoloma_sinuatum_bi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Entoloma sinuatum bost.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Entoloma_sinuatum_bost.jpg/1280px-Entoloma_sinuatum_bost.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Entoloma_sinuatum_bost.jpg/330px-Entoloma_sinuatum_bost.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Entoloma sinuatum hiru.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Entoloma_sinuatum_hiru.jpg/1280px-Entoloma_sinuatum_hiru.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Entoloma_sinuatum_hiru.jpg/330px-Entoloma_sinuatum_hiru.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Lactarius torminosus",
+  "de": "Birken-Reizker",
+  "en": "Woolly milkcap",
+  "group": "Lactarius",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Salmon-pink cap with a woolly, inrolled margin, under birches; white milk that does not change colour. Burning hot; stomach upset.",
+  "note_de": "Lachsrosa Hut mit wolligem, eingerolltem Rand, unter Birken; weiße Milch, die sich nicht verfärbt. Brennend scharf; Magen-Darm-Beschwerden.",
+  "taste": "Burning hot.",
+  "taste_de": "Brennend scharf.",
+  "trees": [
+   "birch"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Lactarius deliciosus",
+   "Lactarius deterrimus"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    54,
+    6,
+    8,
+    13,
+    30,
+    87,
+    414,
+    4640,
+    11015,
+    6333,
+    697,
+    82
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Lactarius torminosus 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Lactarius_torminosus_2.jpg/1280px-Lactarius_torminosus_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Lactarius_torminosus_2.jpg/330px-Lactarius_torminosus_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "JovanaKoturov",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Birkenweg Ecke Neugrabenweg, Milchreizker, Unterseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ruhland%2C_Birkenweg_Ecke_Neugrabenweg%2C_Milchreizker%2C_Unterseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Birkenweg_Ecke_Neugrabenweg%2C_Milchreizker%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ruhland%2C_Birkenweg_Ecke_Neugrabenweg%2C_Milchreizker%2C_Unterseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Birkenweg_Ecke_Neugrabenweg%2C_Milchreizker%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Young Lactarius torminosus.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Young_Lactarius_torminosus.JPG/1280px-Young_Lactarius_torminosus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Young_Lactarius_torminosus.JPG/330px-Young_Lactarius_torminosus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jomo",
+    "license": "Public domain",
+    "stage": "young"
+   },
+   {
+    "file": "Birkenmilchling alt.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Birkenmilchling_alt.JPG/1280px-Birkenmilchling_alt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Birkenmilchling_alt.JPG/330px-Birkenmilchling_alt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Thomas Pruß",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Lactarius torminosus 3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Lactarius_torminosus_3.jpg/1280px-Lactarius_torminosus_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Lactarius_torminosus_3.jpg/330px-Lactarius_torminosus_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Aleksandar Đukić",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius torminosus 7.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Lactarius_torminosus_7.jpg/1280px-Lactarius_torminosus_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Lactarius_torminosus_7.jpg/330px-Lactarius_torminosus_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Aleksandar Đukić",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Lactarius torminosus and Lactarius pubescens comparison.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Lactarius_torminosus_and_Lactarius_pubescens_comparison.jpg/1280px-Lactarius_torminosus_and_Lactarius_pubescens_comparison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Lactarius_torminosus_and_Lactarius_pubescens_comparison.jpg/330px-Lactarius_torminosus_and_Lactarius_pubescens_comparison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Br00k963",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Wladimiro, foto digitali 2011 70.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Wladimiro%2C_foto_digitali_2011_70.jpg/1280px-Wladimiro%2C_foto_digitali_2011_70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Wladimiro%2C_foto_digitali_2011_70.jpg/330px-Wladimiro%2C_foto_digitali_2011_70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "C. Wladi",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Russula emetica",
+  "de": "Kirschroter Spei-Täubling",
+  "en": "Sickener",
+  "group": "Russula",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Cherry-red cap, pure white gills and stem, in damp conifer woods and bogs. Extremely hot. Vomiting.",
+  "note_de": "Kirschroter Hut, rein weiße Lamellen und Stiel, in feuchten Nadelwäldern und Mooren. Extrem scharf. Erbrechen.",
+  "taste": "Extremely hot.",
+  "taste_de": "Extrem scharf.",
+  "trees": [
+   "spruce",
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [
+   "bog"
+  ],
+  "lookalikes": [
+   "Russula vesca"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    73,
+    8,
+    22,
+    168,
+    383,
+    671,
+    2545,
+    5055,
+    6256,
+    3543,
+    708,
+    220
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Russula emetica in Poland.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Russula_emetica_in_Poland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Russula_emetica_in_Poland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "MichalPL",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Mushroom in the Forest PLT-FG-3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Mushroom_in_the_Forest_PLT-FG-3.jpg/1280px-Mushroom_in_the_Forest_PLT-FG-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Mushroom_in_the_Forest_PLT-FG-3.jpg/330px-Mushroom_in_the_Forest_PLT-FG-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Shadowmeld Photography",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Kirschroter Spei-Täubling im Oberjägermeisterschlag im Hauptsmoorwald.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Kirschroter_Spei-T%C3%A4ubling_im_Oberj%C3%A4germeisterschlag_im_Hauptsmoorwald.jpg/1280px-Kirschroter_Spei-T%C3%A4ubling_im_Oberj%C3%A4germeisterschlag_im_Hauptsmoorwald.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Kirschroter_Spei-T%C3%A4ubling_im_Oberj%C3%A4germeisterschlag_im_Hauptsmoorwald.jpg/330px-Kirschroter_Spei-T%C3%A4ubling_im_Oberj%C3%A4germeisterschlag_im_Hauptsmoorwald.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Stephan van Helden",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Russula emetica1.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Russula_emetica1.JPG/1280px-Russula_emetica1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Russula_emetica1.JPG/330px-Russula_emetica1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Piotr J",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "20170810 150417 Russula Emetica.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/20170810_150417_Russula_Emetica.jpg/1280px-20170810_150417_Russula_Emetica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/20170810_150417_Russula_Emetica.jpg/330px-20170810_150417_Russula_Emetica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Bëhnn3153",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Champignon.Autriche.DSCF0346.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Champignon.Autriche.DSCF0346.jpg/1280px-Champignon.Autriche.DSCF0346.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Champignon.Autriche.DSCF0346.jpg/330px-Champignon.Autriche.DSCF0346.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rc1959",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Fungi \"Russulaceae\" (37628453250).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fungi_%22Russulaceae%22_%2837628453250%29.jpg/1280px-Fungi_%22Russulaceae%22_%2837628453250%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fungi_%22Russulaceae%22_%2837628453250%29.jpg/330px-Fungi_%22Russulaceae%22_%2837628453250%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "James Johnstone from Ecclefechan, Scotland",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Russula emetica 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Russula_emetica_01.jpg/1280px-Russula_emetica_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Russula_emetica_01.jpg/330px-Russula_emetica_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Σ64",
+    "license": "CC BY 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Galerina marginata",
+  "de": "Gifthäubling",
+  "en": "Funeral bell",
+  "group": "Galerina",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Small brown tufts on wood, like the sheathed woodtuft. The stem has silvery fibres below the ring instead of scales. Contains the same toxin as the death cap.",
+  "note_de": "Kleine braune Büschel auf Holz, wie das Stockschwämmchen. Der Stiel hat unterhalb des Rings silbrige Fasern statt Schüppchen. Enthält dasselbe Gift wie der Knollenblätterpilz.",
+  "taste": "Mild, mealy — no warning.",
+  "taste_de": "Mild, mehlig — keine Warnung.",
+  "trees": [
+   "spruce",
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Armillaria mellea",
+   "Armillaria ostoyae",
+   "Kuehneromyces mutabilis"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    317,
+    99,
+    97,
+    176,
+    135,
+    255,
+    279,
+    1144,
+    5276,
+    8585,
+    3760,
+    1030
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Galerina marginata Point Reyes.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Galerina_marginata_Point_Reyes.jpg/1280px-Galerina_marginata_Point_Reyes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Galerina_marginata_Point_Reyes.jpg/330px-Galerina_marginata_Point_Reyes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alan Rockefeller",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Galerina marginata 63678.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Galerina_marginata_63678.jpg/1280px-Galerina_marginata_63678.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Galerina_marginata_63678.jpg/330px-Galerina_marginata_63678.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dan Molter (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "GalrinaMarginata.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/GalrinaMarginata.jpg/1280px-GalrinaMarginata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/GalrinaMarginata.jpg/330px-GalrinaMarginata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Matej Frančeškin",
+    "license": "CC BY 4.0",
+    "stage": null
+   },
+   {
+    "file": "Paddenstoelen op dood hout. Locatie, Stuttebosch in de lendevallei. Provincie Friesland 001.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_001.jpg/1280px-Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_001.jpg/330px-Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Paddenstoelen op dood hout. Locatie, Stuttebosch in de lendevallei. Provincie Friesland 002.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_002.jpg/1280px-Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_002.jpg/330px-Paddenstoelen_op_dood_hout._Locatie%2C_Stuttebosch_in_de_lendevallei._Provincie_Friesland_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Funeral Bell (Galerina marginata) - Gatineau Park 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Funeral_Bell_%28Galerina_marginata%29_-_Gatineau_Park_03.jpg/1280px-Funeral_Bell_%28Galerina_marginata%29_-_Gatineau_Park_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Funeral_Bell_%28Galerina_marginata%29_-_Gatineau_Park_03.jpg/330px-Funeral_Bell_%28Galerina_marginata%29_-_Gatineau_Park_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Ryan Hodnett",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Galerina marginata (?) (48992862057).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Galerina_marginata_%28%3F%29_%2848992862057%29.jpg/1280px-Galerina_marginata_%28%3F%29_%2848992862057%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Galerina_marginata_%28%3F%29_%2848992862057%29.jpg/330px-Galerina_marginata_%28%3F%29_%2848992862057%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Galerina marginata - Bundelmosklokje.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Galerina_marginata_-_Bundelmosklokje.jpg/1280px-Galerina_marginata_-_Bundelmosklokje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Galerina_marginata_-_Bundelmosklokje.jpg/330px-Galerina_marginata_-_Bundelmosklokje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "André De Kesel",
+    "license": "CC0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Hypholoma fasciculare",
+  "de": "Grünblättriger Schwefelkopf",
+  "en": "Sulphur tuft",
+  "group": "Hypholoma",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Sulphur-yellow tufts on stumps, greenish-yellow gills, later dark. Very bitter. Stomach upset, in rare cases severe.",
+  "note_de": "Schwefelgelbe Büschel auf Stümpfen, grünlich-gelbe, später dunkle Lamellen. Sehr bitter. Magen-Darm-Beschwerden, selten schwer.",
+  "taste": "Very bitter.",
+  "taste_de": "Sehr bitter.",
+  "trees": [
+   "beech",
+   "oak",
+   "spruce"
+  ],
+  "soil": "any",
+  "extra": [
+   "wood"
+  ],
+  "lookalikes": [
+   "Armillaria mellea",
+   "Armillaria ostoyae",
+   "Kuehneromyces mutabilis"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    1902,
+    619,
+    1207,
+    2840,
+    4064,
+    3477,
+    3372,
+    8023,
+    24208,
+    38441,
+    15031,
+    4311
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Hypholoma fasciculare Queteraro.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hypholoma_fasciculare_Queteraro.jpg/1280px-Hypholoma_fasciculare_Queteraro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hypholoma_fasciculare_Queteraro.jpg/330px-Hypholoma_fasciculare_Queteraro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Alan Rockefeller",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "-2019-10-23 Sulphur Tuft (Hypholoma fasciculare), Pond plantation, Trimingham (3).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/-2019-10-23_Sulphur_Tuft_%28Hypholoma_fasciculare%29%2C_Pond_plantation%2C_Trimingham_%283%29.jpg/1280px--2019-10-23_Sulphur_Tuft_%28Hypholoma_fasciculare%29%2C_Pond_plantation%2C_Trimingham_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/-2019-10-23_Sulphur_Tuft_%28Hypholoma_fasciculare%29%2C_Pond_plantation%2C_Trimingham_%283%29.jpg/330px--2019-10-23_Sulphur_Tuft_%28Hypholoma_fasciculare%29%2C_Pond_plantation%2C_Trimingham_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wi…",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Fungi in Hope Wood, detail - geograph.org.uk - 267998.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Fungi_in_Hope_Wood%2C_detail_-_geograph.org.uk_-_267998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Fungi_in_Hope_Wood%2C_detail_-_geograph.org.uk_-_267998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Jennifer Luther Thomas",
+    "license": "CC BY-SA 2.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Fungi in Winding Stonard wood, New Forest - geograph.org.uk - 267461.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fungi_in_Winding_Stonard_wood%2C_New_Forest_-_geograph.org.uk_-_267461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fungi_in_Winding_Stonard_wood%2C_New_Forest_-_geograph.org.uk_-_267461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Jim Champion",
+    "license": "CC BY-SA 2.0",
+    "stage": "young"
+   },
+   {
+    "file": "2026-04-02 Z5-3170 Achim-Lammerts Hypholoma-fasciculare.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2026-04-02_Z5-3170_Achim-Lammerts_Hypholoma-fasciculare.jpg/1280px-2026-04-02_Z5-3170_Achim-Lammerts_Hypholoma-fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2026-04-02_Z5-3170_Achim-Lammerts_Hypholoma-fasciculare.jpg/330px-2026-04-02_Z5-3170_Achim-Lammerts_Hypholoma-fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "2014 Hypholoma fasciculare.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2014_Hypholoma_fasciculare.jpg/1280px-2014_Hypholoma_fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2014_Hypholoma_fasciculare.jpg/330px-2014_Hypholoma_fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Kreuzschnabel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "2025-10-08 D500-0900 Achim-Lammerts Hypholoma-fasciculare.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2025-10-08_D500-0900_Achim-Lammerts_Hypholoma-fasciculare.jpg/1280px-2025-10-08_D500-0900_Achim-Lammerts_Hypholoma-fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2025-10-08_D500-0900_Achim-Lammerts_Hypholoma-fasciculare.jpg/330px-2025-10-08_D500-0900_Achim-Lammerts_Hypholoma-fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2026-04-02 Z5-3250 Achim-Lammerts Hypholoma-fasciculare.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2026-04-02_Z5-3250_Achim-Lammerts_Hypholoma-fasciculare.jpg/1280px-2026-04-02_Z5-3250_Achim-Lammerts_Hypholoma-fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2026-04-02_Z5-3250_Achim-Lammerts_Hypholoma-fasciculare.jpg/330px-2026-04-02_Z5-3250_Achim-Lammerts_Hypholoma-fasciculare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Coprinopsis atramentaria",
+  "de": "Falten-Tintling",
+  "en": "Common ink cap",
+  "group": "Coprinopsis",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Grey, furrowed bell in clusters, gills turn to black ink. Poisonous together with alcohol — even up to three days after the meal: flushing, racing heart, nausea.",
+  "note_de": "Graue, gefurchte Glocke in Büscheln, Lamellen zerfließen zu schwarzer Tinte. Giftig zusammen mit Alkohol — noch bis zu drei Tage nach der Mahlzeit: Hitzewallungen, Herzrasen, Übelkeit.",
+  "taste": "Mild.",
+  "taste_de": "Mild.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "park"
+  ],
+  "lookalikes": [
+   "Coprinus comatus"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    518,
+    101,
+    313,
+    927,
+    1058,
+    741,
+    632,
+    1441,
+    5543,
+    7885,
+    3208,
+    842
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Coprinopsis atramentaria 3 - Lindsey.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Coprinopsis_atramentaria_3_-_Lindsey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/30/Coprinopsis_atramentaria_3_-_Lindsey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "James Lindsey",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Common ink cap. (Coprinopsis atramentaria) (33701911040).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Common_ink_cap._%28Coprinopsis_atramentaria%29_%2833701911040%29.jpg/1280px-Common_ink_cap._%28Coprinopsis_atramentaria%29_%2833701911040%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Common_ink_cap._%28Coprinopsis_atramentaria%29_%2833701911040%29.jpg/330px-Common_ink_cap._%28Coprinopsis_atramentaria%29_%2833701911040%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Bernard Spragg. NZ from Christchurch, New Zealand",
+    "license": "CC0",
+    "stage": "cut"
+   },
+   {
+    "file": "A group of common ink cap mushrooms.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/A_group_of_common_ink_cap_mushrooms.jpg/1280px-A_group_of_common_ink_cap_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/A_group_of_common_ink_cap_mushrooms.jpg/330px-A_group_of_common_ink_cap_mushrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Michael Palmer",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Faltentintling Coprinus atramentariu.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Faltentintling_Coprinus_atramentariu.jpg/1280px-Faltentintling_Coprinus_atramentariu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Faltentintling_Coprinus_atramentariu.jpg/330px-Faltentintling_Coprinus_atramentariu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Coprinus atramentarius2 mod (1).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Coprinus_atramentarius2_mod_%281%29.JPG/1280px-Coprinus_atramentarius2_mod_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Coprinus_atramentarius2_mod_%281%29.JPG/330px-Coprinus_atramentarius2_mod_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Szabi237 (talk · contribs)",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Black Cap Fungi 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Black_Cap_Fungi_2.jpg/1280px-Black_Cap_Fungi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Black_Cap_Fungi_2.jpg/330px-Black_Cap_Fungi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rangan Datta Wiki",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Cheerful hat (23447182549).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Cheerful_hat_%2823447182549%29.jpg/1280px-Cheerful_hat_%2823447182549%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Cheerful_hat_%2823447182549%29.jpg/330px-Cheerful_hat_%2823447182549%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Paul van de Velde from Netherlands",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Common Inkcap (Coprinopsis atramentaria).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Common_Inkcap_%28Coprinopsis_atramentaria%29.jpg/1280px-Common_Inkcap_%28Coprinopsis_atramentaria%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Common_Inkcap_%28Coprinopsis_atramentaria%29.jpg/330px-Common_Inkcap_%28Coprinopsis_atramentaria%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "AnemoneProjectors (Flickr)",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": false,
+  "sci": "Inosperma erubescens",
+  "de": "Ziegelroter Risspilz",
+  "en": "Deadly fibrecap",
+  "group": "Inosperma",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "White at first, then staining brick-red; conical, radially torn cap. Spring and early summer under beech on chalk — at the same time as St George's mushroom. Muscarine poisoning; deaths have occurred.",
+  "note_de": "Erst weiß, dann ziegelrot verfärbend; kegeliger, radial eingerissener Hut. Frühling und Frühsommer unter Buchen auf Kalk — zur selben Zeit wie der Mairitterling. Muskarin-Vergiftung; es gab Todesfälle.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [
+   "beech",
+   "lime"
+  ],
+  "soil": "calc",
+  "extra": [
+   "park"
+  ],
+  "lookalikes": [
+   "Calocybe gambosa"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    11,
+    0,
+    0,
+    144,
+    1040,
+    2772,
+    1596,
+    1127,
+    1112,
+    371,
+    335,
+    95
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "2010-04-27 Inocybe erubescens.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2010-04-27_Inocybe_erubescens.jpg/1280px-2010-04-27_Inocybe_erubescens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2010-04-27_Inocybe_erubescens.jpg/330px-2010-04-27_Inocybe_erubescens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Inocybe erubescens (19417855088).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Inocybe_erubescens_%2819417855088%29.jpg/1280px-Inocybe_erubescens_%2819417855088%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Inocybe_erubescens_%2819417855088%29.jpg/330px-Inocybe_erubescens_%2819417855088%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Tatiana Bulyonkova from Novosibirsk, Russia",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Inosperma erubescens.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Inosperma_erubescens.jpg/1280px-Inosperma_erubescens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Inosperma_erubescens.jpg/330px-Inosperma_erubescens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "The Brook",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2008-11-05 Inocybe erubescens A. Blytt 50957.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/2008-11-05_Inocybe_erubescens_A._Blytt_50957.jpg/1280px-2008-11-05_Inocybe_erubescens_A._Blytt_50957.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/2008-11-05_Inocybe_erubescens_A._Blytt_50957.jpg/330px-2008-11-05_Inocybe_erubescens_A._Blytt_50957.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Nadine (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Inocybe erubescens MS4 (2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Inocybe_erubescens_MS4_%282%29.jpg/1280px-Inocybe_erubescens_MS4_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Inocybe_erubescens_MS4_%282%29.jpg/330px-Inocybe_erubescens_MS4_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jerzy Opioła",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Inocybe erubescens MS4 (1).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Inocybe_erubescens_MS4_%281%29.jpg/1280px-Inocybe_erubescens_MS4_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Inocybe_erubescens_MS4_%281%29.jpg/330px-Inocybe_erubescens_MS4_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jerzy Opioła",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Punakas narmasnutt2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Punakas_narmasnutt2.jpg/1280px-Punakas_narmasnutt2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Punakas_narmasnutt2.jpg/330px-Punakas_narmasnutt2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Svencapoeira",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Inosperma erubescens 616290884.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Inosperma_erubescens_616290884.jpg/1280px-Inosperma_erubescens_616290884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Inosperma_erubescens_616290884.jpg/330px-Inosperma_erubescens_616290884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Chaym Turak",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Clitocybe rivulosa",
+  "de": "Feld-Trichterling",
+  "en": "Fool's funnel",
+  "group": "Clitocybe",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Small, whitish-grey, gills running down the stem, often in the same lawns and rings as the fairy ring champignon. Muscarine poisoning: sweating, slow pulse.",
+  "note_de": "Klein, weißlich-grau, Lamellen am Stiel herablaufend, oft auf denselben Rasen und in denselben Ringen wie der Nelken-Schwindling. Muskarin-Vergiftung: Schweißausbrüche, langsamer Puls.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [],
+  "soil": "any",
+  "extra": [
+   "meadow"
+  ],
+  "lookalikes": [
+   "Calocybe gambosa",
+   "Marasmius oreades"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    126,
+    24,
+    10,
+    14,
+    30,
+    61,
+    147,
+    618,
+    1992,
+    4421,
+    2517,
+    333
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "2007-08-29 Clitocybe rivulosa.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2007-08-29_Clitocybe_rivulosa.jpg/1280px-2007-08-29_Clitocybe_rivulosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2007-08-29_Clitocybe_rivulosa.jpg/330px-2007-08-29_Clitocybe_rivulosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe rivulosa, old.png",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Clitocybe_rivulosa%2C_old.png/1280px-Clitocybe_rivulosa%2C_old.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Clitocybe_rivulosa%2C_old.png/330px-Clitocybe_rivulosa%2C_old.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Sacha47",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "2016-09-14 Clitocybe rivulosa (Pers.) P. Kumm 688616.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/2016-09-14_Clitocybe_rivulosa_%28Pers.%29_P._Kumm_688616.jpg/1280px-2016-09-14_Clitocybe_rivulosa_%28Pers.%29_P._Kumm_688616.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/2016-09-14_Clitocybe_rivulosa_%28Pers.%29_P._Kumm_688616.jpg/330px-2016-09-14_Clitocybe_rivulosa_%28Pers.%29_P._Kumm_688616.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Igor (Mushroom Observer)",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe rivulosa Kiev2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Clitocybe_rivulosa_Kiev2.jpg/1280px-Clitocybe_rivulosa_Kiev2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Clitocybe_rivulosa_Kiev2.jpg/330px-Clitocybe_rivulosa_Kiev2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Аимаина хикари",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe rivulosa 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Clitocybe_rivulosa_2.jpg/1280px-Clitocybe_rivulosa_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Clitocybe_rivulosa_2.jpg/330px-Clitocybe_rivulosa_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe rivulosa 3.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Clitocybe_rivulosa_3.jpg/1280px-Clitocybe_rivulosa_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Clitocybe_rivulosa_3.jpg/330px-Clitocybe_rivulosa_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe rivulosa 4.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Clitocybe_rivulosa_4.jpg/1280px-Clitocybe_rivulosa_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Clitocybe_rivulosa_4.jpg/330px-Clitocybe_rivulosa_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jose Angel Urquia Goitia",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe candicans (4).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Clitocybe_candicans_%284%29.JPG/1280px-Clitocybe_candicans_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Clitocybe_candicans_%284%29.JPG/330px-Clitocybe_candicans_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jerzy Opioła",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": true,
+  "sci": "Gyromitra esculenta",
+  "de": "Frühjahrs-Lorchel",
+  "en": "False morel",
+  "group": "Gyromitra",
+  "kind": "other",
+  "status": "poisonous",
+  "note": "Spring, under pines on sand. Brain-like, convoluted brown cap without pits; cut lengthwise the inside is chambered, not one hollow. Its toxin (gyromitrin) survives boiling, and even the cooking vapours are toxic. Once sold at markets as edible.",
+  "note_de": "Frühling, unter Kiefern auf Sand. Hirnartig gewundener brauner Hut ohne Gruben; längs aufgeschnitten innen gekammert, kein durchgehender Hohlraum. Ihr Gift (Gyromitrin) übersteht das Abkochen, selbst die Kochdämpfe sind giftig. Wurde früher auf Märkten als Speisepilz verkauft.",
+  "taste": "Mild — no warning.",
+  "taste_de": "Mild — keine Warnung.",
+  "trees": [
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [
+   "sand"
+  ],
+  "lookalikes": [
+   "Morchella esculenta"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    20,
+    47,
+    1275,
+    4500,
+    4920,
+    1051,
+    42,
+    25,
+    33,
+    29,
+    10,
+    3
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Frühjahrslorchel.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fr%C3%BChjahrslorchel.JPG/1280px-Fr%C3%BChjahrslorchel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fr%C3%BChjahrslorchel.JPG/330px-Fr%C3%BChjahrslorchel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Gyromitra esculenta (false morel).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Gyromitra_esculenta_%28false_morel%29.jpg/1280px-Gyromitra_esculenta_%28false_morel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Gyromitra_esculenta_%28false_morel%29.jpg/330px-Gyromitra_esculenta_%28false_morel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "James St. John",
+    "license": "CC BY 2.0",
+    "stage": "old"
+   },
+   {
+    "file": "Gyromitra esculenta01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Gyromitra_esculenta01.jpg/1280px-Gyromitra_esculenta01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Gyromitra_esculenta01.jpg/330px-Gyromitra_esculenta01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Kruczy89",
+    "license": "CC0",
+    "stage": null
+   },
+   {
+    "file": "Gyromitra esculenta (41587150261).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Gyromitra_esculenta_%2841587150261%29.jpg/1280px-Gyromitra_esculenta_%2841587150261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Gyromitra_esculenta_%2841587150261%29.jpg/330px-Gyromitra_esculenta_%2841587150261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Gyromitra esculenta (47346328082).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Gyromitra_esculenta_%2847346328082%29.jpg/1280px-Gyromitra_esculenta_%2847346328082%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Gyromitra_esculenta_%2847346328082%29.jpg/330px-Gyromitra_esculenta_%2847346328082%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Gyromitra esculenta (47346329642).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Gyromitra_esculenta_%2847346329642%29.jpg/1280px-Gyromitra_esculenta_%2847346329642%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Gyromitra_esculenta_%2847346329642%29.jpg/330px-Gyromitra_esculenta_%2847346329642%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Gyromitra esculenta (49572178278).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Gyromitra_esculenta_%2849572178278%29.jpg/1280px-Gyromitra_esculenta_%2849572178278%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Gyromitra_esculenta_%2849572178278%29.jpg/330px-Gyromitra_esculenta_%2849572178278%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Gyromitra esculenta (49572686531).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Gyromitra_esculenta_%2849572686531%29.jpg/1280px-Gyromitra_esculenta_%2849572686531%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Gyromitra_esculenta_%2849572686531%29.jpg/330px-Gyromitra_esculenta_%2849572686531%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": true,
+  "sci": "Tricholoma equestre",
+  "de": "Grünling",
+  "en": "Yellow knight",
+  "group": "Tricholoma",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Yellow-green cap, sulphur-yellow gills, under pines on sand. Long eaten and praised; several meals in a row can break down the muscles (rhabdomyolysis) — there have been deaths. Today classed as poisonous.",
+  "note_de": "Gelbgrüner Hut, schwefelgelbe Lamellen, unter Kiefern auf Sand. Lange gegessen und geschätzt; mehrere Mahlzeiten hintereinander können einen Muskelzerfall auslösen (Rhabdomyolyse) — es gab Todesfälle. Heute als giftig eingestuft.",
+  "taste": "Mild, mealy.",
+  "taste_de": "Mild, mehlig.",
+  "trees": [
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [
+   "sand"
+  ],
+  "lookalikes": [
+   "Russula ochroleuca"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    38,
+    0,
+    3,
+    46,
+    7,
+    11,
+    16,
+    460,
+    2960,
+    3035,
+    1161,
+    169
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Tricholoma equestre.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Tricholoma_equestre.jpg/1280px-Tricholoma_equestre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Tricholoma_equestre.jpg/330px-Tricholoma_equestre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wasserwerk (Straße), Grünling am Waldrand, Seitenansicht und Unterseite, Spätherbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Ruhland%2C_Wasserwerk_%28Stra%C3%9Fe%29%2C_Gr%C3%BCnling_am_Waldrand%2C_Seitenansicht_und_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg/1280px-Ruhland%2C_Wasserwerk_%28Stra%C3%9Fe%29%2C_Gr%C3%BCnling_am_Waldrand%2C_Seitenansicht_und_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Ruhland%2C_Wasserwerk_%28Stra%C3%9Fe%29%2C_Gr%C3%BCnling_am_Waldrand%2C_Seitenansicht_und_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg/330px-Ruhland%2C_Wasserwerk_%28Stra%C3%9Fe%29%2C_Gr%C3%BCnling_am_Waldrand%2C_Seitenansicht_und_Unterseite%2C_Sp%C3%A4therbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Ruhland, Waldschneise zwischen Alter Poststraße und Autobahn, Grünling, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Gr%C3%BCnling%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Gr%C3%BCnling%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Gr%C3%BCnling%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Waldschneise_zwischen_Alter_Poststra%C3%9Fe_und_Autobahn%2C_Gr%C3%BCnling%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "Tricholoma equestre - Museo civico di Lentate sul Seveso.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Tricholoma_equestre_-_Museo_civico_di_Lentate_sul_Seveso.jpg/1280px-Tricholoma_equestre_-_Museo_civico_di_Lentate_sul_Seveso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Tricholoma_equestre_-_Museo_civico_di_Lentate_sul_Seveso.jpg/330px-Tricholoma_equestre_-_Museo_civico_di_Lentate_sul_Seveso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Ensahequ",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Grünling, Herbst, 05.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_05.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_05.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Tricholoma equestre a3 (1).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tricholoma_equestre_a3_%281%29.jpg/1280px-Tricholoma_equestre_a3_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tricholoma_equestre_a3_%281%29.jpg/330px-Tricholoma_equestre_a3_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Jerzy Opioła",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Grünling, Herbst, 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_02.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_02.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Grünling, Herbst, 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_03.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_03.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Gr%C3%BCnling%2C_Herbst%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": true,
+  "sci": "Clitocybe nebularis",
+  "de": "Nebelkappe",
+  "en": "Clouded funnel",
+  "group": "Clitocybe",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Large grey cap, crowded cream gills running down the stem, strong sweetish smell; late autumn, often in rings. Old books list it as edible; it frequently causes stomach upset and is suspected to contain harmful substances. Today classed as poisonous. Dangerous look-alike: livid pinkgill.",
+  "note_de": "Großer grauer Hut, gedrängte cremefarbene, herablaufende Lamellen, kräftiger süßlicher Geruch; Spätherbst, oft in Ringen. In alten Büchern als essbar geführt; verursacht häufig Magen-Darm-Beschwerden und steht im Verdacht, schädliche Stoffe zu enthalten. Heute als giftig eingestuft. Gefährlicher Doppelgänger: Riesen-Rötling.",
+  "taste": "Mild, strongly aromatic.",
+  "taste_de": "Mild, stark aromatisch.",
+  "trees": [
+   "spruce",
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [],
+  "lookalikes": [
+   "Lepista nuda",
+   "Entoloma sinuatum"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    759,
+    57,
+    21,
+    133,
+    336,
+    201,
+    184,
+    568,
+    5419,
+    29970,
+    20932,
+    5110
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Nevelzwam (nebularis) tussen afgevallen beukenblad (d.j.b.) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Nevelzwam_%28nebularis%29_tussen_afgevallen_beukenblad_%28d.j.b.%29_01.jpg/1280px-Nevelzwam_%28nebularis%29_tussen_afgevallen_beukenblad_%28d.j.b.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Nevelzwam_%28nebularis%29_tussen_afgevallen_beukenblad_%28d.j.b.%29_01.jpg/330px-Nevelzwam_%28nebularis%29_tussen_afgevallen_beukenblad_%28d.j.b.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clouded Agaric underside.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Clouded_Agaric_underside.JPG/1280px-Clouded_Agaric_underside.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Clouded_Agaric_underside.JPG/330px-Clouded_Agaric_underside.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rosser1954 Roger Grifiith",
+    "license": "Public domain",
+    "stage": "pores"
+   },
+   {
+    "file": "Clitocybe nebularis 161114w.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Clitocybe_nebularis_161114w.JPG/1280px-Clitocybe_nebularis_161114w.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Clitocybe_nebularis_161114w.JPG/330px-Clitocybe_nebularis_161114w.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Strobilomyces",
+    "license": "CC BY-SA 3.0",
+    "stage": "young"
+   },
+   {
+    "file": "Fonc sa Sacun Clitocybe nebularis Urtijëi.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Fonc_sa_Sacun_Clitocybe_nebularis_Urtij%C3%ABi.jpg/1280px-Fonc_sa_Sacun_Clitocybe_nebularis_Urtij%C3%ABi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Fonc_sa_Sacun_Clitocybe_nebularis_Urtij%C3%ABi.jpg/330px-Fonc_sa_Sacun_Clitocybe_nebularis_Urtij%C3%ABi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a…",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Nebelgrauer Trichterling (Clitocybe nebularis) Bruderwald-20251019-RM-172000.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Nebelgrauer_Trichterling_%28Clitocybe_nebularis%29_Bruderwald-20251019-RM-172000.jpg/1280px-Nebelgrauer_Trichterling_%28Clitocybe_nebularis%29_Bruderwald-20251019-RM-172000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Nebelgrauer_Trichterling_%28Clitocybe_nebularis%29_Bruderwald-20251019-RM-172000.jpg/330px-Nebelgrauer_Trichterling_%28Clitocybe_nebularis%29_Bruderwald-20251019-RM-172000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Reinhold Möller Ermell",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Scuol-Motta Naluns, 11-10-2024. (actm.) 29.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_29.jpg/1280px-Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_29.jpg/330px-Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Scuol-Motta Naluns, 11-10-2024. (actm.) 30.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_30.jpg/1280px-Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_30.jpg/330px-Scuol-Motta_Naluns%2C_11-10-2024._%28actm.%29_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Clitocybe nebularis Nebelkappe 2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Clitocybe_nebularis_Nebelkappe_2.jpg/1280px-Clitocybe_nebularis_Nebelkappe_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Clitocybe_nebularis_Nebelkappe_2.jpg/330px-Clitocybe_nebularis_Nebelkappe_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": true,
+  "formerly": true,
+  "sci": "Paxillus involutus",
+  "de": "Kahler Krempling",
+  "en": "Brown roll-rim",
+  "group": "Paxillus",
+  "kind": "gilled",
+  "status": "poisonous",
+  "note": "Brown, with a felty, inrolled margin and soft gills running down the stem that bruise brown. Was eaten for a long time; after repeated meals it can trigger an immune reaction that destroys the red blood cells — sometimes fatal.",
+  "note_de": "Braun, mit filzigem, eingerolltem Rand und weichen, herablaufenden Lamellen, die auf Druck braun werden. Wurde lange gegessen; nach wiederholtem Verzehr kann er eine Immunreaktion auslösen, die die roten Blutkörperchen zerstört — manchmal tödlich.",
+  "taste": "Mild, slightly sour.",
+  "taste_de": "Mild, leicht säuerlich.",
+  "trees": [
+   "birch",
+   "spruce",
+   "pine",
+   "oak"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Phylloporus pelletieri",
+   "Gyrodon lividus"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    307,
+    30,
+    38,
+    83,
+    218,
+    722,
+    2206,
+    7505,
+    17829,
+    18605,
+    4835,
+    745
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Navadne podvihanke (Paxillus involutus).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Navadne_podvihanke_%28Paxillus_involutus%29.jpg/1280px-Navadne_podvihanke_%28Paxillus_involutus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Navadne_podvihanke_%28Paxillus_involutus%29.jpg/330px-Navadne_podvihanke_%28Paxillus_involutus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Kahler Krempling, Seitenansicht, Spätsommer, 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Seitenansicht%2C_Sp%C3%A4tsommer%2C_02.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Seitenansicht%2C_Sp%C3%A4tsommer%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Seitenansicht%2C_Sp%C3%A4tsommer%2C_02.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Seitenansicht%2C_Sp%C3%A4tsommer%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Ruhland, Ortrander Str. bei Hausnr. 12, Kahler Krempling unter Roteiche, Unterseite, Herbst, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ruhland%2C_Ortrander_Str._bei_Hausnr._12%2C_Kahler_Krempling_unter_Roteiche%2C_Unterseite%2C_Herbst%2C_01.jpg/1280px-Ruhland%2C_Ortrander_Str._bei_Hausnr._12%2C_Kahler_Krempling_unter_Roteiche%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ruhland%2C_Ortrander_Str._bei_Hausnr._12%2C_Kahler_Krempling_unter_Roteiche%2C_Unterseite%2C_Herbst%2C_01.jpg/330px-Ruhland%2C_Ortrander_Str._bei_Hausnr._12%2C_Kahler_Krempling_unter_Roteiche%2C_Unterseite%2C_Herbst%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Ruhland, Wald zwischen verlängerter Grenzstr. und Birkenweg, Kahler Krempling, Oberseite und Seitenansicht, Spätsommer, 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Oberseite_und_Seitenansicht%2C_Sp%C3%A4tsommer%2C_01.jpg/1280px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Oberseite_und_Seitenansicht%2C_Sp%C3%A4tsommer%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Oberseite_und_Seitenansicht%2C_Sp%C3%A4tsommer%2C_01.jpg/330px-Ruhland%2C_Wald_zwischen_verl%C3%A4ngerter_Grenzstr._und_Birkenweg%2C_Kahler_Krempling%2C_Oberseite_und_Seitenansicht%2C_Sp%C3%A4tsommer%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "old"
+   },
+   {
+    "file": "2025-10-15 D500-0990 Achim-Lammerts Paxillus-involutus.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/2025-10-15_D500-0990_Achim-Lammerts_Paxillus-involutus.jpg/1280px-2025-10-15_D500-0990_Achim-Lammerts_Paxillus-involutus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/2025-10-15_D500-0990_Achim-Lammerts_Paxillus-involutus.jpg/330px-2025-10-15_D500-0990_Achim-Lammerts_Paxillus-involutus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2025-10-18 D500-1090 Achim-Lammerts Paxillus-involutus.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2025-10-18_D500-1090_Achim-Lammerts_Paxillus-involutus.jpg/1280px-2025-10-18_D500-1090_Achim-Lammerts_Paxillus-involutus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2025-10-18_D500-1090_Achim-Lammerts_Paxillus-involutus.jpg/330px-2025-10-18_D500-1090_Achim-Lammerts_Paxillus-involutus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "2025-10-18 D500-1105 Achim-Lammerts Paxillus-involutus.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2025-10-18_D500-1105_Achim-Lammerts_Paxillus-involutus.jpg/1280px-2025-10-18_D500-1105_Achim-Lammerts_Paxillus-involutus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2025-10-18_D500-1105_Achim-Lammerts_Paxillus-involutus.jpg/330px-2025-10-18_D500-1105_Achim-Lammerts_Paxillus-involutus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Achim Lammerts (Syntaxys)",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "De gewone krulzoom (Paxillus involutus). Locatie, Paddenstoelenreservaat. 11-10-2021. (actm.) 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/De_gewone_krulzoom_%28Paxillus_involutus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg/1280px-De_gewone_krulzoom_%28Paxillus_involutus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/De_gewone_krulzoom_%28Paxillus_involutus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg/330px-De_gewone_krulzoom_%28Paxillus_involutus%29._Locatie%2C_Paddenstoelenreservaat._11-10-2021._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Scleroderma citrinum",
+  "de": "Dickschaliger Kartoffelbovist",
+  "en": "Common earthball",
+  "group": "Scleroderma",
+  "kind": "other",
+  "status": "poisonous",
+  "note": "Yellowish, potato-like ball with a thick, cracked skin; inside soon purple-black and firm. Mistaken for puffballs. Stomach upset; the parasitic bolete grows on it.",
+  "note_de": "Gelbliche, kartoffelartige Knolle mit dicker, rissiger Schale; innen bald violettschwarz und fest. Wird mit Bovisten verwechselt. Magen-Darm-Beschwerden; auf ihm wächst der Schmarotzer-Röhrling.",
+  "taste": "Unpleasant, rubbery.",
+  "taste_de": "Unangenehm, gummiartig.",
+  "trees": [
+   "oak",
+   "birch",
+   "beech"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Calvatia gigantea",
+   "Lycoperdon perlatum",
+   "Scleroderma areolatum",
+   "Pseudoboletus parasiticus"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    2698,
+    772,
+    243,
+    197,
+    248,
+    530,
+    4902,
+    13948,
+    17803,
+    20372,
+    9084,
+    4649
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Scleroderma citrinum.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Scleroderma_citrinum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/73/Scleroderma_citrinum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Eric Steinert",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Dickschaliger Kartoffelbovist (Scleroderma citrinum).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Dickschaliger_Kartoffelbovist_%28Scleroderma_citrinum%29.jpg/1280px-Dickschaliger_Kartoffelbovist_%28Scleroderma_citrinum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Dickschaliger_Kartoffelbovist_%28Scleroderma_citrinum%29.jpg/330px-Dickschaliger_Kartoffelbovist_%28Scleroderma_citrinum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hans-Martin Scheibner",
+    "license": "CC BY-SA 3.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Boletus parasiticus on Scleroderma citrinum (underside).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Boletus_parasiticus_on_Scleroderma_citrinum_%28underside%29.jpg/1280px-Boletus_parasiticus_on_Scleroderma_citrinum_%28underside%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Boletus_parasiticus_on_Scleroderma_citrinum_%28underside%29.jpg/330px-Boletus_parasiticus_on_Scleroderma_citrinum_%28underside%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "stage": "pores"
+   },
+   {
+    "file": "Scleroderma citrinum UL 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Scleroderma_citrinum_UL_03.jpg/1280px-Scleroderma_citrinum_UL_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Scleroderma_citrinum_UL_03.jpg/330px-Scleroderma_citrinum_UL_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Cephas",
+    "license": "CC BY-SA 4.0",
+    "stage": "young"
+   },
+   {
+    "file": "Scleroderma citrinum (Common Earthball, D= Dickschaliger Kartoffelbovist, F= Scléroderme citron Syn. Scléroderme orangé, NL= Gele aardappelbovist) on a brownrot damaged Oak at Schaarsbergen - panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Scleroderma_citrinum_%28Common_Earthball%2C_D%3D_Dickschaliger_Kartoffelbovist%2C_F%3D_Scl%C3%A9roderme_citron_Syn._Scl%C3%A9roderme_orang%C3%A9%2C_NL%3D_Gele_aardappelbovist%29_on_a_brownrot_damaged_Oak_at_Schaarsbergen_-_panoramio.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Scleroderma_citrinum_%28Common_Earthball%2C_D%3D_Dickschaliger_Kartoffelbovist%2C_F%3D_Scl%C3%A9roderme_citron_Syn._Scl%C3%A9roderme_orang%C3%A9%2C_NL%3D_Gele_aardappelbovist%29_on_a_brownrot_damaged_Oak_at_Schaarsbergen_-_panoramio.jpg/330px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Henk Monster",
+    "license": "CC BY 3.0",
+    "stage": "old"
+   },
+   {
+    "file": "Scleroderma citrinum - earth ball - Kartoffelbovist - Boletales - Sclerodermatineae - 03.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_03.jpg/1280px-Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_03.jpg/330px-Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Scleroderma citrinum - earth ball - Kartoffelbovist - Boletales - Sclerodermatineae - 08.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_08.jpg/1280px-Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_08.jpg/330px-Scleroderma_citrinum_-_earth_ball_-_Kartoffelbovist_-_Boletales_-_Sclerodermatineae_-_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Boletus parasiticus on Scleroderma citrinum.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Boletus_parasiticus_on_Scleroderma_citrinum.jpg/1280px-Boletus_parasiticus_on_Scleroderma_citrinum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Boletus_parasiticus_on_Scleroderma_citrinum.jpg/330px-Boletus_parasiticus_on_Scleroderma_citrinum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Scleroderma areolatum",
+  "de": "Leopardfleckiger Kartoffelbovist",
+  "en": "Leopard earthball",
+  "group": "Scleroderma",
+  "kind": "other",
+  "status": "poisonous",
+  "note": "Small, brownish ball with a thin skin of leopard-like scales and a rooting base; dark inside early. Stomach upset.",
+  "note_de": "Kleine, bräunliche Knolle mit dünner, leopardenartig gefelderter Haut und wurzelnder Basis; innen früh dunkel. Magen-Darm-Beschwerden.",
+  "taste": "Unpleasant.",
+  "taste_de": "Unangenehm.",
+  "trees": [
+   "oak",
+   "beech"
+  ],
+  "soil": "any",
+  "extra": [
+   "wet"
+  ],
+  "lookalikes": [
+   "Lycoperdon perlatum",
+   "Scleroderma citrinum"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    84,
+    8,
+    13,
+    69,
+    115,
+    116,
+    1237,
+    2735,
+    3915,
+    2575,
+    521,
+    94
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Scleroderma areolatum.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Scleroderma_areolatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/24/Scleroderma_areolatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "pellaea",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Ruhland, Birkenweg bei Fichtestr. 15a, Gefelderter Kartoffelbovist, Sommer, 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ruhland%2C_Birkenweg_bei_Fichtestr._15a%2C_Gefelderter_Kartoffelbovist%2C_Sommer%2C_02.jpg/1280px-Ruhland%2C_Birkenweg_bei_Fichtestr._15a%2C_Gefelderter_Kartoffelbovist%2C_Sommer%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ruhland%2C_Birkenweg_bei_Fichtestr._15a%2C_Gefelderter_Kartoffelbovist%2C_Sommer%2C_02.jpg/330px-Ruhland%2C_Birkenweg_bei_Fichtestr._15a%2C_Gefelderter_Kartoffelbovist%2C_Sommer%2C_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Wilhelm Zimmerling PAR",
+    "license": "CC BY-SA 4.0",
+    "stage": "cut"
+   },
+   {
+    "file": "Lycoperdon depressum, older gleba going brown. Scleroderma aurantium (right), young gleba divided into compartments, Great Garth, 10 10 1971 (22843340128).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Lycoperdon_depressum%2C_older_gleba_going_brown._Scleroderma_aurantium_%28right%29%2C_young_gleba_divided_into_compartments%2C_Great_Garth%2C_10_10_1971_%2822843340128%29.jpg/1280px-Lycoperdon_depressum%2C_older_gleba_going_brown._Scleroderma_aurantium_%28right%29%2C_young_gleba_divided_into_compartments%2C_Great_Garth%2C_10_10_1971_%2822843340128%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Lycoperdon_depressum%2C_older_gleba_going_brown._Scleroderma_aurantium_%28right%29%2C_young_gleba_divided_into_compartments%2C_Great_Garth%2C_10_10_1971_%2822843340128%29.jpg/330px-Lycoperdon_depressum%2C_older_gleba_going_brown._Scleroderma_aurantium_%28right%29%2C_young_gleba_divided_into_compartments%2C_Great_Garth%2C_10_10_1971_%2822843340128%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr Mary Gillham Archive Project",
+    "license": "CC BY 2.0",
+    "stage": "young"
+   },
+   {
+    "file": "Leopardenfell-Hartbovist Scleroderma areolatum.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Leopardenfell-Hartbovist_Scleroderma_areolatum.jpg/1280px-Leopardenfell-Hartbovist_Scleroderma_areolatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Leopardenfell-Hartbovist_Scleroderma_areolatum.jpg/330px-Leopardenfell-Hartbovist_Scleroderma_areolatum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Bovist (10119076933).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Bovist_%2810119076933%29.jpg/1280px-Bovist_%2810119076933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Bovist_%2810119076933%29.jpg/330px-Bovist_%2810119076933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Paul van de Velde from Netherlands",
+    "license": "CC BY 2.0",
+    "stage": null
+   },
+   {
+    "file": "Noordwijk - Kleine aardappelbovist (Scleroderma areolatum) v2.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Noordwijk_-_Kleine_aardappelbovist_%28Scleroderma_areolatum%29_v2.jpg/1280px-Noordwijk_-_Kleine_aardappelbovist_%28Scleroderma_areolatum%29_v2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Noordwijk_-_Kleine_aardappelbovist_%28Scleroderma_areolatum%29_v2.jpg/330px-Noordwijk_-_Kleine_aardappelbovist_%28Scleroderma_areolatum%29_v2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rudolphous",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Scleroderma areolatum (Kleine aardappelbovist) - Nieuw Leeuwenhorst, Noordwijkerhout, NL.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Nieuw_Leeuwenhorst%2C_Noordwijkerhout%2C_NL.jpg/1280px-Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Nieuw_Leeuwenhorst%2C_Noordwijkerhout%2C_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Nieuw_Leeuwenhorst%2C_Noordwijkerhout%2C_NL.jpg/330px-Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Nieuw_Leeuwenhorst%2C_Noordwijkerhout%2C_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rudolphous",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Scleroderma areolatum (Kleine aardappelbovist) - Oud Leeuwenhorst, Noordwijk, NL v1.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Oud_Leeuwenhorst%2C_Noordwijk%2C_NL_v1.jpg/1280px-Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Oud_Leeuwenhorst%2C_Noordwijk%2C_NL_v1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Oud_Leeuwenhorst%2C_Noordwijk%2C_NL_v1.jpg/330px-Scleroderma_areolatum_%28Kleine_aardappelbovist%29_-_Oud_Leeuwenhorst%2C_Noordwijk%2C_NL_v1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Rudolphous",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   }
+  ]
+ },
+ {
+  "protection": null,
+  "deadly": false,
+  "formerly": false,
+  "sci": "Russula ochroleuca",
+  "de": "Ocker-Täubling",
+  "en": "Ochre brittlegill",
+  "group": "Russula",
+  "kind": "gilled",
+  "status": "inedible",
+  "note": "Ochre-yellow cap, white gills, stem greying with age; very common in all woods. Mild to slightly hot; not worth eating.",
+  "note_de": "Ockergelber Hut, weiße Lamellen, Stiel im Alter grauend; in allen Wäldern sehr häufig. Mild bis leicht scharf; kein lohnender Speisepilz.",
+  "taste": "Mild to slightly hot.",
+  "taste_de": "Mild bis leicht scharf.",
+  "trees": [
+   "spruce",
+   "beech",
+   "oak",
+   "pine"
+  ],
+  "soil": "acid",
+  "extra": [],
+  "lookalikes": [
+   "Amanita citrina",
+   "Russula vesca",
+   "Tricholoma equestre"
+  ],
+  "quality": null,
+  "extLookalikes": [],
+  "beginner": false,
+  "season": {
+   "months": [
+    157,
+    38,
+    14,
+    20,
+    233,
+    182,
+    883,
+    4015,
+    11517,
+    15340,
+    5512,
+    1208
+   ],
+   "region": "EU"
+  },
+  "photos": [
+   {
+    "file": "Russula ochroleuca châtaigne.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Russula_ochroleuca_ch%C3%A2taigne.JPG/1280px-Russula_ochroleuca_ch%C3%A2taigne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Russula_ochroleuca_ch%C3%A2taigne.JPG/330px-Russula_ochroleuca_ch%C3%A2taigne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Atheox",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "Russula-ochroleuca-taubling.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Russula-ochroleuca-taubling.jpg/1280px-Russula-ochroleuca-taubling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Russula-ochroleuca-taubling.jpg/330px-Russula-ochroleuca-taubling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Geelwitte russula (Russula ochroleuca). Locatie, Hortus (Haren, Groningen) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg/1280px-Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg/330px-Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Geelwitte russula (Russula ochroleuca) in verval. Locatie, Hortus (Haren, Groningen) 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Geelwitte_russula_%28Russula_ochroleuca%29_in_verval._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg/1280px-Geelwitte_russula_%28Russula_ochroleuca%29_in_verval._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Geelwitte_russula_%28Russula_ochroleuca%29_in_verval._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg/330px-Geelwitte_russula_%28Russula_ochroleuca%29_in_verval._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "stage": null
+   },
+   {
+    "file": "Russula-ochroleuca-ockertäubling.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Russula-ochroleuca-ockert%C3%A4ubling.jpg/1280px-Russula-ochroleuca-ockert%C3%A4ubling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Russula-ochroleuca-ockert%C3%A4ubling.jpg/330px-Russula-ochroleuca-ockert%C3%A4ubling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "stage": null
+   },
+   {
+    "file": "Common Yellow Russula - Ochre Brittlegill - Russula ochroleuca - 01.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Common_Yellow_Russula_-_Ochre_Brittlegill_-_Russula_ochroleuca_-_01.jpg/1280px-Common_Yellow_Russula_-_Ochre_Brittlegill_-_Russula_ochroleuca_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Common_Yellow_Russula_-_Ochre_Brittlegill_-_Russula_ochroleuca_-_01.jpg/330px-Common_Yellow_Russula_-_Ochre_Brittlegill_-_Russula_ochroleuca_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "stage": null
+   },
+   {
+    "file": "DSC00577 (30741170466).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/DSC00577_%2830741170466%29.jpg/1280px-DSC00577_%2830741170466%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/DSC00577_%2830741170466%29.jpg/330px-DSC00577_%2830741170466%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Dr. Hans-Günter Wagner",
+    "license": "CC BY-SA 2.0",
+    "stage": null
+   },
+   {
+    "file": "Geelwitte russula (Russula ochroleuca). Locatie, Hortus (Haren, Groningen) 02.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_02.jpg/1280px-Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_02.jpg/330px-Geelwitte_russula_%28Russula_ochroleuca%29._Locatie%2C_Hortus_%28Haren%2C_Groningen%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Agnes Monkelbaan",
+    "license": "CC BY-SA 4.0",
     "stage": null
    }
   ]

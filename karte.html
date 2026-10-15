@@ -102,7 +102,7 @@
 <script>
   const T = {
     de: {
-      back: '← Alle Röhrlinge', title: 'Pilz<span>karte</span>',
+      title: 'Pilz<span>karte</span>',
       modeSpecies: 'Pilzart', modeTree: 'Baumart', here: '📍 Mein Standort',
       legendSpecies: name => `Anteil passender Baumpartner für <i>${name}</i> (1-km-Übersicht, ab Zoom 10 in 10 m)`,
       legendTree: name => `Waldanteil mit vorherrschend ${name}`,
@@ -110,14 +110,14 @@
       detailTree: name => `10-m-Karte: Wald mit vorherrschend ${name}`,
       hostFull: 'Baumpartner', hostPart: 'Baumgruppe, enthält Partner (z. B. Hainbuche, Espe)',
       hereIs: 'Genau hier (10 m)', noTree: 'kein Wald / keine Angabe',
-      mix: 'Bäume im Umkreis (≈1 km²)', fits: 'Passende Röhrlinge', noForest: 'Hier ist laut Karte kaum Wald.',
+      mix: 'Bäume im Umkreis (≈1 km²)', fits: 'Passende Pilze', noForest: 'Hier ist laut Karte kaum Wald.',
       noHosts: 'Keine Baumpartner auf der Karte (z. B. nur im Mittelmeerraum).',
       note: 'Baumdaten: Blickensdörfer et al. (2022), Dominante Baumartenkarte Deutschland 2017/2018, Thünen-Institut, CC BY 4.0. Die Karte zeigt nur, wo passende Bäume vorherrschen — nicht, ob der Pilz dort wächst. Boden, Klima und Seltenheit sind nicht berücksichtigt; die Baumpartner je Art sind ungeprüft. Seit 2018 sind viele Fichtenbestände abgestorben. <a href="quellen.html">Alle Quellen und Lizenzen →</a>',
       trees: { birch: 'Birke', beech: 'Buche', douglas: 'Douglasie', oak: 'Eiche', alder: 'Erle', spruce: 'Fichte', pine: 'Kiefer', larch: 'Lärche', fir: 'Tanne', odh: 'sonst. Laubbäume (langlebig)', odl: 'sonst. Laubbäume (kurzlebig)' },
       tag: { poisonous: '☠ giftig', bitter: '✖ ungenießbar', strict: '🛡 geschützt' }, calc: 'nur auf Kalk', rare: 'selten',
     },
     en: {
-      back: '← All boletes', title: 'Mushroom <span>map</span>',
+      title: 'Mushroom <span>map</span>',
       modeSpecies: 'Mushroom', modeTree: 'Tree species', here: '📍 My location',
       legendSpecies: name => `Share of matching host trees for <i>${name}</i> (1 km overview, 10 m from zoom 10)`,
       legendTree: name => `Forest share dominated by ${name}`,
@@ -125,7 +125,7 @@
       detailTree: name => `10 m map: forest dominated by ${name}`,
       hostFull: 'host trees', hostPart: 'tree group containing hosts (e.g. hornbeam, aspen)',
       hereIs: 'Right here (10 m)', noTree: 'no forest / no data',
-      mix: 'Trees around here (≈1 km²)', fits: 'Matching boletes', noForest: 'Hardly any forest here according to the map.',
+      mix: 'Trees around here (≈1 km²)', fits: 'Matching mushrooms', noForest: 'Hardly any forest here according to the map.',
       noHosts: 'No host trees on this map (e.g. Mediterranean only).',
       note: 'Tree data: Blickensdörfer et al. (2022), Dominant Tree Species for Germany 2017/2018, Thünen Institute, CC BY 4.0. The map only shows where suitable trees dominate — not whether the mushroom grows there. Soil, climate and rarity are not included; host trees per species are unverified. Many spruce stands have died since 2018. <a href="quellen.html">All sources and licences →</a>',
       trees: { birch: 'birch', beech: 'beech', douglas: 'Douglas fir', oak: 'oak', alder: 'alder', spruce: 'spruce', pine: 'pine', larch: 'larch', fir: 'fir', odh: 'other broadleaves (long-lived)', odl: 'other broadleaves (short-lived)' },
@@ -156,7 +156,7 @@
     attribution: '&copy; <a href="https://basemap.de">basemap.de</a> / BKG (CC BY 4.0) · Bäume/Trees: Thünen-Institut (CC BY 4.0)',
   }).addTo(map);
 
-  // Weights over map classes for one bolete; several codes may hit the same class → keep the max.
+  // Weights over map classes for one species; several codes may hit the same class → keep the max.
   function weights(s) {
     const w = new Float32Array(meta.classes.length);
     for (const code of s.trees ?? []) {

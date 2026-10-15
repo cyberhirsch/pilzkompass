@@ -5,11 +5,8 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const UA = { 'User-Agent': 'pilzkompass/1.0 (training data survey)' };
 const OPEN = 'cc0,cc-by,cc-by-sa';
-const LOOKALIKES = [
-  'Paxillus involutus', 'Scleroderma citrinum', 'Scleroderma areolatum', 'Hygrophoropsis aurantiaca',
-  'Amanita phalloides', 'Amanita muscaria', 'Amanita pantherina', 'Amanita rubescens',
-  'Fistulina hepatica', 'Russula ochroleuca', 'Lactarius deliciosus', 'Cantharellus cibarius',
-];
+// Look-alikes outside species.json (none left: since stage 1 they all have a card).
+const LOOKALIKES = [];
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function get(path, params) {
@@ -36,12 +33,18 @@ const count = (taxon_id, license) => get('observations', {
 }).then(j => j.total_results);
 
 const species = JSON.parse(await readFile(new URL('./species.json', import.meta.url), 'utf8'));
+const out = new URL('./inat-counts.json', import.meta.url);
+// Counts from the last run are reused; pass --fresh to recount everything.
+const old = process.argv.includes('--fresh') ? new Map()
+  : new Map(JSON.parse(await readFile(out, 'utf8').catch(() => '[]')).map(r => [r.sci, r]));
 const rows = [];
-for (const [sci, kind] of [...species.map(s => [s.sci, 'bolete']), ...LOOKALIKES.map(n => [n, 'lookalike'])]) {
-  const t = await taxon(sci);
-  const row = { sci, kind, inat: t?.name ?? null, taxon_id: t?.id ?? null, open: 0, all: 0 };
-  if (t) { row.open = await count(t.id, OPEN); row.all = await count(t.id); }
+for (const [sci, kind, bolete] of [...species.map(s => [s.sci, 'species', s.kind === 'bolete']), ...LOOKALIKES.map(n => [n, 'lookalike', false])]) {
+  const prev = old.get(sci);
+  const t = prev?.taxon_id ? { id: prev.taxon_id, name: prev.inat } : await taxon(sci);
+  const row = { sci, kind, bolete, inat: t?.name ?? null, taxon_id: t?.id ?? null, open: 0, all: 0 };
+  if (prev?.taxon_id) { row.open = prev.open; row.all = prev.all; }
+  else if (t) { row.open = await count(t.id, OPEN); row.all = await count(t.id); }
   rows.push(row);
   console.log(String(row.open).padStart(6), String(row.all).padStart(7), sci, t && t.name !== sci ? `(iNat: ${t.name})` : t ? '' : 'NOT FOUND');
 }
-await writeFile(new URL('./inat-counts.json', import.meta.url), JSON.stringify(rows, null, 1));
+await writeFile(out, JSON.stringify(rows, null, 1));

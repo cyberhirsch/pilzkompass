@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>Pilzkompass — Boletes of Europe</title>
+<title>Pilzkompass — Mushrooms of Europe</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -188,6 +188,7 @@
     margin: 6px 0 0; font-size: 12px; padding: 6px 10px; border-radius: 6px;
     background: rgba(76, 141, 214, .12); border-left: 3px solid var(--protect);
   }
+  .prot.formerly, .prot.gilled { background: rgba(224, 160, 60, .12); border-left-color: var(--caution); }
 
   .body { padding: 12px 14px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
   .sci { font: italic 700 19px/1.2 Fraunces, Georgia, serif; }
@@ -408,6 +409,13 @@
       <button class="chip" data-f="inedible"><span class="dot" style="background:var(--muted)"></span><span data-i18n="f_inedible"></span></button>
       <button class="chip" data-f="protected"><span class="dot" style="background:var(--protect)"></span><span data-i18n="f_protected"></span></button>
     </div>
+    <p class="sheet-lbl" data-i18n="filterKind"></p>
+    <div class="opts">
+      <button class="chip" data-k="all" data-i18n="k_all"></button>
+      <button class="chip" data-k="bolete" data-i18n="k_bolete"></button>
+      <button class="chip" data-k="gilled" data-i18n="k_gilled"></button>
+      <button class="chip" data-k="other" data-i18n="k_other"></button>
+    </div>
     <p class="sheet-lbl" data-i18n="sortLabel"></p>
     <div class="opts">
       <button class="chip" data-sort="popular" data-i18n="sortPopular"></button>
@@ -437,9 +445,9 @@
 <script>
   const T = {
     en: {
-      title: 'Pilzkompass — Boletes of Europe',
-      lede: 'The boletes of Central Europe — true <i>Boletus</i> and every genus split from it, plus the rough-stalks, slippery jacks and a few notorious poisonous species from abroad. Poisonous and foul-tasting species carry a warning you cannot miss.',
-      disclaimer: '<strong>Never eat a mushroom based on a website or photo.</strong> Identification needs several features at once — pores, flesh colour change, stem, smell, habitat. Have every find checked by a certified mushroom expert (in Germany: DGfM Pilzsachverständige). Almost all boletes are poisonous raw — always cook thoroughly (at least 15 minutes). Taste is no guide: several poisonous boletes taste mild and pleasant. Taste descriptions here come from the literature — never swallow a tasting sample. Blue 🛡 marks species protected in Germany. ⭐ = beginner-friendly: tastes good, no poisonous or inedible look-alike.',
+      title: 'Pilzkompass — Mushrooms of Europe',
+      lede: 'All boletes of Central Europe, plus the most collected edible mushrooms — chanterelle, parasol, field mushroom, morel and more — together with every dangerous look-alike they have. Poisonous and foul-tasting species carry a warning you cannot miss.',
+      disclaimer: '<strong>Never eat a mushroom based on a website or photo.</strong> Identification needs several features at once — underside, flesh colour change, stem base, smell, habitat. Have every find checked by a certified mushroom expert (in Germany: DGfM Pilzsachverständige). <strong>Gilled mushrooms include the deadliest species of all</strong> (death cap, funeral bell, webcaps): never eat one you are not absolutely certain about. Almost all boletes are poisonous raw — always cook thoroughly (at least 15 minutes). Taste is no guide: several deadly species taste mild and pleasant. Taste descriptions here come from the literature — never swallow a tasting sample. Blue 🛡 marks species protected in Germany. ⭐ = beginner-friendly: tastes good, no poisonous or inedible look-alike.',
       search: 'Search Latin, English or German name…',
       f_all: 'All', f_poisonous: 'Poisonous', f_bitter: 'Tastes bad', f_caution: 'Cook thoroughly', f_edible: 'Edible', f_inedible: 'Not edible', f_protected: 'Protected', f_season: 'In season now', sortLabel: 'Sort by',
       filterBtn: 'Filter', filterTitle: 'Filter', filterStatus: 'Edibility', filterReset: 'Reset', filterDone: 'Done', photosOf: 'Photos', sortPopular: 'Popularity', sortGenus: 'Genus',
@@ -453,7 +461,11 @@
       habitatTrees: 'With', soilLabel: 'Soil',
       soil: { calc: 'chalky', acid: 'acidic', any: 'any' },
       tree: { spruce: 'spruce', pine: 'pine', larch: 'larch', fir: 'fir', stonepine: 'Swiss stone pine', douglas: 'Douglas fir', oak: 'oak', beech: 'beech', hornbeam: 'hornbeam', birch: 'birch', aspen: 'aspen/poplar', willow: 'willow', alder: 'alder', hazel: 'hazel', chestnut: 'sweet chestnut', lime: 'lime', cistus: 'rockrose', holmoak: 'holm oak' },
-      extra: { park: 'parks', wet: 'damp places', sand: 'sandy soil', bog: 'bogs', wood: 'on wood', parasite: 'on earthballs' },
+      extra: { park: 'parks', wet: 'damp places', sand: 'sandy soil', bog: 'bogs', wood: 'on wood', parasite: 'on earthballs', meadow: 'meadows and pastures', compost: 'gardens and compost' },
+      filterKind: 'Group', k_all: 'All', k_bolete: 'Boletes', k_gilled: 'Gilled mushrooms', k_other: 'Other mushrooms',
+      deadly: { badge: 'Deadly poisonous', warn: 'DEADLY POISONOUS', sub: 'Do not eat. Even a small amount can kill; cooking does not help.' },
+      formerly: 'Formerly eaten', formerlyText: 'Formerly eaten and still listed as edible in old books — today classed as poisonous. Do not eat it.',
+      gilledNote: 'Gilled mushroom: only eat it if you are absolutely certain and an expert has checked it. Dig out the whole stem base — a sack (volva) at the base means a deadly Amanita.',
       seasonLabel: 'Finds per month (Europe, GBIF)', seasonWorld: 'Finds per month (worldwide, GBIF)', seasonFew: 'Too few dated finds for a season calendar.',
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       monthsShort: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
@@ -471,16 +483,16 @@
       fComingText: (when, mm, date) => `After the rain ${when} (${mm} mm) mushrooms are growing — expect the first finds around ${date}.`,
       fAhead: n => `Rain forecast — mushrooms in about ${n} days`,
       fAheadText: (day, mm, lag, date) => `About ${mm} mm of rain is forecast for ${day}. At current temperatures mushrooms follow about ${lag} days later, around ${date}.`,
-      fDry: 'Too dry', fDryText: n => `No real rain for ${n} days and none forecast. Boletes appear about 1–2 weeks after a good soaking (10 mm or more).`,
-      fCold: 'Too cold', fColdText: 'With frost and below about 5 °C hardly any new boletes grow.',
+      fDry: 'Too dry', fDryText: n => `No real rain for ${n} days and none forecast. Most mushrooms appear about 1–2 weeks after a good soaking (10 mm or more).`,
+      fCold: 'Too cold', fColdText: 'With frost and below about 5 °C hardly any new mushrooms grow.',
       fFrost: 'Frosty nights slow growth down.',
       verdict: {
-        good: ['Good mushroom weather', 'Plenty of rain and mild temperatures. Boletes usually appear 1–2 weeks after heavy rain.'],
+        good: ['Good mushroom weather', 'Plenty of rain and mild temperatures. Mushrooms usually appear 1–2 weeks after heavy rain.'],
         medium: ['Moderate', ''],
         poor: ['Poor mushroom weather', ''],
       },
       why: { cold: 'too cold', frost: 'frost in the last week', dry: 'too dry', littleRain: 'little rain', hot: 'very warm', cool: 'cool' },
-      offSeason: 'Outside the main bolete season (June–November).',
+      offSeason: 'Outside the main mushroom season (June–November).',
       inSeason: n => `${n} species on this site are in season this month.`, showSeason: 'Show them ↓',
       wxSource: 'Weather data: Deutscher Wetterdienst (DWD), via Bright Sky. Place search: © OpenStreetMap contributors. Rule of thumb only.',
       gHello: 'Welcome!', gYourRegion: 'your region', gLocating: 'Checking the weather, season and trees around you…',
@@ -491,7 +503,7 @@
       gDry: (p, s) => `Too dry in ${p} right now. After the next good rain, look for: ${s}.`,
       gCold: (p, s) => `Too cold in ${p} for new growth. If anything: ${s}.`,
       gNoWeather: s => `No weather data right now (offline?). By season and trees, your best chance is: ${s}.`,
-      gOffSeason: 'It is not bolete season right now. The main season runs from June to November.',
+      gOffSeason: 'Few mushrooms are in season right now. The main season runs from June to November.',
       gNoForest: p => `According to the mushroom map there is hardly any forest around ${p}.`,
       gAlso: list => `Also in season with suitable trees nearby: ${list}.`,
       gStats: (rain, temp) => `Last 14 days: ${rain} mm rain, about ${temp} °C.`,
@@ -504,16 +516,16 @@
       },
       count: (n, t) => `${n} of ${t} species`,
       species: n => `${n} species`,
-      guideTitle: '☠ How to recognise poisonous boletes',
+      guideTitle: '☠ How to recognise poisonous mushrooms',
       aiLink: '📷 Identify from a photo (AI)', mapLink: '🗺 Mushroom map', onMap: 'Where its trees grow →',
-      guide: "\n<p class=\"rule\">Main rule for beginners: do not eat any bolete with red or orange pores. Almost every poisonous bolete in Central Europe belongs to this group.</p>\n<p>The group also contains good edible species (e.g. the scarletina bolete), which experienced foragers eat. For beginners, skipping the whole group removes nearly all the risk.</p>\n\n<h3>The poisonous red-pored boletes</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Species</th><th>Features</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satan's bolete</td><td>Chalky white-grey cap, blood-red pores, swollen stem with red net. Old specimens smell of carrion. Summer, on limestone under beech and oak.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolf bolete</td><td>Pinkish-ochre cap, red pores, <b>no net</b> on the stem, bluing flesh.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purple bolete</td><td>Purple-red cap, flesh turns ink-blue <b>instantly</b>.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Brawny bolete</td><td>Unusually heavy and massive, ochre-yellow cap with purple tones, deep bluing.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Pale to pink caps, red pores, mostly on limestone in warm deciduous woods.</td></tr>\n</table></div>\n<p class=\"rule\">Taste is no guide: all of these taste mild. Do not use the tongue test on red-pored boletes.</p>\n\n<h3>Bad-tasting look-alikes (spoil the meal, not poisonous)</h3>\n<ul>\n<li><b>Bitter bolete</b> (<i>Tylopilus felleus</i>) vs. cep: <b>pink</b> pores and a <b>dark brown</b> net on the stem. The cep has white to yellow-green pores and a <b>white</b> net.</li>\n<li><b>Bitter beech bolete</b> (<i>Caloboletus calopus</i>): red-netted stem but <b>yellow</b> pores.</li>\n<li><b>Peppery bolete</b> (<i>Chalciporus piperatus</i>): small, rusty-brown pores, yellow flesh in the stem base.</li>\n</ul>\n<p>These can be detected safely: touch a tiny piece to the tongue tip, then spit it out.</p>\n\n<h3>\"No red, no colour change = safe\"? No.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Spanish and Portuguese pine dunes): pale pores, no bluing, poisonous.</li>\n<li><b>Rough-stalks</b> (<i>Leccinum</i>): no red pores, flesh turns grey or black. Undercooked, they have caused poisonings.</li>\n<li><b>Every bolete is poisonous raw</b>, the cep included.</li>\n<li><b>Old, soggy or mouldy specimens</b> cause many bolete \"poisonings\" in practice: spoiled protein rather than toxins, but real stomach cramps.</li>\n<li>The reverse fails too: many good edible species turn blue (bay bolete, scarletina bolete, inkstain bolete). <i>Neoboletus venenatus</i> (Japan) has <b>yellow</b> pores and is poisonous.</li>\n</ul>\n\n<h3>Is it a bolete at all?</h3>\n<p>Underneath there must be a <b>sponge of tubes</b>, not gills. The brown roll-rim (<i>Paxillus involutus</i>) is related to boletes but has gills, and can cause a fatal immune reaction. Earthballs (<i>Scleroderma</i>) are poisonous; the parasitic bolete grows on them.</p>\n\n<h3>Safer beginner rule</h3>\n<ol>\n<li>Definitely tubes and pores underneath.</li>\n<li>Pores not red or orange.</li>\n<li>A tiny piece on the tongue tip (spat out) is not bitter or peppery.</li>\n<li>Only firm, fresh specimens.</li>\n<li>Cook for at least 15 minutes.</li>\n<li>Have it checked by a mushroom expert (DGfM).</li>\n</ol>\n<p>Even then this is a filter, not a guarantee.</p>\n<button class=\"show\" data-show=\"poisonous\">Show all poisonous species ↓</button>",
+      guide: "\n<h3>The deadly ones: never confuse these</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Species</th><th>Features</th><th>Mistaken for</th></tr>\n<tr><td><i>Amanita phalloides</i><br>Death cap</td><td>Greenish cap, <b>white gills</b>, ring, <b>sack-like volva</b> at the bulbous base (often hidden in the soil). Liver failure after 6–24 h.</td><td>Field mushroom, green brittlegills, puffballs (egg stage)</td></tr>\n<tr><td><i>Amanita virosa</i><br>Destroying angel</td><td>Pure white, white gills, ring and volva.</td><td>Field and horse mushroom</td></tr>\n<tr><td><i>Galerina marginata</i><br>Funeral bell</td><td>Small brown tufts on wood, silvery fibres below the ring. Same toxin as the death cap.</td><td>Sheathed woodtuft, honey fungus</td></tr>\n<tr><td><i>Cortinarius rubellus, C. orellanus</i><br>Deadly webcaps</td><td>Orange-brown, rusty gills. Destroy the kidneys; symptoms only after 2–20 days.</td><td>Winter chanterelle</td></tr>\n<tr><td><i>Lepiota</i><br>Small dapperlings</td><td>Like a parasol but under 10 cm. Some contain the death cap toxin.</td><td>Parasol</td></tr>\n<tr><td><i>Inosperma erubescens</i><br>Deadly fibrecap</td><td>White, staining brick-red, conical torn cap; spring.</td><td>St George's mushroom</td></tr>\n<tr><td><i>Gyromitra esculenta</i><br>False morel</td><td>Brain-like cap, chambered inside.</td><td>Morel</td></tr>\n</table></div>\n<p class=\"rule\">Rules for gilled mushrooms: dig out the whole stem base. White gills plus a ring or volva — hands off. Never eat small \"parasols\". Mushrooms growing in tufts on wood are for experts only.</p>\n\n<h3>Formerly eaten — today classed as poisonous</h3>\n<p>Older books and many grandparents still call these edible. They are not.</p>\n<ul>\n<li><b>Clouded funnel</b> (<i>Clitocybe nebularis</i>): often causes stomach upset; suspected of containing harmful substances.</li>\n<li><b>Yellow knight</b> (<i>Tricholoma equestre</i>): several meals in a row can break down the muscles — deaths have occurred.</li>\n<li><b>Brown roll-rim</b> (<i>Paxillus involutus</i>): after repeated meals an immune reaction can destroy the red blood cells, sometimes fatally.</li>\n<li><b>False morel</b> (<i>Gyromitra esculenta</i>): sold at markets until the 1970s; its toxin survives boiling.</li>\n</ul>\n<button class=\"show\" data-show=\"formerly\">Show these species ↓</button>\n\n<h3>Boletes: the red-pore rule</h3>\n\n<p class=\"rule\">Main rule for beginners: do not eat any bolete with red or orange pores. Almost every poisonous bolete in Central Europe belongs to this group.</p>\n<p>The group also contains good edible species (e.g. the scarletina bolete), which experienced foragers eat. For beginners, skipping the whole group removes nearly all the risk.</p>\n\n<h3>The poisonous red-pored boletes</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Species</th><th>Features</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satan's bolete</td><td>Chalky white-grey cap, blood-red pores, swollen stem with red net. Old specimens smell of carrion. Summer, on limestone under beech and oak.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolf bolete</td><td>Pinkish-ochre cap, red pores, <b>no net</b> on the stem, bluing flesh.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purple bolete</td><td>Purple-red cap, flesh turns ink-blue <b>instantly</b>.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Brawny bolete</td><td>Unusually heavy and massive, ochre-yellow cap with purple tones, deep bluing.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Pale to pink caps, red pores, mostly on limestone in warm deciduous woods.</td></tr>\n</table></div>\n<p class=\"rule\">Taste is no guide: all of these taste mild. Do not use the tongue test on red-pored boletes.</p>\n\n<h3>Bad-tasting look-alikes (spoil the meal, not poisonous)</h3>\n<ul>\n<li><b>Bitter bolete</b> (<i>Tylopilus felleus</i>) vs. cep: <b>pink</b> pores and a <b>dark brown</b> net on the stem. The cep has white to yellow-green pores and a <b>white</b> net.</li>\n<li><b>Bitter beech bolete</b> (<i>Caloboletus calopus</i>): red-netted stem but <b>yellow</b> pores.</li>\n<li><b>Peppery bolete</b> (<i>Chalciporus piperatus</i>): small, rusty-brown pores, yellow flesh in the stem base.</li>\n</ul>\n<p>These can be detected safely: touch a tiny piece to the tongue tip, then spit it out.</p>\n\n<h3>\"No red, no colour change = safe\"? No.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Spanish and Portuguese pine dunes): pale pores, no bluing, poisonous.</li>\n<li><b>Rough-stalks</b> (<i>Leccinum</i>): no red pores, flesh turns grey or black. Undercooked, they have caused poisonings.</li>\n<li><b>Every bolete is poisonous raw</b>, the cep included.</li>\n<li><b>Old, soggy or mouldy specimens</b> cause many bolete \"poisonings\" in practice: spoiled protein rather than toxins, but real stomach cramps.</li>\n<li>The reverse fails too: many good edible species turn blue (bay bolete, scarletina bolete, inkstain bolete). <i>Neoboletus venenatus</i> (Japan) has <b>yellow</b> pores and is poisonous.</li>\n</ul>\n\n<h3>Is it a bolete at all?</h3>\n<p>Underneath there must be a <b>sponge of tubes</b>, not gills. The brown roll-rim (<i>Paxillus involutus</i>) is related to boletes but has gills, and can cause a fatal immune reaction. Earthballs (<i>Scleroderma</i>) are poisonous; the parasitic bolete grows on them.</p>\n\n<h3>Safer beginner rule</h3>\n<ol>\n<li>Definitely tubes and pores underneath.</li>\n<li>Pores not red or orange.</li>\n<li>A tiny piece on the tongue tip (spat out) is not bitter or peppery.</li>\n<li>Only firm, fresh specimens.</li>\n<li>Cook for at least 15 minutes.</li>\n<li>Have it checked by a mushroom expert (DGfM).</li>\n</ol>\n<p>Even then this is a filter, not a guarantee.</p>\n<button class=\"show\" data-show=\"poisonous\">Show all poisonous species ↓</button>",
       empty: 'No species match.',
       noPhoto: 'No free photo available',
       taste: 'Taste', trap: 'A pleasant taste says nothing about toxicity.',
       photos: n => `${n} photos`,
-      stage: { young: 'Young', old: 'Old', cut: 'Cut / flesh', pores: 'Pores' },
+      stage: { young: 'Young', old: 'Old', cut: 'Cut / flesh', pores: 'Underside' },
       prev: 'Previous photo', next: 'Next photo', close: 'Close',
-      footer: 'Photos: Wikimedia Commons, each linked to its file page with author and licence. Taxonomy follows current genus concepts (e.g. <i>Rubroboletus satanas</i>, formerly <i>Boletus satanas</i>). Covers the boletes of Central Europe plus Mediterranean and notable foreign species; rare varieties and recently split micro-species may be missing. Worldwide, the family Boletaceae alone has well over 1,000 species. <a href="quellen.html">All sources and licences →</a>',
+      footer: 'Photos: Wikimedia Commons, each linked to its file page with author and licence. Taxonomy follows current genus concepts (e.g. <i>Rubroboletus satanas</i>, formerly <i>Boletus satanas</i>). Covers the boletes of Central Europe plus Mediterranean and notable foreign species, and the most collected other edible mushrooms with their dangerous look-alikes. Thousands of other mushroom species are not included — a mushroom missing here is not a sign that it is harmless. <a href="quellen.html">All sources and licences →</a>',
       status: {
         poisonous: { badge: 'Poisonous', warn: 'POISONOUS', sub: 'Do not eat. Causes poisoning even when cooked.' },
         bitter:    { badge: 'Tastes bad', warn: 'TASTES TERRIBLE', sub: 'Inedible — bitter, peppery or foul. One specimen spoils the whole dish.' },
@@ -523,9 +535,9 @@
       },
     },
     de: {
-      title: 'Pilzkompass — Röhrlinge Europas',
-      lede: 'Die Röhrlinge Mitteleuropas — echte <i>Boletus</i> und alle davon abgetrennten Gattungen, dazu Raufüße, Schmierröhrlinge und einige berüchtigte Giftpilze aus aller Welt. Giftige und ungenießbare Arten tragen eine Warnung, die man nicht übersehen kann.',
-      disclaimer: '<strong>Niemals einen Pilz aufgrund einer Website oder eines Fotos essen.</strong> Zur Bestimmung braucht es mehrere Merkmale zugleich — Poren, Verfärbung des Fleisches, Stiel, Geruch, Standort. Jeden Fund von geprüften Pilzsachverständigen (DGfM) kontrollieren lassen. Fast alle Röhrlinge sind roh giftig — immer gründlich garen (mindestens 15 Minuten). Der Geschmack ist kein Kriterium: mehrere giftige Röhrlinge schmecken mild und angenehm. Die Geschmacksangaben stammen aus der Literatur — Kostproben niemals schlucken. Blaues 🛡 markiert in Deutschland geschützte Arten. ⭐ = anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger.',
+      title: 'Pilzkompass — Pilze Europas',
+      lede: 'Alle Röhrlinge Mitteleuropas, dazu die meistgesammelten Speisepilze — Pfifferling, Parasol, Champignon, Morchel und weitere — mit allen gefährlichen Doppelgängern. Giftige und ungenießbare Arten tragen eine Warnung, die man nicht übersehen kann.',
+      disclaimer: '<strong>Niemals einen Pilz aufgrund einer Website oder eines Fotos essen.</strong> Zur Bestimmung braucht es mehrere Merkmale zugleich — Unterseite, Verfärbung des Fleisches, Stielbasis, Geruch, Standort. Jeden Fund von geprüften Pilzsachverständigen (DGfM) kontrollieren lassen. <strong>Unter den Lamellenpilzen sind die tödlichsten Arten überhaupt</strong> (Knollenblätterpilz, Gifthäubling, Rauköpfe): keinen essen, bei dem du dir nicht absolut sicher bist. Fast alle Röhrlinge sind roh giftig — immer gründlich garen (mindestens 15 Minuten). Der Geschmack ist kein Kriterium: mehrere tödliche Arten schmecken mild und angenehm. Die Geschmacksangaben stammen aus der Literatur — Kostproben niemals schlucken. Blaues 🛡 markiert in Deutschland geschützte Arten. ⭐ = anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger.',
       search: 'Lateinischen, deutschen oder englischen Namen suchen…',
       f_all: 'Alle', f_poisonous: 'Giftig', f_bitter: 'Ungenießbar', f_caution: 'Gut durchgaren', f_edible: 'Essbar', f_inedible: 'Kein Speisepilz', f_protected: 'Geschützt', f_season: 'Jetzt in Saison', sortLabel: 'Sortieren nach',
       filterBtn: 'Filter', filterTitle: 'Filter', filterStatus: 'Essbarkeit', filterReset: 'Zurücksetzen', filterDone: 'Fertig', photosOf: 'Fotos', sortPopular: 'Beliebtheit', sortGenus: 'Gattung',
@@ -539,7 +551,11 @@
       habitatTrees: 'Bei', soilLabel: 'Boden',
       soil: { calc: 'kalkhaltig', acid: 'sauer', any: 'egal' },
       tree: { spruce: 'Fichte', pine: 'Kiefer', larch: 'Lärche', fir: 'Tanne', stonepine: 'Zirbe', douglas: 'Douglasie', oak: 'Eiche', beech: 'Buche', hornbeam: 'Hainbuche', birch: 'Birke', aspen: 'Espe/Pappel', willow: 'Weide', alder: 'Erle', hazel: 'Hasel', chestnut: 'Esskastanie', lime: 'Linde', cistus: 'Zistrose', holmoak: 'Steineiche' },
-      extra: { park: 'Parks', wet: 'feuchte Stellen', sand: 'Sandboden', bog: 'Moore', wood: 'auf Holz', parasite: 'auf Kartoffelbovisten' },
+      extra: { park: 'Parks', wet: 'feuchte Stellen', sand: 'Sandboden', bog: 'Moore', wood: 'auf Holz', parasite: 'auf Kartoffelbovisten', meadow: 'Wiesen und Weiden', compost: 'Gärten und Kompost' },
+      filterKind: 'Gruppe', k_all: 'Alle', k_bolete: 'Röhrlinge', k_gilled: 'Lamellenpilze', k_other: 'Andere Pilze',
+      deadly: { badge: 'Tödlich giftig', warn: 'TÖDLICH GIFTIG', sub: 'Nicht essen. Schon kleine Mengen können tödlich sein; Kochen hilft nicht.' },
+      formerly: 'Früher gegessen', formerlyText: 'Früher gegessen und in alten Büchern noch als Speisepilz geführt — heute als giftig eingestuft. Nicht essen.',
+      gilledNote: 'Lamellenpilz: nur essen, wenn du dir absolut sicher bist und Pilzsachverständige ihn geprüft haben. Die ganze Stielbasis ausgraben — eine Knolle mit Scheide bedeutet einen tödlichen Wulstling.',
       seasonLabel: 'Funde pro Monat (Europa, GBIF)', seasonWorld: 'Funde pro Monat (weltweit, GBIF)', seasonFew: 'Zu wenige datierte Funde für einen Saisonkalender.',
       months: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
       monthsShort: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
@@ -557,16 +573,16 @@
       fComingText: (when, mm, date) => `Nach dem Regen ${when} (${mm} mm) wachsen die Pilze — rechne um den ${date} mit den ersten Funden.`,
       fAhead: n => `Regen angesagt — Pilze in etwa ${n} Tagen`,
       fAheadText: (day, mm, lag, date) => `Für ${day} sind etwa ${mm} mm Regen vorhergesagt. Bei den aktuellen Temperaturen folgen die Pilze etwa ${lag} Tage später, um den ${date}.`,
-      fDry: 'Zu trocken', fDryText: n => `Seit ${n} Tagen kein nennenswerter Regen und keiner in Sicht. Röhrlinge erscheinen etwa 1–2 Wochen nach kräftigem Regen (ab etwa 10 mm).`,
-      fCold: 'Zu kalt', fColdText: 'Bei Frost und unter etwa 5 °C wachsen kaum noch neue Röhrlinge.',
+      fDry: 'Zu trocken', fDryText: n => `Seit ${n} Tagen kein nennenswerter Regen und keiner in Sicht. Die meisten Pilze erscheinen etwa 1–2 Wochen nach kräftigem Regen (ab etwa 10 mm).`,
+      fCold: 'Zu kalt', fColdText: 'Bei Frost und unter etwa 5 °C wachsen kaum noch neue Pilze.',
       fFrost: 'Frostnächte bremsen das Wachstum.',
       verdict: {
-        good: ['Gutes Pilzwetter', 'Viel Regen und milde Temperaturen. Röhrlinge erscheinen meist 1–2 Wochen nach kräftigem Regen.'],
+        good: ['Gutes Pilzwetter', 'Viel Regen und milde Temperaturen. Pilze erscheinen meist 1–2 Wochen nach kräftigem Regen.'],
         medium: ['Mittelmäßig', ''],
         poor: ['Schlechtes Pilzwetter', ''],
       },
       why: { cold: 'zu kalt', frost: 'Frost in der letzten Woche', dry: 'zu trocken', littleRain: 'wenig Regen', hot: 'sehr warm', cool: 'kühl' },
-      offSeason: 'Außerhalb der Röhrlings-Hauptsaison (Juni–November).',
+      offSeason: 'Außerhalb der Pilz-Hauptsaison (Juni–November).',
       inSeason: n => `${n} Arten dieser Seite haben diesen Monat Saison.`, showSeason: 'Anzeigen ↓',
       wxSource: 'Wetterdaten: Deutscher Wetterdienst (DWD), über Bright Sky. Ortssuche: © OpenStreetMap-Mitwirkende. Nur eine Faustregel.',
       gHello: 'Willkommen!', gYourRegion: 'deiner Region', gLocating: 'Prüfe Wetter, Saison und Bäume in deiner Nähe…',
@@ -577,7 +593,7 @@
       gDry: (p, s) => `Gerade zu trocken in ${p}. Nach dem nächsten kräftigen Regen lohnt sich vor allem: ${s}.`,
       gCold: (p, s) => `In ${p} ist es zu kalt für neues Wachstum. Wenn überhaupt: ${s}.`,
       gNoWeather: s => `Gerade keine Wetterdaten (offline?). Nach Saison und Bäumen passt am besten: ${s}.`,
-      gOffSeason: 'Gerade ist keine Röhrlingssaison. Die Hauptsaison geht von Juni bis November.',
+      gOffSeason: 'Gerade wachsen nur wenige Pilze. Die Hauptsaison geht von Juni bis November.',
       gNoForest: p => `Laut Pilzkarte gibt es rund um ${p} kaum Wald.`,
       gAlso: list => `Ebenfalls in Saison und mit passenden Bäumen in der Nähe: ${list}.`,
       gStats: (rain, temp) => `Letzte 14 Tage: ${rain} mm Regen, um ${temp} °C.`,
@@ -590,16 +606,16 @@
       },
       count: (n, t) => `${n} von ${t} Arten`,
       species: n => `${n} ${n === 1 ? 'Art' : 'Arten'}`,
-      guideTitle: '☠ Giftige Röhrlinge erkennen',
+      guideTitle: '☠ Giftpilze erkennen',
       aiLink: '📷 Per Foto bestimmen (KI)', mapLink: '🗺 Pilzkarte', onMap: 'Wo seine Bäume wachsen →',
-      guide: "\n<p class=\"rule\">Hauptregel für Anfänger: Keine Röhrlinge mit roten oder orangen Poren essen. Fast alle giftigen Röhrlinge Mitteleuropas gehören zu dieser Gruppe.</p>\n<p>Die Gruppe enthält auch gute Speisepilze (z. B. den Flockenstieligen Hexen-Röhrling), die Erfahrene essen. Für Anfänger beseitigt der Verzicht auf die ganze Gruppe fast das gesamte Risiko.</p>\n\n<h3>Die giftigen Rotporer</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Art</th><th>Merkmale</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satans-Röhrling</td><td>Kreideweiß-grauer Hut, blutrote Poren, bauchiger Stiel mit rotem Netz. Alte Exemplare riechen nach Aas. Sommer, auf Kalk unter Buche und Eiche.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolfs-Röhrling</td><td>Rosa-ockerfarbener Hut, rote Poren, <b>kein Netz</b> am Stiel, blauendes Fleisch.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purpur-Röhrling</td><td>Purpurroter Hut, Fleisch wird <b>sofort</b> tintenblau.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Ochsen-Röhrling</td><td>Auffallend schwer und massig, ockergelber Hut mit Purpurtönen, stark blauend.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Blasse bis rosa Hüte, rote Poren, meist auf Kalk in warmen Laubwäldern.</td></tr>\n</table></div>\n<p class=\"rule\">Der Geschmack hilft nicht: Alle diese Arten schmecken mild. Bei Rotporern keine Geschmacksprobe machen.</p>\n\n<h3>Ungenießbare Doppelgänger (verderben das Essen, nicht giftig)</h3>\n<ul>\n<li><b>Gallen-Röhrling</b> (<i>Tylopilus felleus</i>) vs. Steinpilz: <b>rosa</b> Poren und <b>dunkelbraunes</b> Netz am Stiel. Der Steinpilz hat weiße bis gelbgrüne Poren und ein <b>weißes</b> Netz.</li>\n<li><b>Schönfuß-Röhrling</b> (<i>Caloboletus calopus</i>): rot genetzter Stiel, aber <b>gelbe</b> Poren.</li>\n<li><b>Pfeffer-Röhrling</b> (<i>Chalciporus piperatus</i>): klein, rostbraune Poren, gelbes Fleisch in der Stielbasis.</li>\n</ul>\n<p>Diese lassen sich gefahrlos erkennen: Ein winziges Stück mit der Zungenspitze kosten, dann ausspucken.</p>\n\n<h3>„Kein Rot, keine Verfärbung = sicher“? Nein.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Kiefern-Dünen Spaniens und Portugals): blasse Poren, blaut nicht, giftig.</li>\n<li><b>Raufüße</b> (<i>Leccinum</i>): keine roten Poren, Fleisch wird grau bis schwarz. Ungenügend gegart haben sie Vergiftungen verursacht.</li>\n<li><b>Alle Röhrlinge sind roh giftig</b>, auch der Steinpilz.</li>\n<li><b>Alte, matschige oder schimmelige Exemplare</b> verursachen in der Praxis viele „Röhrlingsvergiftungen“: verdorbenes Eiweiß statt Gift, aber echte Magenkrämpfe.</li>\n<li>Umgekehrt stimmt es auch nicht: Viele gute Speisepilze blauen (Maronen-, Flockenstieliger Hexen-, Schwarzblauender Röhrling). <i>Neoboletus venenatus</i> (Japan) hat <b>gelbe</b> Poren und ist giftig.</li>\n</ul>\n\n<h3>Ist es überhaupt ein Röhrling?</h3>\n<p>Unten muss ein <b>Schwamm aus Röhren</b> sein, keine Lamellen. Der Kahle Krempling (<i>Paxillus involutus</i>) ist mit den Röhrlingen verwandt, hat aber Lamellen und kann eine tödliche Immunreaktion auslösen. Kartoffelboviste (<i>Scleroderma</i>) sind giftig; auf ihnen wächst der Schmarotzer-Röhrling.</p>\n\n<h3>Sicherere Anfängerregel</h3>\n<ol>\n<li>Eindeutig Röhren und Poren auf der Unterseite.</li>\n<li>Poren nicht rot oder orange.</li>\n<li>Ein winziges Stück an der Zungenspitze (ausgespuckt) schmeckt nicht bitter oder pfeffrig.</li>\n<li>Nur feste, frische Exemplare.</li>\n<li>Mindestens 15 Minuten garen.</li>\n<li>Von Pilzsachverständigen (DGfM) prüfen lassen.</li>\n</ol>\n<p>Auch dann ist das ein Filter, keine Garantie.</p>\n<button class=\"show\" data-show=\"poisonous\">Alle giftigen Arten zeigen ↓</button>",
+      guide: "\n<h3>Die tödlichen: niemals verwechseln</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Art</th><th>Merkmale</th><th>Verwechselt mit</th></tr>\n<tr><td><i>Amanita phalloides</i><br>Grüner Knollenblätterpilz</td><td>Grünlicher Hut, <b>weiße Lamellen</b>, Ring, <b>sackartige Scheide</b> an der Knolle (oft im Boden verborgen). Leberversagen nach 6–24 Stunden.</td><td>Champignon, grüne Täublinge, Boviste (Ei-Stadium)</td></tr>\n<tr><td><i>Amanita virosa</i><br>Kegelhütiger Knollenblätterpilz</td><td>Rein weiß, weiße Lamellen, Ring und Scheide.</td><td>Wiesen- und Schaf-Champignon</td></tr>\n<tr><td><i>Galerina marginata</i><br>Gifthäubling</td><td>Kleine braune Büschel auf Holz, unterhalb des Rings silbrig faserig. Gleiches Gift wie der Knollenblätterpilz.</td><td>Stockschwämmchen, Hallimasch</td></tr>\n<tr><td><i>Cortinarius rubellus, C. orellanus</i><br>Tödliche Rauköpfe</td><td>Orangebraun, rostbraune Lamellen. Zerstören die Nieren; Beschwerden erst nach 2–20 Tagen.</td><td>Trompeten-Pfifferling</td></tr>\n<tr><td><i>Lepiota</i><br>Kleine Schirmlinge</td><td>Wie ein Parasol, aber unter 10 cm. Manche enthalten das Knollenblätterpilz-Gift.</td><td>Parasol</td></tr>\n<tr><td><i>Inosperma erubescens</i><br>Ziegelroter Risspilz</td><td>Weiß, ziegelrot verfärbend, kegeliger, eingerissener Hut; Frühling.</td><td>Mairitterling</td></tr>\n<tr><td><i>Gyromitra esculenta</i><br>Frühjahrs-Lorchel</td><td>Hirnartiger Hut, innen gekammert.</td><td>Morchel</td></tr>\n</table></div>\n<p class=\"rule\">Regeln für Lamellenpilze: die ganze Stielbasis ausgraben. Weiße Lamellen plus Ring oder Scheide — Finger weg. Nie kleine „Parasole“ essen. Büschelig auf Holz wachsende Pilze nur für Erfahrene.</p>\n\n<h3>Früher gegessen — heute als giftig eingestuft</h3>\n<p>Ältere Bücher und viele Großeltern nennen diese Pilze noch essbar. Sie sind es nicht.</p>\n<ul>\n<li><b>Nebelkappe</b> (<i>Clitocybe nebularis</i>): verursacht häufig Magen-Darm-Beschwerden; steht im Verdacht, schädliche Stoffe zu enthalten.</li>\n<li><b>Grünling</b> (<i>Tricholoma equestre</i>): mehrere Mahlzeiten hintereinander können einen Muskelzerfall auslösen — es gab Todesfälle.</li>\n<li><b>Kahler Krempling</b> (<i>Paxillus involutus</i>): nach wiederholtem Verzehr kann eine Immunreaktion die roten Blutkörperchen zerstören, manchmal tödlich.</li>\n<li><b>Frühjahrs-Lorchel</b> (<i>Gyromitra esculenta</i>): bis in die 1970er-Jahre auf Märkten verkauft; ihr Gift übersteht das Abkochen.</li>\n</ul>\n<button class=\"show\" data-show=\"formerly\">Diese Arten zeigen ↓</button>\n\n<h3>Röhrlinge: die Rotporen-Regel</h3>\n\n<p class=\"rule\">Hauptregel für Anfänger: Keine Röhrlinge mit roten oder orangen Poren essen. Fast alle giftigen Röhrlinge Mitteleuropas gehören zu dieser Gruppe.</p>\n<p>Die Gruppe enthält auch gute Speisepilze (z. B. den Flockenstieligen Hexen-Röhrling), die Erfahrene essen. Für Anfänger beseitigt der Verzicht auf die ganze Gruppe fast das gesamte Risiko.</p>\n\n<h3>Die giftigen Rotporer</h3>\n<div class=\"table-scroll\"><table>\n<tr><th>Art</th><th>Merkmale</th></tr>\n<tr><td><i>Rubroboletus satanas</i><br>Satans-Röhrling</td><td>Kreideweiß-grauer Hut, blutrote Poren, bauchiger Stiel mit rotem Netz. Alte Exemplare riechen nach Aas. Sommer, auf Kalk unter Buche und Eiche.</td></tr>\n<tr><td><i>Rubroboletus lupinus</i><br>Wolfs-Röhrling</td><td>Rosa-ockerfarbener Hut, rote Poren, <b>kein Netz</b> am Stiel, blauendes Fleisch.</td></tr>\n<tr><td><i>Imperator rhodopurpureus</i><br>Purpur-Röhrling</td><td>Purpurroter Hut, Fleisch wird <b>sofort</b> tintenblau.</td></tr>\n<tr><td><i>Imperator torosus</i><br>Ochsen-Röhrling</td><td>Auffallend schwer und massig, ockergelber Hut mit Purpurtönen, stark blauend.</td></tr>\n<tr><td><i>R. legaliae, R. rhodoxanthus, R. rubrosanguineus</i></td><td>Blasse bis rosa Hüte, rote Poren, meist auf Kalk in warmen Laubwäldern.</td></tr>\n</table></div>\n<p class=\"rule\">Der Geschmack hilft nicht: Alle diese Arten schmecken mild. Bei Rotporern keine Geschmacksprobe machen.</p>\n\n<h3>Ungenießbare Doppelgänger (verderben das Essen, nicht giftig)</h3>\n<ul>\n<li><b>Gallen-Röhrling</b> (<i>Tylopilus felleus</i>) vs. Steinpilz: <b>rosa</b> Poren und <b>dunkelbraunes</b> Netz am Stiel. Der Steinpilz hat weiße bis gelbgrüne Poren und ein <b>weißes</b> Netz.</li>\n<li><b>Schönfuß-Röhrling</b> (<i>Caloboletus calopus</i>): rot genetzter Stiel, aber <b>gelbe</b> Poren.</li>\n<li><b>Pfeffer-Röhrling</b> (<i>Chalciporus piperatus</i>): klein, rostbraune Poren, gelbes Fleisch in der Stielbasis.</li>\n</ul>\n<p>Diese lassen sich gefahrlos erkennen: Ein winziges Stück mit der Zungenspitze kosten, dann ausspucken.</p>\n\n<h3>„Kein Rot, keine Verfärbung = sicher“? Nein.</h3>\n<ul>\n<li><i>Gyroporus ammophilus</i> (Kiefern-Dünen Spaniens und Portugals): blasse Poren, blaut nicht, giftig.</li>\n<li><b>Raufüße</b> (<i>Leccinum</i>): keine roten Poren, Fleisch wird grau bis schwarz. Ungenügend gegart haben sie Vergiftungen verursacht.</li>\n<li><b>Alle Röhrlinge sind roh giftig</b>, auch der Steinpilz.</li>\n<li><b>Alte, matschige oder schimmelige Exemplare</b> verursachen in der Praxis viele „Röhrlingsvergiftungen“: verdorbenes Eiweiß statt Gift, aber echte Magenkrämpfe.</li>\n<li>Umgekehrt stimmt es auch nicht: Viele gute Speisepilze blauen (Maronen-, Flockenstieliger Hexen-, Schwarzblauender Röhrling). <i>Neoboletus venenatus</i> (Japan) hat <b>gelbe</b> Poren und ist giftig.</li>\n</ul>\n\n<h3>Ist es überhaupt ein Röhrling?</h3>\n<p>Unten muss ein <b>Schwamm aus Röhren</b> sein, keine Lamellen. Der Kahle Krempling (<i>Paxillus involutus</i>) ist mit den Röhrlingen verwandt, hat aber Lamellen und kann eine tödliche Immunreaktion auslösen. Kartoffelboviste (<i>Scleroderma</i>) sind giftig; auf ihnen wächst der Schmarotzer-Röhrling.</p>\n\n<h3>Sicherere Anfängerregel</h3>\n<ol>\n<li>Eindeutig Röhren und Poren auf der Unterseite.</li>\n<li>Poren nicht rot oder orange.</li>\n<li>Ein winziges Stück an der Zungenspitze (ausgespuckt) schmeckt nicht bitter oder pfeffrig.</li>\n<li>Nur feste, frische Exemplare.</li>\n<li>Mindestens 15 Minuten garen.</li>\n<li>Von Pilzsachverständigen (DGfM) prüfen lassen.</li>\n</ol>\n<p>Auch dann ist das ein Filter, keine Garantie.</p>\n<button class=\"show\" data-show=\"poisonous\">Alle giftigen Arten zeigen ↓</button>",
       empty: 'Keine passenden Arten.',
       noPhoto: 'Kein freies Foto verfügbar',
       taste: 'Geschmack', trap: 'Angenehmer Geschmack sagt nichts über Giftigkeit.',
       photos: n => `${n} Fotos`,
-      stage: { young: 'Jung', old: 'Alt', cut: 'Schnitt / Fleisch', pores: 'Poren' },
+      stage: { young: 'Jung', old: 'Alt', cut: 'Schnitt / Fleisch', pores: 'Unterseite' },
       prev: 'Vorheriges Foto', next: 'Nächstes Foto', close: 'Schließen',
-      footer: 'Fotos: Wikimedia Commons, jeweils verlinkt zur Dateiseite mit Urheber und Lizenz. Die Systematik folgt aktuellen Gattungskonzepten (z. B. <i>Rubroboletus satanas</i>, früher <i>Boletus satanas</i>). Umfasst die Röhrlinge Mitteleuropas sowie mediterrane und bemerkenswerte ausländische Arten; seltene Varietäten und erst kürzlich abgetrennte Kleinarten können fehlen. Weltweit umfasst allein die Familie Boletaceae weit über 1.000 Arten. <a href="quellen.html">Alle Quellen und Lizenzen →</a>',
+      footer: 'Fotos: Wikimedia Commons, jeweils verlinkt zur Dateiseite mit Urheber und Lizenz. Die Systematik folgt aktuellen Gattungskonzepten (z. B. <i>Rubroboletus satanas</i>, früher <i>Boletus satanas</i>). Umfasst die Röhrlinge Mitteleuropas sowie mediterrane und bemerkenswerte ausländische Arten, dazu die meistgesammelten anderen Speisepilze mit ihren gefährlichen Doppelgängern. Tausende weitere Pilzarten fehlen — dass ein Pilz hier nicht vorkommt, heißt nicht, dass er harmlos ist. <a href="quellen.html">Alle Quellen und Lizenzen →</a>',
       status: {
         poisonous: { badge: 'Giftig', warn: 'GIFTIG', sub: 'Nicht essen. Verursacht Vergiftungen, auch gekocht.' },
         bitter:    { badge: 'Ungenießbar', warn: 'SCHMECKT ÜBEL', sub: 'Ungenießbar — bitter, pfeffrig oder widerlich. Ein Exemplar verdirbt das ganze Gericht.' },
@@ -610,6 +626,8 @@
     },
   };
   const ICON = { poisonous: '☠', bitter: '✖' };
+  // Shown status: 'deadly' is a stronger 'poisonous' (same colour, own wording).
+  const stOf = (t, s) => s.deadly ? t.deadly : t.status[s.status];
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
   const store = {
@@ -618,13 +636,15 @@
   };
   let lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
   let filter = 'all';                                   // edibility / protection, set in the filter sheet
+  let kindF = 'all';                                    // bolete | gilled | other (ridges, spines, puffballs …)
+  const kindOf = s => s.kind === 'bolete' || s.kind === 'gilled' ? s.kind : 'other';
   const tog = { season: false, beginner: false };       // quick toggles above the list
   const q = document.getElementById('q');
   const list = document.getElementById('list');
 
   // One compact row per species: status first, then name; details open on tap.
   function row(s, idx) {
-    const t = T[lang], st = t.status[s.status], ph = s.photos ?? [];
+    const t = T[lang], st = stOf(t, s), ph = s.photos ?? [];
     const thumb = ph.length
       ? `<button class="sp-thumb" data-s="${idx}" data-i="0" aria-label="${t.photosOf}: ${esc(s.sci)}"><img src="${esc(ph[0].thumb)}" alt="" loading="lazy"></button>`
       : '<span class="sp-thumb"></span>';
@@ -632,7 +652,7 @@
     return `<article class="sp st-${s.status}" id="${esc(s.sci)}" data-s="${idx}">
       <div class="sp-row">${thumb}
         <div class="sp-main">
-          <div class="sp-status"><span class="${s.status}">${ICON[s.status] ? ICON[s.status] + ' ' : ''}${st.badge}</span>${prot}</div>
+          <div class="sp-status"><span class="${s.status}">${ICON[s.status] ? ICON[s.status] + ' ' : ''}${st.badge}</span>${s.formerly ? `<span class="bitter">${t.formerly}</span>` : ''}${prot}</div>
           <div class="sp-name">${esc(commonName(s))}${s.beginner ? `<span class="star" title="${t.starTip}">⭐</span>` : ''}</div>
           <div class="sp-sci">${esc(s.sci)}</div>
         </div>
@@ -644,7 +664,7 @@
 
   // Everything else about a species, built when its row is first opened.
   function detail(s, idx) {
-    const t = T[lang], st = t.status[s.status], ph = s.photos ?? [];
+    const t = T[lang], st = stOf(t, s), ph = s.photos ?? [];
     const strip = ph.length
       ? `<div class="strip">${ph.map((p, i) => `<button data-s="${idx}" data-i="${i}" aria-label="${esc(s.sci)} ${i + 1}">
           <img src="${esc(p.thumb)}" alt="" loading="lazy">${p.stage ? `<span class="tag">${t.stage[p.stage]}</span>` : ''}</button>`).join('')}</div>`
@@ -652,6 +672,8 @@
     const warn = st.warn
       ? `<div class="warn ${s.status}" role="alert"><span class="icon">${ICON[s.status]}</span>${st.warn}<small>${st.sub}</small></div>`
       : '';
+    const formerly = s.formerly ? `<p class="prot formerly">⚠ ${t.formerlyText}</p>` : '';
+    const gilled = s.kind === 'gilled' && (s.status === 'edible' || s.status === 'caution') ? `<p class="prot gilled">⚠ ${t.gilledNote}</p>` : '';
     const pr = s.protection && t.protect[s.protection];
     const protWarn = s.protection === 'strict'
       ? `<div class="warn protected" role="note">${pr.warn}<small>${pr.sub}</small></div>` : '';
@@ -668,10 +690,10 @@
       <div class="body">
         <div class="names">${names}</div>
         <p class="note">${esc(lang === 'de' ? s.note_de : s.note)}</p>
-        ${protNote}
+        ${formerly}${gilled}${protNote}
         <p class="taste"><b>${t.taste}:</b> ${esc(taste)}${trap}</p>
         ${twinsLine(s)}
-        <p class="habitat">🌳 ${habitat} · <a class="card-map" href="karte.html#${encodeURIComponent(s.sci)}">${t.onMap}</a></p>
+        <p class="habitat">🌳 ${habitat}${s.trees?.length ? ` · <a class="card-map" href="karte.html#${encodeURIComponent(s.sci)}">${t.onMap}</a>` : ''}</p>
         ${seasonChart(s)}
       </div>`;
   }
@@ -691,7 +713,7 @@
     const t = T[lang];
     const items = [
       ...(s.lookalikes ?? []).map(n => bySci.get(n)).map(o => {
-        const tag = o.status === 'poisonous' ? ' ☠' : o.status === 'bitter' ? ' ✖' : '';
+        const tag = o.deadly ? ' ☠☠' : o.status === 'poisonous' ? ' ☠' : o.status === 'bitter' ? ' ✖' : '';
         return `<a href="#${encodeURIComponent(o.sci)}" class="${o.status}">${esc(commonName(o))}${tag}</a>`;
       }),
       ...(s.extLookalikes ?? []).map(x => `<span class="${x.status}">${esc(lang === 'de' ? x.de : x.en)}${x.status === 'poisonous' ? ' ☠' : ''}</span>`),
@@ -728,6 +750,7 @@
   let shownOrder = [];
   let sortBy = 'popular';
   try { sortBy = localStorage.getItem('sort') || sortBy; } catch {}
+  document.querySelectorAll('[data-k]').forEach(b => b.addEventListener('click', () => { kindF = b.dataset.k; render(); }));
   document.querySelectorAll('[data-sort]').forEach(b => b.addEventListener('click', () => {
     sortBy = b.dataset.sort;
     try { localStorage.setItem('sort', sortBy); } catch {}
@@ -737,7 +760,8 @@
     const t = T[lang];
     const term = q.value.trim().toLowerCase();
     const shown = BOLETES.filter(s =>
-      (filter === 'all' || s.status === filter || (filter === 'protected' && s.protection)) &&
+      (filter === 'all' || s.status === filter || (filter === 'protected' && s.protection) || (filter === 'formerly' && s.formerly)) &&
+      (kindF === 'all' || kindOf(s) === kindF) &&
       (!tog.season || inSeason(s)) && (!tog.beginner || s.beginner) &&
       (!term || [s.sci, s.en, s.de, s.group].join(' ').toLowerCase().includes(term)));
     const groups = new Map();
@@ -760,7 +784,8 @@
     document.querySelectorAll('[data-t]').forEach(b => b.setAttribute('aria-pressed', tog[b.dataset.t]));
     document.querySelectorAll('[data-f]').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === filter));
     document.querySelectorAll('[data-sort]').forEach(b => b.setAttribute('aria-pressed', b.dataset.sort === sortBy));
-    const n = (filter !== 'all') + (sortBy !== 'popular');
+    document.querySelectorAll('[data-k]').forEach(b => b.setAttribute('aria-pressed', b.dataset.k === kindF));
+    const n = (filter !== 'all') + (kindF !== 'all') + (sortBy !== 'popular');
     const badge = document.getElementById('fcount');
     badge.textContent = n; badge.hidden = !n;
   }
@@ -788,7 +813,7 @@
   document.getElementById('fbtn').addEventListener('click', () => { sheet.hidden = false; });
   sheet.addEventListener('click', e => { if (e.target.closest('[data-close]')) sheet.hidden = true; });
   document.getElementById('sheet-reset').addEventListener('click', () => {
-    filter = 'all'; sortBy = 'popular';
+    filter = 'all'; kindF = 'all'; sortBy = 'popular';
     try { localStorage.setItem('sort', sortBy); } catch {}
     render();
   });
@@ -957,6 +982,7 @@
     // how far into its season we are, and how common it is.
     const picks = BOLETES
       .filter(s => (s.status === 'edible' || s.status === 'caution') && s.protection !== 'strict'
+        && (s.kind === 'bolete' || s.beginner)
         && !TreeGrid.NOT_IN_DE.has(s.sci) && Pilzwetter.inSeason(s, NOW))
       .map(s => {
         const share = cell ? trees.around(lat, lon, idx => trees.cellScore(trees.weights(s), idx)) : 10;
@@ -1033,7 +1059,7 @@
   document.querySelector('.guide').addEventListener('click', e => {
     const b = e.target.closest('[data-show]');
     if (!b) return;
-    filter = b.dataset.show; tog.season = tog.beginner = false; q.value = '';
+    filter = b.dataset.show; kindF = 'all'; tog.season = tog.beginner = false; q.value = '';
     render();
     location.hash = 'arten';
   });
