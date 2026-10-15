@@ -634,7 +634,7 @@
     get() { try { return localStorage.getItem('lang'); } catch { return null; } },
     set(v) { try { localStorage.setItem('lang', v); } catch {} },
   };
-  let lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+  let lang = store.get() || 'de';
   let filter = 'all';                                   // edibility / protection, set in the filter sheet
   let kindF = 'all';                                    // bolete | gilled | other (ridges, spines, puffballs …)
   const kindOf = s => s.kind === 'bolete' || s.kind === 'gilled' ? s.kind : 'other';

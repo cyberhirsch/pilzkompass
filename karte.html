@@ -143,7 +143,7 @@
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch {} },
   };
-  let lang = store.get('lang') || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+  let lang = store.get('lang') || 'de';
   let mode = 'species', choice = 'Boletus edulis', grid, meta, overlay;
 
   const map = L.map('map', { minZoom: 5, maxZoom: 17 }).setView([51.2, 10.4], 6);

@@ -127,7 +127,7 @@
     get() { try { return localStorage.getItem('lang'); } catch { return null; } },
     set(v) { try { localStorage.setItem('lang', v); } catch {} },
   };
-  let lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+  let lang = store.get() || 'de';
   const total = BOLETES.reduce((n, s) => n + (s.photos?.length ?? 0), 0);
 
   function renderPhotos() {

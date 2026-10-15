@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pilzkompass</title>
-<meta name="description" content="Pilzkompass: Pilze bestimmen mit KI, Pilzkarte, Pilzwetter und Giftpilz-Warnungen — als App für Android.">
+<meta name="description" content="Pilzkompass: KI-Bestimmungshilfe, Pilzkarte, Pilzwetter und Giftpilz-Warnungen — als App für Android.">
 <link rel="icon" href="app/icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -137,9 +137,9 @@
 <script>
   const T = {
     de: {
-      h1: 'Pilze finden.<br><span>Sicher</span> bestimmen.',
-      lede: 'Der Pilzkompass begleitet dich in den Wald: Er zeigt, wann und wo Pilze wachsen, erkennt sie per Foto und warnt laut vor jedem giftigen Doppelgänger. Probier die App direkt hier im Telefon aus.',
-      f1: '📷 KI-Bestimmung', f1t: 'Drei Fotos mit Schablone, die KI läuft offline auf dem Gerät.',
+      h1: 'Pilze finden.<br>Gefahren <span>erkennen</span>.',
+      lede: 'Der Pilzkompass begleitet dich in den Wald: Er zeigt, wann und wo Pilze wachsen, schlägt per Foto vor, welche Arten infrage kommen, und warnt laut vor jedem giftigen Doppelgänger. Probier die App direkt hier im Telefon aus.',
+      f1: '📷 KI-Bestimmungshilfe', f1t: 'Drei Fotos mit Schablone; die KI grenzt ein, läuft offline auf dem Gerät und ersetzt keine Pilzberatung.',
       f2: '🍄 156 Arten', f2t: 'Alle Röhrlinge, die wichtigsten Speisepilze und ihre gefährlichen Doppelgänger.',
       f3: '🗺 Pilzkarte', f3t: 'Baumarten auf 10 m genau: Wo stehen die Partnerbäume deines Pilzes?',
       f4: '🌦 Pilzwetter', f4t: 'Regen und Temperatur der letzten 14 Tage — wann lohnt sich der Gang in den Wald?',
@@ -150,9 +150,9 @@
       foot: 'Pilzkompass · Fotos: Wikimedia Commons · Baumdaten: Thünen-Institut · Wetter: DWD',
     },
     en: {
-      h1: 'Find mushrooms.<br>Identify them <span>safely</span>.',
-      lede: 'Pilzkompass comes with you to the forest: it shows when and where mushrooms grow, recognises them from photos and warns loudly about every poisonous look-alike. Try the app right here in the phone.',
-      f1: '📷 AI identification', f1t: 'Three photos with a guide outline; the AI runs offline on the device.',
+      h1: 'Find mushrooms.<br>Spot the <span>dangers</span>.',
+      lede: 'Pilzkompass comes with you to the forest: it shows when and where mushrooms grow, suggests from photos which species they might be, and warns loudly about every poisonous look-alike. Try the app right here in the phone.',
+      f1: '📷 AI identification aid', f1t: 'Three photos with a guide outline; the AI narrows it down, runs offline and does not replace an expert.',
       f2: '🍄 156 species', f2t: 'All boletes, the most important edible mushrooms and their dangerous look-alikes.',
       f3: '🗺 Mushroom map', f3t: 'Tree species at 10 m: where do your mushroom’s partner trees grow?',
       f4: '🌦 Mushroom weather', f4t: 'Rain and temperature of the last 14 days — is it worth going out?',
@@ -165,7 +165,7 @@
   };
   const frame = document.getElementById('app');
   let lang = 'de';
-  try { lang = localStorage.getItem('lang') || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en'); } catch {}
+  try { lang = localStorage.getItem('lang') || 'de'; } catch {}
 
   function setLang(l) {
     lang = l;
