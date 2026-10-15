@@ -132,7 +132,7 @@ def main():
 
     for name in ("index.html", "bestimmen.html", "karte.html", "quellen.html"):
         page(name)
-    for name in ("icon.svg", "wetter.js", "trees.js"):
+    for name in ("icon.svg", "wetter.js", "trees.js", "nav.js"):
         shutil.copy(PROJECT / name, WWW / name)
     for name in ("boletus.onnx", "boletus-classes.json", "photo-credits.csv"):
         shutil.copy(PROJECT / "model" / name, WWW / "model" / name)

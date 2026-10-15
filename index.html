@@ -30,24 +30,13 @@
   }
   a { color: inherit; }
 
-  header { position: relative; padding: 56px 16px 24px; max-width: 1240px; margin: 0 auto; }
-  .lang { position: absolute; top: 20px; right: 16px; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  header.top { display: flex; align-items: center; gap: 12px; padding: 18px 16px 10px; max-width: 1240px; margin: 0 auto; }
+  .lang { margin-left: auto; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
   .lang button { background: var(--surface); color: var(--muted); border: 0; padding: 6px 14px; font: 700 12px Inter, sans-serif; letter-spacing: .06em; cursor: pointer; }
   .lang button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
-  .ai-link {
-    display: inline-block; margin-top: 16px; padding: 9px 18px; border-radius: 999px;
-    background: var(--caution); color: #14110d; text-decoration: none; font: 700 14px Inter, sans-serif;
-  }
-  .map-link { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); margin-left: 6px; }
   .card-map { font-size: 12px; color: var(--muted); }
-  .card { scroll-margin-top: 80px; }
-  .card:target { outline: 3px solid var(--caution); outline-offset: 3px; }
-  h1 {
-    font: 900 clamp(40px, 7vw, 76px)/1 Fraunces, Georgia, serif;
-    margin: 0 0 12px; letter-spacing: -0.02em;
-  }
+  h1 { font: 900 32px/1 Fraunces, Georgia, serif; margin: 0; letter-spacing: -0.02em; }
   h1 span { color: var(--caution); }
-  .lede { color: var(--muted); max-width: 640px; margin: 0; }
 
   .disclaimer {
     max-width: 1240px; margin: 24px auto 0; padding: 0 16px;
@@ -90,14 +79,17 @@
     position: sticky; top: 0; z-index: 5; background: rgba(20, 17, 13, .94);
     backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
   }
-  .controls-inner {
-    max-width: 1240px; margin: 0 auto; padding: 12px 16px;
-    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
-  }
+  .controls-inner { max-width: 760px; margin: 0 auto; padding: 10px 16px; display: grid; gap: 8px; }
+  .controls .row1, .controls .row2 { display: flex; gap: 8px; align-items: center; }
   .controls input {
-    flex: 1 1 220px; min-width: 0; padding: 9px 12px; border-radius: 8px;
+    flex: 1; min-width: 0; padding: 9px 12px; border-radius: 8px;
     border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit;
   }
+  .fbtn { flex: none; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface);
+    color: var(--text); border-radius: 8px; padding: 8px 12px; font: 600 14px Inter, sans-serif; cursor: pointer; }
+  .fbtn b { background: var(--caution); color: #14110d; border-radius: 999px; min-width: 18px; padding: 0 5px; font: 800 11px/18px Inter, sans-serif; text-align: center; }
+  .fbtn b[hidden] { display: none; }
+  .controls .row2 .chip { white-space: nowrap; }
   .chip {
     border: 1px solid var(--line); background: var(--surface); color: var(--text);
     padding: 7px 12px; border-radius: 999px; font: 500 13px Inter, sans-serif; cursor: pointer;
@@ -105,14 +97,14 @@
   }
   .chip .dot { width: 9px; height: 9px; border-radius: 50%; }
   .chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
-  .count { color: var(--muted); font-size: 13px; margin-left: auto; }
+  .count { color: var(--muted); font-size: 12px; margin: 6px 0 8px; }
   .sort { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
   .sort select { background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; }
 
-  main { max-width: 1240px; margin: 0 auto; padding: 8px 16px 64px; }
+  main { max-width: 760px; margin: 0 auto; padding: 4px 16px 32px; }
   h2 {
-    font: 700 26px/1.2 Fraunces, Georgia, serif; margin: 40px 0 14px;
-    padding-bottom: 8px; border-bottom: 1px solid var(--line);
+    font: 700 20px/1.2 Fraunces, Georgia, serif; margin: 22px 0 10px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--line);
   }
   h2 small { font: 400 13px Inter, sans-serif; color: var(--muted); margin-left: 8px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
@@ -133,6 +125,41 @@
     position: absolute; right: 6px; bottom: 6px; font-size: 10px; text-decoration: none;
     background: rgba(0,0,0,.6); color: #ddd; padding: 2px 6px; border-radius: 4px;
   }
+
+  /* Compact species rows: status first, details on tap */
+  .sp { background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--muted);
+    border-radius: var(--radius); margin: 0 0 8px; overflow: hidden; scroll-margin-top: 120px; }
+  .sp.st-poisonous { border-left-color: var(--poison); background: rgba(229, 50, 45, .08); }
+  .sp.st-bitter { border-left-color: var(--bitter); }
+  .sp.st-caution { border-left-color: var(--caution); }
+  .sp.st-edible { border-left-color: var(--edible); }
+  .sp-row { display: flex; gap: 12px; align-items: center; padding: 8px 10px 8px 8px; cursor: pointer; }
+  .sp-thumb { flex: none; width: 64px; height: 64px; padding: 0; border: 0; border-radius: 8px; overflow: hidden;
+    background: var(--surface-2); cursor: zoom-in; }
+  .sp-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sp-main { flex: 1; min-width: 0; }
+  .sp-status { display: flex; flex-wrap: wrap; gap: 4px 10px; font: 800 11px/1.4 Inter, sans-serif; letter-spacing: .05em; text-transform: uppercase; }
+  .sp-status .poisonous { color: var(--poison); } .sp-status .bitter { color: var(--bitter); }
+  .sp-status .caution { color: var(--caution); } .sp-status .edible { color: var(--edible); }
+  .sp-status .inedible { color: var(--muted); } .sp-status .protected { color: #7fb0e8; }
+  .sp-name { font: 700 17px/1.25 Fraunces, Georgia, serif; margin-top: 1px; }
+  .sp-sci { font: italic 400 13px/1.3 Fraunces, Georgia, serif; color: var(--muted); }
+  .sp-chev { flex: none; color: var(--muted); transition: transform .15s; }
+  .sp.open .sp-chev { transform: rotate(90deg); }
+  .sp-detail { border-top: 1px solid var(--line); }
+  .sp-detail .warn { font-size: 18px; }
+  .sp-detail .strip { background: transparent; padding: 8px 8px 0; }
+
+  /* Filter sheet */
+  .sheet { position: fixed; inset: 0; z-index: 35; }
+  .sheet[hidden] { display: none; }
+  .sheet-back { position: absolute; inset: 0; background: rgba(0, 0, 0, .55); }
+  .sheet-panel { position: absolute; left: 0; right: 0; bottom: 0; max-width: 760px; margin: 0 auto; background: var(--surface);
+    border: 1px solid var(--line); border-radius: 16px 16px 0 0; padding: 18px 16px calc(18px + env(safe-area-inset-bottom)); }
+  .sheet-panel h3 { margin: 0 0 6px; font: 700 20px Fraunces, Georgia, serif; }
+  .sheet-lbl { margin: 14px 0 8px; color: var(--muted); font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: .05em; }
+  .opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .sheet-actions { display: flex; justify-content: space-between; gap: 8px; margin-top: 20px; }
 
   /* The big warnings */
   .warn {
@@ -315,14 +342,12 @@
 </head>
 <body>
 
-<header>
+<div id="v-today">
+<header class="top">
+  <h1>Pilz<span>kompass</span></h1>
   <div class="lang" role="group" aria-label="Language / Sprache">
     <button data-lang="de">DE</button><button data-lang="en">EN</button>
   </div>
-  <h1>Pilz<span>kompass</span></h1>
-  <p class="lede" data-i18n="lede"></p>
-  <a class="ai-link" href="bestimmen.html" data-i18n="aiLink"></a>
-  <a class="ai-link map-link" href="karte.html" data-i18n="mapLink"></a>
 </header>
 
 <section class="greet-wrap"><div class="greet" id="greet" hidden aria-live="polite"></div></section>
@@ -348,28 +373,52 @@
     <div class="wx-out" id="wx-out" aria-live="polite"></div>
   </div>
 </section>
+</div>
 
+<div id="v-species" hidden>
 <nav class="controls" aria-label="Filter">
   <div class="controls-inner">
-    <input id="q" type="search">
-    <button class="chip" data-f="all" aria-pressed="true" data-i18n="f_all"></button>
-    <button class="chip" data-f="poisonous" aria-pressed="false"><span class="dot" style="background:var(--poison)"></span><span data-i18n="f_poisonous"></span></button>
-    <button class="chip" data-f="bitter" aria-pressed="false"><span class="dot" style="background:var(--bitter)"></span><span data-i18n="f_bitter"></span></button>
-    <button class="chip" data-f="caution" aria-pressed="false"><span class="dot" style="background:var(--caution)"></span><span data-i18n="f_caution"></span></button>
-    <button class="chip" data-f="edible" aria-pressed="false"><span class="dot" style="background:var(--edible)"></span><span data-i18n="f_edible"></span></button>
-    <button class="chip" data-f="inedible" aria-pressed="false"><span class="dot" style="background:var(--muted)"></span><span data-i18n="f_inedible"></span></button>
-    <button class="chip" data-f="protected" aria-pressed="false"><span class="dot" style="background:var(--protect)"></span><span data-i18n="f_protected"></span></button>
-    <button class="chip" data-f="season" aria-pressed="false"><span class="dot" style="background:var(--text)"></span><span data-i18n="f_season"></span></button>
-    <button class="chip" data-f="beginner" aria-pressed="false">⭐ <span data-i18n="f_beginner"></span></button>
-    <label class="sort"><span data-i18n="sortLabel"></span>
-      <select id="sort"><option value="popular" data-i18n="sortPopular"></option><option value="genus" data-i18n="sortGenus"></option></select></label>
-    <span class="count" id="count"></span>
+    <div class="row1">
+      <input id="q" type="search" autocomplete="off">
+      <button class="fbtn" id="fbtn" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span data-i18n="filterBtn"></span><b id="fcount" hidden></b></button>
+    </div>
+    <div class="row2">
+      <button class="chip" data-t="season" aria-pressed="false" data-i18n="f_season"></button>
+      <button class="chip" data-t="beginner" aria-pressed="false">⭐ <span data-i18n="f_beginner"></span></button>
+    </div>
   </div>
 </nav>
 
-<main id="list"></main>
+<main><p class="count" id="count"></p><div id="list"></div></main>
 
 <footer data-i18n="footer"></footer>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-back" data-close></div>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <h3 id="sheet-title" data-i18n="filterTitle"></h3>
+    <p class="sheet-lbl" data-i18n="filterStatus"></p>
+    <div class="opts">
+      <button class="chip" data-f="all" data-i18n="f_all"></button>
+      <button class="chip" data-f="poisonous"><span class="dot" style="background:var(--poison)"></span><span data-i18n="f_poisonous"></span></button>
+      <button class="chip" data-f="bitter"><span class="dot" style="background:var(--bitter)"></span><span data-i18n="f_bitter"></span></button>
+      <button class="chip" data-f="caution"><span class="dot" style="background:var(--caution)"></span><span data-i18n="f_caution"></span></button>
+      <button class="chip" data-f="edible"><span class="dot" style="background:var(--edible)"></span><span data-i18n="f_edible"></span></button>
+      <button class="chip" data-f="inedible"><span class="dot" style="background:var(--muted)"></span><span data-i18n="f_inedible"></span></button>
+      <button class="chip" data-f="protected"><span class="dot" style="background:var(--protect)"></span><span data-i18n="f_protected"></span></button>
+    </div>
+    <p class="sheet-lbl" data-i18n="sortLabel"></p>
+    <div class="opts">
+      <button class="chip" data-sort="popular" data-i18n="sortPopular"></button>
+      <button class="chip" data-sort="genus" data-i18n="sortGenus"></button>
+    </div>
+    <div class="sheet-actions">
+      <button class="wx-btn" id="sheet-reset" data-i18n="filterReset"></button>
+      <button class="wx-btn primary" data-close data-i18n="filterDone"></button>
+    </div>
+  </div>
+</div>
 
 <div class="viewer" id="viewer" role="dialog" aria-modal="true">
   <img class="v-img" id="v-img" alt="">
@@ -384,6 +433,7 @@
 <script src="data.js"></script>
 <script src="wetter.js"></script>
 <script src="trees.js"></script>
+<script src="nav.js"></script>
 <script>
   const T = {
     en: {
@@ -391,7 +441,8 @@
       lede: 'The boletes of Central Europe — true <i>Boletus</i> and every genus split from it, plus the rough-stalks, slippery jacks and a few notorious poisonous species from abroad. Poisonous and foul-tasting species carry a warning you cannot miss.',
       disclaimer: '<strong>Never eat a mushroom based on a website or photo.</strong> Identification needs several features at once — pores, flesh colour change, stem, smell, habitat. Have every find checked by a certified mushroom expert (in Germany: DGfM Pilzsachverständige). Almost all boletes are poisonous raw — always cook thoroughly (at least 15 minutes). Taste is no guide: several poisonous boletes taste mild and pleasant. Taste descriptions here come from the literature — never swallow a tasting sample. Blue 🛡 marks species protected in Germany. ⭐ = beginner-friendly: tastes good, no poisonous or inedible look-alike.',
       search: 'Search Latin, English or German name…',
-      f_all: 'All', f_poisonous: 'Poisonous', f_bitter: 'Tastes bad', f_caution: 'Cook thoroughly', f_edible: 'Edible', f_inedible: 'Not edible', f_protected: 'Protected', f_season: 'In season now', sortLabel: 'Sort:', sortPopular: 'Popularity', sortGenus: 'Genus',
+      f_all: 'All', f_poisonous: 'Poisonous', f_bitter: 'Tastes bad', f_caution: 'Cook thoroughly', f_edible: 'Edible', f_inedible: 'Not edible', f_protected: 'Protected', f_season: 'In season now', sortLabel: 'Sort by',
+      filterBtn: 'Filter', filterTitle: 'Filter', filterStatus: 'Edibility', filterReset: 'Reset', filterDone: 'Done', photosOf: 'Photos', sortPopular: 'Popularity', sortGenus: 'Genus',
       popularHead: 'By popularity', popularNote: 'most reported finds in Europe (GBIF) first', f_beginner: 'Beginner-friendly',
       starTip: 'Beginner-friendly: tastes good and has no poisonous or inedible look-alike',
       twins: 'Can be confused with',
@@ -466,7 +517,7 @@
       status: {
         poisonous: { badge: 'Poisonous', warn: 'POISONOUS', sub: 'Do not eat. Causes poisoning even when cooked.' },
         bitter:    { badge: 'Tastes bad', warn: 'TASTES TERRIBLE', sub: 'Inedible — bitter, peppery or foul. One specimen spoils the whole dish.' },
-        caution:   { badge: 'Edible only well cooked' },
+        caution:   { badge: 'Only well cooked' },
         inedible:  { badge: 'Not edible' },
         edible:    { badge: 'Edible' },
       },
@@ -476,7 +527,8 @@
       lede: 'Die Röhrlinge Mitteleuropas — echte <i>Boletus</i> und alle davon abgetrennten Gattungen, dazu Raufüße, Schmierröhrlinge und einige berüchtigte Giftpilze aus aller Welt. Giftige und ungenießbare Arten tragen eine Warnung, die man nicht übersehen kann.',
       disclaimer: '<strong>Niemals einen Pilz aufgrund einer Website oder eines Fotos essen.</strong> Zur Bestimmung braucht es mehrere Merkmale zugleich — Poren, Verfärbung des Fleisches, Stiel, Geruch, Standort. Jeden Fund von geprüften Pilzsachverständigen (DGfM) kontrollieren lassen. Fast alle Röhrlinge sind roh giftig — immer gründlich garen (mindestens 15 Minuten). Der Geschmack ist kein Kriterium: mehrere giftige Röhrlinge schmecken mild und angenehm. Die Geschmacksangaben stammen aus der Literatur — Kostproben niemals schlucken. Blaues 🛡 markiert in Deutschland geschützte Arten. ⭐ = anfängerfreundlich: schmeckt gut, kein giftiger oder ungenießbarer Doppelgänger.',
       search: 'Lateinischen, deutschen oder englischen Namen suchen…',
-      f_all: 'Alle', f_poisonous: 'Giftig', f_bitter: 'Ungenießbar', f_caution: 'Gut durchgaren', f_edible: 'Essbar', f_inedible: 'Kein Speisepilz', f_protected: 'Geschützt', f_season: 'Jetzt in Saison', sortLabel: 'Sortieren:', sortPopular: 'Beliebtheit', sortGenus: 'Gattung',
+      f_all: 'Alle', f_poisonous: 'Giftig', f_bitter: 'Ungenießbar', f_caution: 'Gut durchgaren', f_edible: 'Essbar', f_inedible: 'Kein Speisepilz', f_protected: 'Geschützt', f_season: 'Jetzt in Saison', sortLabel: 'Sortieren nach',
+      filterBtn: 'Filter', filterTitle: 'Filter', filterStatus: 'Essbarkeit', filterReset: 'Zurücksetzen', filterDone: 'Fertig', photosOf: 'Fotos', sortPopular: 'Beliebtheit', sortGenus: 'Gattung',
       popularHead: 'Nach Beliebtheit', popularNote: 'die am häufigsten gefundenen Arten in Europa (GBIF) zuerst', f_beginner: 'Anfängerfreundlich',
       starTip: 'Anfängerfreundlich: schmeckt gut und hat keinen giftigen oder ungenießbaren Doppelgänger',
       twins: 'Verwechslung mit',
@@ -551,7 +603,7 @@
       status: {
         poisonous: { badge: 'Giftig', warn: 'GIFTIG', sub: 'Nicht essen. Verursacht Vergiftungen, auch gekocht.' },
         bitter:    { badge: 'Ungenießbar', warn: 'SCHMECKT ÜBEL', sub: 'Ungenießbar — bitter, pfeffrig oder widerlich. Ein Exemplar verdirbt das ganze Gericht.' },
-        caution:   { badge: 'Nur gut durchgegart essbar' },
+        caution:   { badge: 'Nur gut durchgegart' },
         inedible:  { badge: 'Kein Speisepilz' },
         edible:    { badge: 'Essbar' },
       },
@@ -565,20 +617,35 @@
     set(v) { try { localStorage.setItem('lang', v); } catch {} },
   };
   let lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
-  let filter = 'all';
+  let filter = 'all';                                   // edibility / protection, set in the filter sheet
+  const tog = { season: false, beginner: false };       // quick toggles above the list
   const q = document.getElementById('q');
   const list = document.getElementById('list');
 
-  function card(s, idx) {
-    const t = T[lang], st = t.status[s.status];
-    const ph = s.photos ?? [];
-    const credit = p => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(p.file.replace(/ /g, '_'))}`;
-    const img = ph.length
-      ? `<img src="${esc(ph[0].src)}" alt="${esc(s.sci)}" loading="lazy">
-         ${ph.length > 1 ? `<span class="n">${t.photos(ph.length)}</span>` : ''}
-         <a class="credit" href="${credit(ph[0])}" target="_blank" rel="noopener">Wikimedia</a>`
-      : `<div class="none">${t.noPhoto}</div>`;
-    const strip = ph.length > 1
+  // One compact row per species: status first, then name; details open on tap.
+  function row(s, idx) {
+    const t = T[lang], st = t.status[s.status], ph = s.photos ?? [];
+    const thumb = ph.length
+      ? `<button class="sp-thumb" data-s="${idx}" data-i="0" aria-label="${t.photosOf}: ${esc(s.sci)}"><img src="${esc(ph[0].thumb)}" alt="" loading="lazy"></button>`
+      : '<span class="sp-thumb"></span>';
+    const prot = s.protection === 'strict' ? `<span class="protected">${t.vProtected}</span>` : '';
+    return `<article class="sp st-${s.status}" id="${esc(s.sci)}" data-s="${idx}">
+      <div class="sp-row">${thumb}
+        <div class="sp-main">
+          <div class="sp-status"><span class="${s.status}">${ICON[s.status] ? ICON[s.status] + ' ' : ''}${st.badge}</span>${prot}</div>
+          <div class="sp-name">${esc(commonName(s))}${s.beginner ? `<span class="star" title="${t.starTip}">⭐</span>` : ''}</div>
+          <div class="sp-sci">${esc(s.sci)}</div>
+        </div>
+        <svg class="sp-chev" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </div>
+      <div class="sp-detail" hidden></div>
+    </article>`;
+  }
+
+  // Everything else about a species, built when its row is first opened.
+  function detail(s, idx) {
+    const t = T[lang], st = t.status[s.status], ph = s.photos ?? [];
+    const strip = ph.length
       ? `<div class="strip">${ph.map((p, i) => `<button data-s="${idx}" data-i="${i}" aria-label="${esc(s.sci)} ${i + 1}">
           <img src="${esc(p.thumb)}" alt="" loading="lazy">${p.stage ? `<span class="tag">${t.stage[p.stage]}</span>` : ''}</button>`).join('')}</div>`
       : '';
@@ -597,12 +664,8 @@
       ...(s.extra ?? []).map(k => `<b>${t.extra[k]}</b>`),
     ].filter(Boolean).join(' · ');
     const trap = s.status === 'poisonous' && /^mild/i.test(taste) ? `<span class="trap">⚠ ${t.trap}</span>` : '';
-    return `<article class="card ${s.status}${s.protection ? ' protected-' + s.protection : ''}" id="${esc(s.sci)}" data-s="${idx}" data-i="0">
-      ${warn}${protWarn}
-      <div class="photo" data-s="${idx}" data-i="0">${img}</div>
-      ${strip}
+    return `${warn}${protWarn}${strip}
       <div class="body">
-        <div class="sci">${esc(s.sci)}${s.beginner ? `<span class="star" title="${t.starTip}">⭐</span>` : ''}</div>
         <div class="names">${names}</div>
         <p class="note">${esc(lang === 'de' ? s.note_de : s.note)}</p>
         ${protNote}
@@ -610,9 +673,14 @@
         ${twinsLine(s)}
         <p class="habitat">🌳 ${habitat} · <a class="card-map" href="karte.html#${encodeURIComponent(s.sci)}">${t.onMap}</a></p>
         ${seasonChart(s)}
-        <span class="badge ${s.status}">${st.badge}</span>
-      </div>
-    </article>`;
+      </div>`;
+  }
+
+  function openRow(el, open = !el.classList.contains('open')) {
+    const d = el.querySelector('.sp-detail'), idx = +el.dataset.s;
+    if (open && !d.innerHTML) d.innerHTML = detail(BOLETES[idx], idx);
+    d.hidden = !open;
+    el.classList.toggle('open', open);
   }
 
   const bySci = new Map(BOLETES.map(s => [s.sci, s]));
@@ -660,14 +728,17 @@
   let shownOrder = [];
   let sortBy = 'popular';
   try { sortBy = localStorage.getItem('sort') || sortBy; } catch {}
-  const sortSel = document.getElementById('sort');
-  sortSel.value = sortBy;
-  sortSel.addEventListener('change', () => { sortBy = sortSel.value; try { localStorage.setItem('sort', sortBy); } catch {} render(); });
+  document.querySelectorAll('[data-sort]').forEach(b => b.addEventListener('click', () => {
+    sortBy = b.dataset.sort;
+    try { localStorage.setItem('sort', sortBy); } catch {}
+    render();
+  }));
   function render() {
     const t = T[lang];
     const term = q.value.trim().toLowerCase();
     const shown = BOLETES.filter(s =>
-      (filter === 'all' || s.status === filter || (filter === 'protected' && s.protection) || (filter === 'season' && inSeason(s)) || (filter === 'beginner' && s.beginner)) &&
+      (filter === 'all' || s.status === filter || (filter === 'protected' && s.protection)) &&
+      (!tog.season || inSeason(s)) && (!tog.beginner || s.beginner) &&
       (!term || [s.sci, s.en, s.de, s.group].join(' ').toLowerCase().includes(term)));
     const groups = new Map();
     if (sortBy === 'popular') {
@@ -678,9 +749,20 @@
     shownOrder = [...groups.values()].flat();
     list.innerHTML = shown.length
       ? [...groups].map(([g, items]) =>
-          `<h2>${g ? `<i>${esc(g)}</i>` : t.popularHead}<small>${g ? t.species(items.length) : t.popularNote}</small></h2><div class="grid">${items.map(s => card(s, BOLETES.indexOf(s))).join('')}</div>`).join('')
+          `${g ? `<h2><i>${esc(g)}</i><small>${t.species(items.length)}</small></h2>` : ''}${items.map(s => row(s, BOLETES.indexOf(s))).join('')}`).join('')
       : `<p class="empty">${t.empty}</p>`;
-    document.getElementById('count').textContent = t.count(shown.length, BOLETES.length);
+    document.getElementById('count').textContent = t.species(shown.length);
+    syncControls();
+  }
+
+  // Pressed states of the quick toggles and the filter sheet; badge = active sheet settings.
+  function syncControls() {
+    document.querySelectorAll('[data-t]').forEach(b => b.setAttribute('aria-pressed', tog[b.dataset.t]));
+    document.querySelectorAll('[data-f]').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === filter));
+    document.querySelectorAll('[data-sort]').forEach(b => b.setAttribute('aria-pressed', b.dataset.sort === sortBy));
+    const n = (filter !== 'all') + (sortBy !== 'popular');
+    const badge = document.getElementById('fcount');
+    badge.textContent = n; badge.hidden = !n;
   }
 
   function setLang(l) {
@@ -700,11 +782,51 @@
   }
 
   document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
-  document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
-    filter = b.dataset.f;
-    document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+  document.querySelectorAll('[data-f]').forEach(b => b.addEventListener('click', () => { filter = b.dataset.f; render(); }));
+  document.querySelectorAll('[data-t]').forEach(b => b.addEventListener('click', () => { tog[b.dataset.t] = !tog[b.dataset.t]; render(); }));
+  const sheet = document.getElementById('sheet');
+  document.getElementById('fbtn').addEventListener('click', () => { sheet.hidden = false; });
+  sheet.addEventListener('click', e => { if (e.target.closest('[data-close]')) sheet.hidden = true; });
+  document.getElementById('sheet-reset').addEventListener('click', () => {
+    filter = 'all'; sortBy = 'popular';
+    try { localStorage.setItem('sort', sortBy); } catch {}
     render();
-  }));
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) sheet.hidden = true; });
+
+  // ----- Two views on this page: "Heute" (greeting, weather, guide) and "Arten" (the list) -----
+  // #arten shows the list, #<species> opens that species in it, anything else shows Heute.
+  function setView(v) {
+    if (document.body.dataset.view === v) return;
+    document.body.dataset.view = v;
+    document.getElementById('v-today').hidden = v !== 'today';
+    document.getElementById('v-species').hidden = v !== 'species';
+    scrollTo(0, 0);
+  }
+  function route() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (id !== 'arten' && !bySci.has(id)) {
+      setView('today');
+      if (id && id !== 'heute') document.getElementById(id)?.scrollIntoView();
+      return;
+    }
+    setView('species');
+    if (!bySci.has(id)) return;
+    let el = document.getElementById(id);
+    if (!el) {   // hidden by a filter: show everything again
+      filter = 'all'; tog.season = tog.beginner = false; q.value = '';
+      render();
+      el = document.getElementById(id);
+    }
+    openRow(el, true);
+    el.scrollIntoView({ block: 'start' });
+  }
+  // Show a species in the list; also when the hash already points at it.
+  function showSpecies(sci) {
+    const hash = '#' + encodeURIComponent(sci);
+    if (location.hash === hash) route(); else location.hash = hash;
+  }
+  addEventListener('hashchange', route);
   q.addEventListener('input', render);
 
   // ----- Pilzwetter (DWD via Bright Sky, no key needed) -----
@@ -796,8 +918,9 @@
       <div class="wx-season">${t.inSeason(nSeason)} <button class="wx-btn" id="wx-show">${t.showSeason}</button></div>
       <div class="wx-note">${t.wxSource}</div>`;
     document.getElementById('wx-show').onclick = () => {
-      document.querySelector('.chip[data-f="season"]').click();
-      document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
+      filter = 'all'; tog.season = true; tog.beginner = false; q.value = '';
+      render();
+      location.hash = 'arten';
     };
   }
 
@@ -910,8 +1033,9 @@
   document.querySelector('.guide').addEventListener('click', e => {
     const b = e.target.closest('[data-show]');
     if (!b) return;
-    document.querySelector(`.chip[data-f="${b.dataset.show}"]`).click();
-    document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
+    filter = b.dataset.show; tog.season = tog.beginner = false; q.value = '';
+    render();
+    location.hash = 'arten';
   });
 
   // ----- Viewer: ←/→ photos of this mushroom, ↑ its look-alikes, ↓ next search result -----
@@ -988,10 +1112,11 @@
 
   // Tap a card (or one of its photos) to open the viewer.
   list.addEventListener('click', e => {
-    if (e.target.closest('a, button.chip, svg')) return;
-    const el = e.target.closest('[data-s]');
-    if (!el) return;
-    vOpen(BOLETES[+el.dataset.s], +el.dataset.i || 0);
+    if (e.target.closest('a, .season')) return;
+    const photo = e.target.closest('[data-i]');
+    if (photo) return vOpen(BOLETES[+photo.dataset.s], +photo.dataset.i || 0);
+    const r = e.target.closest('.sp-row');
+    if (r) openRow(r.parentElement);
   });
   document.getElementById('v-close').onclick = () => vClose();
   document.getElementById('v-prev').onclick = () => vPhoto(-1);
@@ -1002,7 +1127,7 @@
     if (a.dataset.v === 'twin') vTwin();
     if (a.dataset.v === 'next') vNext(1);
     if (a.dataset.v === 'back') { V.twin = -1; V.p = 0; vShow(1); }
-    if (a.dataset.v === 'card') { e.preventDefault(); const id = current().sci; vClose(); setTimeout(() => document.getElementById(id)?.scrollIntoView(), 50); }
+    if (a.dataset.v === 'card') { e.preventDefault(); const id = current().sci; vClose(); setTimeout(() => showSpecies(id), 80); }
   });
 
   // Swipes: dominant axis decides; 40 px threshold.
@@ -1027,8 +1152,8 @@
   });
 
   setLang(lang);
+  route();
   startGreeting();
-  if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
 </script>
 </body>
 </html>
