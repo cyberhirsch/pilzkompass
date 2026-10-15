@@ -134,7 +134,8 @@ def main():
         page(name)
     for name in ("icon.svg", "wetter.js", "trees.js", "nav.js"):
         shutil.copy(PROJECT / name, WWW / name)
-    for name in ("boletus.onnx", "boletus-classes.json", "photo-credits.csv"):
+    shutil.copytree(PROJECT / "licenses", WWW / "licenses")   # e.g. Apache 2.0 for DINOv2
+    for name in ("boletus.onnx", "boletus-classes.json"):
         shutil.copy(PROJECT / "model" / name, WWW / "model" / name)
     ort = APP / "node_modules" / "onnxruntime-web" / "dist"
     for name in ("ort.wasm.min.js", "ort-wasm-simd-threaded.mjs", "ort-wasm-simd-threaded.wasm"):
