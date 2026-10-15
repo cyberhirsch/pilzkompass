@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilzkompass</title>
+<meta name="description" content="Pilzkompass: Pilze bestimmen mit KI, Pilzkarte, Pilzwetter und Giftpilz-Warnungen — als App für Android.">
+<link rel="icon" href="app/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14110d; --surface: #1f1a14; --surface-2: #2a231b; --line: #3a3127;
+    --text: #efe6d8; --muted: #a99a85;
+    --edible: #6fae5a; --caution: #e0a83a; --poison: #e5322d;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: radial-gradient(1200px 700px at 75% 20%, #2f271e 0%, var(--bg) 60%) fixed, var(--bg);
+    color: var(--text); font: 16px/1.55 Inter, system-ui, sans-serif; min-height: 100vh;
+  }
+  a { color: var(--caution); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px 40px; display: grid;
+    grid-template-columns: minmax(0, 1fr) auto; gap: 56px; align-items: center; min-height: 100vh; }
+  header.top { display: flex; align-items: center; gap: 12px; }
+  header.top img { width: 44px; height: 44px; }
+  header.top b { font: 900 22px Fraunces, Georgia, serif; letter-spacing: -.01em; }
+  .lang { margin-left: auto; display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { background: var(--surface); color: var(--muted); border: 0; padding: 6px 14px; font: 700 12px Inter, sans-serif; letter-spacing: .06em; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+  h1 { font: 900 clamp(38px, 5.4vw, 64px)/1.03 Fraunces, Georgia, serif; letter-spacing: -.02em; margin: 40px 0 16px; }
+  h1 span { color: var(--caution); }
+  .lede { color: var(--muted); font-size: 18px; max-width: 34em; margin: 0 0 28px; }
+  .feats { list-style: none; padding: 0; margin: 0 0 30px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .feats li { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .feats button { all: unset; cursor: pointer; display: block; }
+  .feats li:hover { border-color: var(--caution); }
+  .feats b { display: block; font: 700 17px Fraunces, Georgia, serif; margin-bottom: 2px; }
+  .feats span { color: var(--muted); font-size: 14px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 12px 22px;
+    font: 700 15px Inter, sans-serif; text-decoration: none; border: 0; cursor: pointer; }
+  .btn.play { background: var(--text); color: var(--bg); }
+  .btn.play small { display: block; font-weight: 500; font-size: 11px; opacity: .7; line-height: 1; }
+  .btn.play span { line-height: 1.15; text-align: left; }
+  .btn.alt { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); }
+  .safety { margin-top: 26px; font-size: 13px; color: var(--muted); border-left: 3px solid var(--poison); padding: 4px 0 4px 12px; max-width: 40em; }
+  .safety strong { color: var(--text); }
+  footer { grid-column: 1 / -1; color: var(--muted); font-size: 13px; text-align: center; padding-top: 8px; }
+
+  /* Phone */
+  .stage { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .phone-box { position: relative; }
+  .phone {
+    position: absolute; left: 0; top: 0; width: 414px; height: 868px; transform-origin: top left;
+    border-radius: 60px; padding: 12px; background: #0b0a08;
+    box-shadow: 0 0 0 2px #3b342b, 0 0 0 7px #17130f, 0 40px 90px rgba(0, 0, 0, .65), 0 0 120px rgba(224, 168, 58, .08);
+  }
+  .phone::before { /* side buttons */
+    content: ''; position: absolute; right: -9px; top: 190px; width: 4px; height: 90px; border-radius: 0 3px 3px 0; background: #2b251e;
+  }
+  .phone::after {
+    content: ''; position: absolute; left: -9px; top: 160px; width: 4px; height: 130px; border-radius: 3px 0 0 3px; background: #2b251e;
+  }
+  .screen { position: relative; width: 390px; height: 844px; border-radius: 48px; overflow: hidden; background: var(--bg); }
+  .screen iframe { display: block; width: 390px; height: 844px; border: 0; background: var(--bg); }
+  .statusbar { position: absolute; inset: 0 0 auto 0; height: 46px; z-index: 2; pointer-events: none;
+    display: flex; justify-content: space-between; align-items: center; padding: 6px 32px 0;
+    font: 700 15px Inter, sans-serif; color: var(--text); background: linear-gradient(var(--bg) 70%, transparent); }
+  .island { position: absolute; left: 50%; top: 11px; width: 116px; height: 32px; transform: translateX(-50%); border-radius: 20px; background: #000; z-index: 3; }
+  .screen iframe { margin-top: 0; }
+  .screen.has-bar iframe { height: 798px; margin-top: 46px; }
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+  .tabs button { background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 12px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  .tabs button[aria-pressed="true"] { color: var(--bg); background: var(--caution); border-color: var(--caution); }
+  .hint { color: var(--muted); font-size: 12px; text-align: center; max-width: 320px; margin: 0; }
+
+  @media (max-width: 900px) {
+    .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 20px 16px 32px; min-height: 0; }
+    h1 { margin-top: 26px; }
+    .feats { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main>
+    <header class="top">
+      <img src="app/icon.svg" alt="">
+      <b>Pilzkompass</b>
+      <div class="lang"><button data-lang="de">DE</button><button data-lang="en">EN</button></div>
+    </header>
+    <h1 data-i18n="h1"></h1>
+    <p class="lede" data-i18n="lede"></p>
+    <ul class="feats">
+      <li><button data-go="bestimmen.html"><b data-i18n="f1"></b><span data-i18n="f1t"></span></button></li>
+      <li><button data-go="index.html#arten"><b data-i18n="f2"></b><span data-i18n="f2t"></span></button></li>
+      <li><button data-go="karte.html"><b data-i18n="f3"></b><span data-i18n="f3t"></span></button></li>
+      <li><button data-go="index.html#heute"><b data-i18n="f4"></b><span data-i18n="f4t"></span></button></li>
+    </ul>
+    <div class="cta">
+      <span class="btn play" aria-disabled="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19c0 .4.4.6.7.4l16.6-9.5a.5.5 0 0 0 0-.8L4.7 2.1c-.3-.2-.7 0-.7.4Z"/></svg>
+        <span><small data-i18n="soon"></small>Google Play</span>
+      </span>
+      <a class="btn alt" href="app/index.html" data-i18n="full"></a>
+    </div>
+    <p class="safety" data-i18n="safety"></p>
+  </main>
+
+  <aside class="stage">
+    <div class="phone-box" id="box">
+      <div class="phone" id="phone">
+        <div class="screen has-bar">
+          <div class="statusbar"><span id="clock">9:41</span><span>▂▄▆ ◔</span></div>
+          <div class="island"></div>
+          <iframe id="app" src="app/index.html#heute" title="Pilzkompass App" allow="camera; geolocation; fullscreen"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="tabs" id="tabs">
+      <button data-go="index.html#heute" data-i18n="t1"></button>
+      <button data-go="index.html#arten" data-i18n="t2"></button>
+      <button data-go="bestimmen.html" data-i18n="t3"></button>
+      <button data-go="karte.html" data-i18n="t4"></button>
+    </div>
+    <p class="hint" data-i18n="hint"></p>
+  </aside>
+
+  <footer data-i18n="foot"></footer>
+</div>
+
+<script>
+  const T = {
+    de: {
+      h1: 'Pilze finden.<br><span>Sicher</span> bestimmen.',
+      lede: 'Der Pilzkompass begleitet dich in den Wald: Er zeigt, wann und wo Pilze wachsen, erkennt sie per Foto und warnt laut vor jedem giftigen Doppelgänger. Probier die App direkt hier im Telefon aus.',
+      f1: '📷 KI-Bestimmung', f1t: 'Drei Fotos mit Schablone, die KI läuft offline auf dem Gerät.',
+      f2: '🍄 156 Arten', f2t: 'Alle Röhrlinge, die wichtigsten Speisepilze und ihre gefährlichen Doppelgänger.',
+      f3: '🗺 Pilzkarte', f3t: 'Baumarten auf 10 m genau: Wo stehen die Partnerbäume deines Pilzes?',
+      f4: '🌦 Pilzwetter', f4t: 'Regen und Temperatur der letzten 14 Tage — wann lohnt sich der Gang in den Wald?',
+      soon: 'Demnächst bei', full: 'App im Vollbild öffnen',
+      safety: '<strong>Niemals einen Pilz nur nach App oder Foto essen.</strong> Der Pilzkompass hilft beim Eingrenzen und warnt — die Entscheidung über die Essbarkeit gehört zu geprüften Pilzsachverständigen.',
+      t1: 'Heute', t2: 'Arten', t3: 'Bestimmen', t4: 'Karte',
+      hint: 'Das ist die echte App. Tippe, wische und probiere die Bestimmung mit einem eigenen Foto aus.',
+      foot: 'Pilzkompass · Fotos: Wikimedia Commons · Baumdaten: Thünen-Institut · Wetter: DWD',
+    },
+    en: {
+      h1: 'Find mushrooms.<br>Identify them <span>safely</span>.',
+      lede: 'Pilzkompass comes with you to the forest: it shows when and where mushrooms grow, recognises them from photos and warns loudly about every poisonous look-alike. Try the app right here in the phone.',
+      f1: '📷 AI identification', f1t: 'Three photos with a guide outline; the AI runs offline on the device.',
+      f2: '🍄 156 species', f2t: 'All boletes, the most important edible mushrooms and their dangerous look-alikes.',
+      f3: '🗺 Mushroom map', f3t: 'Tree species at 10 m: where do your mushroom’s partner trees grow?',
+      f4: '🌦 Mushroom weather', f4t: 'Rain and temperature of the last 14 days — is it worth going out?',
+      soon: 'Coming soon on', full: 'Open the app full screen',
+      safety: '<strong>Never eat a mushroom based on an app or a photo.</strong> Pilzkompass helps you narrow it down and warns you — the decision on edibility belongs to a certified mushroom expert.',
+      t1: 'Today', t2: 'Species', t3: 'Identify', t4: 'Map',
+      hint: 'This is the real app. Tap, swipe and try identifying a mushroom with a photo of your own.',
+      foot: 'Pilzkompass · Photos: Wikimedia Commons · Tree data: Thünen Institute · Weather: DWD',
+    },
+  };
+  const frame = document.getElementById('app');
+  let lang = 'de';
+  try { lang = localStorage.getItem('lang') || ((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en'); } catch {}
+
+  function setLang(l) {
+    lang = l;
+    try { localStorage.setItem('lang', l); } catch {}  // same origin: the app inside picks it up too
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-i18n]').forEach(el => el.innerHTML = T[l][el.dataset.i18n]);
+    document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l));
+    // Switch the app's language as well, via its own buttons.
+    try { frame.contentDocument?.querySelector(`[data-lang="${l}"]`)?.click(); } catch {}
+  }
+  document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+  // Jump the app to a screen.
+  function go(path) {
+    const url = new URL('app/' + path, location.href);
+    const cur = frame.contentWindow?.location;
+    if (cur && cur.pathname === url.pathname) cur.hash = url.hash.slice(1); else frame.src = url.href;
+    markTab(url.pathname, url.hash);
+  }
+  function markTab(path, hash) {
+    document.querySelectorAll('#tabs button').forEach(b => {
+      const u = new URL('app/' + b.dataset.go, location.href);
+      b.setAttribute('aria-pressed', u.pathname === path && (!u.hash || u.hash === hash || (u.hash === '#heute' && !hash)));
+    });
+  }
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => go(b.dataset.go)));
+  // Keep the pills in sync when the user navigates inside the app (tab bar, links).
+  frame.addEventListener('load', () => {
+    const w = frame.contentWindow;
+    // Phones have no visible scrollbars; hide the desktop ones inside the frame.
+    try {
+      const st = w.document.createElement('style');
+      st.textContent = 'html{scrollbar-width:none}::-webkit-scrollbar{display:none}';
+      w.document.head.append(st);
+    } catch {}
+    const sync = () => { try { markTab(w.location.pathname, w.location.hash); } catch {} };
+    sync();
+    try { w.addEventListener('hashchange', sync); } catch {}
+  });
+
+  // Scale the phone to the space available (fits the viewport height on desktop, the width on phones).
+  const box = document.getElementById('box'), phone = document.getElementById('phone');
+  function fit() {
+    const W = 414, H = 868;
+    const narrow = innerWidth <= 900;
+    const s = Math.min(1, narrow ? (innerWidth - 40) / W : (innerHeight - 120) / H, (innerWidth - 32) / W);
+    phone.style.transform = `scale(${s})`;
+    box.style.width = W * s + 'px';
+    box.style.height = H * s + 'px';
+  }
+  addEventListener('resize', fit);
+  addEventListener('load', fit);   // phones settle their viewport late
+  fit();
+
+  const clock = document.getElementById('clock');
+  const tick = () => { clock.textContent = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }); };
+  tick(); setInterval(tick, 20000);
+
+  setLang(lang);
+  markTab(new URL('app/index.html', location.href).pathname, '#heute');
+</script>
+</body>
+</html>

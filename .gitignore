@@ -30,3 +30,4 @@ app/dist/
 # Map tiles copied into the Play asset pack by tools/play-bundle.sh
 app/android/tiles/src/
 training/old/
+_site/
